@@ -15,6 +15,7 @@ October 23 2001 John Check, fgpanels@rockfish.net
  <sim>
 
   <description>Space Shuttle</description>
+  <author>Jon S. Berndt</author>
   
   <flight-model>jsb</flight-model>
   <aero>shuttle</aero>
