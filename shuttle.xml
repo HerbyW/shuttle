@@ -1,7 +1,6 @@
-<FDM_CONFIG NAME="Space Shuttle" VERSION="1.40">
+<FDM_CONFIG NAME="Space Shuttle" VERSION="1.50">
 
   <!--
-
   File:        shuttle.xml
   Author:      Jon S. Berndt
   CVS Version: $Id$
@@ -20,9 +19,6 @@
 
     Pilot's eyepoint location, in aircraft's own coord system, FROM cg.
     X, Y, Z, in inches
-    
-    The 
-    
     -->
 
     AC_WINGAREA 2690
