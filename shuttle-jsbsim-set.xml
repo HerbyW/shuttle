@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<!--
+************************************************************************
+Space Shuttle simulation config. This files ties together all the components
+used by FGFS to represent the shuttle. Components include the flight data 
+model, instrument panel, and external 3D model.
+3D models can be downloaded from http://home.t-online.de/home/Wolfram.Kuss/
+
+October 23 2001 John Check, fgpanels@rockfish.net
+************************************************************************
+-->
+
+<PropertyList>
+
+ <sim>
+
+  <description>Space Shuttle</description>
+  
+  <flight-model>jsb</flight-model>
+  <aero>shuttle</aero>
+  
+  <systems>
+   <electrical>
+    <path>Aircraft/Generic/generic-electrical.xml</path>
+   </electrical>
+  </systems> 
+
+  <sound>
+   <audible>true</audible>
+  </sound>
+
+  <panel>
+   <path>Aircraft/c172/Panels/c172-vfr-panel.xml</path>
+   <visibility>true</visibility>
+  </panel>
+  <panel_2>
+   <path>Aircraft/c172/Panels/c172-trans-mini-panel.xml</path>
+  </panel_2>
+
+  <model>
+   <path><!-- you need to set this --></path>
+  </model>
+
+ </sim>
+ 
+</PropertyList>
+
+
