@@ -6,8 +6,6 @@
   CVS Version: $Id$
 
   Function: Models the U.S. Space Shuttle
-  Notes:    Try running FlightGear using this command line,
-            fgfs --fdm=jsb --aircraft=shuttle --altitude=60000 --uBody=3000 --wBody=120
   -->
 
   <METRICS>
