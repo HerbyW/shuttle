@@ -1,4 +1,4 @@
-<FDM_CONFIG NAME="Space Shuttle" VERSION="1.61">
+<FDM_CONFIG NAME="Space Shuttle" VERSION="1.65">
 
   <!--
   File:        shuttle.xml
@@ -310,7 +310,7 @@
       <COEFFICIENT NAME="CLalpha" TYPE="VALUE">
         Lift_due_to_alpha
         aero/qbar-psf | metrics/Sw-sqft | aero/alpha-rad
-	      6.0
+        6.0
       </COEFFICIENT>
 
       <COEFFICIENT NAME="CLDe" TYPE="VECTOR">
