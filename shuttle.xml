@@ -1,4 +1,4 @@
-<FDM_CONFIG NAME="Space Shuttle" VERSION="1.56">
+<FDM_CONFIG NAME="Space Shuttle" VERSION="1.57">
 
   <!--
   File:        shuttle.xml
@@ -53,9 +53,9 @@
     <max steer angle>                Maximum steerable angle in degrees
     -->
 
-    AC_GEAR     NOSE         380    0 -48 150000  10000  0.02  0.5 0.02 STEERABLE NOSE 15
-    AC_GEAR     LEFT_WHEEL  1152 -140 160 150000  10000  0.02  0.5 0.02 FIXED LEFT 0
-    AC_GEAR     RIGHT_WHEEL 1152  140 210 150000  10000  0.02  0.5 0.02 FIXED RIGHT 0
+    AC_GEAR     NOSE         380    0 -48 150000  10000  0.02  0.5 0.02 STEERABLE NOSE 15 FIXED
+    AC_GEAR     LEFT_WHEEL  1152 -140 160 150000  10000  0.02  0.5 0.02 FIXED LEFT 0 FIXED
+    AC_GEAR     RIGHT_WHEEL 1152  140 210 150000  10000  0.02  0.5 0.02 FIXED RIGHT 0 FIXED
 
   </UNDERCARRIAGE>
 
