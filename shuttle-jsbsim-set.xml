@@ -25,10 +25,6 @@ October 23 2001 John Check, fgpanels@rockfish.net
    </electrical>
   </systems> 
 
-  <sound>
-   <audible>true</audible>
-  </sound>
-
   <panel>
    <path>Aircraft/c172/Panels/c172-vfr-panel.xml</path>
    <visibility>true</visibility>
