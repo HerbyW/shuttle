@@ -6,6 +6,8 @@
   CVS Version: $Id$
 
   Function: Models the U.S. Space Shuttle
+  Notes:    Try running FlightGear using this command line,
+            fgfs --fdm=jsb --aircraft=shuttle --altitude=60000 --uBody=3000 --wBody=120
   -->
 
   <METRICS>
@@ -51,7 +53,7 @@
     <max steer angle>                Maximum steerable angle in degrees
     -->
 
-    AC_GEAR     NOSE         375    0 225 150000  10000  0.02  0.5 0.02 STEERABLE NOSE 15 FIXED
+    AC_GEAR     NOSE         375    0 225 150000  10000  0.02  0.5 0.02 STEERABLE NONE 15 FIXED
     AC_GEAR     LEFT_WHEEL  1172 -136 171 150000  10000  0.02  0.5 0.02 FIXED LEFT 0 FIXED
     AC_GEAR     RIGHT_WHEEL 1172  136 171 150000  10000  0.02  0.5 0.02 FIXED RIGHT 0 FIXED
 
