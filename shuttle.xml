@@ -399,12 +399,6 @@
         0.45
       </COEFFICIENT>
 
-      <COEFFICIENT NAME="CYdr" TYPE="VALUE">
-        Side_force_due_to_rudder
-        FG_QBAR|FG_WINGAREA|FG_RUDDER_POS
-        0.45
-      </COEFFICIENT>
-
     </AXIS>
 
     <AXIS NAME="ROLL">
