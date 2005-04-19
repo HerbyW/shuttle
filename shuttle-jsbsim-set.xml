@@ -38,6 +38,10 @@ October 23 2001 John Check, fgpanels@rockfish.net
    <path><!-- you need to set this --></path>
   </model>
 
+  <help>
+   <title>Space Shuttle</title>
+  </help>
+
  </sim>
  
 </PropertyList>
