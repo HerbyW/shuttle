@@ -9,6 +9,20 @@
         <filecreationdate> 2001-01-01 </filecreationdate>
         <version> $Revision$ </version>
         <description> Space Shuttle </description>
+        <license>
+          <licenseName>GPL (General Public License)</licenseName>
+          <licenseURL>http://www.gnu.org/licenses/gpl.html</licenseURL>
+        </license>
+        <note>
+          This model was created using publicly available data, publicly available
+          technical reports, textbooks, and guesses. It contains no proprietary or
+          restricted data. It has been validated only to the extent that it may seem
+          to "fly right", and possibly to comply to published, publicly known, 
+          performance data (maximum speed, endurance, etc.). Thus, this model
+          is meant for educational and entertainment purposes only.
+          
+          This simulation model is not endorsed by the manufacturer or operator.
+        </note>
     </fileheader>
 
     <metrics>
