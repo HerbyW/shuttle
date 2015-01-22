@@ -1,0 +1,81 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+ <sim>
+  <description>NASA Space Shuttle Atlantis</description>
+  <flight-model>jsb</flight-model>
+  <aero>SpaceShuttle</aero>
+  <author>Gijs de Rooy, NASA (3D), HerbyW</author>
+	<model>
+		<path>Aircraft/SpaceShuttle/Models/shuttle.xml</path>
+	</model>
+	
+<multiplay>
+   <chat_display>1</chat_display>
+     <generic> 
+        
+        <float n="3" alias="/instrumentation/doors/door1/position-norm" />
+        <int type="int" n="8" alias="/controls/lighting/nav-lights"> 0 </int>
+        
+     </generic>
+</multiplay>
+
+<controls>
+    
+    <shuttle>
+      <door>
+       <position type="float">0</position>
+      </door>
+      <payload type="int">2</payload>            
+    </shuttle>
+    <lighting>
+       <nav-lights type="float">0</nav-lights>
+    </lighting>
+    <lighting>
+       <nav-lights type="float">1</nav-lights>
+    </lighting>
+  </controls>
+	
+	
+  <view n="0">
+   <internal archive="y">true</internal>
+   <config>
+    <x-offset-m archive="y" type="double">0</x-offset-m>
+    <y-offset-m archive="y" type="double">4.94</y-offset-m>
+    <z-offset-m archive="y" type="double">-32.5</z-offset-m>
+   </config>
+</view>
+
+<chase-distance-m type="double" archive="y">-65.0</chase-distance-m>
+
+<help>
+      <title>Space Shuttle</title>
+      <text>
+	Set the Pilot to 96000
+     Set the Tank 1 to 590000
+     Set the Tank 2 to 97000, try to get the shuttle in horizontal position!
+     Gears and Flaps are not animated but are there in the jsb
+     Set a flightlevel of 17000 and push the trottle,
+     then you may fly and control the shuttle and land it correctly.
+      </text>
+</help>
+      
+
+
+
+ </sim>
+
+
+
+ <payload>
+  <weight>
+   <name type="string">Pilot</name>
+   <weight-lb alias="/fdm/jsbsim/inertia/pointmass-weight-lbs[0]"/>
+   <min-lb type="double">0.0</min-lb>
+   <max-lb type="double">1200000.0</max-lb>
+  </weight>
+ </payload>  
+
+</PropertyList>
+
+
