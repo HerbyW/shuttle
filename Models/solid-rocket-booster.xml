@@ -1,0 +1,14 @@
+<PropertyList>
+	<path>srb.ac</path>
+		
+<offsets>          <heading-deg>-180</heading-deg> </offsets>  
+
+<animation>
+<type>select</type>
+<condition>
+<property>controls/shuttle/solid-rocket-boosters</property>
+<value>1</value>
+</condition>
+</animation>
+
+</PropertyList>

@@ -23,16 +23,24 @@
 	</startup>
 
 	<model>
-		<path>Aircraft/SpaceShuttle/Models/shuttle.xml</path>		
+		<path>Aircraft/SpaceShuttle/Models/shuttle2.xml</path>		
 	</model>
 
 <controls>
     
     <shuttle>
+      <external-fuel-tank type="float">1</external-fuel-tank>
+      <solid-rocket-boosters type="float">1</solid-rocket-boosters>
       <door>
-       <position type="float">0</position>
+       <position type="float">1</position>
       </door>               
     </shuttle>
+    
+    
+    
+    
+    
+    
     <lighting>
        <nav-lights type="float">0</nav-lights>
     </lighting>
@@ -63,6 +71,9 @@
      with the rudder set the weight to a lower value till the shuttle is controllably!
      Gears and Flaps and speed breaks are not animated but are there in the jsb.
      Then you may start and fly and control the shuttle and land it correctly.
+     
+     To set the booster and tank go to the properties-browser,
+     contols- shuttle and set 1 to the tank and the boosters.
       </text>
 </help>
       

@@ -1,0 +1,165 @@
+<PropertyList>
+	<path>shuttle.ac</path>
+		
+<offsets>          <heading-deg>0</heading-deg> </offsets>  
+
+<!--
+<model>
+<path>Aircraft/shuttle/Models/external-fuel-tank.xml</path>
+		<offsets>
+			<x-m>-11.7</x-m>
+			<y-m>0.0</y-m>
+			<z-m>-10.0</z-m>
+		</offsets>
+		<condition>
+		 <greater-than>
+			<property>controls/shuttle/external-fuel-tank</property>
+			<value>0</value>
+		 </greater-than>
+		</condition>
+</model>
+
+<model>
+<path>Aircraft/shuttle/Models/solid-rocket-booster.xml</path>
+		<offsets>
+			<x-m>-5.2</x-m>
+			<y-m>-6.35</y-m>
+			<z-m>-7.566</z-m>
+			<roll-deg>90.0</roll-deg>
+		</offsets>
+		<condition>
+		 <greater-than>
+			<property>controls/shuttle/solid-rocket-boosters</property>
+			<value>0</value>
+		 </greater-than>
+		</condition>
+</model>
+
+<model>
+<path>Aircraft/shuttle/Models/solid-rocket-booster.xml</path>
+		<offsets>
+			<x-m>-5.2</x-m>
+			<y-m>6.35</y-m>
+			<z-m>-7.566</z-m>
+			<roll-deg>-90.0</roll-deg>
+		</offsets>
+		<condition>
+		 <greater-than>
+			<property>controls/shuttle/solid-rocket-boosters</property>
+			<value>0</value>
+		 </greater-than>
+		</condition>
+</model>
+-->
+
+<model>
+<path>Aircraft/shuttle/Models/smoke_engine1.xml</path>
+</model>
+
+	<model>
+		<path>Aircraft/shuttle/Models/Effects/trails.xml</path>
+		<condition>
+		 <greater-then>
+			<property>engines/engine/thrust_lb</property>
+			<value>1</value>
+		 </greater-then>
+		</condition>
+		<offsets>
+			<x-m> 26</x-m>
+			<y-m>  0.00</y-m>
+			<z-m>  1.443</z-m>
+			<roll-deg>0.0</roll-deg>
+			<pitch-deg>0.0</pitch-deg>
+			<heading-deg>0.0</heading-deg>
+		</offsets>
+	</model>
+
+	<model>
+		<path>Aircraft/shuttle/Models/Effects/trails.xml</path>
+		<condition>
+		 <greater-then>
+			<property>engines/engine/thrust_lb</property>
+			<value>1</value>
+		 </greater-then>
+		</condition>
+		<offsets>
+			<x-m> 26</x-m>
+			<y-m>  1.5496</y-m>
+			<z-m> -0.6942</z-m>
+			<roll-deg>0.0</roll-deg>
+			<pitch-deg>0.0</pitch-deg>
+			<heading-deg>0.0</heading-deg>
+		</offsets>
+	</model>
+
+	<model>
+		<path>Aircraft/shuttle/Models/Effects/trails.xml</path>
+		<condition>
+		 <greater-then>
+			<property>engines/engine/thrust_lb</property>
+			<value>1</value>
+		 </greater-then>
+		</condition>
+		<offsets>
+			<x-m> 26</x-m>
+			<y-m> -1.5496</y-m>
+			<z-m> -0.6942</z-m>
+			<roll-deg>0.0</roll-deg>
+			<pitch-deg>0.0</pitch-deg>
+			<heading-deg>0.0</heading-deg>
+		</offsets>
+	</model>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>spaceshutt_spstob</object-name>
+  <property>instrumentation/doors/door1/position-norm</property>
+  <interpolation>
+    <entry>
+      <ind>0.2</ind>
+      <dep>0</dep>
+    </entry>
+    <entry>
+      <ind>1.0</ind>
+      <dep>-200</dep>
+    </entry>
+  </interpolation>
+  <center>   
+   <y-m> -2.5272</y-m>
+   <z-m>  0.8034</z-m>
+   <x-m> -2.2671</x-m>
+  </center>
+  <axis>
+   <x>1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>spaceshutt_spstob.001</object-name>
+  <property>instrumentation/doors/door1/position-norm</property>
+  <interpolation>
+    <entry>
+      <ind>0.2</ind>
+      <dep>0</dep>
+    </entry>
+    <entry>
+      <ind>1.0</ind>
+      <dep>200</dep>
+    </entry>
+  </interpolation>
+  <center>   
+   <y-m>  2.5272</y-m>
+   <z-m>  0.8034</z-m>
+   <x-m> -2.2672</x-m>
+  </center>
+  <axis>
+   <x>1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+</PropertyList>

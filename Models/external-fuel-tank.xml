@@ -1,0 +1,14 @@
+<PropertyList>
+	<path>et.ac</path>
+		
+<offsets>          <heading-deg>-180</heading-deg> </offsets>  
+
+<animation>
+<type>select</type>
+<condition>
+<property>controls/shuttle/external-fuel-tank</property>
+<value>1</value>
+</condition>
+</animation>
+
+</PropertyList>
