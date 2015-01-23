@@ -13,6 +13,8 @@
      <generic> 
         
         <float n="3" alias="/instrumentation/doors/door1/position-norm" />
+        <int type="int" n="6" alias="/controls/shuttle/external-fuel-tank"> 1 </int>
+	<int type="int" n="7" alias="/controls/shuttle/solid-rocket-boosters"> 1 </int>
         <int type="int" n="8" alias="/controls/lighting/nav-lights"> 0 </int>
         
      </generic>
@@ -29,8 +31,8 @@
 <controls>
     
     <shuttle>
-      <external-fuel-tank type="float">1</external-fuel-tank>
-      <solid-rocket-boosters type="float">1</solid-rocket-boosters>
+      <external-fuel-tank type="int">1</external-fuel-tank>
+      <solid-rocket-boosters type="int">1</solid-rocket-boosters>
       <door>
        <position type="float">1</position>
       </door>               
