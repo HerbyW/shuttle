@@ -6,9 +6,7 @@
   <flight-model>jsb</flight-model>
   <aero>SpaceShuttle</aero>
   <author>Gijs de Rooy, NASA (3D), HerbyW</author>
-	<model>
-		<path>Aircraft/SpaceShuttle/Models/shuttle.xml</path>
-	</model>
+
 	
 <multiplay>
    <chat_display>1</chat_display>
@@ -20,13 +18,16 @@
      </generic>
 </multiplay>
 
+	<model>
+		<path>Aircraft/SpaceShuttle/Models/shuttle.xml</path>
+	</model>
+
 <controls>
     
     <shuttle>
       <door>
        <position type="float">0</position>
-      </door>
-      <payload type="int">2</payload>            
+      </door>               
     </shuttle>
     <lighting>
        <nav-lights type="float">0</nav-lights>
