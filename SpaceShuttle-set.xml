@@ -1,6 +1,22 @@
 <?xml version="1.0"?>
 
 <PropertyList>
+ 
+ <controls>    
+    <shuttle>
+      <external-fuel-tank type="int">1</external-fuel-tank>
+      <solid-rocket-boosters type="int">1</solid-rocket-boosters>
+      <door>
+       <position type="float">1</position>
+      </door>               
+    </shuttle>
+    
+    <lighting>
+       <nav-lights type="bool">1</nav-lights>
+    </lighting>
+  </controls> 
+ 
+ 
  <sim>
   <description>NASA Space Shuttle Atlantis</description>
   <flight-model>jsb</flight-model>
@@ -13,9 +29,9 @@
      <generic> 
         
         <float n="3" alias="/instrumentation/doors/door1/position-norm" />
-        <int type="int" n="6" alias="/controls/shuttle/external-fuel-tank"> 1 </int>
-	<int type="int" n="7" alias="/controls/shuttle/solid-rocket-boosters"> 1 </int>
-        <int type="int" n="8" alias="/controls/lighting/nav-lights"> 0 </int>
+        <int type="int" n="6" alias="/controls/shuttle/external-fuel-tank"/>
+	<int type="int" n="7" alias="/controls/shuttle/solid-rocket-boosters"/>
+        <int type="int" n="8" alias="/controls/lighting/nav-lights"/>
         
      </generic>
 </multiplay>
@@ -24,32 +40,13 @@
 		<splash-texture>Aircraft/SpaceShuttle/SpaceShuttle-splash.png</splash-texture>
 	</startup>
 
-	<model>
-		<path>Aircraft/SpaceShuttle/Models/shuttle2.xml</path>		
-	</model>
+	
 
-<controls>
-    
-    <shuttle>
-      <external-fuel-tank type="int">1</external-fuel-tank>
-      <solid-rocket-boosters type="int">1</solid-rocket-boosters>
-      <door>
-       <position type="float">1</position>
-      </door>               
-    </shuttle>
-    
-    
-    
-    
-    
-    
-    <lighting>
-       <nav-lights type="float">0</nav-lights>
-    </lighting>
-    <lighting>
-       <nav-lights type="float">1</nav-lights>
-    </lighting>
-  </controls>
+  
+  
+  <model>
+		<path>Aircraft/SpaceShuttle/Models/shuttle2.xml</path>		
+  </model>
 	
 	
   <view n="0">
