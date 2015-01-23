@@ -265,6 +265,7 @@
     </thruster>
   </engine>
 
+<!--booster rockets
 
    <engine file="SRB">
     <location unit="IN">
@@ -318,7 +319,7 @@
        <yaw>   0.00 </yaw>
      </orient>
     </thruster>
-  </engine>
+    </engine>                                 -->
 
   <tank type="OXIDIZER" number="0">
      <location unit="IN">

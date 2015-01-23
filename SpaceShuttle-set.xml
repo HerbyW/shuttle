@@ -18,8 +18,12 @@
      </generic>
 </multiplay>
 
+        <startup>
+		<splash-texture>Aircraft/SpaceShuttle/SpaceShuttle-splash.png</splash-texture>
+	</startup>
+
 	<model>
-		<path>Aircraft/SpaceShuttle/Models/shuttle.xml</path>
+		<path>Aircraft/SpaceShuttle/Models/shuttle.xml</path>		
 	</model>
 
 <controls>
@@ -53,11 +57,12 @@
       <title>Space Shuttle</title>
       <text>
 	Set the Pilot to 96000
-     Set the Tank 1 to 590000
-     Set the Tank 2 to 97000, try to get the shuttle in horizontal position!
-     Gears and Flaps are not animated but are there in the jsb
-     Set a flightlevel of 17000 and push the trottle,
-     then you may fly and control the shuttle and land it correctly.
+     Set the Tank 1 to 390000
+     Set the Tank 2 to 97000, try to get the shuttle in horizontal position,
+     try to get a little throttle , if the shuttle is not controllably on the ground
+     with the rudder set the weight to a lower value till the shuttle is controllably!
+     Gears and Flaps and speed breaks are not animated but are there in the jsb.
+     Then you may start and fly and control the shuttle and land it correctly.
       </text>
 </help>
       
