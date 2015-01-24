@@ -95,9 +95,9 @@
 		 </greater-then>
 		</condition>
 		<offsets>
-			<x-m> 19</x-m>
+			<x-m> 17</x-m>
 			<y-m>  0.00</y-m>
-			<z-m>  1.443</z-m>
+			<z-m>  -0.843</z-m>
 			<roll-deg>0.0</roll-deg>
 			<pitch-deg>0.0</pitch-deg>
 			<heading-deg>0.0</heading-deg>
@@ -113,9 +113,9 @@
 		 </greater-then>
 		</condition>
 		<offsets>
-			<x-m> 19</x-m>
+			<x-m> 17</x-m>
 			<y-m>  1.5496</y-m>
-			<z-m> -0.6942</z-m>
+			<z-m> -3.4942</z-m>
 			<roll-deg>0.0</roll-deg>
 			<pitch-deg>0.0</pitch-deg>
 			<heading-deg>0.0</heading-deg>
@@ -131,9 +131,9 @@
 		 </greater-then>
 		</condition>
 		<offsets>
-			<x-m> 19</x-m>
+			<x-m> 17</x-m>
 			<y-m> -1.5496</y-m>
-			<z-m> -0.6942</z-m>
+			<z-m> -3.4942</z-m>
 			<roll-deg>0.0</roll-deg>
 			<pitch-deg>0.0</pitch-deg>
 			<heading-deg>0.0</heading-deg>
