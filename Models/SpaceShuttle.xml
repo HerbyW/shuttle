@@ -11,10 +11,10 @@
 			<z-m>-10.0</z-m>
 		</offsets>
 		<condition>
-		 <greater-than>
+		 <greater-then>
 			<property>sim/multiplay/generic/int[6]</property>
 			<value>0</value>
-		 </greater-than>
+		 </greater-then>
 		</condition>
 </model>
 
@@ -27,10 +27,10 @@
 			<roll-deg>90.0</roll-deg>
 		</offsets>
 		<condition>
-		 <greater-than>
+		 <greater-then>
 			<property>sim/multiplay/generic/int[7]</property>
 			<value>0</value>
-		 </greater-than>
+		 </greater-then>
 		</condition>
 </model>
 
@@ -43,10 +43,10 @@
 			<roll-deg>-90.0</roll-deg>
 		</offsets>
 		<condition>
-		 <greater-than>
+		 <greater-then>
 			<property>sim/multiplay/generic/int[7]</property>
 			<value>0</value>
-		 </greater-than>
+		 </greater-then>
 		</condition>
 </model>
 
@@ -95,7 +95,7 @@
 		 </greater-then>
 		</condition>
 		<offsets>
-			<x-m> 26</x-m>
+			<x-m> 19</x-m>
 			<y-m>  0.00</y-m>
 			<z-m>  1.443</z-m>
 			<roll-deg>0.0</roll-deg>
@@ -113,7 +113,7 @@
 		 </greater-then>
 		</condition>
 		<offsets>
-			<x-m> 26</x-m>
+			<x-m> 19</x-m>
 			<y-m>  1.5496</y-m>
 			<z-m> -0.6942</z-m>
 			<roll-deg>0.0</roll-deg>
@@ -131,7 +131,7 @@
 		 </greater-then>
 		</condition>
 		<offsets>
-			<x-m> 26</x-m>
+			<x-m> 19</x-m>
 			<y-m> -1.5496</y-m>
 			<z-m> -0.6942</z-m>
 			<roll-deg>0.0</roll-deg>

@@ -26,7 +26,7 @@
 <multiplay>
    <chat_display>1</chat_display>
      <generic> 
-        
+        <float n="2" alias="/engines/engine[3]/thrust_lb" />
         <float n="3" alias="/instrumentation/doors/door1/position-norm" />
         <int type="int" n="6" alias="/controls/shuttle/external-fuel-tank"/>
 	<int type="int" n="7" alias="/controls/shuttle/solid-rocket-boosters"/>
