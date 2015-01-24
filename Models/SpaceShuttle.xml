@@ -3,11 +3,88 @@
 		
 <offsets>          <heading-deg>0</heading-deg> </offsets>  
 
-
+<model>
+<path>Aircraft/SpaceShuttle/Models/external-fuel-tank.xml</path>
+		<offsets>
+			<x-m>-10.0</x-m>
+			<y-m>0.0</y-m>
+			<z-m>-10.0</z-m>
+		</offsets>
+		<condition>
+		 <greater-than>
+			<property>sim/multiplay/generic/int[6]</property>
+			<value>0</value>
+		 </greater-than>
+		</condition>
+</model>
 
 <model>
-<path>Aircraft/SpaceShuttle/Models/smoke_engine1.xml</path>
+<path>Aircraft/SpaceShuttle/Models/solid-rocket-booster.xml</path>
+		<offsets>
+			<x-m>-5.2</x-m>
+			<y-m>-6.35</y-m>
+			<z-m>-10.6</z-m>
+			<roll-deg>90.0</roll-deg>
+		</offsets>
+		<condition>
+		 <greater-than>
+			<property>sim/multiplay/generic/int[7]</property>
+			<value>0</value>
+		 </greater-than>
+		</condition>
 </model>
+
+<model>
+<path>Aircraft/SpaceShuttle/Models/solid-rocket-booster.xml</path>
+		<offsets>
+			<x-m>-5.2</x-m>
+			<y-m>6.35</y-m>
+			<z-m>-10.6</z-m>
+			<roll-deg>-90.0</roll-deg>
+		</offsets>
+		<condition>
+		 <greater-than>
+			<property>sim/multiplay/generic/int[7]</property>
+			<value>0</value>
+		 </greater-than>
+		</condition>
+</model>
+
+
+  <model>
+   <path>Aircraft/SpaceShuttle/Models/Effects/smoke_engine1.xml</path>
+    <offsets>
+		 <x-m>20.5</x-m>
+		 <y-m>-6.2</y-m>
+		 <z-m>-10.4</z-m>
+		 <pitch-deg>0</pitch-deg>
+		 <roll-deg>90</roll-deg>
+	 </offsets>
+
+	<condition>
+		 <bigger-then>
+			 <property>engines/engine[3]/thrust_lb</property>
+			 <value>100</value>
+		 </bigger-then>
+	</condition>
+  </model>
+  <model>
+    <path>Aircraft/SpaceShuttle/Models/Effects/smoke_engine2.xml</path>
+      <offsets>
+		 <x-m>20.5</x-m>
+		 <y-m>6.2</y-m>
+		 <z-m>-10.4</z-m>
+		 <pitch-deg>0</pitch-deg>
+		 <roll-deg>90</roll-deg>
+	 </offsets>
+
+	<condition>
+		 <bigger-then>
+			 <property>engines/engine[4]/thrust_lb</property>
+			 <value>100</value>
+		 </bigger-then>
+	</condition>
+  </model>
 
 	<model>
 		<path>Aircraft/SpaceShuttle/Models/Effects/trails.xml</path>
@@ -77,8 +154,8 @@
 <binding>
 <command>property-toggle</command>
 <property>/controls/shuttle/door/position</property>
-<min>0</min>
-<max>1</max>
+<value>0</value>
+<value>1</value>
 </binding>
 
 <binding>

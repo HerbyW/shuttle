@@ -7,10 +7,9 @@
       <external-fuel-tank type="int">1</external-fuel-tank>
       <solid-rocket-boosters type="int">1</solid-rocket-boosters>
       <door>
-       <position type="float">1</position>
-      </door>               
+       <position type="float">0</position>
+      </door>           
     </shuttle>
-    
     <lighting>
        <nav-lights type="bool">1</nav-lights>
     </lighting>
@@ -20,7 +19,7 @@
  <sim>
   <description>NASA Space Shuttle Atlantis</description>
   <flight-model>jsb</flight-model>
-  <aero>SpaceShuttle</aero>
+  <aero>shuttle</aero>
   <author>Gijs de Rooy, NASA (3D), HerbyW</author>
 
 	
@@ -45,7 +44,7 @@
   
   
   <model>
-		<path>Aircraft/SpaceShuttle/Models/shuttle2.xml</path>		
+		<path>Aircraft/SpaceShuttle/Models/SpaceShuttle.xml</path>		
   </model>
 	
 	
@@ -69,22 +68,25 @@ Set the Tank 1 to 129000
 Set the Tank 2 to 117000
 now the shuttle will be in horizontal position,
 give a little throttle, and take off, be carefull with throttle - it is a rocket!
+Hold it in a climbing position of 50-70 degree and go to 150000 ft,
+then deactivate the tank and booster rockets and glide to your landing place.
 
-Start like the Shuttle:
+(Start like the Shuttle: very carefully set the vertical position to max 80%!
 Set the Pilot to 0
 Set the Tank 1 to 220000
 Set the Tank 2 to full
 Set the Autopilot to Heading Control - Wing Leveler
-and Velocity Control to 500, by clicking the Velocity Contoll Start up!
+and Velocity Control to 500, by clicking the Velocity Control - and Take off!
+It is not working now, we are on it to fix it) 
 
 Gears, Flaps and Speed Breaks are not animated but are there in the jsb.
    
-To set the booster and tank go to the properties-browser,
- > contols > shuttle and set 1 to the tank and the boosters properties,
+To set or unset the booster and tank go to the properties-browser,
+ > contols > shuttle and set 1 or 0 to the tank and the boosters properties,
 befor landing or after reaching the orbit disable both of them by setting the properties to 0.
 
 Have fun and take your time to get control, it is a little bit tricky but fully working,
-also with ILS and AP.
+also with ILS and AP. Glidepath is not working! Velocity Control set to 170, landing wwith 140-150 kt.
 
 See the latest version on: www.github.com/HerbyW
 </text>

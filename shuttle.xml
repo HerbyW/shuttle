@@ -1,13 +1,13 @@
 <?xml version="1.0"?>
 <?xml-stylesheet type="text/xsl" href="http://jsbsim.sourceforge.net/JSBSim.xsl"?>
-<fdm_config name="SpaceShuttle" version="2.0" release="ALPHA"
+<fdm_config name="shuttle" version="2.0" release="ALPHA"
    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
    xsi:noNamespaceSchemaLocation="http://jsbsim.sourceforge.net/JSBSim.xsd">
 
  <fileheader>
   <author> Aeromatic v 0.9, HerbyW</author>
   <filecreationdate> 2009-04-09, 01-2015</filecreationdate>
-  <version>$Revison: 1$</version>
+  <version>Revison: 2</version>
   <description> Models a shuttle </description>
  </fileheader>
 
@@ -102,8 +102,8 @@
 
 <contact type="BOGEY" name="LEFT_MAIN">
 <location unit="M">
-<x> 9.60 </x>
-<y> -3.5 </y>
+<x> 9.80 </x>
+<y> -3.9 </y>
 <z>-7.00 </z>
 </location>
 <static_friction> 0.80 </static_friction>
@@ -118,8 +118,8 @@
 
 <contact type="BOGEY" name="RIGHT_MAIN">
 <location unit="M">
-<x> 9.60 </x>
-<y> 3.5 </y>
+<x> 9.80 </x>
+<y> 3.9 </y>
 <z>-7.00 </z>
 </location>
 <static_friction> 0.80 </static_friction>
