@@ -196,6 +196,7 @@
       <yaw>   0.00 </yaw>
     </orient>
     <feed>0</feed>
+    <feed>2</feed>
     
     <thruster file="xlr99_nozzle">
      <location unit="IN">
@@ -223,6 +224,7 @@
       <yaw>   0.00 </yaw>
     </orient>
     <feed>0</feed>
+    <feed>2</feed>
     
     <thruster file="xlr99_nozzle">
      <location unit="IN">
@@ -250,6 +252,7 @@
       <yaw>   0.00 </yaw>
     </orient>
     <feed>0</feed>
+    <feed>2</feed>
     
     <thruster file="xlr99_nozzle">
      <location unit="IN">
@@ -329,6 +332,7 @@
      </location>
      <capacity unit="LBS"> 1387457.00 </capacity>
      <contents unit="LBS"> 1387457.00 </contents>
+     <priority>1</priority>
   </tank>
 
   <tank type="FUEL" number="1">
@@ -340,6 +344,18 @@
      <capacity unit="LBS"> 234265.00 </capacity>
      <contents unit="LBS"> 234265.00 </contents>
   </tank>
+  
+  <tank type="FUEL" number="2">
+     <location unit="IN">
+       <x> 100.00 </x>
+       <y> -10.00 </y>
+       <z>-100.00 </z>
+     </location>
+     <capacity unit="LBS"> 117265.00 </capacity>
+     <contents unit="LBS"> 117265.00 </contents>
+     <priority>2</priority>
+  </tank>
+  
  </propulsion>
 
  <flight_control name="FCS: shuttle">
