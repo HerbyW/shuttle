@@ -196,7 +196,7 @@
       <yaw>   0.00 </yaw>
     </orient>
     <feed>0</feed>
-    <feed>1</feed>
+    
     <thruster file="xlr99_nozzle">
      <location unit="IN">
       <x> 200.00 </x>
@@ -223,7 +223,7 @@
       <yaw>   0.00 </yaw>
     </orient>
     <feed>0</feed>
-    <feed>1</feed>
+    
     <thruster file="xlr99_nozzle">
      <location unit="IN">
       <x> 200.00 </x>
@@ -250,7 +250,7 @@
       <yaw>   0.00 </yaw>
     </orient>
     <feed>0</feed>
-    <feed>1</feed>
+    
     <thruster file="xlr99_nozzle">
      <location unit="IN">
       <x> 200.00 </x>
@@ -278,7 +278,7 @@
       <roll>   0.00 </roll>
       <yaw>   0.00 </yaw>
     </orient>
-    <feed>0</feed>
+    
     <feed>1</feed>
     <thruster file="SRB_nozzle">
      <location unit="IN">
@@ -305,7 +305,7 @@
       <roll>   0.00 </roll>
       <yaw>   0.00 </yaw>
     </orient>
-    <feed>0</feed>
+    
     <feed>1</feed>
     <thruster file="SRB_nozzle">
      <location unit="IN">
@@ -321,7 +321,7 @@
     </thruster>
     </engine>
 
-  <tank type="OXIDIZER" number="0">
+  <tank type="FUEL" number="0">
      <location unit="IN">
        <x> 100.00 </x>
        <y>   1.00 </y>

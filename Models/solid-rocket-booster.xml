@@ -5,10 +5,20 @@
 
 <animation>
 <type>select</type>
-<condition>
-<property>controls/shuttle/solid-rocket-boosters</property>
-<value>1</value>
-</condition>
+ <condition>
+  <and>
+    <equals>
+     <property>controls/shuttle/solid-rocket-boosters</property>
+     <value>1</value>
+     </equals>
+    
+     <greater-than>
+     <property>consumables/fuel/tank/level-lbs</property>
+     <value>10</value>
+     </greater-than>
+      </and>
+ </condition>
 </animation>
 
 </PropertyList>
+ 
