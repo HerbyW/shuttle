@@ -84,53 +84,53 @@
 
  <ground_reactions>
 
-  <contact type="BOGEY" name="NOSE">
-   <location unit="IN">
-     <x> -177.00 </x>
-     <y>    0.00 </y>
-     <z> -100.00 </z>
-   </location>
-   <static_friction>  0.80 </static_friction>
-   <dynamic_friction> 0.50 </dynamic_friction>
-   <rolling_friction> 0.02 </rolling_friction>
-   <spring_coeff unit="LBS/FT">      90000.00 </spring_coeff>
-   <damping_coeff unit="LBS/FT/SEC"> 30000.00 </damping_coeff>
-   <max_steer unit="DEG"> 5.00 </max_steer>
-   <brake_group>NONE</brake_group>
-   <retractable>1</retractable>
- </contact>
+<contact type="BOGEY" name="NOSE">
+<location unit="M">
+<x> -21.00 </x>
+<y> 0.00 </y>
+<z> -7.00 </z>
+</location>
+<static_friction> 0.80 </static_friction>
+<dynamic_friction> 0.20 </dynamic_friction>
+<rolling_friction> 0.02 </rolling_friction>
+<spring_coeff unit="LBS/FT"> 90000.00 </spring_coeff>
+<damping_coeff unit="LBS/FT/SEC"> 30000.00 </damping_coeff>
+<max_steer unit="DEG"> 5.00 </max_steer>
+<brake_group>NONE</brake_group>
+<retractable>1</retractable>
+</contact>
 
-  <contact type="BOGEY" name="LEFT_MAIN">
-   <location unit="IN">
-     <x> 100.00 </x>
-     <y> -85.00 </y>
-     <z>-100.00 </z>
-   </location>
-   <static_friction>  0.80 </static_friction>
-   <dynamic_friction> 0.50 </dynamic_friction>
-   <rolling_friction> 0.02 </rolling_friction>
-   <spring_coeff unit="LBS/FT">      550000.00 </spring_coeff>
-   <damping_coeff unit="LBS/FT/SEC"> 110000.00 </damping_coeff>
-   <max_steer unit="DEG">0</max_steer>
-   <brake_group>LEFT</brake_group>
-   <retractable>1</retractable>
- </contact>
+<contact type="BOGEY" name="LEFT_MAIN">
+<location unit="M">
+<x> 9.60 </x>
+<y> -3.5 </y>
+<z>-7.00 </z>
+</location>
+<static_friction> 0.80 </static_friction>
+<dynamic_friction> 0.20 </dynamic_friction>
+<rolling_friction> 0.02 </rolling_friction>
+<spring_coeff unit="LBS/FT"> 550000.00 </spring_coeff>
+<damping_coeff unit="LBS/FT/SEC"> 110000.00 </damping_coeff>
+<max_steer unit="DEG">0</max_steer>
+<brake_group>LEFT</brake_group>
+<retractable>1</retractable>
+</contact>
 
-  <contact type="BOGEY" name="RIGHT_MAIN">
-   <location unit="IN">
-     <x> 100.00 </x>
-     <y>  85.00 </y>
-     <z>-100.00 </z>
-   </location>
-   <static_friction>  0.80 </static_friction>
-   <dynamic_friction> 0.50 </dynamic_friction>
-   <rolling_friction> 0.02 </rolling_friction>
-   <spring_coeff unit="LBS/FT">      550000.00 </spring_coeff>
-   <damping_coeff unit="LBS/FT/SEC"> 110000.00 </damping_coeff>
-   <max_steer unit="DEG">0</max_steer>
-   <brake_group>RIGHT</brake_group>
-   <retractable>1</retractable>
- </contact>
+<contact type="BOGEY" name="RIGHT_MAIN">
+<location unit="M">
+<x> 9.60 </x>
+<y> 3.5 </y>
+<z>-7.00 </z>
+</location>
+<static_friction> 0.80 </static_friction>
+<dynamic_friction> 0.20 </dynamic_friction>
+<rolling_friction> 0.02 </rolling_friction>
+<spring_coeff unit="LBS/FT"> 550000.00 </spring_coeff>
+<damping_coeff unit="LBS/FT/SEC"> 110000.00 </damping_coeff>
+<max_steer unit="DEG">0</max_steer>
+<brake_group>RIGHT</brake_group>
+<retractable>1</retractable>
+</contact>
 
   <contact type="STRUCTURE" name="FRONT_LEG">
    <location unit="IN">

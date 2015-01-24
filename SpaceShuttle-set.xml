@@ -62,18 +62,32 @@
 
 <help>
       <title>Space Shuttle</title>
-      <text>
-	Set the Pilot to 96000
-     Set the Tank 1 to 390000
-     Set the Tank 2 to 97000, try to get the shuttle in horizontal position,
-     try to get a little throttle , if the shuttle is not controllably on the ground
-     with the rudder set the weight to a lower value till the shuttle is controllably!
-     Gears and Flaps and speed breaks are not animated but are there in the jsb.
-     Then you may start and fly and control the shuttle and land it correctly.
-     
-     To set the booster and tank go to the properties-browser,
-     contols- shuttle and set 1 to the tank and the boosters.
-      </text>
+<text>
+Start like a airplane:
+Set the Pilot to 0
+Set the Tank 1 to 129000
+Set the Tank 2 to 117000
+now the shuttle will be in horizontal position,
+give a little throttle, and take off, be carefull with throttle - it is a rocket!
+
+Start like the Shuttle:
+Set the Pilot to 0
+Set the Tank 1 to 220000
+Set the Tank 2 to full
+Set the Autopilot to Heading Control - Wing Leveler
+and Velocity Control to 500, by clicking the Velocity Contoll Start up!
+
+Gears, Flaps and Speed Breaks are not animated but are there in the jsb.
+   
+To set the booster and tank go to the properties-browser,
+ > contols > shuttle and set 1 to the tank and the boosters properties,
+befor landing or after reaching the orbit disable both of them by setting the properties to 0.
+
+Have fun and take your time to get control, it is a little bit tricky but fully working,
+also with ILS and AP.
+
+See the latest version on: www.github.com/HerbyW
+</text>
 </help>
       
 
