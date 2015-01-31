@@ -1,53 +1,61 @@
 <PropertyList>
 	<path>shuttle.ac</path>
 		
-<offsets>          <heading-deg>0</heading-deg> </offsets>  
 
 <model>
 <path>Aircraft/SpaceShuttle/Models/external-fuel-tank.xml</path>
+
+
+
 		<offsets>
 			<x-m>-10.0</x-m>
 			<y-m>0.0</y-m>
 			<z-m>-10.0</z-m>
 		</offsets>
 		<condition>
-		 <greater-then>
-			<property>sim/multiplay/generic/int[6]</property>
-			<value>0</value>
-		 </greater-then>
-		</condition>
+ 		 <greater-than>
++			<property>sim/multiplay/generic/int[6]</property>
+ 			<value>0</value>
+ 		 </greater-than>
+ 		</condition>
 </model>
 
 <model>
 <path>Aircraft/SpaceShuttle/Models/solid-rocket-booster.xml</path>
+
+
+
 		<offsets>
-			<x-m>-5.2</x-m>
-			<y-m>-6.35</y-m>
-			<z-m>-10.6</z-m>
+			<x-m> -5.2 </x-m>
+			<y-m> -6.35</y-m>
+			<z-m>-10.6 </z-m>
 			<roll-deg>90.0</roll-deg>
 		</offsets>
-		<condition>
-		 <greater-then>
-			<property>sim/multiplay/generic/int[7]</property>
-			<value>0</value>
-		 </greater-then>
-		</condition>
+                <condition>
+ 		 <greater-than>
++			<property>sim/multiplay/generic/int[7]</property>
+ 			<value>0</value>
+ 		 </greater-than>
+ 		</condition>
 </model>
 
 <model>
 <path>Aircraft/SpaceShuttle/Models/solid-rocket-booster.xml</path>
+
+
+
 		<offsets>
-			<x-m>-5.2</x-m>
-			<y-m>6.35</y-m>
-			<z-m>-10.6</z-m>
+			<x-m> -5.2 </x-m>
+			<y-m>  6.35</y-m>
+			<z-m>-10.6 </z-m>
 			<roll-deg>-90.0</roll-deg>
 		</offsets>
 		<condition>
-		 <greater-then>
-			<property>sim/multiplay/generic/int[7]</property>
-			<value>0</value>
-		 </greater-then>
-		</condition>
+ 		 <greater-than>
++			<property>sim/multiplay/generic/int[7]</property>
+ 			<value>0</value>
+ 		 </greater-than>
+ 		</condition>
 </model>
 
 
@@ -59,15 +67,9 @@
 		 <z-m>-10.4</z-m>
 		 <pitch-deg>0</pitch-deg>
 		 <roll-deg>90</roll-deg>
-	 </offsets>
-
-	<condition>
-		 <bigger-then>
-			 <property>engines/engine[3]/thrust_lb</property>
-			 <value>100</value>
-		 </bigger-then>
-	</condition>
+	 </offsets>	
   </model>
+  
   <model>
     <path>Aircraft/SpaceShuttle/Models/Effects/smoke_engine2.xml</path>
       <offsets>
@@ -76,24 +78,11 @@
 		 <z-m>-10.4</z-m>
 		 <pitch-deg>0</pitch-deg>
 		 <roll-deg>90</roll-deg>
-	 </offsets>
-
-	<condition>
-		 <bigger-then>
-			 <property>engines/engine[4]/thrust_lb</property>
-			 <value>100</value>
-		 </bigger-then>
-	</condition>
+	 </offsets>	
   </model>
 
-	<model>
-		<path>Aircraft/SpaceShuttle/Models/Effects/trails.xml</path>
-		<condition>
-		 <greater-then>
-			<property>engines/engine/thrust_lb</property>
-			<value>1</value>
-		 </greater-then>
-		</condition>
+  <model>
+		<path>Aircraft/SpaceShuttle/Models/Effects/trails.xml</path>		
 		<offsets>
 			<x-m> 17</x-m>
 			<y-m>  0.00</y-m>
@@ -102,16 +91,10 @@
 			<pitch-deg>0.0</pitch-deg>
 			<heading-deg>0.0</heading-deg>
 		</offsets>
-	</model>
+  </model>
 
-	<model>
-		<path>Aircraft/SpaceShuttle/Models/Effects/trails.xml</path>
-		<condition>
-		 <greater-then>
-			<property>engines/engine/thrust_lb</property>
-			<value>1</value>
-		 </greater-then>
-		</condition>
+  <model>
+		<path>Aircraft/SpaceShuttle/Models/Effects/trails.xml</path>		
 		<offsets>
 			<x-m> 17</x-m>
 			<y-m>  1.5496</y-m>
@@ -120,16 +103,10 @@
 			<pitch-deg>0.0</pitch-deg>
 			<heading-deg>0.0</heading-deg>
 		</offsets>
-	</model>
+  </model>
 
-	<model>
-		<path>Aircraft/SpaceShuttle/Models/Effects/trails.xml</path>
-		<condition>
-		 <greater-then>
-			<property>engines/engine/thrust_lb</property>
-			<value>1</value>
-		 </greater-then>
-		</condition>
+  <model>
+		<path>Aircraft/SpaceShuttle/Models/Effects/trails.xml</path>		
 		<offsets>
 			<x-m> 17</x-m>
 			<y-m> -1.5496</y-m>
@@ -138,7 +115,7 @@
 			<pitch-deg>0.0</pitch-deg>
 			<heading-deg>0.0</heading-deg>
 		</offsets>
-	</model>
+  </model>
 
 
 <animation>
@@ -230,9 +207,9 @@
 			<y-m>-11.9</y-m>
 			<z-m>-4.46</z-m>
 		</offsets>
-	</model>   
+</model>   
 	
-	<model>
+<model>
 		<name>Strobe_4</name>
 		<path>Aircraft/SpaceShuttle/Models/Lights/strobe-green.xml</path>	
 		<offsets>
@@ -240,8 +217,9 @@
 			<y-m>11.9</y-m>
 			<z-m>-4.46</z-m>
 		</offsets>
-	</model>   
-        <model>
+</model>   
+
+<model>
 		<name>Strobe_3</name>
 		<path>Aircraft/SpaceShuttle/Models/Lights/strobe-yellow.xml</path>	
 		<offsets>
@@ -249,6 +227,97 @@
 			<y-m>0</y-m>
 			<z-m>-1</z-m>
 		</offsets>
-	</model>   
+</model>   
+
+<model>
+    <name>Beacon_1</name>
+    <path>Aircraft/SpaceShuttle/Models/Lights/beacon.xml</path>
+    <offsets>
+      <x-m> 9.99 </x-m>
+      <y-m>  0.00000 </y-m>
+      <z-m>  -5.30 </z-m>
+    </offsets>
+</model>
+<model>
+    <name>Beacon_2</name>
+    <path>Aircraft/SpaceShuttle/Models/Lights/beacon.xml</path>
+    <offsets>
+      <x-m> 15.45 </x-m>
+      <y-m>  0.00000 </y-m>
+      <z-m>  8.28 </z-m>
+    </offsets>
+</model>
+
+<model>
+    <path>Aircraft/SpaceShuttle/Models/Lights/StrobeLight.xml</path>
+     <offsets>
+      <x-m>9.95</x-m>
+      <y-m>-12.0</y-m>
+      <z-m>-4.46</z-m>
+     </offsets>
+</model>
+<model>
+    <path>Aircraft/SpaceShuttle/Models/Lights/StrobeLight.xml</path>
+     <offsets>
+      <x-m>9.95</x-m>
+      <y-m>12.0</y-m>
+      <z-m>-4.46</z-m>
+     </offsets>
+</model>
+
+<model>
+    <path>Aircraft/SpaceShuttle/Models/Lights/StrobeLight.xml</path>
+     <offsets>
+      <x-m>17.70</x-m>
+      <y-m> 0.0</y-m>
+      <z-m> 8.15</z-m>
+     </offsets>
+</model>
+
+<model>
+    <path>Aircraft/SpaceShuttle/Models/Lights/WhiteLight.xml</path>
+     <offsets>
+      <x-m>-1.70</x-m>
+      <y-m>-4.68</y-m>
+      <z-m>-4.46</z-m>
+     </offsets>
+</model>
+<model>
+    <path>Aircraft/SpaceShuttle/Models/Lights/WhiteLight.xml</path>
+     <offsets>
+      <x-m>-1.70</x-m>
+      <y-m> 4.68</y-m>
+      <z-m>-4.46</z-m>
+     </offsets>
+</model>
+
+
+
+
+<!--Light for Gears! there are no gears, so I set some lights to the spot of earthcontact -->
+<model>
+    <path>Aircraft/SpaceShuttle/Models/Lights/WhiteLight.xml</path>
+     <offsets>
+       <x-m> -16.00 </x-m>
+       <y-m> 0.00 </y-m>
+       <z-m> -6.82 </z-m>
+     </offsets>
+</model>
+<model>
+    <path>Aircraft/SpaceShuttle/Models/Lights/WhiteLight.xml</path>
+     <offsets>
+       <x-m> 9.80 </x-m>
+       <y-m> -3.9 </y-m>
+       <z-m>-7.00 </z-m>
+     </offsets>
+</model>
+<model>
+    <path>Aircraft/SpaceShuttle/Models/Lights/WhiteLight.xml</path>
+     <offsets>
+       <x-m> 9.80 </x-m>
+       <y-m> 3.9 </y-m>
+       <z-m>-7.00 </z-m>
+     </offsets>
+</model> 
 
 </PropertyList>

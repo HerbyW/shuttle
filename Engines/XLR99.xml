@@ -2,7 +2,7 @@
 <rocket_engine name="XLR-99">
   <isp>                    453  </isp>
   <maxthrottle>           1.04  </maxthrottle>
-  <minthrottle>           0.55  </minthrottle>
+  <minthrottle>           0.35  </minthrottle>
   <max_pc>			419328  </max_pc>
   <slfuelflowmax unit="LBS/SEC">  970.0  </slfuelflowmax>
   <sloxiflowmax unit="LBS/SEC">   162.0  </sloxiflowmax>

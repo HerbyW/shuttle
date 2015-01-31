@@ -1,23 +1,28 @@
 <PropertyList>
+  
 	<path>srb.ac</path>
 		
-<offsets>          <heading-deg>-180</heading-deg> </offsets>  
+<offsets>
+  <heading-deg>-180</heading-deg>
+</offsets>  
 
 <animation>
 <type>select</type>
+ 
  <condition>
   <and>
     <equals>
-     <property>controls/shuttle/solid-rocket-boosters</property>
+     <property>sim/multiplay/generic/int[7]</property>
      <value>1</value>
-     </equals>
+    </equals>
     
-     <greater-than>
-     <property>consumables/fuel/tank[1]/level-lbs</property>
+    <greater-than>
+     <property>sim/multiplay/generic/float[5]</property>
      <value>10</value>
-     </greater-than>
-      </and>
+    </greater-than>
+  </and>
  </condition>
+ 
 </animation>
 
 </PropertyList>

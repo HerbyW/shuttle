@@ -7,7 +7,7 @@
  <fileheader>
   <author> Aeromatic v 0.9, HerbyW</author>
   <filecreationdate> 2009-04-09, 01-2015</filecreationdate>
-  <version>Revison: 2</version>
+  <version>$Revison: 2$</version>
   <description> Models a shuttle </description>
  </fileheader>
 
@@ -16,10 +16,10 @@
   Inputs:
     name:          shuttle
     type:          three-engine transonic transport
-    max weight:    240000 lb
-    wing span:     78.06 ft
-    length:        122.17 ft
-    wing area:     2691.25 sq-ft
+    max weight:    240000 lb                   82499 kg
+    wing span:     78.06 ft                    23.79 m    ok
+    length:        122.17 ft                  37.237 m    ok
+    wing area:     2691.25 sq-ft              250 qm      ok
     gear type:     tricycle
     retractable?:  yes
     # engines:     3
@@ -33,7 +33,105 @@
     CL-max:        1.2
     CD-0:          0.019
     K:             0.042
+ 
+ http://www.bernd-leitenberger.de/shuttle-mission.shtml
+ 
+Gesamtsystem:
 
+Startmasse 1.992.500 kg 
+
+Orbiter:
+
+Maximale Startmasse: 110900 kg                    244492 lb
+maximale Nutzlast: 29500 kg                        65036 lb
+maximale zurückgeführte Nutzlast: 14500 kg         31967 lb
+Landemasse leer: 70800 kg                         156087 lb
+Trockengewicht 68060 kg                           150046 lb
+Höhe: 16.4 m
+Länge: 37.2 m
+Spannweite: 23.8 m
+Flügelfläche: 250 m²
+
+Subsysteme:
+
+Struktur: 22450 kg                                  49493 lb
+Haupttriebwerke und Schubgerüst: 12000 kg           26455 lb
+Wärmeschutz: 11400 kg                               25132 lb
+OMS und RCS Treibstoffe: 9370 kg                    20657 lb
+Lande- und Dockeinrichtungen: 4300 kg                9480 lb
+Elektrische Stromversorgung: 3670 kg                 8090 lb
+Hilfstriebwerke: 2370 kg                             5225 lb
+Hydraulik: 2370 kg                                   5225 lb
+Elektronikausrüstung: 2050 kg                        4519 lb
+Klimaausrüstung / Lebenserhaltung: 1940 kg
+Verlustmassen (Gase, Abwasser, Sprengvorrichtungen): 1800 kg
+Flüssigkeiten + Resttreibstoffe: 1620 kg
+Steuerruder: 835 kg
+Ausrüstung für Besatzung: 630 kg
+Besatzung: 550 kg
+Reserve: 5700 kg                                     12566 lb
+
+Besatzung 3-7 (Notfälle 10)
+Missionsdauer nominal: 7 Tage
+Mit zusätzlicher Ausrüstung maximal: 30 Tage
+
+Triebwerke
+
+3 x SSME:
+
+Triebstoffe: LOX / LH2
+Schub Boden 1668 kN
+Schub Vakuum: 2090 kN Nominell, 2270 kN (109 %)
+Regelbereich: 50-109 %
+Länge: 4.3 m
+Gewicht: 2880 kg                                   6349 lb
+Spezifischer Impuls Vakuum: 4462 m/s
+Spezifischer Impuls Boden: 3560 m/s
+Brennzeit: 480 Sekunden
+Lebensdauer: maximal 55 Flüge
+Brennkammerdruck: 200 Bar
+
+2 x OMS
+
+Treibstoffe: NTO / MMH
+Schub: 26.7 kN
+max. Geschwindigkeitsänderung: 305 m/s
+je weiterer Zusatztank: 152 m/s
+spezifischer Impuls: 3020 m/s.
+
+38 x RCS
+
+Treibstoffe: NTO / MMH
+Schub: 3.87 kN
+
+Energieversorgung
+
+3 Brennstoffzellen mit je 7 kW Nennleistung (maximal 10 kW)
+3 Hilfsgeneratoren mit katalytischer Hydrazinzersetzung / Turbine je 5 kW Leistung
+3 Nickelcadmiumbatterien von je 10 Ah
+Hydrauliksystem: 4 Hydrazin Turbinen mit je 150 PS Leistung
+
+Externer Tank
+
+Höhe: 46,85 m
+Durchmesser: 8,38 m                                              ok
+Startmasse: 734200 kg                              1618634 lb
+Leermasse: 31300 kg                                  69004 lb
+Tankvolumen LOX: 552 m³
+Tankvolumen LH2: 1535 m³
+
+Feststoffbooster
+
+Länge: 45,4 m
+Durchmesser: 3,71 m                                            ok
+Startmasse: 573700 kg                              1264792 lb
+Leermasse: 82500 kg                                 181881 lb
+Schub am Boden: 11830 kN
+spezifischer Impuls (Durchschnitt): 2538 m/s
+Brennzeit: 120 sec
+
+Gesamtmasse: 111+734+573+573= 1.990 t
+             
 -->
 
  <metrics>
@@ -86,9 +184,9 @@
 
 <contact type="BOGEY" name="NOSE">
 <location unit="M">
-<x> -21.00 </x>
+<x> -16.00 </x>
 <y> 0.00 </y>
-<z> -7.00 </z>
+<z> -6.82 </z>
 </location>
 <static_friction> 0.80 </static_friction>
 <dynamic_friction> 0.20 </dynamic_friction>
@@ -274,7 +372,7 @@
     <location unit="IN">
       <x> 200.00 </x>
       <y>-100.00 </y>
-      <z>-100.00 </z>
+      <z>-441.00 </z>
     </location>
     <orient unit="DEG">
       <pitch> 0.00 </pitch>
@@ -287,7 +385,7 @@
      <location unit="IN">
       <x> 200.00 </x>
       <y>-100.00 </y>
-      <z>-100.00 </z>
+      <z>-441.00 </z>
      </location>
      <orient unit="DEG">
        <pitch> 0.00 </pitch>
@@ -301,7 +399,7 @@
     <location unit="IN">
       <x> 200.00 </x>
       <y> 100.00 </y>
-      <z>-100.00 </z>
+      <z>-441.00 </z>
     </location>
     <orient unit="DEG">
       <pitch> 0.00 </pitch>
@@ -314,7 +412,7 @@
      <location unit="IN">
       <x> 200.00 </x>
       <y> 100.00 </y>
-      <z>-100.00 </z>
+      <z>-441.00 </z>
      </location>
      <orient unit="DEG">
        <pitch> 0.00 </pitch>
@@ -327,8 +425,8 @@
   <tank type="FUEL" number="0">
      <location unit="IN">
        <x> 100.00 </x>
-       <y>   1.00 </y>
-       <z>-100.00 </z>
+       <y>   0.00 </y>
+       <z>-441.00 </z>
      </location>
      <capacity unit="LBS"> 1387457.00 </capacity>
      <contents unit="LBS"> 1387457.00 </contents>
@@ -338,8 +436,8 @@
   <tank type="FUEL" number="1">
      <location unit="IN">
        <x> 100.00 </x>
-       <y> -10.00 </y>
-       <z>-100.00 </z>
+       <y>   0.00 </y>
+       <z>-441.00 </z>
      </location>
      <capacity unit="LBS"> 234265.00 </capacity>
      <contents unit="LBS"> 234265.00 </contents>
@@ -348,7 +446,7 @@
   <tank type="FUEL" number="2">
      <location unit="IN">
        <x> 100.00 </x>
-       <y> -10.00 </y>
+       <y>   0.00 </y>
        <z>-100.00 </z>
      </location>
      <capacity unit="LBS"> 117265.00 </capacity>

@@ -5,11 +5,12 @@
  <controls>    
     <shuttle>
       <external-fuel-tank type="int">1</external-fuel-tank>
-      <solid-rocket-boosters type="int">1</solid-rocket-boosters>
++      <solid-rocket-boosters type="int">1</solid-rocket-boosters>
       <door>
        <position type="float">0</position>
       </door>           
     </shuttle>
+    
     <lighting>
        <nav-lights type="bool">1</nav-lights>
     </lighting>
@@ -28,8 +29,13 @@
      <generic> 
         <float n="2" alias="/engines/engine[3]/thrust_lb" />
         <float n="3" alias="/instrumentation/doors/door1/position-norm" />
+        
+        <float n="4" alias="/consumables/fuel/tank/level-lbs" />
+	<float n="5" alias="/consumables/fuel/tank[1]/level-lbs" />
+        
+        
         <int type="int" n="6" alias="/controls/shuttle/external-fuel-tank"/>
-	<int type="int" n="7" alias="/controls/shuttle/solid-rocket-boosters"/>
+        <int type="int" n="7" alias="/controls/shuttle/solid-rocket-boosters"/>
         <int type="int" n="8" alias="/controls/lighting/nav-lights"/>
         
      </generic>
@@ -106,7 +112,16 @@ See the latest version on: www.github.com/HerbyW
    <min-lb type="double">0.0</min-lb>
    <max-lb type="double">1200000.0</max-lb>
   </weight>
- </payload>  
+ </payload>
+ 
+ <nasal>
+    
+    <SpaceShuttle>
+      <file>Aircraft/SpaceShuttle/Nasal/light.nas</file>
+      <!--<file>Aircraft/SpaceShuttle/Nasal/setprop.nas</file>-->
+    </SpaceShuttle>
+    
+  </nasal>
 
 </PropertyList>
 

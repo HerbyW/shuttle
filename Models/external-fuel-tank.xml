@@ -1,7 +1,10 @@
 <PropertyList>
+  
 	<path>et.ac</path>
 		
-<offsets>          <heading-deg>-180</heading-deg> </offsets>  
+<offsets>
+  <heading-deg>-180</heading-deg>
+</offsets>  
 
 <animation>
 <type>select</type>
@@ -9,15 +12,15 @@
  <condition>
   <and>
     <equals>
-     <property>controls/shuttle/external-fuel-tank</property>
+     <property>sim/multiplay/generic/int[6]</property>
      <value>1</value>
-     </equals>
+    </equals>
     
-     <greater-than>
-     <property>consumables/fuel/tank[0]/level-lbs</property>
+    <greater-than>
+     <property>sim/multiplay/generic/float[4]</property>
      <value>10</value>
-     </greater-than>
-      </and>
+    </greater-than>
+  </and>
  </condition>
  
 </animation>

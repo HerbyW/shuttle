@@ -16,18 +16,18 @@ sweat by maggse
 			<roll-deg>0.0</roll-deg>
 			<pitch-deg>0.0</pitch-deg>
 			<heading-deg>0.0</heading-deg>
-	 <condition>
-<and>
-<greater-than>
-<property>sim/multiplay/generic/float[2]</property>
-<value>100</value>
-</greater-than>
+<condition>
+  <and>
+    <greater-than>
+     <property>sim/multiplay/generic/float[2]</property>
+     <value>100</value>
+    </greater-than>
 
-<greater-than>
-<property>sim/multiplay/generic/int[7]</property>
-<value>0</value>
-</greater-than>
-</and>
+    <greater-than>
+     <property>sim/multiplay/generic/int[7]</property>
+     <value>0</value>
+    </greater-than>
+  </and>
 </condition>
 		 
 	 <attach>world</attach>
