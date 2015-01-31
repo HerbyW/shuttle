@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<rocket_engine name="XLR-01">
+  <isp>                    500  </isp>
+  <maxthrottle>           1.0  </maxthrottle>
+  <minthrottle>           0.0  </minthrottle>
+  <max_pc>			419  </max_pc>
+  <slfuelflowmax unit="LBS/SEC">  25.0  </slfuelflowmax>
+  <sloxiflowmax unit="LBS/SEC">   2.0  </sloxiflowmax>
+</rocket_engine>

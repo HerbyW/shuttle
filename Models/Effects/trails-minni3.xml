@@ -14,7 +14,7 @@
 		</offsets>
 		<condition>
 			<greater-than>
-				<property>sim/multiplay/generic/float[1]</property>
+				<property>sim/multiplay/generic/float[7]</property>
 				<value>1</value>
 			</greater-than>
 		</condition>

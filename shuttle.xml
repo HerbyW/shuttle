@@ -478,7 +478,7 @@ Gesamtmasse: 111+734+573+573= 1.990 t
   </engine>
 
    <!--extra engines for outer space control Pitch Leveler Controls -->
-   <engine file="XLR01">
+   <engine file="XLR02">
     <location unit="M">
       <x-m>-18.0 </x-m>
       <y-m> 0.0 </y-m>
@@ -491,7 +491,7 @@ Gesamtmasse: 111+734+573+573= 1.990 t
     </orient>
     <feed>2</feed>
     
-    <thruster file="xlr01_nozzle">     
+    <thruster file="xlr02_nozzle">     
       <location unit="M">
       <x-m>-18.0 </x-m>
       <y-m> 0.0 </y-m>
@@ -505,7 +505,7 @@ Gesamtmasse: 111+734+573+573= 1.990 t
     </thruster>
   </engine>
   
-  <engine file="XLR01">
+  <engine file="XLR02">
     <location unit="M">
       <x-m>-18.0 </x-m>
       <y-m> 0.0 </y-m>
@@ -518,7 +518,7 @@ Gesamtmasse: 111+734+573+573= 1.990 t
     </orient>
     <feed>2</feed>
     
-    <thruster file="xlr01_nozzle">     
+    <thruster file="xlr02_nozzle">     
       <location unit="M">
       <x-m>-18.0 </x-m>
       <y-m> 0.0 </y-m>
