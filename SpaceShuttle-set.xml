@@ -25,6 +25,12 @@
   <aero>shuttle</aero>
   <author>Gijs de Rooy, NASA (3D), HerbyW</author>
 
+  <input>
+    <selected>
+      <engine n = "5" type="bool">0</engine>
+      <engine n = "6" type="bool">0</engine>
+    </selected>
+   </input>
 	
 <multiplay>
    <chat_display>1</chat_display>
@@ -36,7 +42,7 @@
         <float n="4" alias="/consumables/fuel/tank/level-lbs" />
 	<float n="5" alias="/consumables/fuel/tank[1]/level-lbs" />
 	<float n="6" alias="/consumables/fuel/tank[2]/level-lbs" />
-        
+        <float n="7" alias="/engines/engine[6]/thrust_lb" />
         
         <int type="int" n="6" alias="/controls/shuttle/external-fuel-tank"/>
         <int type="int" n="7" alias="/controls/shuttle/solid-rocket-boosters"/>
@@ -126,15 +132,11 @@ See the latest version on: www.github.com/HerbyW
   </weight>
  </payload>
  
- <nasal>
-    <controls>
-     <file>Aircraft/SpaceShuttle/Nasal/controls1.nas</file>
-    </controls>    
+ <nasal>      
     <SpaceShuttle>
       <file>Aircraft/SpaceShuttle/Nasal/light.nas</file>
       <!--<file>Aircraft/SpaceShuttle/Nasal/setprop.nas</file>-->
-    </SpaceShuttle>
-    
+    </SpaceShuttle>    
   </nasal>
 
 </PropertyList>

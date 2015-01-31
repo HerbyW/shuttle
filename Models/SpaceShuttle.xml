@@ -83,7 +83,7 @@
   
   <!-- smoke from the extra control engines xlr01-->
   <model>
-		<path>Aircraft/SpaceShuttle/Models/Effects/trails-minni.xml</path>		
+		<path>Aircraft/SpaceShuttle/Models/Effects/trails-minni1.xml</path>		
 		<offsets>
 			<x-m>9.45</x-m>
                         <y-m>-11.4</y-m>
@@ -94,7 +94,7 @@
 		</offsets>
   </model>
   <model>
-		<path>Aircraft/SpaceShuttle/Models/Effects/trails-minni.xml</path>		
+		<path>Aircraft/SpaceShuttle/Models/Effects/trails-minni2.xml</path>		
 		<offsets>
 			<x-m>9.45</x-m>
                         <y-m>11.4</y-m>
