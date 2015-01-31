@@ -81,7 +81,7 @@
 	 </offsets>	
   </model>
   
-  <!-- smoke from the extra control engines xlr01-->
+  <!-- smoke from the extra control engines xlr01 winglevel-->
   <model>
 		<path>Aircraft/SpaceShuttle/Models/Effects/trails-minni1.xml</path>		
 		<offsets>
@@ -101,6 +101,30 @@
                         <z-m>-4.46</z-m>
 			<roll-deg>0.0</roll-deg>
 			<pitch-deg>-90.0</pitch-deg>
+			<heading-deg>0.0</heading-deg>
+		</offsets>
+  </model>
+  
+  <!-- smoke from the extra control engines xlr01 pitchlevel-->
+  <model>
+		<path>Aircraft/SpaceShuttle/Models/Effects/trails-minni3.xml</path>		
+		<offsets>
+			<x-m>-18.0 </x-m>
+                        <y-m> 0.0 </y-m>
+                        <z-m>-4.70 </z-m>
+			<roll-deg>0.0</roll-deg>
+			<pitch-deg>-90.0</pitch-deg>
+			<heading-deg>0.0</heading-deg>
+		</offsets>
+  </model>
+  <model>
+		<path>Aircraft/SpaceShuttle/Models/Effects/trails-minni4.xml</path>		
+		<offsets>
+			<x-m>-18.0 </x-m>
+                        <y-m> 0.0 </y-m>
+                        <z-m>-2.65 </z-m>
+			<roll-deg>0.0</roll-deg>
+			<pitch-deg>90.0</pitch-deg>
 			<heading-deg>0.0</heading-deg>
 		</offsets>
   </model>
@@ -344,5 +368,7 @@
        <z-m>-7.00 </z-m>
      </offsets>
 </model> 
+
+
 
 </PropertyList>

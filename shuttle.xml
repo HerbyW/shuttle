@@ -422,7 +422,7 @@ Gesamtmasse: 111+734+573+573= 1.990 t
     </thruster>
     </engine>
     
-    <!--extra engines for outer space control -->
+    <!--extra engines for outer space control Wing Leveler Controls -->
     <engine file="XLR01">
     <location unit="M">
       <x-m>9.45</x-m>
@@ -477,7 +477,60 @@ Gesamtmasse: 111+734+573+573= 1.990 t
     </thruster>
   </engine>
 
-   
+   <!--extra engines for outer space control Pitch Leveler Controls -->
+   <engine file="XLR01">
+    <location unit="M">
+      <x-m>-18.0 </x-m>
+      <y-m> 0.0 </y-m>
+      <z-m>-4.70 </z-m>
+    </location>
+    <orient unit="DEG">
+      <pitch> -90.00 </pitch>
+      <roll>   0.00 </roll>
+      <yaw>   0.00 </yaw>
+    </orient>
+    <feed>2</feed>
+    
+    <thruster file="xlr01_nozzle">     
+      <location unit="M">
+      <x-m>-18.0 </x-m>
+      <y-m> 0.0 </y-m>
+      <z-m>-4.70 </z-m>
+      </location>
+     <orient unit="DEG">
+       <pitch> -90.00 </pitch>
+       <roll>   0.00 </roll>
+       <yaw>   0.00 </yaw>
+     </orient>
+    </thruster>
+  </engine>
+  
+  <engine file="XLR01">
+    <location unit="M">
+      <x-m>-18.0 </x-m>
+      <y-m> 0.0 </y-m>
+      <z-m>-2.65 </z-m>
+    </location>
+    <orient unit="DEG">
+      <pitch> 90.00 </pitch>
+      <roll>   0.00 </roll>
+      <yaw>   0.00 </yaw>
+    </orient>
+    <feed>2</feed>
+    
+    <thruster file="xlr01_nozzle">     
+      <location unit="M">
+      <x-m>-18.0 </x-m>
+      <y-m> 0.0 </y-m>
+      <z-m>-2.65 </z-m>
+      </location>
+     <orient unit="DEG">
+       <pitch> 90.00 </pitch>
+       <roll>   0.00 </roll>
+       <yaw>   0.00 </yaw>
+     </orient>
+    </thruster>
+  </engine>
 
   <tank type="FUEL" number="0">
      <location unit="IN">
@@ -487,7 +540,7 @@ Gesamtmasse: 111+734+573+573= 1.990 t
      </location>
      <capacity unit="LBS"> 1387457.00 </capacity>
      <contents unit="LBS"> 1387457.00 </contents>
-     <priority>0</priority>
+     <priority>1</priority>
   </tank>
 
   <tank type="FUEL" number="1">
@@ -508,7 +561,7 @@ Gesamtmasse: 111+734+573+573= 1.990 t
      </location>
      <capacity unit="LBS"> 117265.00 </capacity>
      <contents unit="LBS"> 117265.00 </contents>
-     <priority>1</priority>
+     <priority>2</priority>
   </tank>
   
  </propulsion>
