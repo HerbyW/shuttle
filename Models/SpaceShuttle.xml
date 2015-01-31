@@ -80,7 +80,32 @@
 		 <roll-deg>90</roll-deg>
 	 </offsets>	
   </model>
-
+  
+  <!-- smoke from the extra control engines xlr01-->
+  <model>
+		<path>Aircraft/SpaceShuttle/Models/Effects/trails.xml</path>		
+		<offsets>
+			<x-m>9.45</x-m>
+      <y-m>-11.4</y-m>
+      <z-m>-4.46</z-m>
+			<roll-deg>0.0</roll-deg>
+			<pitch-deg>0.0</pitch-deg>
+			<heading-deg>0.0</heading-deg>
+		</offsets>
+  </model>
+  <model>
+		<path>Aircraft/SpaceShuttle/Models/Effects/trails.xml</path>		
+		<offsets>
+			<x-m>9.45</x-m>
+      <y-m>11.4</y-m>
+      <z-m>-4.46</z-m>
+			<roll-deg>0.0</roll-deg>
+			<pitch-deg>0.0</pitch-deg>
+			<heading-deg>0.0</heading-deg>
+		</offsets>
+  </model>
+  <!-- end extra engines -->
+  
   <model>
 		<path>Aircraft/SpaceShuttle/Models/Effects/trails.xml</path>		
 		<offsets>

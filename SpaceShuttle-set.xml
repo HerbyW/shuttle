@@ -4,8 +4,9 @@
  
  <controls>    
     <shuttle>
-      <external-fuel-tank type="int">1</external-fuel-tank>
+       <external-fuel-tank type="int">1</external-fuel-tank>
 +      <solid-rocket-boosters type="int">1</solid-rocket-boosters>
+       <outerspace type="bool">1</outerspace>
       <door>
        <position type="float">0</position>
       </door>           
@@ -14,6 +15,7 @@
     <lighting>
        <nav-lights type="bool">1</nav-lights>
     </lighting>
+    
   </controls> 
  
  
@@ -53,7 +55,13 @@
   <model>
 		<path>Aircraft/SpaceShuttle/Models/SpaceShuttle.xml</path>		
   </model>
-	
+
+  <systems>
+      <autopilot>
+        <path>Aircraft/SpaceShuttle/Nasal/autopilot-innerspace.xml</path>      
+        <path>Aircraft/SpaceShuttle/Nasal/autopilot-outerspace.xml</path>
+      </autopilot>      
+  </systems>  
 	
   <view n="0">
    <internal archive="y">true</internal>
@@ -116,7 +124,9 @@ See the latest version on: www.github.com/HerbyW
  </payload>
  
  <nasal>
-    
+    <controls>
+     <file>Aircraft/SpaceShuttle/Nasal/controls1.nas</file>
+    </controls>    
     <SpaceShuttle>
       <file>Aircraft/SpaceShuttle/Nasal/light.nas</file>
       <!--<file>Aircraft/SpaceShuttle/Nasal/setprop.nas</file>-->

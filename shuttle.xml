@@ -421,6 +421,63 @@ Gesamtmasse: 111+734+573+573= 1.990 t
      </orient>
     </thruster>
     </engine>
+    
+    <!--extra engines for outer space control -->
+    <engine file="XLR01">
+    <location unit="M">
+      <x-m>9.45</x-m>
+      <y-m>-11.4</y-m>
+      <z-m>-4.46</z-m>
+    </location>
+    <orient unit="DEG">
+      <pitch> 90.00 </pitch>
+      <roll>   0.00 </roll>
+      <yaw>   0.00 </yaw>
+    </orient>
+    <feed>2</feed>
+    
+    <thruster file="xlr01_nozzle">     
+      <location unit="M">
+      <x-m>9.45</x-m>
+      <y-m>-11.4</y-m>
+      <z-m>-4.46</z-m>
+      </location>
+     <orient unit="DEG">
+       <pitch> 90.00 </pitch>
+       <roll>   0.00 </roll>
+       <yaw>   0.00 </yaw>
+     </orient>
+    </thruster>
+  </engine>
+  
+  <engine file="XLR01">
+    <location unit="M">
+      <x-m>9.45</x-m>
+      <y-m>11.4</y-m>
+      <z-m>-4.46</z-m>
+    </location>
+    <orient unit="DEG">
+      <pitch> 90.00 </pitch>
+      <roll>   0.00 </roll>
+      <yaw>   0.00 </yaw>
+    </orient>
+    <feed>2</feed>
+    
+    <thruster file="xlr01_nozzle">     
+      <location unit="M">
+      <x-m>9.45</x-m>
+      <y-m>11.4</y-m>
+      <z-m>-4.46</z-m>
+      </location>
+     <orient unit="DEG">
+       <pitch> 90.00 </pitch>
+       <roll>   0.00 </roll>
+       <yaw>   0.00 </yaw>
+     </orient>
+    </thruster>
+  </engine>
+
+   
 
   <tank type="FUEL" number="0">
      <location unit="IN">
