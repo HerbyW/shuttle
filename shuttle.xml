@@ -173,7 +173,7 @@ Gesamtmasse: 111+734+573+573= 1.990 t
         <pointmass name="Pilot">
             <weight unit="LBS"> 600000 </weight>
             <location name="POINTMASS" unit="IN">
-                <x> 700 </x>
+                <x> 100 </x>
                 <y> 0 </y>
                 <z> 0 </z>
             </location>
@@ -372,7 +372,7 @@ Gesamtmasse: 111+734+573+573= 1.990 t
     <location unit="IN">
       <x> 200.00 </x>
       <y>-100.00 </y>
-      <z>-441.00 </z>
+      <z>-241.00 </z>
     </location>
     <orient unit="DEG">
       <pitch> 0.00 </pitch>
@@ -385,7 +385,7 @@ Gesamtmasse: 111+734+573+573= 1.990 t
      <location unit="IN">
       <x> 200.00 </x>
       <y>-100.00 </y>
-      <z>-441.00 </z>
+      <z>-241.00 </z>
      </location>
      <orient unit="DEG">
        <pitch> 0.00 </pitch>
@@ -399,7 +399,7 @@ Gesamtmasse: 111+734+573+573= 1.990 t
     <location unit="IN">
       <x> 200.00 </x>
       <y> 100.00 </y>
-      <z>-441.00 </z>
+      <z>-241.00 </z>
     </location>
     <orient unit="DEG">
       <pitch> 0.00 </pitch>
@@ -412,7 +412,7 @@ Gesamtmasse: 111+734+573+573= 1.990 t
      <location unit="IN">
       <x> 200.00 </x>
       <y> 100.00 </y>
-      <z>-441.00 </z>
+      <z>-241.00 </z>
      </location>
      <orient unit="DEG">
        <pitch> 0.00 </pitch>
@@ -424,20 +424,20 @@ Gesamtmasse: 111+734+573+573= 1.990 t
 
   <tank type="FUEL" number="0">
      <location unit="IN">
-       <x> 100.00 </x>
+       <x> 1.00 </x>
        <y>   0.00 </y>
-       <z>-441.00 </z>
+       <z>-241.00 </z>
      </location>
      <capacity unit="LBS"> 1387457.00 </capacity>
      <contents unit="LBS"> 1387457.00 </contents>
-     <priority>1</priority>
+     <priority>0</priority>
   </tank>
 
   <tank type="FUEL" number="1">
      <location unit="IN">
-       <x> 100.00 </x>
+       <x> 1.00 </x>
        <y>   0.00 </y>
-       <z>-441.00 </z>
+       <z>-241.00 </z>
      </location>
      <capacity unit="LBS"> 234265.00 </capacity>
      <contents unit="LBS"> 234265.00 </contents>
@@ -445,13 +445,13 @@ Gesamtmasse: 111+734+573+573= 1.990 t
   
   <tank type="FUEL" number="2">
      <location unit="IN">
-       <x> 100.00 </x>
+       <x> 1.00 </x>
        <y>   0.00 </y>
        <z>-100.00 </z>
      </location>
      <capacity unit="LBS"> 117265.00 </capacity>
      <contents unit="LBS"> 117265.00 </contents>
-     <priority>2</priority>
+     <priority>1</priority>
   </tank>
   
  </propulsion>

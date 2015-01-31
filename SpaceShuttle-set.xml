@@ -32,6 +32,7 @@
         
         <float n="4" alias="/consumables/fuel/tank/level-lbs" />
 	<float n="5" alias="/consumables/fuel/tank[1]/level-lbs" />
+	<float n="6" alias="/consumables/fuel/tank[2]/level-lbs" />
         
         
         <int type="int" n="6" alias="/controls/shuttle/external-fuel-tank"/>
