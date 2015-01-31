@@ -14,7 +14,7 @@
 		</offsets>
 		<condition>
 			<greater-than>
-				<property>sim/multiplay/generic/float[2]</property>
+				<property>sim/multiplay/generic/float[1]</property>
 				<value>1</value>
 			</greater-than>
 		</condition>
@@ -45,8 +45,8 @@
 		</shooter>
 		<counter>
 			<particles-per-sec>
-				<value>100</value>
-				<spread>2</spread>
+				<value>5</value>
+				<spread>1</spread>
 			</particles-per-sec>
 		</counter>
 		<align>billboard</align>
@@ -70,14 +70,14 @@
 					<alpha><value>0.95</value></alpha>
 				</color>
 				<size>
-					<value>18</value>
+					<value>50</value>
 				</size>
 			</end>
 			<life-sec>
 				<value>45</value>
 			</life-sec>
-			<mass-kg>0.25</mass-kg>
-			<radius-m>0.50</radius-m>
+			<mass-kg>0.05</mass-kg>
+			<radius-m>0.01</radius-m>
 		</particle>
 		<program>
 			<fluid>air</fluid>

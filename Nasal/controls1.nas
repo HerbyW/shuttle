@@ -1,6 +1,26 @@
 #var outerspace = setprop(/position/altitude-ft
+#
+# settimer(<function>, <time> [, <realtime=0>]);
+#
+# create timer with 1 second interval
+var timer = maketimer(1.0, func { 
+ if (getprop("/position/altitude-ft") > 140000)
+  {
+  setprop("/controls/shuttle/outerspace",  1 );
+      }
+      else
+      {
+        setprop("/controls/shuttle/outerspace",  0 );
+      }
+; 
+ }
+);
+# start the timer (with 1 second inverval)
+timer.start();
 
-var throttleAxis = myaxisHandler("/controls/engines/engine[", "]/throttle");
+
+
+
 
 
 ##
@@ -47,3 +67,6 @@ var myaxisHandler = func(pre, post) {
                 setprop(pre ~ e.index ~ post, (1 - val) / 2);
     }
 };
+
+
+var throttleAxis = myaxisHandler("/controls/engines/engine[", "]/throttle");

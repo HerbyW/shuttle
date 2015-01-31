@@ -29,6 +29,7 @@
 <multiplay>
    <chat_display>1</chat_display>
      <generic> 
+        <float n="1" alias="/engines/engine[5]/thrust_lb" />
         <float n="2" alias="/engines/engine[3]/thrust_lb" />
         <float n="3" alias="/instrumentation/doors/door1/position-norm" />
         
@@ -57,10 +58,12 @@
   </model>
 
   <systems>
-      <autopilot>
-        <path>Aircraft/SpaceShuttle/Nasal/autopilot-innerspace.xml</path>      
+      <autopilot n = "0" >
+        <path>Aircraft/SpaceShuttle/Nasal/autopilot-innerspace.xml</path>        
+      </autopilot>
+      <autopilot n = "1" >            
         <path>Aircraft/SpaceShuttle/Nasal/autopilot-outerspace.xml</path>
-      </autopilot>      
+      </autopilot> 
   </systems>  
 	
   <view n="0">
