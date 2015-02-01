@@ -36,6 +36,8 @@
       <engine n = "8" type="bool">0</engine>
       <engine n = "9" type="bool">0</engine>
       <engine n = "10" type="bool">0</engine>
+      <engine n = "11" type="bool">0</engine>
+      <engine n = "12" type="bool">0</engine>
     </selected>
    </input>
 	
@@ -105,12 +107,13 @@
       <title>Space Shuttle</title>
 <text>
 Start like a airplane:
-Set the Pilot to 0
-Set the Tank 1 to 129000
-Set the Tank 2 to 117000
+Set Pilot to 0
+Set Tank 0 to 129000
+Set Tank 1 to 117000
+Set Tank 2 full 
 now the shuttle will be in horizontal position,
 give a little throttle, and take off, be carefull with throttle - it is a rocket!
-Hold it in a climbing position of 50-70 degree and go to 150000 ft,
+Hold it in a climbing position of 23-54 degree and go to 145000 ft,
 then deactivate the tank and booster rockets and glide to your landing place.
 
 (Start like the Shuttle: very carefully set the vertical position to max 80%!
@@ -123,14 +126,14 @@ It is not working now, we are on it to fix it)
 
 Gears, Flaps and Speed Breaks are not animated but are there in the jsb.
    
-To set or unset the booster and tank go to the properties-browser,
- > contols > shuttle and set 1 or 0 to the tank and the boosters properties,
-befor landing or after reaching the orbit disable both of them by setting the properties to 0.
+To set or unset the booster and tank go to payload menue and empty the tank 0 and1.
+Befor landing or after reaching the orbit disable both of them.
 
 Have fun and take your time to get control, it is a little bit tricky but fully working,
-also with ILS and AP. Glidepath is not working! Velocity Control set to 170, landing wwith 140-150 kt.
+also with ILS and AP. Glidepath is not working! Velocity Control set to 170, landing with 160-280 kt.
 
-Wing and Pitch leveler with 6 extra engines working with autopilot in outer-space!
+Wing and Pitch leveler with 8 extra engines working with autopilot in outer-space!
+Befor take off, set the wing leveler activ and the pitch control to 23 degree.
 
 Click the little windows on top to activate the man for the moon :)
 

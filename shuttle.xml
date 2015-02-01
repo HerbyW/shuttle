@@ -475,6 +475,61 @@ Gesamtmasse: 111+734+573+573= 1.990 t
      </orient>
     </thruster>
   </engine>
+  
+  <!--extra engines for outer space control Wing Leveler Controls down l+r n=11(with 6 connected),12(with 5 connected) -->
+    <engine file="XLR01">
+    <location unit="M">
+      <x-m>9.45</x-m>
+      <y-m>-11.4</y-m>
+      <z-m>-4.46</z-m>
+    </location>
+    <orient unit="DEG">
+      <pitch> -90.00 </pitch>
+      <roll>   0.00 </roll>
+      <yaw>   0.00 </yaw>
+    </orient>
+    <feed>2</feed>
+    
+    <thruster file="xlr01_nozzle">     
+      <location unit="M">
+      <x-m>9.45</x-m>
+      <y-m>-11.4</y-m>
+      <z-m>-4.46</z-m>
+      </location>
+     <orient unit="DEG">
+       <pitch> -90.00 </pitch>
+       <roll>   0.00 </roll>
+       <yaw>   0.00 </yaw>
+     </orient>
+    </thruster>
+  </engine>
+  
+  <engine file="XLR01">
+    <location unit="M">
+      <x-m>9.45</x-m>
+      <y-m>11.4</y-m>
+      <z-m>-4.46</z-m>
+    </location>
+    <orient unit="DEG">
+      <pitch> -90.00 </pitch>
+      <roll>   0.00 </roll>
+      <yaw>   0.00 </yaw>
+    </orient>
+    <feed>2</feed>
+    
+    <thruster file="xlr01_nozzle">     
+      <location unit="M">
+      <x-m>9.45</x-m>
+      <y-m>11.4</y-m>
+      <z-m>-4.46</z-m>
+      </location>
+     <orient unit="DEG">
+       <pitch> -90.00 </pitch>
+       <roll>   0.00 </roll>
+       <yaw>   0.00 </yaw>
+     </orient>
+    </thruster>
+  </engine>
 
    <!--extra engines for outer space control Pitch Leveler Controls 2*l+2*r n=7,8,9,10-->
    <engine file="XLR02">
