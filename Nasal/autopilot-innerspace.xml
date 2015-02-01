@@ -246,9 +246,9 @@
  <!-- Pitch Axis Modes                                                -->
  <!-- =============================================================== -->
 
- <!-- Simple pitch hold --> 
+ <!-- Simple pitch hold, 2 stage cascade controller.--> 
  <pid-controller>
-    <name>Pitch hold</name>
+    <name>Pitch hold Stage 1</name>
     <debug>false</debug>
     <enable>
       <prop>/autopilot/locks/altitude</prop>
@@ -261,16 +261,45 @@
       <prop>/autopilot/settings/target-pitch-deg</prop>
     </reference>
     <output>
+      <prop>/autopilot/internal/target-pitch-deg-err</prop>
+    </output>
+    <config>
+      <Kp>1.0</Kp>      <!-- proportional gain -->
+      <beta>1.0</beta>    <!-- input value weighing factor -->
+      <alpha>0.1</alpha>  <!-- low pass filter weighing factor -->
+      <gamma>0.0</gamma>  <!-- input value weighing factor for -->
+                          <!-- unfiltered derivative error -->
+      <Ti>0.01</Ti>        <!-- integrator time -->
+      <Td>0.0001</Td>    <!-- derivator time -->
+      <u_min>-30.0</u_min> <!-- minimum output clamp -->
+      <u_max>30.0</u_max>  <!-- maximum output clamp -->
+    </config>
+   </pid-controller>
+   
+   <pid-controller>
+    <name>Pitch hold Stage 2</name>
+    <debug>false</debug>
+    <enable>
+      <prop>/autopilot/locks/altitude</prop>
+      <value>pitch-hold</value>
+    </enable>
+    <input>
+      <prop>/autopilot/internal/target-pitch-deg-err</prop>
+    </input>
+    <reference>
+      <value>0.0</value>
+    </reference>
+    <output>
       <prop>/controls/flight/elevator-trim</prop>
     </output>
     <config>
-      <Kp>-0.05</Kp>      <!-- proportional gain -->
+      <Kp>1.0</Kp>      <!-- proportional gain -->
       <beta>1.0</beta>    <!-- input value weighing factor -->
       <alpha>0.1</alpha>  <!-- low pass filter weighing factor -->
       <gamma>0.0</gamma>  <!-- input value weighing factor for -->
                           <!-- unfiltered derivative error -->
       <Ti>1.0</Ti>        <!-- integrator time -->
-      <Td>0.00001</Td>    <!-- derivator time -->
+      <Td>0.0013</Td>    <!-- derivator time -->
       <u_min>-1.0</u_min> <!-- minimum output clamp -->
       <u_max>1.0</u_max>  <!-- maximum output clamp -->
     </config>
@@ -511,9 +540,7 @@
       <prop>/controls/engines/engine[2]/throttle</prop>
       <prop>/controls/engines/engine[3]/throttle</prop>
       <prop>/controls/engines/engine[4]/throttle</prop>
-      <prop>/controls/engines/engine[5]/throttle</prop>
-      <prop>/controls/engines/engine[6]/throttle</prop>
-      <prop>/controls/engines/engine[7]/throttle</prop>
+      
     </output>
     <config>
       <Kp>0.1</Kp>        <!-- proportional gain -->
