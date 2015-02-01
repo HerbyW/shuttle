@@ -41,6 +41,20 @@ sim input selected
    <input>controls/flight/elevator-trim</input>
    <output>controls/engines/engine[8]/throttle</output>
  </filter>
+ 
+ <filter>
+   <type>gain</type>
+   <gain>-1.0</gain>
+   <input>controls/flight/elevator-trim</input>
+   <output>controls/engines/engine[9]/throttle</output>
+ </filter>
+ 
+ <filter>
+   <type>gain</type>
+   <gain>1.0</gain>
+   <input>controls/flight/elevator-trim</input>
+   <output>controls/engines/engine[10]/throttle</output>
+ </filter>
 
 
 </PropertyList>

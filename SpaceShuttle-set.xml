@@ -7,6 +7,7 @@
        <external-fuel-tank type="int">1</external-fuel-tank>
 +      <solid-rocket-boosters type="int">1</solid-rocket-boosters>
        <outerspace type="bool">1</outerspace>
+       <EMU type="int">0</EMU>
       <door>
        <position type="float">0</position>
       </door>           
@@ -15,7 +16,9 @@
     <lighting>
        <nav-lights type="bool">1</nav-lights>
     </lighting>
-    
+    <armament>
+      <trigger type="int">0</trigger>
+    </armament>
   </controls> 
  
  
@@ -31,6 +34,8 @@
       <engine n = "6" type="bool">0</engine>
       <engine n = "7" type="bool">0</engine>
       <engine n = "8" type="bool">0</engine>
+      <engine n = "9" type="bool">0</engine>
+      <engine n = "10" type="bool">0</engine>
     </selected>
    </input>
 	
@@ -47,10 +52,14 @@
         <float n="7" alias="/engines/engine[6]/thrust_lb" />
         <float n="8" alias="/engines/engine[7]/thrust_lb" />
         <float n="9" alias="/engines/engine[8]/thrust_lb" />
-        
+        <float n="10" alias="/engines/engine[9]/thrust_lb" />
+        <float n="11" alias="/engines/engine[10]/thrust_lb" />
+        <float n="12" alias="/engines/engine[0]/thrust_lb" />
+        <int type="int" n="5" alias="/controls/shuttle/EMU"/>
         <int type="int" n="6" alias="/controls/shuttle/external-fuel-tank"/>
         <int type="int" n="7" alias="/controls/shuttle/solid-rocket-boosters"/>
         <int type="int" n="8" alias="/controls/lighting/nav-lights"/>
+        <int type="int" n="9" alias="/controls/armament/trigger"/>
         
      </generic>
 </multiplay>
@@ -67,6 +76,11 @@
 		<path>Aircraft/SpaceShuttle/Models/SpaceShuttle.xml</path>		
   </model>
 
+  <submodels>
+      <serviceable type="bool">true</serviceable>
+      <path>Aircraft/SpaceShuttle/Models/EMU/submodels.xml</path>
+    </submodels>
+  
   <systems>
       <autopilot n = "0" >
         <path>Aircraft/SpaceShuttle/Nasal/autopilot-innerspace.xml</path>        
@@ -116,7 +130,11 @@ befor landing or after reaching the orbit disable both of them by setting the pr
 Have fun and take your time to get control, it is a little bit tricky but fully working,
 also with ILS and AP. Glidepath is not working! Velocity Control set to 170, landing wwith 140-150 kt.
 
-Wing and Pitch leveler with extra engines working with autopilot in outer-space!
+Wing and Pitch leveler with 6 extra engines working with autopilot in outer-space!
+
+Click the little windows on top to activate the man for the moon :)
+
+Click the satelit to launch it, click again to set a new one and so on, or use the trigger button for that.
 
 See the latest version on: www.github.com/HerbyW
 </text>

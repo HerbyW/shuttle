@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+  
+    <path>Aircraft/SpaceShuttle/Models/EMU/satelit.ac</path>
+
+ <animation>   
+   <object-name>spaceshutt_spstob_eal</object-name>
+</animation>
+
+  <animation>
+    <type>material</type>
+    <object-name>spaceshutt_spstob_eal</object-name>
+   <emission>
+      <factor>1</factor>
+      <red>   0.25 </red>
+      <green> 0.25 </green>
+      <blue>  0.25 </blue>
+    </emission>
+  </animation>   
+    
+    
+<!-- EXTRACT -->
+ <animation>
+  <type>translate</type>
+  
+  <property>sim/time/elapsed-sec</property>
+  <offset>0</offset>
+  <factor>1</factor>
+  <max-m>1</max-m>
+  <axis> 
+    <z>1</z>
+  </axis>
+ </animation>
+
+<!-- INFLATE -->
+ <animation>
+  <type>scale</type>
+  
+  <property>sim/time/elapsed-sec</property>
+  <offset>0</offset>
+  <x-max>1</x-max>
+  <y-max>1</y-max>
+  <z-max>1</z-max>
+  <x-factor>1</x-factor>
+  <y-factor>1</y-factor>
+  <z-factor>1</z-factor>
+ </animation>
+
+</PropertyList>

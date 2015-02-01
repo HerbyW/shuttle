@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  <submodel> 
+    <name>satelit</name>
+    <model>Aircraft/SpaceShuttle/Models/EMU/satelit.xml</model>
+    
+    <trigger>sim/multiplay/generic/int[9]</trigger>
+    <speed> 1 </speed>
+    <repeat> true </repeat>
+    <delay> 0 </delay>
+    <count> 50 </count>
+    <x-offset>  22 </x-offset>
+    <y-offset>  0 </y-offset>
+    <z-offset>  5 </z-offset>
+    <yaw-offset> 0 </yaw-offset>
+    <pitch-offset> 90 </pitch-offset>
+    <cd> 0.65 </cd>
+    <eda> 100 </eda>
+    <weight> 1200 </weight>
+    <wind> true </wind>
+    <buoyancy> 30 </buoyancy>
+    <life> 600 </life>
+    <randomness>1.0</randomness>
+  </submodel>
+
+</PropertyList>

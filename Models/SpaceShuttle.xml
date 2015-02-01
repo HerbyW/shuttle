@@ -1,12 +1,88 @@
 <PropertyList>
-	<path>shuttle.ac</path>
-		
+	<path>shuttle_o.ac</path>
+
+  <!--Lights-->
+                                   
+<animation>   
+   <object-name>spaceshutt_spstob_1</object-name>
+   <object-name>spaceshutt_spstob</object-name>
+   <object-name>spaceshutt_spstob.001</object-name>   
+   <object-name>spaceshutt_spstob_2</object-name>
+   <object-name>spaceshutt_spstob_3</object-name>
+   <object-name>spaceshutt_spstob_4</object-name>
+</animation>
+
+  <animation>
+    <type>material</type>
+    <object-name>spaceshutt_spstob_1</object-name>
+   <object-name>spaceshutt_spstob</object-name>
+   <object-name>spaceshutt_spstob.001</object-name>   
+   <object-name>spaceshutt_spstob_2</object-name>
+   <object-name>spaceshutt_spstob_3</object-name>
+   <object-name>spaceshutt_spstob_4</object-name>
+   <emission>
+      <factor>1</factor>
+      <red>   0.25 </red>
+      <green> 0.25 </green>
+      <blue>  0.25 </blue>
+    </emission>
+  </animation>
+
+<!-- man for the moon, pick the little windows on the top to activate him -->
+
+<model>
+    <path>Aircraft/SpaceShuttle/Models/EMU/acesjustforroomshow.xml</path>
+     <offsets>
+       <x-m> -12.30 </x-m>
+       <y-m> 1.10 </y-m>
+       <z-m> -2.92 </z-m>
+       <heading-deg>90.0</heading-deg>
+     </offsets>
+</model>  
+  
+<animation>
+ <type>pick</type>
+  <object-name>spaceshutt_spstob_4</object-name>
+  <visible>true</visible>
+ <action>
+  <button>0</button>
+   <binding>
+    <command>property-toggle</command>
+     <property>sim/multiplay/generic/int[5]</property>
+     <value>0</value>
+     <value>1</value>
+   </binding>
+ </action>
+</animation>
+
+<!-- satelit, click it to launch a satelit -->
+<model>
+    <path>Aircraft/SpaceShuttle/Models/EMU/satelit-int.xml</path>
+     <offsets>
+       <x-m> 0.0 </x-m>
+       <y-m> 0.0 </y-m>
+       <z-m> -1.0 </z-m>
+       <heading-deg>0.0</heading-deg>
+     </offsets>
+</model>
+
+<animation>
+ <type>pick</type>
+  <object-name>spaceshutt_spstob_eal</object-name>
+  <visible>true</visible>
+ <action>
+  <button>0</button>
+   <binding>
+    <command>property-toggle</command>
+     <property>sim/multiplay/generic/int[9]</property>
+     <value>0</value>
+     <value>1</value>
+   </binding>
+ </action>
+</animation>
 
 <model>
 <path>Aircraft/SpaceShuttle/Models/external-fuel-tank.xml</path>
-
-
-
 		<offsets>
 			<x-m>-10.0</x-m>
 			<y-m>0.0</y-m>
@@ -22,9 +98,6 @@
 
 <model>
 <path>Aircraft/SpaceShuttle/Models/solid-rocket-booster.xml</path>
-
-
-
 		<offsets>
 			<x-m> -5.2 </x-m>
 			<y-m> -6.35</y-m>
@@ -41,9 +114,6 @@
 
 <model>
 <path>Aircraft/SpaceShuttle/Models/solid-rocket-booster.xml</path>
-
-
-
 		<offsets>
 			<x-m> -5.2 </x-m>
 			<y-m>  6.35</y-m>
@@ -58,6 +128,7 @@
  		</condition>
 </model>
 
+<!-- smoke from booster rockets-->
 
   <model>
    <path>Aircraft/SpaceShuttle/Models/Effects/smoke_engine1.xml</path>
@@ -110,7 +181,7 @@
 		<path>Aircraft/SpaceShuttle/Models/Effects/trails-minni3.xml</path>		
 		<offsets>
 			<x-m>-18.0 </x-m>
-                        <y-m> 0.0 </y-m>
+                        <y-m> 1.0 </y-m>
                         <z-m>-4.70 </z-m>
 			<roll-deg>0.0</roll-deg>
 			<pitch-deg>-90.0</pitch-deg>
@@ -121,14 +192,38 @@
 		<path>Aircraft/SpaceShuttle/Models/Effects/trails-minni4.xml</path>		
 		<offsets>
 			<x-m>-18.0 </x-m>
-                        <y-m> 0.0 </y-m>
+                        <y-m> 1.0 </y-m>
                         <z-m>-2.65 </z-m>
 			<roll-deg>0.0</roll-deg>
 			<pitch-deg>90.0</pitch-deg>
 			<heading-deg>0.0</heading-deg>
 		</offsets>
   </model>
-  <!-- end extra engines -->
+  
+  <model>
+		<path>Aircraft/SpaceShuttle/Models/Effects/trails-minni5.xml</path>		
+		<offsets>
+			<x-m>-18.0 </x-m>
+                        <y-m> -1.0 </y-m>
+                        <z-m>-4.70 </z-m>
+			<roll-deg>0.0</roll-deg>
+			<pitch-deg>-90.0</pitch-deg>
+			<heading-deg>0.0</heading-deg>
+		</offsets>
+  </model>
+  <model>
+		<path>Aircraft/SpaceShuttle/Models/Effects/trails-minni6.xml</path>		
+		<offsets>
+			<x-m>-18.0 </x-m>
+                        <y-m> -1.0 </y-m>
+                        <z-m>-2.65 </z-m>
+			<roll-deg>0.0</roll-deg>
+			<pitch-deg>90.0</pitch-deg>
+			<heading-deg>0.0</heading-deg>
+		</offsets>
+  </model>
+  
+  <!-- Smoke for 3 Shuttle engines -->
   
   <model>
 		<path>Aircraft/SpaceShuttle/Models/Effects/trails.xml</path>		
@@ -166,6 +261,7 @@
 		</offsets>
   </model>
 
+  <!-- doors animation -->
 
 <animation>
 <type>pick</type>
@@ -340,9 +436,6 @@
      </offsets>
 </model>
 
-
-
-
 <!--Light for Gears! there are no gears, so I set some lights to the spot of earthcontact -->
 <model>
     <path>Aircraft/SpaceShuttle/Models/Lights/WhiteLight.xml</path>
@@ -367,8 +460,16 @@
        <y-m> 3.9 </y-m>
        <z-m>-7.00 </z-m>
      </offsets>
-</model> 
+</model>
 
-
+<!--One Light for the center of the model -->
+<model>
+    <path>Aircraft/SpaceShuttle/Models/Lights/strobe-white.xml</path>
+     <offsets>
+       <x-m> 0.00 </x-m>
+       <y-m> 0.00 </y-m>
+       <z-m> 0.00 </z-m>
+     </offsets>
+</model>
 
 </PropertyList>

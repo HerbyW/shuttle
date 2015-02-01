@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+  
+    <path>Aircraft/SpaceShuttle/Models/EMU/satelit.ac</path>
+
+ <animation>   
+   <object-name>spaceshutt_spstob_eal</object-name>
+</animation>
+
+  <animation>
+    <type>material</type>
+    <object-name>spaceshutt_spstob_eal</object-name>
+   <emission>
+      <factor>1</factor>
+      <red>   0.25 </red>
+      <green> 0.25 </green>
+      <blue>  0.25 </blue>
+    </emission>
+  </animation>   
+    
+    
+
+</PropertyList>

@@ -1,0 +1,28 @@
+<PropertyList>
+
+<path>Aircraft/SpaceShuttle/Models/EMU/acesjustforroomshow.ac</path>
+ 
+ <animation>
+ <type>select</type> 
+ <condition> 
+    <equals>
+     <property>sim/multiplay/generic/int[5]</property>
+     <value>1</value>
+    </equals>  
+ </condition> 
+</animation>
+
+<animation>   
+  </animation>
+
+  <animation>
+   <type>material</type>    
+    <emission>
+      <factor>1</factor>
+      <red>   0.25 </red>
+      <green> 0.25 </green>
+      <blue>  0.25 </blue>
+    </emission>
+  </animation>
+
+</PropertyList>

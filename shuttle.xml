@@ -7,7 +7,7 @@
  <fileheader>
   <author> Aeromatic v 0.9, HerbyW</author>
   <filecreationdate> 2009-04-09, 01-2015</filecreationdate>
-  <version>$Revison: 2$</version>
+  <version>$Revison: 3$</version>
   <description> Models a shuttle </description>
  </fileheader>
 
@@ -281,7 +281,7 @@ Gesamtmasse: 111+734+573+573= 1.990 t
  </ground_reactions>
 
  <propulsion>
-
+   <!--3*Shuttle Engines n=0,1,2-->
    <engine file="XLR99">
     <location unit="IN">
       <x> 200.00 </x>
@@ -366,8 +366,7 @@ Gesamtmasse: 111+734+573+573= 1.990 t
     </thruster>
   </engine>
 
-
-
+<!--2*Booster Engines n=3,4 -->
    <engine file="SRB">
     <location unit="IN">
       <x> 200.00 </x>
@@ -422,7 +421,7 @@ Gesamtmasse: 111+734+573+573= 1.990 t
     </thruster>
     </engine>
     
-    <!--extra engines for outer space control Wing Leveler Controls -->
+ <!--extra engines for outer space control Wing Leveler Controls up l+r n=5,6 -->
     <engine file="XLR01">
     <location unit="M">
       <x-m>9.45</x-m>
@@ -477,11 +476,11 @@ Gesamtmasse: 111+734+573+573= 1.990 t
     </thruster>
   </engine>
 
-   <!--extra engines for outer space control Pitch Leveler Controls -->
+   <!--extra engines for outer space control Pitch Leveler Controls 2*l+2*r n=7,8,9,10-->
    <engine file="XLR02">
     <location unit="M">
       <x-m>-18.0 </x-m>
-      <y-m> 0.0 </y-m>
+      <y-m> 1.0 </y-m>
       <z-m>-4.70 </z-m>
     </location>
     <orient unit="DEG">
@@ -494,7 +493,7 @@ Gesamtmasse: 111+734+573+573= 1.990 t
     <thruster file="xlr02_nozzle">     
       <location unit="M">
       <x-m>-18.0 </x-m>
-      <y-m> 0.0 </y-m>
+      <y-m> 1.0 </y-m>
       <z-m>-4.70 </z-m>
       </location>
      <orient unit="DEG">
@@ -508,7 +507,7 @@ Gesamtmasse: 111+734+573+573= 1.990 t
   <engine file="XLR02">
     <location unit="M">
       <x-m>-18.0 </x-m>
-      <y-m> 0.0 </y-m>
+      <y-m> 1.0 </y-m>
       <z-m>-2.65 </z-m>
     </location>
     <orient unit="DEG">
@@ -521,7 +520,61 @@ Gesamtmasse: 111+734+573+573= 1.990 t
     <thruster file="xlr02_nozzle">     
       <location unit="M">
       <x-m>-18.0 </x-m>
-      <y-m> 0.0 </y-m>
+      <y-m> 1.0 </y-m>
+      <z-m>-2.65 </z-m>
+      </location>
+     <orient unit="DEG">
+       <pitch> 90.00 </pitch>
+       <roll>   0.00 </roll>
+       <yaw>   0.00 </yaw>
+     </orient>
+    </thruster>
+    
+  </engine>
+  <engine file="XLR02">
+    <location unit="M">
+      <x-m>-18.0 </x-m>
+      <y-m>-1.0 </y-m>
+      <z-m>-4.70 </z-m>
+    </location>
+    <orient unit="DEG">
+      <pitch> -90.00 </pitch>
+      <roll>   0.00 </roll>
+      <yaw>   0.00 </yaw>
+    </orient>
+    <feed>2</feed>
+    
+    <thruster file="xlr02_nozzle">     
+      <location unit="M">
+      <x-m>-18.0 </x-m>
+      <y-m>-1.0 </y-m>
+      <z-m>-4.70 </z-m>
+      </location>
+     <orient unit="DEG">
+       <pitch> -90.00 </pitch>
+       <roll>   0.00 </roll>
+       <yaw>   0.00 </yaw>
+     </orient>
+    </thruster>
+  </engine>
+  
+  <engine file="XLR02">
+    <location unit="M">
+      <x-m>-18.0 </x-m>
+      <y-m>-1.0 </y-m>
+      <z-m>-2.65 </z-m>
+    </location>
+    <orient unit="DEG">
+      <pitch> 90.00 </pitch>
+      <roll>   0.00 </roll>
+      <yaw>   0.00 </yaw>
+    </orient>
+    <feed>2</feed>
+    
+    <thruster file="xlr02_nozzle">     
+      <location unit="M">
+      <x-m>-18.0 </x-m>
+      <y-m>-1.0 </y-m>
       <z-m>-2.65 </z-m>
       </location>
      <orient unit="DEG">
@@ -531,7 +584,8 @@ Gesamtmasse: 111+734+573+573= 1.990 t
      </orient>
     </thruster>
   </engine>
-
+  
+<!--tank definitions -->
   <tank type="FUEL" number="0">
      <location unit="IN">
        <x> 1.00 </x>
