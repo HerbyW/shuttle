@@ -26,12 +26,12 @@
 			<type>point</type> 
 		</placer>
 		<shooter>
-			<theta-min-deg>89</theta-min-deg>
-			<theta-max-deg>91</theta-max-deg>
-			<phi-min-deg>0.1</phi-min-deg>
-			<phi-max-deg>0.1</phi-max-deg>
+			<theta-min-deg>89.90</theta-min-deg>
+			<theta-max-deg>90.10</theta-max-deg>
+			<phi-min-deg>0.01</phi-min-deg>
+			<phi-max-deg>0.01</phi-max-deg>
 			<speed-mps>
-				<value>0</value>
+				<value>20</value>
 				<spread>0</spread>
 			</speed-mps>
 			<rotation-speed>
@@ -45,7 +45,7 @@
 		</shooter>
 		<counter>
 			<particles-per-sec>
-				<value>5</value>
+				<value>60</value>
 				<spread>1</spread>
 			</particles-per-sec>
 		</counter>
@@ -56,10 +56,10 @@
 					<red><value>0.9</value></red>
 					<green><value>0.9</value></green>
 					<blue><value>0.9</value></blue>
-					<alpha><value>0.4</value></alpha>
+					<alpha><value>0.6</value></alpha>
 				</color>
 				<size>
-					<value>0.7</value>
+					<value>0.15</value>
 				</size>
 			</start>
 			<end>
@@ -70,14 +70,14 @@
 					<alpha><value>0.95</value></alpha>
 				</color>
 				<size>
-					<value>50</value>
+					<value>1</value>
 				</size>
 			</end>
 			<life-sec>
-				<value>45</value>
+				<value>0.35</value>
 			</life-sec>
 			<mass-kg>0.05</mass-kg>
-			<radius-m>0.01</radius-m>
+			<radius-m>0.03</radius-m>
 		</particle>
 		<program>
 			<fluid>air</fluid>

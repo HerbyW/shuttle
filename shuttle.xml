@@ -131,7 +131,10 @@ spezifischer Impuls (Durchschnitt): 2538 m/s
 Brennzeit: 120 sec
 
 Gesamtmasse: 111+734+573+573= 1.990 t
-             
+
+Cockpit wiew:
+http://www.businessinsider.com/breathtaking-images-of-the-space-shuttle-2013-9?IR=T
+
 -->
 
  <metrics>
@@ -531,29 +534,31 @@ Gesamtmasse: 111+734+573+573= 1.990 t
     </thruster>
   </engine>
 
-   <!--extra engines for outer space control Pitch Leveler Controls 2*l+2*r n=7,8,9,10-->
+<!--extra engines for outer space control Pitch Leveler Controls
+    on nose position 2*l+2*r n=7,8,9,10-->
+   
    <engine file="XLR02">
     <location unit="M">
-      <x-m>-18.0 </x-m>
-      <y-m> 1.0 </y-m>
-      <z-m>-4.70 </z-m>
+      <x-m>-16.72 </x-m>
+      <y-m> 1.45 </y-m>
+      <z-m>-3.40 </z-m>
     </location>
     <orient unit="DEG">
       <pitch> -90.00 </pitch>
-      <roll>   0.00 </roll>
+      <roll>   20.00 </roll>
       <yaw>   0.00 </yaw>
     </orient>
     <feed>2</feed>
     
     <thruster file="xlr02_nozzle">     
       <location unit="M">
-      <x-m>-18.0 </x-m>
-      <y-m> 1.0 </y-m>
-      <z-m>-4.70 </z-m>
+      <x-m>-16.72 </x-m>
+      <y-m> 1.45 </y-m>
+      <z-m>-3.40 </z-m>
       </location>
      <orient unit="DEG">
        <pitch> -90.00 </pitch>
-       <roll>   0.00 </roll>
+       <roll>   20.00 </roll>
        <yaw>   0.00 </yaw>
      </orient>
     </thruster>
@@ -561,26 +566,26 @@ Gesamtmasse: 111+734+573+573= 1.990 t
   
   <engine file="XLR02">
     <location unit="M">
-      <x-m>-18.0 </x-m>
-      <y-m> 1.0 </y-m>
-      <z-m>-2.65 </z-m>
+      <x-m>-16.72 </x-m>
+      <y-m> 1.45 </y-m>
+      <z-m>-3.40 </z-m>
     </location>
     <orient unit="DEG">
       <pitch> 90.00 </pitch>
-      <roll>   0.00 </roll>
+      <roll> -20.00 </roll>
       <yaw>   0.00 </yaw>
     </orient>
     <feed>2</feed>
     
     <thruster file="xlr02_nozzle">     
       <location unit="M">
-      <x-m>-18.0 </x-m>
-      <y-m> 1.0 </y-m>
-      <z-m>-2.65 </z-m>
+      <x-m>-16.72 </x-m>
+      <y-m> 1.45 </y-m>
+      <z-m>-3.40 </z-m>
       </location>
      <orient unit="DEG">
        <pitch> 90.00 </pitch>
-       <roll>   0.00 </roll>
+       <roll> -20.00 </roll>
        <yaw>   0.00 </yaw>
      </orient>
     </thruster>
@@ -588,26 +593,26 @@ Gesamtmasse: 111+734+573+573= 1.990 t
   </engine>
   <engine file="XLR02">
     <location unit="M">
-      <x-m>-18.0 </x-m>
-      <y-m>-1.0 </y-m>
-      <z-m>-4.70 </z-m>
+      <x-m>-16.72 </x-m>
+      <y-m> -1.45 </y-m>
+      <z-m> -3.40 </z-m>
     </location>
     <orient unit="DEG">
       <pitch> -90.00 </pitch>
-      <roll>   0.00 </roll>
+      <roll>   20.00 </roll>
       <yaw>   0.00 </yaw>
     </orient>
     <feed>2</feed>
     
     <thruster file="xlr02_nozzle">     
       <location unit="M">
-      <x-m>-18.0 </x-m>
-      <y-m>-1.0 </y-m>
-      <z-m>-4.70 </z-m>
+      <x-m>-16.72 </x-m>
+      <y-m> -1.45 </y-m>
+      <z-m> -3.40 </z-m>
       </location>
      <orient unit="DEG">
        <pitch> -90.00 </pitch>
-       <roll>   0.00 </roll>
+       <roll>   20.00 </roll>
        <yaw>   0.00 </yaw>
      </orient>
     </thruster>
@@ -615,30 +620,142 @@ Gesamtmasse: 111+734+573+573= 1.990 t
   
   <engine file="XLR02">
     <location unit="M">
-      <x-m>-18.0 </x-m>
-      <y-m>-1.0 </y-m>
-      <z-m>-2.65 </z-m>
+      <x-m>-16.72 </x-m>
+      <y-m> -1.45 </y-m>
+      <z-m> -3.40 </z-m>
     </location>
     <orient unit="DEG">
       <pitch> 90.00 </pitch>
-      <roll>   0.00 </roll>
+      <roll> -20.00 </roll>
       <yaw>   0.00 </yaw>
     </orient>
     <feed>2</feed>
     
     <thruster file="xlr02_nozzle">     
       <location unit="M">
-      <x-m>-18.0 </x-m>
-      <y-m>-1.0 </y-m>
-      <z-m>-2.65 </z-m>
+      <x-m>-16.72 </x-m>
+      <y-m> -1.45 </y-m>
+      <z-m> -3.40 </z-m>
       </location>
      <orient unit="DEG">
        <pitch> 90.00 </pitch>
-       <roll>   0.00 </roll>
+       <roll> -20.00 </roll>
        <yaw>   0.00 </yaw>
      </orient>
     </thruster>
   </engine>
+  
+<!--extra engines for outer space control Pitch Leveler Controls
+new    on tail position 2*l+2*r n=13,14,15,16-->
+
+    <engine file="XLR01">
+    <location unit="M">
+      <x-m> 12.48 </x-m>
+      <y-m>  3.1  </y-m>
+      <z-m> -1.45 </z-m>
+    </location>
+    <orient unit="DEG">
+      <pitch> 90.00 </pitch>
+      <roll>  20.00 </roll>
+      <yaw>    0.00 </yaw>
+    </orient>
+    <feed>2</feed>
+    
+    <thruster file="xlr01_nozzle">     
+      <location unit="M">
+      <x-m> 12.48 </x-m>
+      <y-m>  3.1  </y-m>
+      <z-m> -1.45 </z-m>
+      </location>
+     <orient unit="DEG">
+       <pitch> 90.00 </pitch>
+       <roll>  20.00 </roll>
+       <yaw>    0.00 </yaw>
+     </orient>
+    </thruster>
+  </engine>
+  
+  <engine file="XLR01">
+    <location unit="M">
+      <x-m> 12.4 </x-m>
+      <y-m>  2.5 </y-m>
+      <z-m>  1.1 </z-m>
+    </location>
+    <orient unit="DEG">
+      <pitch> -90.00 </pitch>
+      <roll>  -20.00 </roll>
+      <yaw>     0.00 </yaw>
+    </orient>
+    <feed>2</feed>
+    
+    <thruster file="xlr01_nozzle">     
+      <location unit="M">
+      <x-m> 12.4 </x-m>
+      <y-m>  2.5 </y-m>
+      <z-m>  1.1 </z-m>
+      </location>
+     <orient unit="DEG">
+       <pitch> -90.00 </pitch>
+       <roll>  -20.00 </roll>
+       <yaw>     0.00 </yaw>
+     </orient>
+    </thruster>
+  </engine>
+  
+  <engine file="XLR01">
+    <location unit="M">
+      <x-m> 12.48 </x-m>
+      <y-m> -3.1  </y-m>
+      <z-m> -1.45 </z-m>
+    </location>
+    <orient unit="DEG">
+      <pitch> 90.00 </pitch>
+      <roll> -20.00 </roll>
+      <yaw>    0.00 </yaw>
+    </orient>
+    <feed>2</feed>
+    
+    <thruster file="xlr01_nozzle">     
+      <location unit="M">
+      <x-m> 12.48 </x-m>
+      <y-m> -3.1  </y-m>
+      <z-m> -1.45 </z-m>
+      </location>
+     <orient unit="DEG">
+       <pitch> 90.00 </pitch>
+       <roll> -20.00 </roll>
+       <yaw>    0.00 </yaw>
+     </orient>
+    </thruster>
+  </engine>
+  
+  <engine file="XLR01">
+    <location unit="M">
+      <x-m> 12.4 </x-m>
+      <y-m> -2.5 </y-m>
+      <z-m>  1.1 </z-m>
+    </location>
+    <orient unit="DEG">
+      <pitch> -90.00 </pitch>
+      <roll>   20.00 </roll>
+      <yaw>    0.00 </yaw>
+    </orient>
+    <feed>2</feed>
+    
+    <thruster file="xlr01_nozzle">     
+      <location unit="M">
+      <x-m> 12.4 </x-m>
+      <y-m> -2.5 </y-m>
+      <z-m>  1.1 </z-m>
+      </location>
+     <orient unit="DEG">
+       <pitch> -90.00 </pitch>
+       <roll>   20.00 </roll>
+       <yaw>     0.00 </yaw>
+     </orient>
+    </thruster>
+  </engine>
+  
   
 <!--tank definitions -->
   <tank type="FUEL" number="0">

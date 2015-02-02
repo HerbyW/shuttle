@@ -31,7 +31,7 @@
 			<phi-min-deg>0.1</phi-min-deg>
 			<phi-max-deg>0.1</phi-max-deg>
 			<speed-mps>
-				<value>0</value>
+				<value>100</value>
 				<spread>0</spread>
 			</speed-mps>
 			<rotation-speed>
@@ -53,10 +53,10 @@
 		<particle>
 			<start>
 				<color>
-					<red><value>0.9</value></red>
-					<green><value>0.9</value></green>
-					<blue><value>0.9</value></blue>
-					<alpha><value>0.4</value></alpha>
+					<red><value>1.0</value></red>
+					<green><value>0.9059</value></green>
+					<blue><value>0.7294</value></blue>
+					<alpha><value>0.90</value></alpha>
 				</color>
 				<size>
 					<value>0.7</value>
@@ -64,13 +64,13 @@
 			</start>
 			<end>
 				<color>
-					<red><value>0.9</value></red>
-					<green><value>0.9</value></green>
-					<blue><value>0.9</value></blue>
+					<red><value>0.22</value></red>
+					<green><value>0.22</value></green>
+					<blue><value>0.22</value></blue>
 					<alpha><value>0.95</value></alpha>
 				</color>
 				<size>
-					<value>18</value>
+					<value>180</value>
 				</size>
 			</end>
 			<life-sec>

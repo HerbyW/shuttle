@@ -61,7 +61,7 @@
      <offsets>
        <x-m> 0.0 </x-m>
        <y-m> 0.0 </y-m>
-       <z-m> -1.0 </z-m>
+       <z-m> -0.0 </z-m>
        <heading-deg>0.0</heading-deg>
      </offsets>
 </model>
@@ -198,14 +198,14 @@
 		</offsets>
   </model>
   
-  <!-- smoke from the extra control engines xlr01 pitchlevel-->
+  <!-- smoke from the extra control engines xlr01 pitchlevel nose position -->
   <model>
 		<path>Aircraft/SpaceShuttle/Models/Effects/trails-minni3.xml</path>		
 		<offsets>
-			<x-m>-18.0 </x-m>
-                        <y-m> 1.0 </y-m>
-                        <z-m>-4.70 </z-m>
-			<roll-deg>0.0</roll-deg>
+			<x-m>-16.72 </x-m>
+                        <y-m>  1.55 </y-m>
+                        <z-m> -3.30 </z-m>
+			<roll-deg>-20.0</roll-deg>
 			<pitch-deg>-90.0</pitch-deg>
 			<heading-deg>0.0</heading-deg>
 		</offsets>
@@ -213,10 +213,10 @@
   <model>
 		<path>Aircraft/SpaceShuttle/Models/Effects/trails-minni4.xml</path>		
 		<offsets>
-			<x-m>-18.0 </x-m>
-                        <y-m> 1.0 </y-m>
-                        <z-m>-2.65 </z-m>
-			<roll-deg>0.0</roll-deg>
+			<x-m>-16.72 </x-m>
+                        <y-m>  1.55 </y-m>
+                        <z-m> -3.50 </z-m>
+			<roll-deg>20.0</roll-deg>
 			<pitch-deg>90.0</pitch-deg>
 			<heading-deg>0.0</heading-deg>
 		</offsets>
@@ -225,10 +225,10 @@
   <model>
 		<path>Aircraft/SpaceShuttle/Models/Effects/trails-minni5.xml</path>		
 		<offsets>
-			<x-m>-18.0 </x-m>
-                        <y-m> -1.0 </y-m>
-                        <z-m>-4.70 </z-m>
-			<roll-deg>0.0</roll-deg>
+			<x-m>-16.72 </x-m>
+                        <y-m> -1.55 </y-m>
+                        <z-m> -3.30 </z-m>
+			<roll-deg>20.0</roll-deg>
 			<pitch-deg>-90.0</pitch-deg>
 			<heading-deg>0.0</heading-deg>
 		</offsets>
@@ -236,15 +236,62 @@
   <model>
 		<path>Aircraft/SpaceShuttle/Models/Effects/trails-minni6.xml</path>		
 		<offsets>
-			<x-m>-18.0 </x-m>
-                        <y-m> -1.0 </y-m>
-                        <z-m>-2.65 </z-m>
-			<roll-deg>0.0</roll-deg>
+			<x-m>-16.72 </x-m>
+                        <y-m> -1.55 </y-m>
+                        <z-m> -3.50 </z-m>
+			<roll-deg>-20.0</roll-deg>
 			<pitch-deg>90.0</pitch-deg>
 			<heading-deg>0.0</heading-deg>
 		</offsets>
   </model>
   
+  <!-- smoke from the extra control engines xlr01 pitchlevel tail position -->
+  <model>
+		<path>Aircraft/SpaceShuttle/Models/Effects/trails-minni14.xml</path>		
+		<offsets>
+			<x-m> 12.4 </x-m>
+                        <y-m>  2.5 </y-m>
+                        <z-m>  1.1 </z-m>
+			<roll-deg>-20.0</roll-deg>
+			<pitch-deg>-90.0</pitch-deg>
+			<heading-deg>0.0</heading-deg>
+		</offsets>
+  </model>
+  <model>
+		<path>Aircraft/SpaceShuttle/Models/Effects/trails-minni13.xml</path>		
+		<offsets>
+			<x-m> 12.48 </x-m>
+                        <y-m>  3.1  </y-m>
+                        <z-m> -1.45 </z-m>
+			<roll-deg>20.0</roll-deg>
+			<pitch-deg>90.0</pitch-deg>
+			<heading-deg>0.0</heading-deg>
+		</offsets>
+  </model>
+  
+  <model>
+		<path>Aircraft/SpaceShuttle/Models/Effects/trails-minni16.xml</path>		
+		<offsets>
+			<x-m> 12.4 </x-m>
+                        <y-m> -2.5 </y-m>
+                        <z-m>  1.1 </z-m>
+			<roll-deg>20.0</roll-deg>
+			<pitch-deg>-90.0</pitch-deg>
+			<heading-deg>0.0</heading-deg>
+		</offsets>
+  </model>
+  <model>
+		<path>Aircraft/SpaceShuttle/Models/Effects/trails-minni15.xml</path>		
+		<offsets>
+			<x-m> 12.48 </x-m>
+                        <y-m> -3.1  </y-m>
+                        <z-m> -1.45 </z-m>
+			<roll-deg>-20.0</roll-deg>
+			<pitch-deg>90.0</pitch-deg>
+			<heading-deg>0.0</heading-deg>
+		</offsets>
+  </model>
+    
   <!-- Smoke for 3 Shuttle engines -->
   
   <model>
@@ -488,9 +535,9 @@
 <model>
     <path>Aircraft/SpaceShuttle/Models/Lights/strobe-white.xml</path>
      <offsets>
-       <x-m> 0.00 </x-m>
-       <y-m> 0.00 </y-m>
-       <z-m> 0.00 </z-m>
+       <x-m> 0.0 </x-m>
+       <y-m> 0.0 </y-m>
+       <z-m> 0.0 </z-m>
      </offsets>
 </model>
 

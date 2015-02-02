@@ -14,7 +14,7 @@
 		</offsets>
 		<condition>
 			<greater-than>
-				<property>sim/multiplay/generic/float[8]</property>
+				<property>sim/multiplay/generic/float[10]</property>
 				<value>1</value>
 			</greater-than>
 		</condition>
@@ -86,3 +86,4 @@
 		</program>
 	</particlesystem>
 </PropertyList>
+
