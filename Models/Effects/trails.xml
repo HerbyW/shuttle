@@ -53,28 +53,28 @@
 		<particle>
 			<start>
 				<color>
-					<red><value>1.0</value></red>
-					<green><value>0.9059</value></green>
-					<blue><value>0.7294</value></blue>
-					<alpha><value>0.90</value></alpha>
+					<red><value>0.9</value></red>
+					<green><value>0.9</value></green>
+					<blue><value>0.9</value></blue>
+					<alpha><value>0.80</value></alpha>
 				</color>
 				<size>
-					<value>0.7</value>
+					<value>0.8</value>
 				</size>
 			</start>
 			<end>
 				<color>
-					<red><value>0.22</value></red>
-					<green><value>0.22</value></green>
-					<blue><value>0.22</value></blue>
-					<alpha><value>0.95</value></alpha>
+					<red><value>0.2</value></red>
+					<green><value>0.2</value></green>
+					<blue><value>0.2</value></blue>
+					<alpha><value>0.98</value></alpha>
 				</color>
 				<size>
-					<value>180</value>
+					<value>200</value>
 				</size>
 			</end>
 			<life-sec>
-				<value>45</value>
+				<value>55</value>
 			</life-sec>
 			<mass-kg>0.25</mass-kg>
 			<radius-m>0.50</radius-m>

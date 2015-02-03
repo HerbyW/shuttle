@@ -1,0 +1,142 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+	<!--<path>Aircraft/f-14b/Models/f14-fx.ac</path>-->
+	<path>Aircraft/SpaceShuttle/Models/Effects/engine-fire.ac</path>
+	<nopreview/>
+
+	<effect>
+		<inherits-from>Effects/model-transparent</inherits-from>
+		
+		<object-name>HeatBlurL</object-name>
+		
+		<object-name>InnerFlameL</object-name>
+		
+		
+		<object-name>ReheatL</object-name>
+	</effect>
+
+
+	
+	<animation>
+		<type>select</type>
+		
+		<object-name>HeatBlurL</object-name>
+		<condition>
+			<greater-than>
+				<property>sim/multiplay/generic/float[12]</property>
+				<value>1</value>
+			</greater-than>
+		</condition>
+	</animation>
+
+	<animation>
+		<type>blend</type>
+		<object-name>ReheatL</object-name>
+		<property>sim/multiplay/generic/float[12]</property>
+		<offset>1</offset>
+		<factor>-1.4</factor>
+	</animation>
+
+	
+
+	<!-- Burner Flame -->
+	
+	
+
+	<animation>
+		<type>select</type>
+		<object-name>InnerFlameL</object-name>
+		<condition>
+			<greater-than>
+				<property>sim/multiplay/generic/float[12]</property>
+				<value>1</value>
+			</greater-than>
+		</condition>
+	</animation>
+	<animation>
+		<type>translate</type>
+		<object-name>InnerFlameL</object-name>
+		<factor>1.0</factor>
+		<offset-m>8.682</offset-m>
+		<axis>
+			<x>9.835</x>
+			<y>-1.724</y>
+			<z>-1.457</z>
+		</axis>
+	</animation>
+	<animation>
+		<type>scale</type>
+		<object-name>InnerFlameL</object-name>
+		<property>sim/multiplay/generic/int[6]</property>
+		<x-factor>0.7</x-factor>
+		<x-offset>1.0</x-offset>
+		<y-factor>0.3</y-factor>
+		<y-offset>1.0</y-offset>
+		<z-factor>0.3</z-factor>
+		<z-offset>1.0</z-offset>
+	</animation>
+	<animation>
+		<type>translate</type>
+		<object-name>InnerFlameL</object-name>
+		<factor>0.0</factor>
+		<offset-m>-8.682</offset-m>
+		<axis>
+			<x>9.835</x>
+			<y>-1.724</y>
+			<z>-1.457</z>
+		</axis>
+	</animation>
+
+	
+	<!--flame texture animation -->
+
+	
+
+	<animation>
+		<type>textranslate</type>
+		<object-name>InnerFlameL</object-name>
+		<property>sim/multiplay/generic/int[6]</property>
+		<factor>-0.0673828125</factor>
+		<axis>
+			<x>0</x>
+			<y>1</y>
+			<z>0</z>
+		</axis>
+	</animation>
+
+
+
+
+
+
+
+	<!-- Heat Blur -->
+
+	<animation>
+		<type>select</type>
+		<object-name>HeatBlurL</object-name>
+		<property>sim/multiplay/generic/int[6]</property>
+	</animation>
+
+	
+
+	<animation>
+		<type>shader</type>
+		<shader>heat-haze</shader>
+		
+		<object-name>HeatBlurL</object-name>
+		<factor>0.12</factor>
+		<speed>120</speed>
+	</animation>
+
+
+	<!-- disable shadows for these objects -->
+	<animation>
+		<type>noshadow</type>
+		<object-name>fx</object-name>
+	</animation>
+
+</PropertyList>
+

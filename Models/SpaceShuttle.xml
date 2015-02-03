@@ -541,4 +541,33 @@
      </offsets>
 </model>
 
+<!--lets set some fire to the main engines -->
+<model>
+    <path>Aircraft/SpaceShuttle/Models/Effects/engine-fire.xml</path>
+     <offsets>
+       <x-m> 7.5 </x-m>
+       <y-m> 1.5 </y-m>
+       <z-m> -0.55 </z-m>
+       <pitch-deg>-8.0</pitch-deg>
+     </offsets>
+</model>
+<model>
+    <path>Aircraft/SpaceShuttle/Models/Effects/engine-fire.xml</path>
+     <offsets>
+       <x-m> 7.6 </x-m>
+       <y-m> 0.05 </y-m>
+       <z-m> -3.20 </z-m>
+       <pitch-deg>-8.0</pitch-deg>
+     </offsets>
+</model>
+<model>
+    <path>Aircraft/SpaceShuttle/Models/Effects/engine-fire.xml</path>
+     <offsets>
+       <x-m> 7.6 </x-m>
+       <y-m> 2.90 </y-m>
+       <z-m> -3.20 </z-m>
+       <pitch-deg>-8.0</pitch-deg>
+     </offsets>
+</model>
+
 </PropertyList>

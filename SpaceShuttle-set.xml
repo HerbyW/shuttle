@@ -38,6 +38,10 @@
       <engine n = "10" type="bool">0</engine>
       <engine n = "11" type="bool">0</engine>
       <engine n = "12" type="bool">0</engine>
+      <engine n = "13" type="bool">0</engine>
+      <engine n = "14" type="bool">0</engine>
+      <engine n = "15" type="bool">0</engine>
+      <engine n = "16" type="bool">0</engine>
     </selected>
    </input>
 	
@@ -162,7 +166,7 @@ See the latest version on: www.github.com/HerbyW
  <nasal>      
     <SpaceShuttle>
       <file>Aircraft/SpaceShuttle/Nasal/light.nas</file>
-      <!--<file>Aircraft/SpaceShuttle/Nasal/setprop.nas</file>-->
+      <file>Aircraft/SpaceShuttle/Nasal/setprop.nas</file>
     </SpaceShuttle>    
   </nasal>
 
