@@ -53,7 +53,7 @@
 		<particle>
 			<start>
 				<color>
-					<red><value>0.9</value></red>
+					<red><value>0.09</value></red>
 					<green><value>0.9</value></green>
 					<blue><value>0.9</value></blue>
 					<alpha><value>0.6</value></alpha>

@@ -14,7 +14,7 @@
 		</offsets>
 		<condition>
 			<greater-than>
-				<property>sim/multiplay/generic/float[1]</property>
+				<property>sim/multiplay/generic/float[14]</property>
 				<value>1</value>
 			</greater-than>
 		</condition>
@@ -53,9 +53,9 @@
 		<particle>
 			<start>
 				<color>
-					<red><value>0.9</value></red>
+					<red><value>0.09</value></red>
 					<green><value>0.9</value></green>
-					<blue><value>0.9</value></blue>
+					<blue><value>0.09</value></blue>
 					<alpha><value>0.6</value></alpha>
 				</color>
 				<size>

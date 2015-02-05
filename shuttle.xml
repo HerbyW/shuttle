@@ -284,44 +284,16 @@ http://www.businessinsider.com/breathtaking-images-of-the-space-shuttle-2013-9?I
  </ground_reactions>
 
  <propulsion>
-   <!--3*Shuttle Engines n=0,1,2-->
-   <engine file="XLR99">
-    <location unit="IN">
-      <x> 200.00 </x>
-      <y> -20.00 </y>
-      <z> -20.00 </z>
-    </location>
-    <orient unit="DEG">
-      <pitch> 0.00 </pitch>
-      <roll>   0.00 </roll>
-      <yaw>   0.00 </yaw>
-    </orient>
-    <feed>0</feed>
-    <feed>2</feed>
-    
-    <thruster file="xlr99_nozzle">
-     <location unit="IN">
-      <x> 200.00 </x>
-      <y> -20.00 </y>
-      <z> -20.00 </z>
-     </location>
-     <orient unit="DEG">
-       <pitch> 0.00 </pitch>
-       <roll>   0.00 </roll>
-       <yaw>   0.00 </yaw>
-     </orient>
-    </thruster>
-  </engine>
-
+   <!--3 Shuttle Engines n=0 reduced to one engine-->
    <engine file="XLR99">
     <location unit="IN">
       <x> 200.00 </x>
       <y>   0.00 </y>
-      <z>  20.00 </z>
+      <z>   0.00 </z>
     </location>
     <orient unit="DEG">
       <pitch> 0.00 </pitch>
-      <roll>   0.00 </roll>
+      <roll>  0.00 </roll>
       <yaw>   0.00 </yaw>
     </orient>
     <feed>0</feed>
@@ -331,45 +303,17 @@ http://www.businessinsider.com/breathtaking-images-of-the-space-shuttle-2013-9?I
      <location unit="IN">
       <x> 200.00 </x>
       <y>   0.00 </y>
-      <z>  20.00 </z>
+      <z>   0.00 </z>
      </location>
      <orient unit="DEG">
        <pitch> 0.00 </pitch>
-       <roll>   0.00 </roll>
+       <roll>  0.00 </roll>
        <yaw>   0.00 </yaw>
      </orient>
     </thruster>
-  </engine>
+  </engine>   
 
-   <engine file="XLR99">
-    <location unit="IN">
-      <x> 200.00 </x>
-      <y>  20.00 </y>
-      <z> -20.00 </z>
-    </location>
-    <orient unit="DEG">
-      <pitch> 0.00 </pitch>
-      <roll>   0.00 </roll>
-      <yaw>   0.00 </yaw>
-    </orient>
-    <feed>0</feed>
-    <feed>2</feed>
-    
-    <thruster file="xlr99_nozzle">
-     <location unit="IN">
-      <x> 200.00 </x>
-      <y>  20.00 </y>
-      <z> -20.00 </z>
-     </location>
-     <orient unit="DEG">
-       <pitch> 0.00 </pitch>
-       <roll>   0.00 </roll>
-       <yaw>   0.00 </yaw>
-     </orient>
-    </thruster>
-  </engine>
-
-<!--2*Booster Engines n=3,4 -->
+<!--2*Booster Engines n=1,2  -->
    <engine file="SRB">
     <location unit="IN">
       <x> 200.00 </x>
@@ -378,7 +322,7 @@ http://www.businessinsider.com/breathtaking-images-of-the-space-shuttle-2013-9?I
     </location>
     <orient unit="DEG">
       <pitch> 0.00 </pitch>
-      <roll>   0.00 </roll>
+      <roll>  0.00 </roll>
       <yaw>   0.00 </yaw>
     </orient>
     
@@ -391,7 +335,7 @@ http://www.businessinsider.com/breathtaking-images-of-the-space-shuttle-2013-9?I
      </location>
      <orient unit="DEG">
        <pitch> 0.00 </pitch>
-       <roll>   0.00 </roll>
+       <roll>  0.00 </roll>
        <yaw>   0.00 </yaw>
      </orient>
     </thruster>
@@ -405,7 +349,7 @@ http://www.businessinsider.com/breathtaking-images-of-the-space-shuttle-2013-9?I
     </location>
     <orient unit="DEG">
       <pitch> 0.00 </pitch>
-      <roll>   0.00 </roll>
+      <roll>  0.00 </roll>
       <yaw>   0.00 </yaw>
     </orient>
     
@@ -418,68 +362,13 @@ http://www.businessinsider.com/breathtaking-images-of-the-space-shuttle-2013-9?I
      </location>
      <orient unit="DEG">
        <pitch> 0.00 </pitch>
-       <roll>   0.00 </roll>
+       <roll>  0.00 </roll>
        <yaw>   0.00 </yaw>
      </orient>
     </thruster>
     </engine>
     
- <!--extra engines for outer space control Wing Leveler Controls up l+r n=5,6 -->
-    <engine file="XLR01">
-    <location unit="M">
-      <x-m>9.45</x-m>
-      <y-m>-11.4</y-m>
-      <z-m>-4.46</z-m>
-    </location>
-    <orient unit="DEG">
-      <pitch> 90.00 </pitch>
-      <roll>   0.00 </roll>
-      <yaw>   0.00 </yaw>
-    </orient>
-    <feed>2</feed>
-    
-    <thruster file="xlr01_nozzle">     
-      <location unit="M">
-      <x-m>9.45</x-m>
-      <y-m>-11.4</y-m>
-      <z-m>-4.46</z-m>
-      </location>
-     <orient unit="DEG">
-       <pitch> 90.00 </pitch>
-       <roll>   0.00 </roll>
-       <yaw>   0.00 </yaw>
-     </orient>
-    </thruster>
-  </engine>
-  
-  <engine file="XLR01">
-    <location unit="M">
-      <x-m>9.45</x-m>
-      <y-m>11.4</y-m>
-      <z-m>-4.46</z-m>
-    </location>
-    <orient unit="DEG">
-      <pitch> 90.00 </pitch>
-      <roll>   0.00 </roll>
-      <yaw>   0.00 </yaw>
-    </orient>
-    <feed>2</feed>
-    
-    <thruster file="xlr01_nozzle">     
-      <location unit="M">
-      <x-m>9.45</x-m>
-      <y-m>11.4</y-m>
-      <z-m>-4.46</z-m>
-      </location>
-     <orient unit="DEG">
-       <pitch> 90.00 </pitch>
-       <roll>   0.00 </roll>
-       <yaw>   0.00 </yaw>
-     </orient>
-    </thruster>
-  </engine>
-  
-  <!--extra engines for outer space control Wing Leveler Controls down l+r n=11(with 6 connected),12(with 5 connected) -->
+ <!--extra engines for outer space control Wing Leveler Controls up l+r n=3,4 -->
     <engine file="XLR01">
     <location unit="M">
       <x-m>9.45</x-m>
@@ -489,187 +378,19 @@ http://www.businessinsider.com/breathtaking-images-of-the-space-shuttle-2013-9?I
     <orient unit="DEG">
       <pitch> -90.00 </pitch>
       <roll>   0.00 </roll>
-      <yaw>   0.00 </yaw>
-    </orient>
-    <feed>2</feed>
-    
-    <thruster file="xlr01_nozzle">     
-      <location unit="M">
-      <x-m>9.45</x-m>
-      <y-m>-11.4</y-m>
-      <z-m>-4.46</z-m>
-      </location>
-     <orient unit="DEG">
-       <pitch> -90.00 </pitch>
-       <roll>   0.00 </roll>
-       <yaw>   0.00 </yaw>
-     </orient>
-    </thruster>
-  </engine>
-  
-  <engine file="XLR01">
-    <location unit="M">
-      <x-m>9.45</x-m>
-      <y-m>11.4</y-m>
-      <z-m>-4.46</z-m>
-    </location>
-    <orient unit="DEG">
-      <pitch> -90.00 </pitch>
-      <roll>   0.00 </roll>
-      <yaw>   0.00 </yaw>
-    </orient>
-    <feed>2</feed>
-    
-    <thruster file="xlr01_nozzle">     
-      <location unit="M">
-      <x-m>9.45</x-m>
-      <y-m>11.4</y-m>
-      <z-m>-4.46</z-m>
-      </location>
-     <orient unit="DEG">
-       <pitch> -90.00 </pitch>
-       <roll>   0.00 </roll>
-       <yaw>   0.00 </yaw>
-     </orient>
-    </thruster>
-  </engine>
-
-<!--extra engines for outer space control Pitch Leveler Controls
-    on nose position 2*l+2*r n=7,8,9,10-->
-   
-   <engine file="XLR02">
-    <location unit="M">
-      <x-m>-16.72 </x-m>
-      <y-m> 1.45 </y-m>
-      <z-m>-3.40 </z-m>
-    </location>
-    <orient unit="DEG">
-      <pitch> -90.00 </pitch>
-      <roll>   20.00 </roll>
-      <yaw>   0.00 </yaw>
-    </orient>
-    <feed>2</feed>
-    
-    <thruster file="xlr02_nozzle">     
-      <location unit="M">
-      <x-m>-16.72 </x-m>
-      <y-m> 1.45 </y-m>
-      <z-m>-3.40 </z-m>
-      </location>
-     <orient unit="DEG">
-       <pitch> -90.00 </pitch>
-       <roll>   20.00 </roll>
-       <yaw>   0.00 </yaw>
-     </orient>
-    </thruster>
-  </engine>
-  
-  <engine file="XLR02">
-    <location unit="M">
-      <x-m>-16.72 </x-m>
-      <y-m> 1.45 </y-m>
-      <z-m>-3.40 </z-m>
-    </location>
-    <orient unit="DEG">
-      <pitch> 90.00 </pitch>
-      <roll> -20.00 </roll>
-      <yaw>   0.00 </yaw>
-    </orient>
-    <feed>2</feed>
-    
-    <thruster file="xlr02_nozzle">     
-      <location unit="M">
-      <x-m>-16.72 </x-m>
-      <y-m> 1.45 </y-m>
-      <z-m>-3.40 </z-m>
-      </location>
-     <orient unit="DEG">
-       <pitch> 90.00 </pitch>
-       <roll> -20.00 </roll>
-       <yaw>   0.00 </yaw>
-     </orient>
-    </thruster>
-    
-  </engine>
-  <engine file="XLR02">
-    <location unit="M">
-      <x-m>-16.72 </x-m>
-      <y-m> -1.45 </y-m>
-      <z-m> -3.40 </z-m>
-    </location>
-    <orient unit="DEG">
-      <pitch> -90.00 </pitch>
-      <roll>   20.00 </roll>
-      <yaw>   0.00 </yaw>
-    </orient>
-    <feed>2</feed>
-    
-    <thruster file="xlr02_nozzle">     
-      <location unit="M">
-      <x-m>-16.72 </x-m>
-      <y-m> -1.45 </y-m>
-      <z-m> -3.40 </z-m>
-      </location>
-     <orient unit="DEG">
-       <pitch> -90.00 </pitch>
-       <roll>   20.00 </roll>
-       <yaw>   0.00 </yaw>
-     </orient>
-    </thruster>
-  </engine>
-  
-  <engine file="XLR02">
-    <location unit="M">
-      <x-m>-16.72 </x-m>
-      <y-m> -1.45 </y-m>
-      <z-m> -3.40 </z-m>
-    </location>
-    <orient unit="DEG">
-      <pitch> 90.00 </pitch>
-      <roll> -20.00 </roll>
-      <yaw>   0.00 </yaw>
-    </orient>
-    <feed>2</feed>
-    
-    <thruster file="xlr02_nozzle">     
-      <location unit="M">
-      <x-m>-16.72 </x-m>
-      <y-m> -1.45 </y-m>
-      <z-m> -3.40 </z-m>
-      </location>
-     <orient unit="DEG">
-       <pitch> 90.00 </pitch>
-       <roll> -20.00 </roll>
-       <yaw>   0.00 </yaw>
-     </orient>
-    </thruster>
-  </engine>
-  
-<!--extra engines for outer space control Pitch Leveler Controls
-new    on tail position 2*l+2*r n=13,14,15,16-->
-
-    <engine file="XLR01">
-    <location unit="M">
-      <x-m> 12.48 </x-m>
-      <y-m>  3.1  </y-m>
-      <z-m> -1.45 </z-m>
-    </location>
-    <orient unit="DEG">
-      <pitch> 90.00 </pitch>
-      <roll>  20.00 </roll>
       <yaw>    0.00 </yaw>
     </orient>
     <feed>2</feed>
     
     <thruster file="xlr01_nozzle">     
       <location unit="M">
-      <x-m> 12.48 </x-m>
-      <y-m>  3.1  </y-m>
-      <z-m> -1.45 </z-m>
+      <x-m>9.45</x-m>
+      <y-m>-11.4</y-m>
+      <z-m>-4.46</z-m>
       </location>
      <orient unit="DEG">
-       <pitch> 90.00 </pitch>
-       <roll>  20.00 </roll>
+       <pitch> -90.00 </pitch>
+       <roll>   0.00 </roll>
        <yaw>    0.00 </yaw>
      </orient>
     </thruster>
@@ -677,26 +398,56 @@ new    on tail position 2*l+2*r n=13,14,15,16-->
   
   <engine file="XLR01">
     <location unit="M">
-      <x-m> 12.4 </x-m>
-      <y-m>  2.5 </y-m>
-      <z-m>  1.1 </z-m>
+      <x-m>9.45</x-m>
+      <y-m>11.4</y-m>
+      <z-m>-4.46</z-m>
     </location>
     <orient unit="DEG">
       <pitch> -90.00 </pitch>
-      <roll>  -20.00 </roll>
+      <roll>   0.00 </roll>
+      <yaw>    0.00 </yaw>
+    </orient>
+    <feed>2</feed>
+    
+    <thruster file="xlr01_nozzle">     
+      <location unit="M">
+      <x-m>9.45</x-m>
+      <y-m>11.4</y-m>
+      <z-m>-4.46</z-m>
+      </location>
+     <orient unit="DEG">
+       <pitch> -90.00 </pitch>
+       <roll>   0.00 </roll>
+       <yaw>    0.00 </yaw>
+     </orient>
+    </thruster>
+  </engine>
+
+<!--extra engines for outer space control Pitch Leveler Controls
+    on nose position n=5,6 smoke is still as it would be 4 engines-->
+   
+   <engine file="XLR01">
+    <location unit="M">
+      <x-m>-17.50 </x-m>
+      <y-m>   0.0 </y-m>
+      <z-m> -4.80 </z-m>
+    </location>
+    <orient unit="DEG">
+      <pitch> 90.00 </pitch>
+      <roll>    0.00 </roll>
       <yaw>     0.00 </yaw>
     </orient>
     <feed>2</feed>
     
     <thruster file="xlr01_nozzle">     
       <location unit="M">
-      <x-m> 12.4 </x-m>
-      <y-m>  2.5 </y-m>
-      <z-m>  1.1 </z-m>
+      <x-m>-17.50 </x-m>
+      <y-m>   0.0 </y-m>
+      <z-m> -4.80 </z-m>
       </location>
      <orient unit="DEG">
-       <pitch> -90.00 </pitch>
-       <roll>  -20.00 </roll>
+       <pitch> 90.00 </pitch>
+       <roll>    0.00 </roll>
        <yaw>     0.00 </yaw>
      </orient>
     </thruster>
@@ -704,58 +455,144 @@ new    on tail position 2*l+2*r n=13,14,15,16-->
   
   <engine file="XLR01">
     <location unit="M">
-      <x-m> 12.48 </x-m>
-      <y-m> -3.1  </y-m>
-      <z-m> -1.45 </z-m>
+      <x-m>-17.50 </x-m>
+      <y-m>   0.0 </y-m>
+      <z-m> -2.30 </z-m>
     </location>
     <orient unit="DEG">
-      <pitch> 90.00 </pitch>
-      <roll> -20.00 </roll>
+      <pitch> -90.00 </pitch>
+      <roll>   0.00 </roll>
       <yaw>    0.00 </yaw>
     </orient>
     <feed>2</feed>
     
     <thruster file="xlr01_nozzle">     
       <location unit="M">
-      <x-m> 12.48 </x-m>
-      <y-m> -3.1  </y-m>
-      <z-m> -1.45 </z-m>
+      <x-m>-17.50 </x-m>
+      <y-m>   0.0 </y-m>
+      <z-m> -2.30 </z-m>
+      </location>
+     <orient unit="DEG">
+       <pitch> -90.00 </pitch>
+       <roll>   0.00 </roll>
+       <yaw>    0.00 </yaw>
+     </orient>
+    </thruster>    
+  </engine>  
+  
+  <!--extra engines for outer space control Wing Leveler Controls down l+r n=7,8 -->
+    <engine file="XLR01">
+    <location unit="M">
+      <x-m>9.45</x-m>
+      <y-m>-11.4</y-m>
+      <z-m>-4.46</z-m>
+    </location>
+    <orient unit="DEG">
+      <pitch> 90.00 </pitch>
+      <roll>   0.00 </roll>
+      <yaw>   0.00 </yaw>
+    </orient>
+    <feed>2</feed>
+    
+    <thruster file="xlr01_nozzle">     
+      <location unit="M">
+      <x-m>9.45</x-m>
+      <y-m>-11.4</y-m>
+      <z-m>-4.46</z-m>
       </location>
      <orient unit="DEG">
        <pitch> 90.00 </pitch>
-       <roll> -20.00 </roll>
+       <roll>   0.00 </roll>
+       <yaw>   0.00 </yaw>
+     </orient>
+    </thruster>
+  </engine>
+  
+  <engine file="XLR01">
+    <location unit="M">
+      <x-m>9.45</x-m>
+      <y-m>11.4</y-m>
+      <z-m>-4.46</z-m>
+    </location>
+    <orient unit="DEG">
+      <pitch> 90.00 </pitch>
+      <roll>   0.00 </roll>
+      <yaw>   0.00 </yaw>
+    </orient>
+    <feed>2</feed>
+    
+    <thruster file="xlr01_nozzle">     
+      <location unit="M">
+      <x-m>9.45</x-m>
+      <y-m>11.4</y-m>
+      <z-m>-4.46</z-m>
+      </location>
+     <orient unit="DEG">
+       <pitch> 90.00 </pitch>
+       <roll>   0.00 </roll>
+       <yaw>   0.00 </yaw>
+     </orient>
+    </thruster>
+  </engine>
+  
+<!--extra engines for outer space control Pitch Leveler Controls
+    on tail position n=9,10 smoke is still as it would be 4 engines-->
+
+    <engine file="XLR01">
+    <location unit="M">
+      <x-m> 13.00 </x-m>
+      <y-m>  0.0  </y-m>
+      <z-m> -5.30 </z-m>
+    </location>
+    <orient unit="DEG">
+      <pitch> 90.00 </pitch>
+      <roll>    0.00 </roll>
+      <yaw>     0.00 </yaw>
+    </orient>
+    <feed>2</feed>
+    
+    <thruster file="xlr01_nozzle">     
+      <location unit="M">
+      <x-m> 13.00 </x-m>
+      <y-m>  0.0  </y-m>
+      <z-m> -5.30 </z-m>
+      </location>
+     <orient unit="DEG">
+       <pitch> 90.00 </pitch>
+       <roll>    0.00 </roll>
+       <yaw>     0.00 </yaw>
+     </orient>
+    </thruster>
+  </engine>
+  
+  <engine file="XLR01">
+    <location unit="M">
+      <x-m> 13.00 </x-m>
+      <y-m>  0.0 </y-m>
+      <z-m>  0.70 </z-m>
+    </location>
+    <orient unit="DEG">
+      <pitch> -90.00 </pitch>
+      <roll>   0.00 </roll>
+      <yaw>    0.00 </yaw>
+    </orient>
+    <feed>2</feed>
+    
+    <thruster file="xlr01_nozzle">     
+      <location unit="M">
+      <x-m> 13.00 </x-m>
+      <y-m>  0.0 </y-m>
+      <z-m>  0.70 </z-m>
+      </location>
+     <orient unit="DEG">
+       <pitch> -90.00 </pitch>
+       <roll>   0.00 </roll>
        <yaw>    0.00 </yaw>
      </orient>
     </thruster>
   </engine>
   
-  <engine file="XLR01">
-    <location unit="M">
-      <x-m> 12.4 </x-m>
-      <y-m> -2.5 </y-m>
-      <z-m>  1.1 </z-m>
-    </location>
-    <orient unit="DEG">
-      <pitch> -90.00 </pitch>
-      <roll>   20.00 </roll>
-      <yaw>    0.00 </yaw>
-    </orient>
-    <feed>2</feed>
-    
-    <thruster file="xlr01_nozzle">     
-      <location unit="M">
-      <x-m> 12.4 </x-m>
-      <y-m> -2.5 </y-m>
-      <z-m>  1.1 </z-m>
-      </location>
-     <orient unit="DEG">
-       <pitch> -90.00 </pitch>
-       <roll>   20.00 </roll>
-       <yaw>     0.00 </yaw>
-     </orient>
-    </thruster>
-  </engine>
-  
+
   
 <!--tank definitions -->
   <tank type="FUEL" number="0">
@@ -789,7 +626,7 @@ new    on tail position 2*l+2*r n=13,14,15,16-->
      <contents unit="LBS"> 117265.00 </contents>
      <priority>2</priority>
   </tank>
-  
+    
  </propulsion>
 
  <flight_control name="FCS: shuttle">

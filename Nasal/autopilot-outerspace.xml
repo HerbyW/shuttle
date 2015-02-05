@@ -18,30 +18,44 @@ sim input selected
    <type>gain</type>
    <gain>-1.0</gain>
    <input>controls/flight/aileron</input>
-   <output>controls/engines/engine[5]/throttle</output>
+   <output>controls/engines/engine[3]/throttle</output>
  </filter>
  
  <filter>
    <type>gain</type>
    <gain>1.0</gain>
    <input>controls/flight/aileron</input>
-   <output>controls/engines/engine[6]/throttle</output>
+   <output>controls/engines/engine[4]/throttle</output>
+ </filter>
+ 
+  <filter>
+   <type>gain</type>
+   <gain>1.0</gain>
+   <input>controls/flight/aileron</input>
+   <output>controls/engines/engine[7]/throttle</output>
  </filter>
  
  <filter>
    <type>gain</type>
    <gain>-1.0</gain>
-   <input>controls/flight/elevator-trim</input>
-   <output>controls/engines/engine[7]/throttle</output>
+   <input>controls/flight/aileron</input>
+   <output>controls/engines/engine[8]/throttle</output>
  </filter>
  
  <filter>
    <type>gain</type>
    <gain>1.0</gain>
    <input>controls/flight/elevator-trim</input>
-   <output>controls/engines/engine[8]/throttle</output>
+   <output>controls/engines/engine[5]/throttle</output>
  </filter>
  
+ <filter>
+   <type>gain</type>
+   <gain>-1.0</gain>
+   <input>controls/flight/elevator-trim</input>
+   <output>controls/engines/engine[6]/throttle</output>
+ </filter> 
+
  <filter>
    <type>gain</type>
    <gain>-1.0</gain>
@@ -56,47 +70,4 @@ sim input selected
    <output>controls/engines/engine[10]/throttle</output>
  </filter>
  
- <filter>
-   <type>gain</type>
-   <gain>-1.0</gain>
-   <input>controls/flight/elevator-trim</input>
-   <output>controls/engines/engine[11]/throttle</output>
- </filter>
- 
- <filter>
-   <type>gain</type>
-   <gain>1.0</gain>
-   <input>controls/flight/elevator-trim</input>
-   <output>controls/engines/engine[12]/throttle</output>
- </filter>
-
- <filter>
-   <type>gain</type>
-   <gain>-1.0</gain>
-   <input>controls/flight/elevator-trim</input>
-   <output>controls/engines/engine[13]/throttle</output>
- </filter>
- 
- <filter>
-   <type>gain</type>
-   <gain>1.0</gain>
-   <input>controls/flight/elevator-trim</input>
-   <output>controls/engines/engine[14]/throttle</output>
- </filter>
- 
- <filter>
-   <type>gain</type>
-   <gain>-1.0</gain>
-   <input>controls/flight/elevator-trim</input>
-   <output>controls/engines/engine[15]/throttle</output>
- </filter>
- 
- <filter>
-   <type>gain</type>
-   <gain>1.0</gain>
-   <input>controls/flight/elevator-trim</input>
-   <output>controls/engines/engine[16]/throttle</output>
- </filter>
-
-
 </PropertyList>

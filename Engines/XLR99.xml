@@ -3,7 +3,7 @@
   <isp>                    453  </isp>
   <maxthrottle>           1.04  </maxthrottle>
   <minthrottle>           0.35  </minthrottle>
-  <max_pc>			419328  </max_pc>
-  <slfuelflowmax unit="LBS/SEC">  970.0  </slfuelflowmax>
-  <sloxiflowmax unit="LBS/SEC">   162.0  </sloxiflowmax>
+  <max_pc>			1257984  </max_pc>
+  <slfuelflowmax unit="LBS/SEC"> 2910.0  </slfuelflowmax>
+  <sloxiflowmax unit="LBS/SEC">   486.0  </sloxiflowmax>
 </rocket_engine>

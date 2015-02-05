@@ -5,7 +5,7 @@
  <controls>    
     <shuttle>
        <external-fuel-tank type="int">1</external-fuel-tank>
-+      <solid-rocket-boosters type="int">1</solid-rocket-boosters>
+       <solid-rocket-boosters type="int">1</solid-rocket-boosters>
        <outerspace type="bool">1</outerspace>
        <EMU type="int">0</EMU>
       <door>
@@ -20,7 +20,13 @@
       <trigger type="int">0</trigger>
     </armament>
   </controls> 
- 
+  <instrumentation>
+    <doors>
+      <door1>
+	<position-norm type="float">0</position-norm>
+      </door1>
+    </doors>
+   </instrumentation>
  
  <sim>
   <description>NASA Space Shuttle Atlantis</description>
@@ -35,48 +41,38 @@
       <engine n = "7" type="bool">0</engine>
       <engine n = "8" type="bool">0</engine>
       <engine n = "9" type="bool">0</engine>
-      <engine n = "10" type="bool">0</engine>
-      <engine n = "11" type="bool">0</engine>
-      <engine n = "12" type="bool">0</engine>
-      <engine n = "13" type="bool">0</engine>
-      <engine n = "14" type="bool">0</engine>
-      <engine n = "15" type="bool">0</engine>
-      <engine n = "16" type="bool">0</engine>
+      <engine n = "10" type="bool">0</engine>      
     </selected>
    </input>
 	
 <multiplay>
    <chat_display>1</chat_display>
      <generic> 
-        <float n="1" alias="/engines/engine[5]/thrust_lb" />
-        <float n="2" alias="/engines/engine[3]/thrust_lb" />
-        <float n="3" alias="/instrumentation/doors/door1/position-norm" />
-        
+        <float n="1" alias="/engines/engine[3]/thrust_lb" />
+        <float n="2" alias="/engines/engine[1]/thrust_lb" />
+        <float n="3" alias="/instrumentation/doors/door1/position-norm" />        
         <float n="4" alias="/consumables/fuel/tank/level-lbs" />
 	<float n="5" alias="/consumables/fuel/tank[1]/level-lbs" />
 	<float n="6" alias="/consumables/fuel/tank[2]/level-lbs" />
-        <float n="7" alias="/engines/engine[6]/thrust_lb" />
-        <float n="8" alias="/engines/engine[7]/thrust_lb" />
-        <float n="9" alias="/engines/engine[8]/thrust_lb" />
-        <float n="10" alias="/engines/engine[9]/thrust_lb" />
-        <float n="11" alias="/engines/engine[10]/thrust_lb" />
-        <float n="12" alias="/engines/engine[0]/thrust_lb" />
+        <float n="7" alias="/engines/engine[4]/thrust_lb" />
+        <float n="8" alias="/engines/engine[5]/thrust_lb" />
+        <float n="9" alias="/engines/engine[6]/thrust_lb" />        
+        <float n="12" alias="/engines/engine[0]/thrust_lb" />        
+        <float n="13" alias="/engines/engine[7]/thrust_lb" />
+        <float n="14" alias="/engines/engine[8]/thrust_lb" />
+        <float n="15" alias="/engines/engine[9]/thrust_lb" />
+        <float n="16" alias="/engines/engine[10]/thrust_lb" />        
         <int type="int" n="5" alias="/controls/shuttle/EMU"/>
         <int type="int" n="6" alias="/controls/shuttle/external-fuel-tank"/>
         <int type="int" n="7" alias="/controls/shuttle/solid-rocket-boosters"/>
         <int type="int" n="8" alias="/controls/lighting/nav-lights"/>
-        <int type="int" n="9" alias="/controls/armament/trigger"/>
-        
+        <int type="int" n="9" alias="/controls/armament/trigger"/>        
      </generic>
 </multiplay>
 
         <startup>
 		<splash-texture>Aircraft/SpaceShuttle/SpaceShuttle-splash.png</splash-texture>
 	</startup>
-
-	
-
-  
   
   <model>
 		<path>Aircraft/SpaceShuttle/Models/SpaceShuttle.xml</path>		
@@ -166,7 +162,7 @@ See the latest version on: www.github.com/HerbyW
  <nasal>      
     <SpaceShuttle>
       <file>Aircraft/SpaceShuttle/Nasal/light.nas</file>
-      <file>Aircraft/SpaceShuttle/Nasal/setprop.nas</file>
+      <!--<file>Aircraft/SpaceShuttle/Nasal/setprop.nas</file>-->
     </SpaceShuttle>    
   </nasal>
 

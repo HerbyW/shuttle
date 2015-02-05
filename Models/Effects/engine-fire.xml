@@ -8,12 +8,8 @@
 
 	<effect>
 		<inherits-from>Effects/model-transparent</inherits-from>
-		
 		<object-name>HeatBlurL</object-name>
-		
 		<object-name>InnerFlameL</object-name>
-		
-		
 		<object-name>ReheatL</object-name>
 	</effect>
 
@@ -109,9 +105,6 @@
 
 
 
-
-
-
 	<!-- Heat Blur -->
 
 	<animation>
@@ -121,7 +114,7 @@
 	</animation>
 
 	
-
+<!-- 
 	<animation>
 		<type>shader</type>
 		<shader>heat-haze</shader>
@@ -130,9 +123,9 @@
 		<factor>0.12</factor>
 		<speed>120</speed>
 	</animation>
+  -->
 
-
-	<!-- disable shadows for these objects -->
+	<!-- disable shadows for these objects  -->
 	<animation>
 		<type>noshadow</type>
 		<object-name>fx</object-name>
