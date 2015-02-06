@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!--
+  File:     my_engine.xml
+  Author:   Aero-Matic v 0.81
+
+  Inputs:
+    name:           my_engine
+    type:           piston
+    power:          393800 hp
+    augmented?      yes
+    injected?       yes
+-->
+
+<piston_engine name="my_engine">
+<minmp unit="INHG">          6.0 </minmp>
+<!-- Deprecated -->
+<maxmp unit="INHG">         29.9 </maxmp>
+<!-- Deprecated -->
+<displacement unit="IN3"> 748220.00 </displacement>
+<!-- Defining 
+<bsfc> over-rides the bsfc value calculated from <maxhp> -->
+<!--<bsfc>           0.45 </bsfc>-->
+<maxhp>        393800.00 </maxhp>
+<cycles>         4.0 </cycles>
+<idlerpm>      700.0 </idlerpm>
+<maxrpm>      2800.0 </maxrpm>
+<maxthrottle>    1.0 </maxthrottle>
+<minthrottle>    0.2 </minthrottle>
+<sparkfaildrop>  0.0 </sparkfaildrop>
+</piston_engine>
