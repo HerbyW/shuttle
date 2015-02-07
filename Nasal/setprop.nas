@@ -81,3 +81,4 @@ setprop("fdm/jsbsim/propulsion/engine[7]/set-running", 1);
 setprop("fdm/jsbsim/propulsion/engine[8]/set-running", 1);
 setprop("fdm/jsbsim/propulsion/engine[9]/set-running", 1);
 setprop("fdm/jsbsim/propulsion/engine[10]/set-running", 1);
+setprop("fdm/jsbsim/propulsion/engine[11]/set-running", 1);

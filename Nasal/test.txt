@@ -1,0 +1,171 @@
+
+<!-- =============================================================== -->
+  <!-- rudder servo driver.                                            -->
+  <!-- =============================================================== -->
+
+	<filter>
+		<name>SERVO-DRIVER:rudder heading-bug</name>
+		<debug>false</debug>
+		<feedback-if-disabled>true</feedback-if-disabled>
+		<enable>
+			<condition>
+				<or>
+					<equals>
+						<property>/autopilot/locks/heading</property>
+						<value>dg-heading-hold</value>
+					</equals>
+					<equals>
+						<property>/autopilot/locks/heading</property>
+						<value>true-heading-hold</value>
+					</equals>
+					<equals>
+						<property>/autopilot/locks/heading</property>
+						<value>wing-leveler</value>
+					</equals>
+					<equals>
+						<property>/autopilot/locks/heading</property>
+						<value>nav1-hold</value>
+					</equals>
+				</or>
+			</condition>
+		</enable>
+		<input>/autopilot/internal/rudder-servo</input>
+		<output>/controls/flight/rudder</output>
+		<type>noise-spike</type>
+		<max-rate-of-change>0.08</max-rate-of-change>
+	</filter>
+
+
+<!-- =============================================================== -->
+  <!-- throttle servo driver.                                          -->
+  <!-- =============================================================== -->
+
+	<filter>
+		<name>SERVO-DRIVER:throttle</name>
+		<debug>false</debug>
+		<feedback-if-disabled>true</feedback-if-disabled>
+		<enable>
+			<condition>
+				<or>
+					<equals>
+						<property>/autopilot/locks/speed</property>
+						<value>speed-with-throttle</value>
+					</equals>
+					<and>
+						<equals>
+							<property>/autopilot/locks/speed</property>
+							<value>speed-with-pitch-trim</value>
+						</equals>
+						<or>
+							<equals>
+								<property>/autopilot/locks/altitude</property>
+								<value>vertical-speed-hold</value>
+							</equals>
+							<equals>
+								<property>/autopilot/locks/altitude</property>
+								<value>altitude-hold</value>
+							</equals>
+							<equals>
+								<property>/autopilot/locks/altitude</property>
+								<value>agl-hold</value>
+							</equals>
+							<equals>
+								<property>/autopilot/locks/altitude</property>
+								<value>gs1-hold</value>
+							</equals>
+						</or>
+					</and>
+				</or>
+			</condition>
+		</enable>
+		<input>/autopilot/internal/throttle-servo</input>
+		<output>
+			<property>/controls/engines/engine[0]/throttle</property>
+			<property>/controls/engines/engine[1]/throttle</property>
+			<property>/controls/engines/engine[2]/throttle</property>
+			<property>/controls/engines/engine[3]/throttle</property>
+		</output>
+		<type>noise-spike</type>
+		<max-rate-of-change>0.1</max-rate-of-change>
+	</filter>
+	
+	
+	
+	<switch name="Spacecraft Stage Switch">
+				<default value="0"/>
+				<test logic="AND" value="1">
+					stages/unit[5]/active eq 1.0
+				</test>
+				<output>stages/spacecraft</output>
+	</switch>
+
+	
+	<fcs_function name="propulsion/engine[22]/green">
+		<function>
+			<quotient>
+				<property>propulsion/engine[22]/fuel-flow-rate-pps</property>
+				<value>0.044</value>
+			</quotient>
+		</function>
+		</fcs_function>
+
+		<switch name="propulsion/engine[22]/red">
+			<default value="0"/>
+			<test logic="AND" value="0.949">
+				propulsion/engine[21]/fuel-flow-rate-pps gt 0.0
+			</test>
+		</switch>
+		
+
+		<switch name="calculations/stages/unit[4]/control/factor-control">
+			<default value="systems/orientationcomputer/factor-control"/>
+			<test logic="AND" value="stages/unit[4]/control/mass-control">
+				stages/unit[4]/active eq 1.0
+			</test>
+			<output>systems/orientationcomputer/factor-control</output>
+		</switch>
+		
+		<switch name="calculations/stages/unit[4]/control/r-control-add">
+			<default value="systems/orientationcomputer/r-control-add"/>
+			<test logic="AND" value="systems/orientationcomputer/r-control-acceleration">
+				stages/unit[4]/active eq 1.0
+				systems/controlhandle/button-switch eq 1.0
+			</test>
+			<test logic="AND" value="systems/orientationcomputer/r-control-return">
+				stages/unit[4]/active eq 1.0
+				systems/controlhandle/button-switch eq 0.0
+			</test>
+			<output>systems/orientationcomputer/r-control-add</output>
+		</switch>
+		
+		
+		<switch name="Second Stage Main First Engine Throttle">
+			<default value="0"/>
+			<test logic="AND" value="systems/gascontrol/lever-pos">
+				systems/gascontrol/lever-pos gt 0.2
+				stages/unit[2]/active eq 1.0
+				stages/unit[2]/ignited eq 1.0
+				stages/unit[2]/broken eq 0
+			</test>
+			<test logic="AND" value="0.2">
+				systems/gascontrol/lever-pos le 0.2
+				stages/unit[2]/active eq 1.0
+				stages/unit[2]/ignited eq 1.0
+				stages/unit[2]/broken eq 0
+			</test>
+			<output>fcs/throttle-pos-norm[8]</output>
+		</switch>
+		
+		
+		<switch name="calculations/gascontrol/feedback">
+			<default value="/controls/engines/engine/throttle"/>
+			<test logic="AND" value="systems/gascontrol/lever-pos">
+				systems/gascontrol/shift-oscillator-command eq 1
+				systems/gascontrol/shift-oscillator-pos gt 0.8
+			</test>
+			<test logic="AND" value="systems/gascontrol/lever-pos">
+				systems/gascontrol/shift-abs gt 0.0
+				systems/gascontrol/shift-locked eq 0.0
+			</test>
+			<output>/controls/engines/engine/throttle</output>
+		</switch>

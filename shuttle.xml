@@ -189,14 +189,14 @@ http://www.businessinsider.com/breathtaking-images-of-the-space-shuttle-2013-9?I
 <location unit="M">
 <x> -16.00 </x>
 <y> 0.00 </y>
-<z> -6.82 </z>
+<z> -6.85 </z>
 </location>
 <static_friction> 0.80 </static_friction>
 <dynamic_friction> 0.20 </dynamic_friction>
 <rolling_friction> 0.02 </rolling_friction>
 <spring_coeff unit="LBS/FT"> 90000.00 </spring_coeff>
 <damping_coeff unit="LBS/FT/SEC"> 30000.00 </damping_coeff>
-<max_steer unit="DEG"> 5.00 </max_steer>
+<max_steer unit="DEG"> 45.00 </max_steer>
 <brake_group>NONE</brake_group>
 <retractable>1</retractable>
 </contact>
@@ -204,8 +204,8 @@ http://www.businessinsider.com/breathtaking-images-of-the-space-shuttle-2013-9?I
 <contact type="BOGEY" name="LEFT_MAIN">
 <location unit="M">
 <x> 9.80 </x>
-<y> -3.9 </y>
-<z>-7.00 </z>
+<y> -4.4 </y>
+<z>-6.85 </z>
 </location>
 <static_friction> 0.80 </static_friction>
 <dynamic_friction> 0.20 </dynamic_friction>
@@ -220,8 +220,8 @@ http://www.businessinsider.com/breathtaking-images-of-the-space-shuttle-2013-9?I
 <contact type="BOGEY" name="RIGHT_MAIN">
 <location unit="M">
 <x> 9.80 </x>
-<y> 3.9 </y>
-<z>-7.00 </z>
+<y> 4.4 </y>
+<z>-6.85 </z>
 </location>
 <static_friction> 0.80 </static_friction>
 <dynamic_friction> 0.20 </dynamic_friction>
@@ -607,6 +607,38 @@ http://www.businessinsider.com/breathtaking-images-of-the-space-shuttle-2013-9?I
     </thruster>
   </engine>
   
+  <!--extra engine for outer space Yaw Control
+    on nose position n=11 smoke is still as it would be 2 engines,
+    also a reverser is build in, as we have no more engines left :)  -->
+
+    <engine file="XLR03">
+    <location unit="M">
+      <x> -18.95 </x>
+      <y>  0.0  </y>
+      <z> -3.75 </z>
+    </location>
+    <orient unit="DEG">
+      <pitch>   0.00 </pitch>
+      <roll>    0.00 </roll>
+      <yaw>     180.00 </yaw>
+    </orient>
+                        <feed>3</feed>
+			<feed>4</feed>
+			
+    
+    <thruster file="xlr03_nozzle">     
+      <location unit="M">
+      <x> -18.95 </x>
+      <y>  0.0  </y>
+      <z> -3.75 </z>
+      </location>
+     <orient unit="DEG">
+       <pitch>   0.00 </pitch>
+       <roll>    0.00 </roll>
+       <yaw>     180.00 </yaw>
+     </orient>
+    </thruster>
+  </engine>
 
   
 <!--tank definitions -->
@@ -858,11 +890,11 @@ http://www.businessinsider.com/breathtaking-images-of-the-space-shuttle-2013-9?I
           <time>      0 </time>
        </setting>
        <setting>
-          <position> 15 </position>
+          <position> 7 </position>
           <time>      4 </time>
        </setting>
        <setting>
-          <position> 30 </position>
+          <position> 14 </position>
           <time>      3 </time>
        </setting>
      </traverse>
@@ -949,7 +981,7 @@ http://www.businessinsider.com/breathtaking-images-of-the-space-shuttle-2013-9?I
            <property>aero/qbar-psf</property>
            <property>metrics/Sw-sqft</property>
            <property>fcs/flap-pos-deg</property>
-           <value> 0.05000 </value>
+           <value> 0.02500 </value>
        </product>
     </function>
 
@@ -1028,7 +1060,7 @@ http://www.businessinsider.com/breathtaking-images-of-the-space-shuttle-2013-9?I
            <property>aero/qbar-psf</property>
            <property>metrics/Sw-sqft</property>
            <property>fcs/flap-pos-deg</property>
-           <value> 0.00190 </value>
+           <value> 0.00080 </value>
          </product>
     </function>
 

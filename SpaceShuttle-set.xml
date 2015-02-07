@@ -19,7 +19,8 @@
     <armament>
       <trigger type="int">0</trigger>
     </armament>
-  </controls> 
+  </controls>
+  
   <instrumentation>
     <doors>
       <door1>
@@ -34,6 +35,7 @@
   <aero>shuttle</aero>
   <author>Gijs de Rooy, NASA (3D), HerbyW</author>
 
+
   <input>
     <selected>
       <engine n = "5" type="bool">0</engine>
@@ -41,9 +43,12 @@
       <engine n = "7" type="bool">0</engine>
       <engine n = "8" type="bool">0</engine>
       <engine n = "9" type="bool">0</engine>
-      <engine n = "10" type="bool">0</engine>      
+      <engine n = "10" type="bool">0</engine>  
+      <engine n = "11" type="bool">0</engine> 
     </selected>
     </input>
+    
+
 	
 <multiplay>
    <chat_display>1</chat_display>
@@ -65,7 +70,10 @@
         <float n="13" alias="/engines/engine[7]/thrust_lb" />
         <float n="14" alias="/engines/engine[8]/thrust_lb" />
         <float n="15" alias="/engines/engine[9]/thrust_lb" />
-        <float n="16" alias="/engines/engine[10]/thrust_lb" />        
+        <float n="16" alias="/engines/engine[10]/thrust_lb" />
+        
+        <float n="17" alias="/engines/engine[11]/thrust_lb" />
+        
         <int type="int" n="5" alias="/controls/shuttle/EMU"/>
         <int type="int" n="6" alias="/controls/shuttle/external-fuel-tank"/>
         <int type="int" n="7" alias="/controls/shuttle/solid-rocket-boosters"/>
@@ -162,8 +170,29 @@ See the latest version on: www.github.com/HerbyW/antonov-aircrafts
 
 
  </sim>
+<!-- Key mapping -->
 
-
+ <input>
+  <keyboard>
+    
+ <!-- Reverser Start  --> 
+   <key n="258">
+    <name>F2</name>
+     <desc>Toggle Reversers</desc>  
+     <binding>
+     <command>nasal</command>
+     <script>reversethrust.togglereverser()</script>
+    </binding>   
+    </key>
+   </keyboard>
+  </input>
+  
+  <engines>    
+   <engine n="11">
+    <reverser-pos-norm type="bool">0</reverser-pos-norm>
+   </engine>  
+  </engines>  
+ <!-- Reverser End -->
 
  <payload>
   <weight>
@@ -178,7 +207,13 @@ See the latest version on: www.github.com/HerbyW/antonov-aircrafts
     <SpaceShuttle>
       <file>Aircraft/SpaceShuttle/Nasal/light.nas</file>
       <file>Aircraft/SpaceShuttle/Nasal/setprop.nas</file>
-    </SpaceShuttle>    
+    </SpaceShuttle> 
+    
+    <!-- Reverser Start  -->
+    <reversethrust>
+      <file>Aircraft/SpaceShuttle/Nasal/reverse-thrust.nas</file>
+    </reversethrust>
+    <!-- Reverser End -->
   </nasal>
 
 </PropertyList>

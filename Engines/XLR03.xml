@@ -1,13 +1,13 @@
 <?xml version="1.0"?>
-<rocket_engine name="XLR01">
+<rocket_engine name="XLR03">
 	<isp>               326 </isp>
 	<shr>              1.23 </shr>
 	<max_pc>       86556.00 </max_pc>
 	<variance>         0.10 </variance>
 	<prop_eff>         0.67 </prop_eff>
 	<maxthrottle>      1.00 </maxthrottle>
-	<minthrottle>      0.10 </minthrottle>
-	<sloxiflowmax>   1.47 </sloxiflowmax>
-	<slfuelflowmax>   0.551 </slfuelflowmax>
+	<minthrottle>      0.98 </minthrottle>
+	<sloxiflowmax>     160.94 </sloxiflowmax>
+	<slfuelflowmax>   320.102 </slfuelflowmax>
 </rocket_engine>
 

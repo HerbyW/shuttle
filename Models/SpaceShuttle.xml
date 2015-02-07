@@ -291,6 +291,43 @@
 			<heading-deg>0.0</heading-deg>
 		</offsets>
   </model>
+  
+    <!-- smoke from the extra control engines03 for yaw control nose position
+         based on reverser position on=1=270=blow to left, off=0=90=blow to right-->
+  <model>
+		<path>Aircraft/SpaceShuttle/Models/Effects/trails-minni17.xml</path>		
+		<offsets>
+			<x-m> -18.95 </x-m>
+                        <y-m>  0.0 </y-m>
+                        <z-m>  -3.75 </z-m>
+			<roll-deg>    0.0</roll-deg>
+			<pitch-deg>   0.0</pitch-deg>
+			<heading-deg> 270.0</heading-deg>
+		</offsets>	
+			<condition>
+			 <equals>
+				<property>/engines/engine[11]/reverser-pos-norm</property>
+				<value>0</value>
+			 </equals>
+			</condition>
+  </model>
+  <model>
+		<path>Aircraft/SpaceShuttle/Models/Effects/trails-minni17.xml</path>		
+		<offsets>
+			<x-m> -18.95 </x-m>
+                        <y-m>  0.0 </y-m>
+                        <z-m>  -3.75 </z-m>
+			<roll-deg>    0.0</roll-deg>
+			<pitch-deg>   0.0</pitch-deg>
+			<heading-deg> 90.0</heading-deg>
+		</offsets>	
+			<condition>
+			 <equals>
+				<property>/engines/engine[11]/reverser-pos-norm</property>
+				<value>1</value>
+			 </equals>
+			</condition>
+  </model>
     
   <!-- Smoke for 3 Shuttle engines -->
   
@@ -511,33 +548,33 @@
      <offsets>
        <x-m> -16.00 </x-m>
        <y-m> 0.00 </y-m>
-       <z-m> -6.82 </z-m>
+       <z-m> -6.0 </z-m>
      </offsets>
 </model>
 <model>
     <path>Aircraft/SpaceShuttle/Models/Lights/WhiteLight.xml</path>
      <offsets>
        <x-m> 9.80 </x-m>
-       <y-m> -3.9 </y-m>
-       <z-m>-7.00 </z-m>
+       <y-m> -4.4 </y-m>
+       <z-m>-6.85 </z-m>
      </offsets>
 </model>
 <model>
     <path>Aircraft/SpaceShuttle/Models/Lights/WhiteLight.xml</path>
      <offsets>
        <x-m> 9.80 </x-m>
-       <y-m> 3.9 </y-m>
-       <z-m>-7.00 </z-m>
+       <y-m> 4.4 </y-m>
+       <z-m>-6.85 </z-m>
      </offsets>
 </model>
 
-<!--One Light for the center of the model -->
+<!--One Light for the center of the model, just for testing reasons, will be removed later-->
 <model>
     <path>Aircraft/SpaceShuttle/Models/Lights/strobe-white.xml</path>
      <offsets>
-       <x-m> 0.0 </x-m>
+       <x-m> -18.95 </x-m>
        <y-m> 0.0 </y-m>
-       <z-m> 0.0 </z-m>
+       <z-m> -3.75 </z-m>
      </offsets>
 </model>
 
