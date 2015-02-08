@@ -169,14 +169,14 @@ http://www.businessinsider.com/breathtaking-images-of-the-space-shuttle-2013-9?I
    <izz unit="SLUG*FT2">   2475373 </izz>
    <emptywt unit="LBS" >    172000 </emptywt>
    <location name="CG" unit="IN">
-     <x>-100.00 </x>
+     <x>0.00 </x>
      <y>   0.00 </y>
      <z>   1.00 </z>
    </location>
         <pointmass name="Pilot">
             <weight unit="LBS"> 20000 </weight>
             <location name="POINTMASS" unit="IN">
-                <x> 100 </x>
+                <x> 0 </x>
                 <y> 0 </y>
                 <z> 0 </z>
             </location>
@@ -890,11 +890,11 @@ http://www.businessinsider.com/breathtaking-images-of-the-space-shuttle-2013-9?I
           <time>      0 </time>
        </setting>
        <setting>
-          <position> 7 </position>
+          <position> 9 </position>
           <time>      4 </time>
        </setting>
        <setting>
-          <position> 14 </position>
+          <position> 19 </position>
           <time>      3 </time>
        </setting>
      </traverse>
@@ -981,7 +981,7 @@ http://www.businessinsider.com/breathtaking-images-of-the-space-shuttle-2013-9?I
            <property>aero/qbar-psf</property>
            <property>metrics/Sw-sqft</property>
            <property>fcs/flap-pos-deg</property>
-           <value> 0.006 </value>
+           <value> 0.009 </value>
        </product>
     </function>
 
@@ -1060,7 +1060,7 @@ http://www.businessinsider.com/breathtaking-images-of-the-space-shuttle-2013-9?I
            <property>aero/qbar-psf</property>
            <property>metrics/Sw-sqft</property>
            <property>fcs/flap-pos-deg</property>
-           <value> 0.00040 </value>
+           <value> 0.00060 </value>
          </product>
     </function>
 
