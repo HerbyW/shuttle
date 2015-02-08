@@ -72,9 +72,9 @@ sim input selected
  
  <filter>
    <type>gain</type>
-   <gain>1.0</gain>   
-   <input>controls/flight/rudder</input>   
-   <output>controls/engines/engine[11]/throttle</output>    
+   <gain>1.0</gain>
+   <input>controls/flight/rudder</input>
+   <output>controls/engines/engine[11]/throttle</output>
  </filter>
- 
+   
 </PropertyList>

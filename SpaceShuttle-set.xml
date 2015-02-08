@@ -150,6 +150,7 @@ At 80000 ft the shuttle should be stable and you set the pitch to -3 degree or t
 Now you glide to your landing spot.
 
 Gears, Flaps and Speed Breaks are not animated but are there in the jsb.
+Speed Breakes: Key s
    
 ILS Heading is working, glidepath is not usefull as you have a different glide path as a comercial airliner.
 Landing with 220-280 kt, Flaps one or two steps.
@@ -175,7 +176,17 @@ See the latest version on: www.github.com/HerbyW/antonov-aircrafts
  <input>
   <keyboard>
     
- <!-- Reverser Start  --> 
+    <key n="115">
+	<name>S</name>
+	<desc>Speedbreakes on Rudder, left and right</desc>
+	<binding>
+           <command>property-toggle</command>
+             <property>fcs/speedbrake-cmd-norm</property>
+             <value>true</value>
+        </binding>	
+     </key>
+    
+ <!-- Reverser Start  for YAW engine--> 
    <key n="258">
     <name>F2</name>
      <desc>Toggle Reversers</desc>  

@@ -189,14 +189,14 @@ http://www.businessinsider.com/breathtaking-images-of-the-space-shuttle-2013-9?I
 <location unit="M">
 <x> -16.00 </x>
 <y> 0.00 </y>
-<z> -6.85 </z>
+<z> -6.95 </z>
 </location>
 <static_friction> 0.80 </static_friction>
 <dynamic_friction> 0.20 </dynamic_friction>
 <rolling_friction> 0.02 </rolling_friction>
 <spring_coeff unit="LBS/FT"> 90000.00 </spring_coeff>
 <damping_coeff unit="LBS/FT/SEC"> 30000.00 </damping_coeff>
-<max_steer unit="DEG"> 45.00 </max_steer>
+<max_steer unit="DEG"> 25.00 </max_steer>
 <brake_group>NONE</brake_group>
 <retractable>1</retractable>
 </contact>
@@ -611,7 +611,7 @@ http://www.businessinsider.com/breathtaking-images-of-the-space-shuttle-2013-9?I
     on nose position n=11 smoke is still as it would be 2 engines,
     also a reverser is build in, as we have no more engines left :)  -->
 
-    <engine file="XLR03">
+    <engine file="XLR01">
     <location unit="M">
       <x> -18.95 </x>
       <y>  0.0  </y>
@@ -620,13 +620,13 @@ http://www.businessinsider.com/breathtaking-images-of-the-space-shuttle-2013-9?I
     <orient unit="DEG">
       <pitch>   0.00 </pitch>
       <roll>    0.00 </roll>
-      <yaw>     180.00 </yaw>
+      <yaw>     90.00 </yaw>
     </orient>
                         <feed>3</feed>
 			<feed>4</feed>
 			
     
-    <thruster file="xlr03_nozzle">     
+    <thruster file="xlr01_nozzle">     
       <location unit="M">
       <x> -18.95 </x>
       <y>  0.0  </y>
@@ -635,7 +635,7 @@ http://www.businessinsider.com/breathtaking-images-of-the-space-shuttle-2013-9?I
      <orient unit="DEG">
        <pitch>   0.00 </pitch>
        <roll>    0.00 </roll>
-       <yaw>     180.00 </yaw>
+       <yaw>     90.00 </yaw>
      </orient>
     </thruster>
   </engine>
@@ -981,7 +981,7 @@ http://www.businessinsider.com/breathtaking-images-of-the-space-shuttle-2013-9?I
            <property>aero/qbar-psf</property>
            <property>metrics/Sw-sqft</property>
            <property>fcs/flap-pos-deg</property>
-           <value> 0.02500 </value>
+           <value> 0.006 </value>
        </product>
     </function>
 
@@ -1060,7 +1060,7 @@ http://www.businessinsider.com/breathtaking-images-of-the-space-shuttle-2013-9?I
            <property>aero/qbar-psf</property>
            <property>metrics/Sw-sqft</property>
            <property>fcs/flap-pos-deg</property>
-           <value> 0.00080 </value>
+           <value> 0.00040 </value>
          </product>
     </function>
 

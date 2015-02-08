@@ -1,4 +1,35 @@
 
+ 
+<switch name="togglereverser-off">
+			<default value="0"/>
+			<test logic="AND" value="0">
+				controls/flight/rudder eq 0
+				controls/flight/rudder lt 0
+			</test>			
+			<output>/controls/engines/engine[11]/reverser</output>
+</switch>
+
+<switch name="togglereverser-on">
+			<default value="1"/>
+			<test logic="AND" value="1">
+				controls/flight/rudder qt 0				
+			</test>			
+			<output>/controls/engines/engine[11]/reverser</output>
+</switch>
+
+
+
+   
+</PropertyList>
+
+
+/fdm/jsbsim/propulsion/engine[11]/yaw-angle-rad  Value(0.78539816325);setValue(2.35619448975);
+/controls/engines/engine[11]/reverser            BoolValue(1);BoolValue(0);
+/sim/input/selected/engine[11]                   BoolValue(1);BoolValue(1);
+
+
+
+
 <!-- =============================================================== -->
   <!-- rudder servo driver.                                            -->
   <!-- =============================================================== -->

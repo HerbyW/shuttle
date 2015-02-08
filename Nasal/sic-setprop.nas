@@ -84,25 +84,16 @@ setprop("fdm/jsbsim/propulsion/engine[10]/set-running", 1);
 setprop("fdm/jsbsim/propulsion/engine[11]/set-running", 1);
 
 
-#
-# settimer(<function>, <time> [, <realtime=0>]);
-#
-# create timer with 0.1 second interval
-var timer = maketimer(0.1, func
-
-  { if(getprop("/controls/flight/rudder") <= 0)
-      {
-        setprop("/fdm/jsbsim/propulsion/engine[11]/yaw-angle-rad", 0.78539816325 );
-        setprop("/controls/engines/engine[11]/reverser", 1 );
-        setprop("/sim/input/selected/engine[11]", 1 );
+if (getprop("/controls/flight/rudder") <= 0)
+  {
+  setprop("/fdm/jsbsim/propulsion/engine[11]/yaw-angle-rad", 0.78539816325 );
+  setprop("/controls/engines/engine[11]/reverser", 1 );
+  setprop("/sim/input/selected/engine[11]", 1 );
       }
       else
       {
         setprop("/fdm/jsbsim/propulsion/engine[11]/yaw-angle-rad", 2.35619448975 );
 	setprop("/controls/engines/engine[11]/reverser", 0 );
 	setprop("/sim/input/selected/engine[11]", 1 );
-      }  
-  }
-);
-# start the timer (with 0.1 second inverval)
-timer.start();
+      }
+;

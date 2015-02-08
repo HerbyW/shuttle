@@ -16,7 +16,7 @@ togglereverser = func {
 
     r3.getChild("reverser").setBoolValue(1);
 
-   
+    r5.getChild("engine[11]").setBoolValue(1);
 
   } else {
     if (val == 1.0){
@@ -26,7 +26,7 @@ togglereverser = func {
 
       r3.getChild("reverser").setBoolValue(0);
 
-     
+      r5.getChild("engine[11]").setBoolValue(1);
 
     }  
   }
