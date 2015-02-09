@@ -174,7 +174,7 @@ http://www.businessinsider.com/breathtaking-images-of-the-space-shuttle-2013-9?I
      <z>   1.00 </z>
    </location>
         <pointmass name="Pilot">
-            <weight unit="LBS"> 20000 </weight>
+            <weight unit="LBS"> 80000 </weight>
             <location name="POINTMASS" unit="IN">
                 <x> 0 </x>
                 <y> 0 </y>

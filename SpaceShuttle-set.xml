@@ -119,7 +119,7 @@
       <title>Space Shuttle</title>
 <text>
 Start like a airplane: (as we have no ramp jet)
-Pilot, Tank 0, Tank 1 are set initially
+Pilot, Tank 0, Tank 1 are set initially (improvements are going on)
 Tank 2 will be for comming engine to make orbit maneuvers, no need to set it now
 Tank 3 and 4 are emty in the beginning, they are for the engines of the OCS (Orbital Control System)
 You need to set them later.
@@ -135,14 +135,15 @@ Give throttle, and take off, be carefull with throttle - it is a rocket!
 Hold it in a climbing position of 23-54 degree and go to 17000 ft,
 stop throttle, set the Autopilot to -1 pitch hold and give throttle again.
 If the shuttle goes up more then 35 degree reduce throttle.
-Try to get a speed of 12000 kts for a 10 minute orbital flight, 22000 kts for 20 minutes.
+Try to get a speed of 12000 kts for a 10 minute orbital flight, 22000 kts for 220 minutes.
 We work on getting the orbital speed of 28000 kts to reach a stable orbit position.
 
 When reaching 145000 ft deactivate the tank and booster rockets by setting the Tank 0 and 1 to 0.
-You are now making a ballistic flight pattern, reaching 2200000 ft is possible.
+You are now making a ballistic flight pattern, reaching 100.000.000 ft is possible.
 
 Fill Tank 3 and 4 now to full and watch the autopilot controlling the OCS engines,
-manually controll is recommendet to get a stable position by only short (0.08 sec!) impulses.
+manually controll is recommendet to get a stable position by only short (0.08 sec!) impulses
+by making tank 4 full and 4 tank 3 empty, then activate the engines by short filling the tank 3.
 
 Entering the athmosphere is tricky: set the autopilot to -40 degree pitch and hope for the best :)
 At 80000 ft the shuttle should be stable and you set the pitch to -3 degree or to +3.
@@ -153,15 +154,21 @@ Gears, Flaps and Speed Breaks are not animated but are there in the jsb.
 Speed Breakes: Key s
    
 ILS Heading is working, glidepath is not usefull as you have a different glide path as a comercial airliner.
-Landing with 220-280 kt, Flaps one or two steps.
+Landing with 240-340 kt, Flaps to full.
 
-Wing and Pitch leveler with 6 extra engines working with autopilot in outer-space!
+Wing and Pitch leveler with 8 extra engines working with autopilot in outer-space!
 
 Click the little windows on top of the cockpit to activate the man for the moon :)
 
 Click the satelit to launch it, click again to set a new one and so on, or use the trigger button for that.
 
 Have fun and take your time to get control, it is a little bit tricky but fully working.
+
+Landing airports: KTTS, KVBG, LTAC, GMMN, FJDG, KDYS, KEDW, KRCA, PHIK,
+                  EDDK, KMUO, FZAA, OERK, KWSD, and KXTA
+		  
+http://de.wikipedia.org/wiki/Kategorie:Space-Shuttle-Landeplatz
+http://en.wikipedia.org/wiki/List_of_space_shuttle_landing_sites
 
 See the latest version on: www.github.com/HerbyW/antonov-aircrafts
 </text>
@@ -177,11 +184,11 @@ See the latest version on: www.github.com/HerbyW/antonov-aircrafts
   <keyboard>
     
     <key n="115">
-	<name>S</name>
+	<name>s</name>
 	<desc>Speedbreakes on Rudder, left and right</desc>
 	<binding>
            <command>property-toggle</command>
-             <property>fcs/speedbrake-cmd-norm</property>
+             <property>controls/flight/speedbrake</property>
              <value>true</value>
         </binding>	
      </key>
