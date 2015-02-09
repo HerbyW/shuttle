@@ -6,7 +6,7 @@
 	<variance>         0.10 </variance>
 	<prop_eff>         0.67 </prop_eff>
 	<maxthrottle>      1.00 </maxthrottle>
-	<minthrottle>      0.10 </minthrottle>
+	<minthrottle>      0.00 </minthrottle>
 	<sloxiflowmax>   1.47 </sloxiflowmax>
 	<slfuelflowmax>   0.551 </slfuelflowmax>
 </rocket_engine>

@@ -4,6 +4,6 @@
 		pe      = Nozzle exit pressure, psf.
 		area    = Nozzle exit area, sqft.
 	-->
-	<pe unit="PSF"> 28000.0  </pe>
-	<area unit="FT2"> 43.118  </area>
+	<pe unit="PSF"> 6000.0  </pe>
+	<area unit="FT2"> 6.118  </area>
 </nozzle>

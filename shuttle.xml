@@ -196,7 +196,7 @@ http://www.businessinsider.com/breathtaking-images-of-the-space-shuttle-2013-9?I
 <rolling_friction> 0.02 </rolling_friction>
 <spring_coeff unit="LBS/FT"> 90000.00 </spring_coeff>
 <damping_coeff unit="LBS/FT/SEC"> 30000.00 </damping_coeff>
-<max_steer unit="DEG"> 25.00 </max_steer>
+<max_steer unit="DEG"> 90.00 </max_steer>
 <brake_group>NONE</brake_group>
 <retractable>1</retractable>
 </contact>
@@ -618,9 +618,9 @@ http://www.businessinsider.com/breathtaking-images-of-the-space-shuttle-2013-9?I
       <z> -3.75 </z>
     </location>
     <orient unit="DEG">
-      <pitch>   0.00 </pitch>
-      <roll>    0.00 </roll>
-      <yaw>     90.00 </yaw>
+      <pitch>   180.00 </pitch>
+      <roll>    90.00 </roll>
+      <yaw>    0.00 </yaw>
     </orient>
                         <feed>3</feed>
 			<feed>4</feed>
@@ -633,9 +633,9 @@ http://www.businessinsider.com/breathtaking-images-of-the-space-shuttle-2013-9?I
       <z> -3.75 </z>
       </location>
      <orient unit="DEG">
-       <pitch>   0.00 </pitch>
-       <roll>    0.00 </roll>
-       <yaw>     90.00 </yaw>
+       <pitch>   180.00 </pitch>
+       <roll>    90.00 </roll>
+       <yaw>    0.00 </yaw>
      </orient>
     </thruster>
   </engine>

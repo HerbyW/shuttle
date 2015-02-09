@@ -144,6 +144,7 @@ You are now making a ballistic flight pattern, reaching 100.000.000 ft is possib
 Fill Tank 3 and 4 now to full and watch the autopilot controlling the OCS engines,
 manually controll is recommendet to get a stable position by only short (0.08 sec!) impulses
 by making tank 4 full and 4 tank 3 empty, then activate the engines by short filling the tank 3.
+There is a YAW-controll by the rudder implemented now!
 
 Entering the athmosphere is tricky: set the autopilot to -40 degree pitch and hope for the best :)
 At 80000 ft the shuttle should be stable and you set the pitch to -3 degree or to +3.
@@ -193,7 +194,7 @@ See the latest version on: www.github.com/HerbyW/antonov-aircrafts
         </binding>	
      </key>
     
- <!-- Reverser Start  for YAW engine--> 
+ <!-- Reverser Start  for YAW engine
    <key n="258">
     <name>F2</name>
      <desc>Toggle Reversers</desc>  
@@ -201,9 +202,9 @@ See the latest version on: www.github.com/HerbyW/antonov-aircrafts
      <command>nasal</command>
      <script>reversethrust.togglereverser()</script>
     </binding>   
-    </key>
+    </key>               --> 
    </keyboard>
-  </input>
+  </input>                     
   
   <engines>    
    <engine n="11">
@@ -227,7 +228,7 @@ See the latest version on: www.github.com/HerbyW/antonov-aircrafts
       <file>Aircraft/SpaceShuttle/Nasal/setprop.nas</file>
     </SpaceShuttle> 
     
-    <!-- Reverser Start  -->
+    <!-- Reverser Start -->
     <reversethrust>
       <file>Aircraft/SpaceShuttle/Nasal/reverse-thrust.nas</file>
     </reversethrust>
