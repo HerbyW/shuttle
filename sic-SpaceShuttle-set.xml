@@ -174,9 +174,11 @@ http://en.wikipedia.org/wiki/List_of_space_shuttle_landing_sites
 See the latest version on: www.github.com/HerbyW/antonov-aircrafts
 </text>
 </help>
+      
+
+
 
  </sim>
- 
 <!-- Key mapping -->
 
  <input>
@@ -191,11 +193,10 @@ See the latest version on: www.github.com/HerbyW/antonov-aircrafts
              <value>true</value>
         </binding>	
      </key>
- 
+     
    </keyboard>
   </input>                     
   
-  <!-- Reverser Start--> 
   <engines>    
    <engine n="11">
     <reverser-pos-norm type="bool">0</reverser-pos-norm>
@@ -212,7 +213,7 @@ See the latest version on: www.github.com/HerbyW/antonov-aircrafts
    <engine n="10">
     <reverser-pos-norm type="bool">0</reverser-pos-norm>
    </engine>
-  </engines>    
+  </engines>  
  <!-- Reverser End -->
 
  <payload>

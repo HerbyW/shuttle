@@ -163,7 +163,32 @@
 			<pitch-deg>-90.0</pitch-deg>
 			<heading-deg>0.0</heading-deg>
 		</offsets>
+		 <condition>
+			 <equals>
+				<property>/engines/engine[3]/reverser-pos-norm</property>
+				<value>1</value>
+			 </equals>
+		 </condition>
   </model>
+  
+  <model>
+		<path>Aircraft/SpaceShuttle/Models/Effects/trails-minni1.xml</path>		
+		<offsets>
+			<x-m>9.45</x-m>
+                        <y-m>-11.4</y-m>
+                        <z-m>-4.46</z-m>
+			<roll-deg>0.0</roll-deg>
+			<pitch-deg>90.0</pitch-deg>
+			<heading-deg>0.0</heading-deg>
+		</offsets>
+		 <condition>
+			 <equals>
+				<property>/engines/engine[3]/reverser-pos-norm</property>
+				<value>0</value>
+			 </equals>
+		 </condition>
+  </model>
+  
   <model>
 		<path>Aircraft/SpaceShuttle/Models/Effects/trails-minni2.xml</path>		
 		<offsets>
@@ -173,8 +198,34 @@
 			<roll-deg>0.0</roll-deg>
 			<pitch-deg>-90.0</pitch-deg>
 			<heading-deg>0.0</heading-deg>
-		</offsets>
+		</offsets>		 
+		 <condition>
+			 <equals>
+				<property>/engines/engine[4]/reverser-pos-norm</property>
+				<value>1</value>
+			 </equals>
+		 </condition>
   </model>
+  
+  <model>
+		<path>Aircraft/SpaceShuttle/Models/Effects/trails-minni2.xml</path>		
+		<offsets>
+			<x-m>9.45</x-m>
+                        <y-m>11.4</y-m>
+                        <z-m>-4.46</z-m>
+			<roll-deg>0.0</roll-deg>
+			<pitch-deg>90.0</pitch-deg>
+			<heading-deg>0.0</heading-deg>
+		</offsets>		 
+		 <condition>
+			 <equals>
+				<property>/engines/engine[4]/reverser-pos-norm</property>
+				<value>0</value>
+			 </equals>
+		 </condition>
+  </model>
+
+  <!--
   <model>
 		<path>Aircraft/SpaceShuttle/Models/Effects/trails-minni11.xml</path>		
 		<offsets>
@@ -197,6 +248,7 @@
 			<heading-deg>0.0</heading-deg>
 		</offsets>
   </model>
+  -->
   
   <!-- smoke from the extra control engines xlr01 pitchlevel nose position -->
   <model>
@@ -209,7 +261,16 @@
 			<pitch-deg>-90.0</pitch-deg>
 			<heading-deg>0.0</heading-deg>
 		</offsets>
+		<condition>
+			 <equals>
+				<property>/engines/engine[6]/reverser-pos-norm</property>
+				<value>0</value>
+			 </equals>
+		 </condition>
   </model>
+  
+  
+  
   <model>
 		<path>Aircraft/SpaceShuttle/Models/Effects/trails-minni4.xml</path>		
 		<offsets>
@@ -220,6 +281,12 @@
 			<pitch-deg>90.0</pitch-deg>
 			<heading-deg>0.0</heading-deg>
 		</offsets>
+		<condition>
+			 <equals>
+				<property>/engines/engine[6]/reverser-pos-norm</property>
+				<value>1</value>
+			 </equals>
+		 </condition>
   </model>
   
   <model>
@@ -232,6 +299,12 @@
 			<pitch-deg>-90.0</pitch-deg>
 			<heading-deg>0.0</heading-deg>
 		</offsets>
+		<condition>
+			 <equals>
+				<property>/engines/engine[6]/reverser-pos-norm</property>
+				<value>0</value>
+			 </equals>
+		 </condition>
   </model>
   <model>
 		<path>Aircraft/SpaceShuttle/Models/Effects/trails-minni6.xml</path>		
@@ -243,6 +316,12 @@
 			<pitch-deg>90.0</pitch-deg>
 			<heading-deg>0.0</heading-deg>
 		</offsets>
+		<condition>
+			 <equals>
+				<property>/engines/engine[6]/reverser-pos-norm</property>
+				<value>1</value>
+			 </equals>
+		 </condition>
   </model>
   
   <!-- smoke from the extra control engines xlr01 pitchlevel tail position -->
@@ -256,7 +335,14 @@
 			<pitch-deg>-90.0</pitch-deg>
 			<heading-deg>0.0</heading-deg>
 		</offsets>
+		<condition>
+			 <equals>
+				<property>/engines/engine[10]/reverser-pos-norm</property>
+				<value>0</value>
+			 </equals>
+		 </condition>
   </model>
+    
   <model>
 		<path>Aircraft/SpaceShuttle/Models/Effects/trails-minni13.xml</path>		
 		<offsets>
@@ -267,6 +353,12 @@
 			<pitch-deg>90.0</pitch-deg>
 			<heading-deg>0.0</heading-deg>
 		</offsets>
+		<condition>
+			 <equals>
+				<property>/engines/engine[10]/reverser-pos-norm</property>
+				<value>1</value>
+			 </equals>
+		 </condition>
   </model>
   
   <model>
@@ -279,6 +371,12 @@
 			<pitch-deg>-90.0</pitch-deg>
 			<heading-deg>0.0</heading-deg>
 		</offsets>
+		<condition>
+			 <equals>
+				<property>/engines/engine[10]/reverser-pos-norm</property>
+				<value>0</value>
+			 </equals>
+		 </condition>
   </model>
   <model>
 		<path>Aircraft/SpaceShuttle/Models/Effects/trails-minni15.xml</path>		
@@ -290,6 +388,12 @@
 			<pitch-deg>90.0</pitch-deg>
 			<heading-deg>0.0</heading-deg>
 		</offsets>
+		<condition>
+			 <equals>
+				<property>/engines/engine[10]/reverser-pos-norm</property>
+				<value>1</value>
+			 </equals>
+		 </condition>
   </model>
   
     <!-- smoke from the extra control engines03 for yaw control nose position
@@ -606,5 +710,15 @@
        <pitch-deg>-8.0</pitch-deg>
      </offsets>
 </model>
+<!--
+<model>
+    <path>Aircraft/SpaceShuttle/Models/lunarlandernofoil-c/lunarlander.xml</path>
+     <offsets>
+       <x-m> -2.30 </x-m>
+       <y-m> 20.0 </y-m>
+       <z-m> -6.45 </z-m>
+       <heading-deg>0.0</heading-deg>
+     </offsets>
+</model>  -->
 
 </PropertyList>

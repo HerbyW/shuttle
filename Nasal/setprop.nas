@@ -87,8 +87,8 @@ setprop("fdm/jsbsim/propulsion/engine[11]/set-running", 1);
 #
 # settimer(<function>, <time> [, <realtime=0>]);  0.78539816325  2.35619448975
 #
-# create timer with 0.1 second interval to st the reverser for YAW-Engine
-var timer = maketimer(0.1, func
+# create timer with 0.1 second interval to set the reverser for YAW-Engine
+var timerYAW = maketimer(0.1, func
 
   { if(getprop("/controls/flight/rudder") <= 0)
       {
@@ -107,4 +107,67 @@ var timer = maketimer(0.1, func
   }
 );
 # start the timer (with 0.1 second inverval)
-timer.start();
+timerYAW.start();
+
+#
+# create timer with 0.1 second interval to set the reverser for Roll-Engines
+var timerROLL = maketimer(0.1, func
+
+  { if(getprop("/controls/flight/aileron") <= 0)
+      {
+        setprop("/fdm/jsbsim/propulsion/engine[3]/pitch-angle-rad", -1 );
+        setprop("/controls/engines/engine[3]/reverser", 1 );
+        setprop("/sim/input/selected/engine[3]", 1 );
+	setprop("/engines/engine[3]/reverser-pos-norm", 1 );
+	setprop("/fdm/jsbsim/propulsion/engine[4]/pitch-angle-rad", 1 );
+        setprop("/controls/engines/engine[4]/reverser", 0 );
+        setprop("/sim/input/selected/engine[4]", 1 );
+	setprop("/engines/engine[4]/reverser-pos-norm", 0 );
+      }
+      else
+      {
+        setprop("/fdm/jsbsim/propulsion/engine[3]/pitch-angle-rad", 1 );
+	setprop("/controls/engines/engine[3]/reverser", 0 );
+	setprop("/sim/input/selected/engine[3]", 1 );
+	setprop("/engines/engine[3]/reverser-pos-norm", 0 );
+	setprop("/fdm/jsbsim/propulsion/engine[4]/pitch-angle-rad", -1 );
+	setprop("/controls/engines/engine[4]/reverser", 1 );
+	setprop("/sim/input/selected/engine[4]", 1 );
+	setprop("/engines/engine[4]/reverser-pos-norm", 1 );
+      }  
+  }
+);
+# start the timer (with 0.1 second inverval)
+timerROLL.start();
+
+#
+# create timer with 0.1 second interval to set the reverser for Pitch-Engines
+var timerPITCH = maketimer(0.1, func
+
+  { if(getprop("/controls/flight/elevator-trim") <= 0)
+      {
+        setprop("/fdm/jsbsim/propulsion/engine[6]/pitch-angle-rad", 1 );
+        setprop("/controls/engines/engine[6]/reverser", 0 );
+        setprop("/sim/input/selected/engine[6]", 1 );
+	setprop("/engines/engine[6]/reverser-pos-norm", 0 );
+	setprop("/fdm/jsbsim/propulsion/engine[10]/pitch-angle-rad", -1 );
+        setprop("/controls/engines/engine[10]/reverser", 1 );
+        setprop("/sim/input/selected/engine[10]", 1 );
+	setprop("/engines/engine[10]/reverser-pos-norm", 1 );
+      }
+      else
+      {
+        setprop("/fdm/jsbsim/propulsion/engine[6]/pitch-angle-rad", -1 );
+	setprop("/controls/engines/engine[6]/reverser", 1 );
+	setprop("/sim/input/selected/engine[6]", 1 );
+	setprop("/engines/engine[6]/reverser-pos-norm", 1 );
+	setprop("/fdm/jsbsim/propulsion/engine[10]/pitch-angle-rad", 1 );
+	setprop("/controls/engines/engine[10]/reverser", 0 );
+	setprop("/sim/input/selected/engine[10]", 1 );
+	setprop("/engines/engine[10]/reverser-pos-norm", 0 );
+      }  
+  }
+);
+# start the timer (with 0.1 second inverval)
+timerPITCH.start();
+

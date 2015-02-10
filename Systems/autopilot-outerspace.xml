@@ -16,6 +16,80 @@ sim input selected
   
   <filter>
    <type>gain</type>
+   <enable>
+   <condition>
+    <or>
+     <greater-than>
+       <property>controls/flight/aileron</property>
+       <value>0.0</value>
+     </greater-than>
+     <equals>
+       <property>controls/flight/aileron</property>
+       <value>0.0</value>
+     </equals>
+    </or>
+   </condition>
+ </enable>
+   <gain>1.0</gain>   
+   <input>controls/flight/aileron</input>   
+   <output>controls/engines/engine[3]/throttle</output>    
+ </filter>
+ 
+ <filter>
+   <type>gain</type>
+   <enable>
+   <condition>
+     <less-than>
+       <property>controls/flight/aileron</property>
+       <value>0.0</value>
+     </less-than>     
+   </condition>
+ </enable>
+   <gain>-1.0</gain>   
+   <input>controls/flight/aileron</input>   
+   <output>controls/engines/engine[3]/throttle</output>    
+ </filter>
+ 
+ <filter>
+   <type>gain</type>
+   <enable>
+   <condition>
+    <or>
+     <greater-than>
+       <property>controls/flight/aileron</property>
+       <value>0.0</value>
+     </greater-than>
+     <equals>
+       <property>controls/flight/aileron</property>
+       <value>0.0</value>
+     </equals>
+    </or>
+   </condition>
+ </enable>
+   <gain>1.0</gain>   
+   <input>controls/flight/aileron</input>   
+   <output>controls/engines/engine[4]/throttle</output>    
+ </filter>
+ 
+ <filter>
+   <type>gain</type>
+   <enable>
+   <condition>
+     <less-than>
+       <property>controls/flight/aileron</property>
+       <value>0.0</value>
+     </less-than>     
+   </condition>
+ </enable>
+   <gain>-1.0</gain>   
+   <input>controls/flight/aileron</input>   
+   <output>controls/engines/engine[4]/throttle</output>    
+ </filter>
+  
+  
+<!--  
+  <filter>
+   <type>gain</type>
    <gain>-1.0</gain>
    <input>controls/flight/aileron</input>
    <output>controls/engines/engine[3]/throttle</output>
@@ -27,6 +101,7 @@ sim input selected
    <input>controls/flight/aileron</input>
    <output>controls/engines/engine[4]/throttle</output>
  </filter>
+ 
  
   <filter>
    <type>gain</type>
@@ -41,6 +116,83 @@ sim input selected
    <input>controls/flight/aileron</input>
    <output>controls/engines/engine[8]/throttle</output>
  </filter>
+ -->
+ 
+ <filter>
+   <type>gain</type>
+   <enable>
+   <condition>
+    <or>
+     <greater-than>
+       <property>controls/flight/elevator-trim</property>
+       <value>0.0</value>
+     </greater-than>
+     <equals>
+       <property>controls/flight/elevator-trim</property>
+       <value>0.0</value>
+     </equals>
+    </or>
+   </condition>
+ </enable>
+   <gain>1.0</gain>   
+   <input>controls/flight/elevator-trim</input>   
+   <output>controls/engines/engine[6]/throttle</output>    
+ </filter>
+ 
+ <filter>
+   <type>gain</type>
+   <enable>
+   <condition>
+     <less-than>
+       <property>controls/flight/elevator-trim</property>
+       <value>0.0</value>
+     </less-than>     
+   </condition>
+ </enable>
+   <gain>-1.0</gain>   
+   <input>controls/flight/elevator-trim</input>   
+   <output>controls/engines/engine[6]/throttle</output>    
+ </filter>
+ 
+ <filter>
+   <type>gain</type>
+   <enable>
+   <condition>
+    <or>
+     <greater-than>
+       <property>controls/flight/elevator-trim</property>
+       <value>0.0</value>
+     </greater-than>
+     <equals>
+       <property>controls/flight/elevator-trim</property>
+       <value>0.0</value>
+     </equals>
+    </or>
+   </condition>
+ </enable>
+   <gain>1.0</gain>   
+   <input>controls/flight/elevator-trim</input>   
+   <output>controls/engines/engine[10]/throttle</output>    
+ </filter>
+ 
+ <filter>
+   <type>gain</type>
+   <enable>
+   <condition>
+     <less-than>
+       <property>controls/flight/elevator-trim</property>
+       <value>0.0</value>
+     </less-than>     
+   </condition>
+ </enable>
+   <gain>-1.0</gain>   
+   <input>controls/flight/elevator-trim</input>   
+   <output>controls/engines/engine[10]/throttle</output>    
+ </filter>
+ 
+ 
+ 
+ <!--
  
  <filter>
    <type>gain</type>
@@ -70,6 +222,9 @@ sim input selected
    <output>controls/engines/engine[10]/throttle</output>
  </filter>
  
+ -->
+ 
+ <!--YAW-Controll-Engine-->
  <filter>
    <type>gain</type>
    <enable>

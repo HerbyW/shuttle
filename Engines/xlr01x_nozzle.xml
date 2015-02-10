@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<nozzle name="xlr01_nozzle">
+	<!--
+		pe      = Nozzle exit pressure, psf.
+		area    = Nozzle exit area, sqft.
+	-->
+	<pe unit="PSF"> 2.0  </pe>
+	<area unit="FT2"> 0.00298  </area>
+</nozzle>
