@@ -12,9 +12,12 @@
  <animation>
   <type>select</type>
   <object-name>strobe</object-name>
-  <condition>
-   <property>sim/multiplay/generic/float[18]</property>
-  </condition>
+    <condition>
+	<greater-than>
+	<property>sim/multiplay/generic/float[18]</property>
+	<value>0</value>
+	</greater-than>
+    </condition>
  </animation>
 
  <animation>

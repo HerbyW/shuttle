@@ -200,7 +200,7 @@ See the latest version on: www.github.com/HerbyW/antonov-aircrafts
    </keyboard>
   </input>                     
   
-  <!-- Reverser Start for OCS--> 
+  <!-- Reverser Start for OCS and OMS --> 
   <engines>    
    <engine n="11">
     <reverser-pos-norm type="bool">0</reverser-pos-norm>

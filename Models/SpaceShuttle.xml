@@ -748,8 +748,7 @@
 <!--lets set some fire to the OSM-main engines -->
 
 <model>
-		<name>Strobe_5</name>
-		<path>Aircraft/SpaceShuttle/Models/Lights/strobe-red5.xml</path>	
+  <path>Aircraft/SpaceShuttle/Models/Lights/strobe-red5.xml</path>	
 		<offsets>
                  <x-m> 12.95 </x-m>
                  <y-m> -2.20 </y-m>
@@ -757,18 +756,14 @@
 		</offsets>
 </model> 
 
-
-
 <model>
-  <name>Strobe_5</name>
-    <path>Aircraft/SpaceShuttle/Models/Lights/strobe-red5.xml</path>
+   <path>Aircraft/SpaceShuttle/Models/Lights/strobe-red5.xml</path>
      <offsets>
        <x-m> 12.95 </x-m>
        <y-m> 2.20 </y-m>
        <z-m> -0.250 </z-m>
      </offsets>
 </model>
-
 
 <!--
 <model>

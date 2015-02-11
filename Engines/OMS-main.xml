@@ -6,14 +6,14 @@
 
 <!-- TDU-1 Maneur Engine -->
 
-<rocket_engine name="OMS-main2">
-	<isp>               266 </isp>
+<rocket_engine name="OMS-main">
+	<isp>               345 </isp>
 	<shr>              1.23 </shr>
 	<max_pc>       86556.00 </max_pc>
 	<variance>         0.10 </variance>
 	<prop_eff>         0.67 </prop_eff>
 	<maxthrottle>      1.00 </maxthrottle>
 	<minthrottle>       0.0 </minthrottle>
-	<slfuelflowmax>    3.18 </slfuelflowmax>
-	<sloxiflowmax>     1.58 </sloxiflowmax>
+	<slfuelflowmax>    4.18 </slfuelflowmax>
+	<sloxiflowmax>     2.58 </sloxiflowmax>
 </rocket_engine>
