@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+  
+  <path>robotarm.ac</path>  
+
+ <animation>   
+   <object-name>spaceshutt_spstob_2</object-name>
+</animation>
+
+  <animation>
+    <type>material</type>
+    <object-name>spaceshutt_spstob_2</object-name>
+   <emission>
+      <factor>1</factor>
+      <red>   0.5 </red>
+      <green> 0.5 </green>
+      <blue>  0.5 </blue>
+    </emission>
+  </animation>   
+  
+  
+<animation>
+<type>pick</type>
+<object-name>spaceshutt_spstob_2</object-name>
+<visible>true</visible>
+
+<action>
+<button>0</button>
+
+<binding>
+<command>property-toggle</command>
+<property>/controls/shuttle/robotarm-norm</property>
+<value>0</value>
+<value>1</value>
+</binding>
+
+<binding>
+<command>property-interpolate</command>
+<property>sim/multiplay/generic/float[19]</property>
+<property>/controls/shuttle/robotarm-norm</property> <!-- the value to interpolate to, is 1 -->
+<rate>0.10</rate><!-- 5 seconds to 0 from 1 or 1 to 0 -->
+</binding>
+
+</action>
+
+</animation>
+ 
+  
+ <animation>
+  <type>rotate</type>
+  <object-name>spaceshutt_spstob_2</object-name>
+  <property>sim/multiplay/generic/float[19]</property>
+  <interpolation>
+    <entry>
+      <ind>0.2</ind>
+      <dep>0</dep>
+    </entry>
+    <entry>
+      <ind>1.0</ind>
+      <dep>-45</dep>
+    </entry>
+  </interpolation>
+  <center>
+   <x-m> -8.8671</x-m>
+   <y-m> -2.552</y-m>
+   <z-m>  -1.52</z-m>   
+  </center>
+  <axis>
+   <x>0</x>
+   <y>1</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>spaceshutt_spstob_2</object-name>
+  <property>sim/multiplay/generic/float[19]</property>
+  <interpolation>
+    <entry>
+      <ind>0.2</ind>
+      <dep>0</dep>
+    </entry>
+    <entry>
+      <ind>1.0</ind>
+      <dep>45</dep>
+    </entry>
+  </interpolation>
+  <center>
+   <x-m> -8.8672</x-m>
+   <y-m>  2.552</y-m>
+   <z-m>  -1.52</z-m>   
+  </center>
+  <axis>
+   <x>0</x>
+   <y>-1</y>
+   <z>0</z>
+  </axis>
+ </animation>    
+    
+    
+</PropertyList>

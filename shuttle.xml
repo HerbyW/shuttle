@@ -284,7 +284,7 @@ http://www.businessinsider.com/breathtaking-images-of-the-space-shuttle-2013-9?I
  </ground_reactions>
 
  <propulsion>
-   <!--3 Shuttle Engines n=0 reduced to one engine-->
+   <!--3 Shuttle Engines reduced to one engine n=0 -->
    <engine file="XLR99">
     <location unit="IN">
       <x> 200.00 </x>
@@ -296,8 +296,7 @@ http://www.businessinsider.com/breathtaking-images-of-the-space-shuttle-2013-9?I
       <roll>  0.00 </roll>
       <yaw>   0.00 </yaw>
     </orient>
-    <feed>0</feed>
-    
+                             <feed>0</feed>    
     <thruster file="xlr99_nozzle">
      <location unit="IN">
       <x> 200.00 </x>
@@ -312,11 +311,11 @@ http://www.businessinsider.com/breathtaking-images-of-the-space-shuttle-2013-9?I
     </thruster>
   </engine>   
 
-<!--2*Booster Engines n=1,2  -->
+<!--2 Booster Engines redused to one engine n=1 -->
    <engine file="SRB">
     <location unit="IN">
       <x> 200.00 </x>
-      <y>-100.00 </y>
+      <y>  0.00 </y>
       <z>-241.00 </z>
     </location>
     <orient unit="DEG">
@@ -324,12 +323,12 @@ http://www.businessinsider.com/breathtaking-images-of-the-space-shuttle-2013-9?I
       <roll>  0.00 </roll>
       <yaw>   0.00 </yaw>
     </orient>    
-    <feed>1</feed>
+                               <feed>1</feed>
     
     <thruster file="SRB_nozzle">
      <location unit="IN">
       <x> 200.00 </x>
-      <y>-100.00 </y>
+      <y>  0.00 </y>
       <z>-241.00 </z>
      </location>
      <orient unit="DEG">
@@ -339,26 +338,28 @@ http://www.businessinsider.com/breathtaking-images-of-the-space-shuttle-2013-9?I
      </orient>
     </thruster>
   </engine>
+  
 
-   <engine file="SRB">
-    <location unit="IN">
-      <x> 200.00 </x>
-      <y> 100.00 </y>
-      <z>-241.00 </z>
+<!--OMS-main engine on right Tail position n=2 -->
+
+   <engine file="OMS-main">
+    <location unit="M">
+      <x> 12.95 </x>
+       <y> 2.20 </y>
+       <z> -0.250 </z>
     </location>
     <orient unit="DEG">
       <pitch> 0.00 </pitch>
       <roll>  0.00 </roll>
       <yaw>   0.00 </yaw>
     </orient>    
-    <feed>1</feed>
-    
-    <thruster file="SRB_nozzle">
-     <location unit="IN">
-      <x> 200.00 </x>
-      <y> 100.00 </y>
-      <z>-241.00 </z>
-     </location>
+                                 <feed>2</feed>    
+    <thruster file="OMS-main-Nozzle">
+     <location unit="M">
+      <x> 12.95 </x>
+       <y> 2.20 </y>
+       <z> -0.250 </z>
+    </location>
      <orient unit="DEG">
        <pitch> 0.00 </pitch>
        <roll>  0.00 </roll>
@@ -421,39 +422,38 @@ http://www.businessinsider.com/breathtaking-images-of-the-space-shuttle-2013-9?I
      </orient>
     </thruster>
   </engine>
-
-<!--extra engines for outer space control Pitch Leveler Controls
-    on nose position n=5,6 smoke is still as it would be 4 engines-->
    
-   <engine file="XLR01x">
+<!--OMS-main engine on Tail left position n=5 -->
+
+   <engine file="OMS-main">
     <location unit="M">
-      <x>-17.50 </x>
-      <y>   0.0 </y>
-      <z> -4.80 </z>
+      <x> 12.95 </x>
+       <y> -2.20 </y>
+       <z> -0.250 </z>
     </location>
     <orient unit="DEG">
-      <pitch> 90.00 </pitch>
-      <roll>    0.00 </roll>
-      <yaw>     0.00 </yaw>
-    </orient>
-                        <feed>3</feed>
-			<feed>4</feed>
-			
-    
-    <thruster file="xlr01x_nozzle">     
-      <location unit="M">
-      <x>-17.50 </x>
-      <y>   0.0 </y>
-      <z> -4.80 </z>
-      </location>
+      <pitch> 0.00 </pitch>
+      <roll>  0.00 </roll>
+      <yaw>   0.00 </yaw>
+    </orient>    
+                               <feed>2</feed>    
+    <thruster file="OMS-main-Nozzle">
+     <location unit="M">
+      <x> 12.95 </x>
+       <y> -2.20 </y>
+       <z> -0.250 </z>
+    </location>
      <orient unit="DEG">
-       <pitch> 90.00 </pitch>
-       <roll>    0.00 </roll>
-       <yaw>     0.00 </yaw>
+       <pitch> 0.00 </pitch>
+       <roll>  0.00 </roll>
+       <yaw>   0.00 </yaw>
      </orient>
     </thruster>
-  </engine>
-  
+    </engine>
+    
+ <!--extra engine for outer space control Pitch Leveler Controls
+    on nose position n=6 smoke is still as it would be 4 engines-->
+    
   <engine file="XLR01">
     <location unit="M">
       <x>-17.50 </x>
@@ -466,9 +466,7 @@ http://www.businessinsider.com/breathtaking-images-of-the-space-shuttle-2013-9?I
       <yaw>    0.00 </yaw>
     </orient>
                         <feed>3</feed>
-			<feed>4</feed>
-			
-    
+			<feed>4</feed>    
     <thruster file="xlr01_nozzle">     
       <location unit="M">
       <x>-17.50 </x>
@@ -483,7 +481,11 @@ http://www.businessinsider.com/breathtaking-images-of-the-space-shuttle-2013-9?I
     </thruster>    
   </engine>  
   
-  <!--extra engines for outer space control Wing Leveler Controls down l+r n=7,8 -->
+  <!--extra engines for outer space control Wing Leveler Controls down l+r-->
+    
+    <!--free -->
+    <!--free -->
+    <!--free -->
     <engine file="XLR01x">
     <location unit="M">
       <x>9.45</x>
@@ -498,7 +500,6 @@ http://www.businessinsider.com/breathtaking-images-of-the-space-shuttle-2013-9?I
                         <feed>3</feed>
 			<feed>4</feed>
 			
-    
     <thruster file="xlr01x_nozzle">     
       <location unit="M">
       <x>9.45</x>
@@ -512,6 +513,10 @@ http://www.businessinsider.com/breathtaking-images-of-the-space-shuttle-2013-9?I
      </orient>
     </thruster>
   </engine>
+  
+  <!--free -->
+  <!--free -->
+  <!--free -->
   
   <engine file="XLR01x">
     <location unit="M">
@@ -542,9 +547,13 @@ http://www.businessinsider.com/breathtaking-images-of-the-space-shuttle-2013-9?I
     </thruster>
   </engine>
   
-<!--extra engines for outer space control Pitch Leveler Controls
-    on tail position n=9,10 smoke is still as it would be 4 engines-->
-
+<!--extra engine for outer space control Pitch Leveler Controls
+    on tail position n=10 smoke is still as 4 engines-->
+    
+    <!--free -->
+    <!--free -->
+    <!--free -->
+  
     <engine file="XLR01x">
     <location unit="M">
       <x> 13.00 </x>
@@ -604,8 +613,7 @@ http://www.businessinsider.com/breathtaking-images-of-the-space-shuttle-2013-9?I
   </engine>
   
   <!--extra engine for outer space Yaw Control
-    on nose position n=11 smoke is still as it would be 2 engines,
-    also a reverser is build in, as we have no more engines left :)  -->
+    on nose position n=11 smoke is still as 2 engines -->
 
     <engine file="XLR01">
     <location unit="M">
@@ -666,7 +674,7 @@ http://www.businessinsider.com/breathtaking-images-of-the-space-shuttle-2013-9?I
        <z>-100.00 </z>
      </location>
      <capacity unit="LBS"> 117265.00 </capacity>
-     <contents unit="LBS"> 0.00 </contents>
+     <contents unit="LBS"> 0.10 </contents>
      <priority>2</priority>
   </tank>
  

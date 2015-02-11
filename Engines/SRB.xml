@@ -4,7 +4,7 @@
   <maxthrottle>           1.04  </maxthrottle>
   <minthrottle>           0.35  </minthrottle>
   <max_pc>		    86556.00  </max_pc>
-  <slfuelflowmax unit="LBS/SEC">  970.0  </slfuelflowmax>
-  <sloxiflowmax unit="LBS/SEC">   162.0  </sloxiflowmax>
+  <slfuelflowmax unit="LBS/SEC">  1940.0  </slfuelflowmax>
+  <sloxiflowmax unit="LBS/SEC">   324.0  </sloxiflowmax>
 </rocket_engine>
 

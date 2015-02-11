@@ -5,9 +5,7 @@
 <!-- Each component is evaluated in the order specified.  You can make up -->
 <!-- property names to pass the result of one component on to a subsequent -->
 <!-- component. 
-
 -->
-
 
 <PropertyList>
 
@@ -15,9 +13,7 @@
   <!-- Roll Axis Modes                                                 -->
   <!-- =============================================================== -->
 
-  <!-- Wing leveler --> 
-
-  
+  <!-- Wing leveler 2 stage cascade controller.-->
   <pid-controller>
     <name>Wing Leveler Stage 1</name>
     <debug>false</debug>

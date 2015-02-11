@@ -8,14 +8,16 @@
        <solid-rocket-boosters type="int">1</solid-rocket-boosters>
        <outerspace type="bool">1</outerspace>
        <EMU type="int">0</EMU>
+       <robotarm type="float">0</robotarm> 
       <door>
        <position type="float">0</position>
-      </door>           
+      </door>             
     </shuttle>
     
     <lighting>
        <nav-lights type="bool">1</nav-lights>
     </lighting>
+    
     <armament>
       <trigger type="int">0</trigger>
     </armament>
@@ -27,6 +29,7 @@
 	<position-norm type="float">0</position-norm>
       </door1>
     </doors>
+    <robotarm-norm type="float">0</robotarm-norm> 
    </instrumentation>
  
  <sim>
@@ -38,7 +41,6 @@
 
   <input>
     <selected>
-      <engine n = "5" type="bool">0</engine>
       <engine n = "6" type="bool">0</engine>
       <engine n = "7" type="bool">0</engine>
       <engine n = "8" type="bool">0</engine>
@@ -59,21 +61,20 @@
         <float n="4" alias="/consumables/fuel/tank/level-lbs" />
 	<float n="5" alias="/consumables/fuel/tank[1]/level-lbs" />
 	<float n="6" alias="/consumables/fuel/tank[2]/level-lbs" />
-	
-	<float n="10" alias="/consumables/fuel/tank[3]/level-lbs" />
-	<float n="11" alias="/consumables/fuel/tank[4]/level-lbs" />
-	
-        <float n="7" alias="/engines/engine[4]/thrust_lb" />
+	<float n="7" alias="/engines/engine[4]/thrust_lb" />
         <float n="8" alias="/engines/engine[5]/thrust_lb" />
-        <float n="9" alias="/engines/engine[6]/thrust_lb" />        
+        <float n="9" alias="/engines/engine[6]/thrust_lb" />	
+	<float n="10" alias="/consumables/fuel/tank[3]/level-lbs" />
+	<float n="11" alias="/consumables/fuel/tank[4]/level-lbs" />                
         <float n="12" alias="/engines/engine[0]/thrust_lb" />        
         <float n="13" alias="/engines/engine[7]/thrust_lb" />
         <float n="14" alias="/engines/engine[8]/thrust_lb" />
         <float n="15" alias="/engines/engine[9]/thrust_lb" />
-        <float n="16" alias="/engines/engine[10]/thrust_lb" />
-        
+        <float n="16" alias="/engines/engine[10]/thrust_lb" />        
         <float n="17" alias="/engines/engine[11]/thrust_lb" />
-        
+        <float n="18" alias="/engines/engine[2]/thrust_lb" />
+        <float n="19" alias="/instrumentation/robotarm-norm" />
+        <int type="int" n="4" alias="/controls/shuttle/EMU"/>
         <int type="int" n="5" alias="/controls/shuttle/EMU"/>
         <int type="int" n="6" alias="/controls/shuttle/external-fuel-tank"/>
         <int type="int" n="7" alias="/controls/shuttle/solid-rocket-boosters"/>
@@ -146,6 +147,8 @@ manually controll is recommendet to get a stable position by only short (0.08 se
 by making tank 4 full and tank 3 empty, then activate the engines by short filling the tank 3.
 There is a YAW-controll by the rudder implemented now!
 
+Orbit Manouver Engines on tail position are activated by setting tank 2.
+
 Entering the athmosphere is tricky: set the autopilot to -40 degree pitch and hope for the best :)
 At 80000 ft the shuttle should be stable and you set the pitch to -3 degree or to +3.
 
@@ -160,6 +163,8 @@ Landing with 240-340 kt, Flaps (2 Steps) and Speedbreak (1 Step) to full level.
 Wing and Pitch leveler with 8 extra engines working with autopilot in outer-space!
 
 Click the little windows on top of the cockpit to activate the man for the moon :)
+
+Click the robotarm :)
 
 Click the satelit to launch it, click again to set a new one and so on, or use the trigger button for that.
 
@@ -195,15 +200,21 @@ See the latest version on: www.github.com/HerbyW/antonov-aircrafts
    </keyboard>
   </input>                     
   
-  <!-- Reverser Start--> 
+  <!-- Reverser Start for OCS--> 
   <engines>    
    <engine n="11">
+    <reverser-pos-norm type="bool">0</reverser-pos-norm>
+   </engine>
+   <engine n="2">
     <reverser-pos-norm type="bool">0</reverser-pos-norm>
    </engine>
    <engine n="3">
     <reverser-pos-norm type="bool">0</reverser-pos-norm>
    </engine>
    <engine n="4">
+    <reverser-pos-norm type="bool">0</reverser-pos-norm>
+   </engine>
+   <engine n="5">
     <reverser-pos-norm type="bool">0</reverser-pos-norm>
    </engine>
    <engine n="6">

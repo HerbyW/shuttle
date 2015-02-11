@@ -26,10 +26,10 @@
   
   <property>sim/time/elapsed-sec</property>
   <offset>0</offset>
-  <factor>1</factor>
-  <max-m>1</max-m>
+  <factor>1.0</factor>
+  <max-m>1.0</max-m>
   <axis> 
-    <z>1</z>
+    <z>0</z>
   </axis>
  </animation>
 
@@ -39,9 +39,9 @@
   
   <property>sim/time/elapsed-sec</property>
   <offset>0</offset>
-  <x-max>1</x-max>
-  <y-max>1</y-max>
-  <z-max>1</z-max>
+  <x-max>1.0</x-max>
+  <y-max>1.0</y-max>
+  <z-max>1.0</z-max>
   <x-factor>1</x-factor>
   <y-factor>1</y-factor>
   <z-factor>1</z-factor>
