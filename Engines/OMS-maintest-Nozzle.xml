@@ -6,11 +6,11 @@
 
 <!-- TDU-1 Main Nozzle -->
 
-<nozzle name="OMS-main-Nozzle">
+<nozzle name="OMS-maintest-Nozzle">
 	<!--
 		pe      = Nozzle exit pressure, psf.
 		area    = Nozzle exit area, sqft.
 	-->
-	<pe unit="PSF"> 1000.0  </pe>
-	<area unit="FT2"> 5.536  </area>
+	<pe unit="PSF"> 25000.0  </pe>
+	<area unit="FT2"> 2.00  </area>
 </nozzle>

@@ -35,13 +35,13 @@
   <type>scale</type>
   <object-name>strobe</object-name>
   <property>/sim/time/sun-angle-rad</property>
-  <offset>-5.4</offset>
+  <offset>1.0</offset>
   <x-min>1</x-min>
   <y-min>1</y-min>
   <z-min>1</z-min>
-  <x-factor>5.5</x-factor>
-  <y-factor>5.5</y-factor>
-  <z-factor>5.5</z-factor>
+  <x-factor>1.1</x-factor>
+  <y-factor>1.1</y-factor>
+  <z-factor>1.1</z-factor>
  </animation>
 
 </PropertyList>

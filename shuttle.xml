@@ -7,7 +7,7 @@
  <fileheader>
   <author> Aeromatic v 0.9, HerbyW</author>
   <filecreationdate> 2009-04-09, 01-2015</filecreationdate>
-  <version>$Revison: 3$</version>
+  <version>$Revison: 4$</version>
   <description> Models a shuttle </description>
  </fileheader>
 
@@ -340,12 +340,12 @@ http://www.businessinsider.com/breathtaking-images-of-the-space-shuttle-2013-9?I
   </engine>
   
 
-<!--OMS-main engine on right Tail position n=2 -->
+<!--OMS-main engine on right Tail position n=2, red lights iluminate Position and funktion-->
 
    <engine file="OMS-maintest">
     <location unit="M">
       <x> 12.95 </x>
-       <y> 2.20 </y>
+       <y> 0.00 </y>
        <z> -0.250 </z>
     </location>
     <orient unit="DEG">
@@ -357,7 +357,7 @@ http://www.businessinsider.com/breathtaking-images-of-the-space-shuttle-2013-9?I
     <thruster file="OMS-maintest-Nozzle">
      <location unit="M">
       <x> 12.95 </x>
-       <y> 2.20 </y>
+       <y> 0.00 </y>
        <z> -0.250 </z>
     </location>
      <orient unit="DEG">
@@ -423,12 +423,12 @@ http://www.businessinsider.com/breathtaking-images-of-the-space-shuttle-2013-9?I
     </thruster>
   </engine>
    
-<!--OMS-main engine on Tail left position n=5 -->
+<!--OMS-main engine on Tail left position n=5 super small no funktion-->
 
-   <engine file="OMS-maintest">
+   <engine file="OMS-mainx">
     <location unit="M">
       <x> 12.95 </x>
-       <y> -2.20 </y>
+       <y> 0.0 </y>
        <z> -0.250 </z>
     </location>
     <orient unit="DEG">
@@ -437,10 +437,10 @@ http://www.businessinsider.com/breathtaking-images-of-the-space-shuttle-2013-9?I
       <yaw>   0.00 </yaw>
     </orient>    
                                <feed>2</feed>    
-    <thruster file="OMS-maintest-Nozzle">
+    <thruster file="OMS-mainx-Nozzle">
      <location unit="M">
       <x> 12.95 </x>
-       <y> -2.20 </y>
+       <y> -0.0 </y>
        <z> -0.250 </z>
     </location>
      <orient unit="DEG">

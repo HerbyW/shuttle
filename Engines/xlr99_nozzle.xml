@@ -5,5 +5,5 @@
     area    = Nozzle exit area, sqft.
   -->
   <pe unit="PSF"> 151056 </pe>
-  <area unit="FT2"> 4.0  </area>
+  <area unit="FT2"> 9.0  </area>
 </nozzle>

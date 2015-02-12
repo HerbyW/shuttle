@@ -745,12 +745,12 @@
      </offsets>
 </model>
 
-<!--lets set some fire to the OSM-main engines -->
+<!--lets set some fire to the OMS-main engines, 2 are iluminated-->
 
 <model>
   <path>Aircraft/SpaceShuttle/Models/Lights/strobe-red5.xml</path>	
 		<offsets>
-                 <x-m> 12.95 </x-m>
+                 <x-m> 13.10 </x-m>
                  <y-m> -2.20 </y-m>
                  <z-m> -0.250 </z-m>
 		</offsets>
@@ -759,7 +759,7 @@
 <model>
    <path>Aircraft/SpaceShuttle/Models/Lights/strobe-red5.xml</path>
      <offsets>
-       <x-m> 12.95 </x-m>
+       <x-m> 13.10 </x-m>
        <y-m> 2.20 </y-m>
        <z-m> -0.250 </z-m>
      </offsets>
