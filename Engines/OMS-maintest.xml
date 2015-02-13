@@ -9,6 +9,6 @@
 	<prop_eff>         0.67 </prop_eff>
 	<maxthrottle>      1.00 </maxthrottle>
 	<minthrottle>      0.00 </minthrottle>
-	<sloxiflowmax>   360.000 </sloxiflowmax>
-	<slfuelflowmax>   81.000 </slfuelflowmax>
+	<sloxiflowmax>   600.000 </sloxiflowmax>
+	<slfuelflowmax>  162.000 </slfuelflowmax>
 </rocket_engine>
