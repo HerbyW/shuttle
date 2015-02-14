@@ -40,26 +40,13 @@
 	<value>0</value>
 	</greater-than>
     </condition>
-  <scale>2.0</scale>
-  <x-min>2</x-min>
-  <y-min>2</y-min>
-  <z-min>2</z-min>
+  <scale>1.0</scale>
+  <x-min>4</x-min>
+  <y-min>4</y-min>
+  <z-min>4</z-min>
   <x-factor>1.1</x-factor>
   <y-factor>1.1</y-factor>
   <z-factor>1.1</z-factor>
- </animation>
- 
- <animation>
-  <type>scale</type>
-  <object-name>strobe</object-name>
-  <property>/sim/time/sun-angle-rad</property>
-  <offset>1.0</offset>
-  <x-min>1</x-min>
-  <y-min>1</y-min>
-  <z-min>1</z-min>
-  <x-factor>1.02</x-factor>
-  <y-factor>1.02</y-factor>
-  <z-factor>1.02</z-factor>
  </animation>
 
 </PropertyList>

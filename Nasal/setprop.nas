@@ -72,7 +72,7 @@ if (getprop("/consumables/fuel/tank[1]/level-lbs") < 100)
       }
 ;
 
-
+setprop("fdm/jsbsim/propulsion/engine[2]/set-running", 1);
 setprop("fdm/jsbsim/propulsion/engine[3]/set-running", 1);
 setprop("fdm/jsbsim/propulsion/engine[4]/set-running", 1);
 setprop("fdm/jsbsim/propulsion/engine[5]/set-running", 1);
@@ -170,4 +170,24 @@ var timerPITCH = maketimer(0.1, func
 );
 # start the timer (with 0.1 second inverval)
 timerPITCH.start();
+
+#
+# create timer with 0.1 second interval to set the reverser for Pitch-Engines
+var timerOMS = maketimer(0.1, func
+
+  { if(getprop("/controls/engines/engine[2]/propeller-pitch") >= 0)
+      {
+        setprop("/fdm/jsbsim/propulsion/engine[2]/pitch-angle-rad", (getprop("/controls/engines/engine[2]/propeller-pitch") * 2 -1)* 0.2 );
+        setprop("/controls/engines/engine[2]/reverser", 0 );
+        setprop("/sim/input/selected/engine[2]", 1 );
+	setprop("/engines/engine[2]/reverser-pos-norm", 0 );
+	setprop("/fdm/jsbsim/propulsion/engine[5]/pitch-angle-rad", (getprop("/controls/engines/engine[5]/propeller-pitch") * 2 -1)* 0.2 );
+        setprop("/controls/engines/engine[5]/reverser", 0 );
+        setprop("/sim/input/selected/engine[5]", 1 );
+	setprop("/engines/engine[5]/reverser-pos-norm", 0 );
+      }
+  }
+);
+# start the timer (with 0.1 second inverval)
+timerOMS.start();
 

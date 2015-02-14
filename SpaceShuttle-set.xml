@@ -41,6 +41,8 @@
 
   <input>
     <selected>
+      <engine n = "2" type="bool">0</engine>
+      <engine n = "5" type="bool">0</engine>
       <engine n = "6" type="bool">0</engine>
       <engine n = "7" type="bool">0</engine>
       <engine n = "8" type="bool">0</engine>
@@ -121,21 +123,21 @@
 <text>
 Start like a airplane: (as we have no ramp jet)
 Pilot, Tank 0, Tank 1 are set initially (improvements are going on)
-Tank 2 will be for comming engines to make orbit maneuvers, no need to set it now
+Tank 2 is for Orbital Manouver System (OMS) engines to make orbit maneuvers, set it later to full
 Tank 3 and 4 are emty in the beginning, they are for the engines of the OCS (Orbital Control System)
 You need to set them later.
 
 Now the shuttle will be in horizontal position.
 
-Befor take off, set the wing leveler activ and the pitch control to 23 degree.
-Close the doors by clicking on them.
 Open the payload menue and the generic autopilot menue.
 Open the HUD, key H.
+Befor take off, set the wing leveler activ and the pitch control to 23 degree.
+Close the doors by clicking on them.
 
 Give throttle, and take off, be carefull with throttle - it is a rocket!
-Hold it in a climbing position of 23-54 degree and go to 17000 ft,
-stop throttle, set the Autopilot to -1 pitch hold and give throttle again.
-If the shuttle goes up more then 35 degree reduce throttle.
+Hold it in a climbing position of 23 degree and go to 15000 ft,
+stop throttle, set the Autopilot to -3 pitch hold and give throttle again.
+If the shuttle goes up more then 35 degrees reduce throttle.
 Try to get a speed of 12000 kts for a 10 minute orbital flight, 22000 kts for 220 minutes.
 We work on getting the orbital speed of 28000 kts to reach a stable orbit position.
 
@@ -148,19 +150,23 @@ by making tank 4 full and tank 3 empty, then activate the engines by short filli
 There is a YAW-controll by the rudder implemented now!
 
 Orbit Manouver Engines on tail position are activated by setting tank 2.
+They are controlled with Throttle and with propeller-pitch control for pitching them (-35 - +35 degree pitch for the Thruster)
+try to get them in a position so that the elevator-trim is in neutral position.
+So you may control a flight from 145000 ft up to 350000 ft and back again.
 
 Entering the athmosphere is tricky: set the autopilot to -40 degree pitch and hope for the best :)
-At 80000 ft the shuttle should be stable and you set the pitch to -3 degree or to +3.
+Set all Tanks  to 0.
+At 50000 ft the shuttle should be stable and you set the pitch to -3 degree or to +3.
 
 Now you glide to your landing spot.
 
 Gears, Flaps and Speed Breaks are not animated but are there in the jsb.
 Speed Breakes: Key s
    
-ILS Heading is working, glidepath is not usefull as you have a different glide path as a comercial airliner.
+ILS Heading is not working, glidepath is not usefull as you have a different glide path as a comercial airliner.
 Landing with 240-340 kt, Flaps (2 Steps) and Speedbreak (1 Step) to full level.
 
-Wing and Pitch leveler with 8 extra engines working with autopilot in outer-space!
+Wing and Pitch leveler engines (OCS) with 8 extra engines working with autopilot in outer-space!
 
 Click the little windows on top of the cockpit to activate the man for the moon :)
 

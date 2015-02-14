@@ -345,7 +345,7 @@ http://www.businessinsider.com/breathtaking-images-of-the-space-shuttle-2013-9?I
    <engine file="OMS-maintest">
     <location unit="M">
       <x> 12.95 </x>
-       <y> 0.00 </y>
+       <y> 2.00 </y>
        <z> -1.5 </z>
     </location>
     <orient unit="DEG">
@@ -357,7 +357,7 @@ http://www.businessinsider.com/breathtaking-images-of-the-space-shuttle-2013-9?I
     <thruster file="OMS-maintest-Nozzle">
      <location unit="M">
       <x> 12.95 </x>
-       <y> 0.00 </y>
+       <y> 2.00 </y>
        <z> -1.5 </z>
     </location>
      <orient unit="DEG">
@@ -423,28 +423,28 @@ http://www.businessinsider.com/breathtaking-images-of-the-space-shuttle-2013-9?I
     </thruster>
   </engine>
    
-<!--OMS-main engine on Tail left position n=5 super small no funktion-->
+<!--OMS-main engine on Tail left position n=5 -->
 
-   <engine file="OMS-mainx">
+   <engine file="OMS-maintest">
     <location unit="M">
       <x> 12.95 </x>
-       <y> 0.0 </y>
-       <z> -0.250 </z>
+       <y> -2.00 </y>
+       <z> -1.5 </z>
     </location>
     <orient unit="DEG">
-      <pitch> 0.00 </pitch>
+      <pitch> 4.0 </pitch>
       <roll>  0.00 </roll>
       <yaw>   0.00 </yaw>
     </orient>    
-                               <feed>2</feed>    
-    <thruster file="OMS-mainx-Nozzle">
+                                 <feed>2</feed>    
+    <thruster file="OMS-maintest-Nozzle">
      <location unit="M">
       <x> 12.95 </x>
-       <y> -0.0 </y>
-       <z> -0.250 </z>
+       <y> -2.00 </y>
+       <z> -1.5 </z>
     </location>
      <orient unit="DEG">
-       <pitch> 0.00 </pitch>
+       <pitch> 4.0 </pitch>
        <roll>  0.00 </roll>
        <yaw>   0.00 </yaw>
      </orient>
