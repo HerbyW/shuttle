@@ -254,6 +254,11 @@ See the latest version on: www.github.com/HerbyW/antonov-aircrafts
                         Reverser End -->
   </nasal>
 
+  <import>
+        <path>Huds/Sets/controls.xml</path>
+        <x-offset>-100</x-offset>
+        <y-offset>70</y-offset>
+    </import>
 </PropertyList>
 
 

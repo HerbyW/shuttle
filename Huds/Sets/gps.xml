@@ -1,0 +1,331 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+	<!-- GPS waypoint -->
+	
+	<label>
+		<width>2</width>
+		<height>2</height>
+		<format>GPS OBS:%5s</format>
+		<halign>left</halign>
+		<input>
+			<property>/instrumentation/gps/wp/wp[1]/ID</property>
+		</input>
+
+        <condition>
+            <equals>
+                <property>/instrumentation/gps/mode</property>
+                <value>obs</value>
+            </equals>
+        </condition>
+	</label>
+	
+	<label>
+		<width>2</width>
+		<height>2</height>
+		<x>80</x>
+		<format>(TO)</format>
+		<halign>left</halign>
+
+        <condition>
+            <and>
+                <equals>
+                    <property>/instrumentation/gps/mode</property>
+                    <value>obs</value>
+                </equals>
+                <not><property>/instrumentation/gps/from-flag</property></not>
+            </and>
+        </condition>
+	</label>
+	
+	<label>
+		<width>2</width>
+		<height>2</height>
+		<x>80</x>
+		<format>(FROM)</format>
+		<halign>left</halign>
+
+        <condition>
+            <and>
+                <equals>
+                    <property>/instrumentation/gps/mode</property>
+                    <value>obs</value>
+                </equals>
+                <property>/instrumentation/gps/from-flag</property>
+            </and>
+        </condition>
+	</label>
+	
+	<label>
+		<width>2</width>
+		<height>2</height>
+		<format>GPS DTO:%5s</format>
+		<halign>left</halign>
+		<input>
+			<property>/instrumentation/gps/wp/wp[1]/ID</property>
+		</input>
+
+        <condition>
+            <property>/instrumentation/gps/wp/wp[1]/valid</property>
+            <equals>
+                <property>/instrumentation/gps/mode</property>
+                <value>dto</value>
+            </equals>
+        </condition>
+	</label>
+	
+	<label>
+		<width>2</width>
+		<height>2</height>
+		<format>GPS LEG:%5s</format>
+		<halign>left</halign>
+		<input>
+			<property>/instrumentation/gps/wp/wp[0]/ID</property>
+		</input>
+
+        <condition>
+            <property>/instrumentation/gps/wp/wp[1]/valid</property>
+            <equals>
+                <property>/instrumentation/gps/mode</property>
+                <value>leg</value>
+            </equals>
+        </condition>
+
+	</label>
+	
+	<label>
+		<width>2</width>
+		<height>2</height>
+		<x>80</x>
+		<format>-&gt;%5s</format>
+		<halign>left</halign>
+		<input>
+			<property>/instrumentation/gps/wp/wp[1]/ID</property>
+		</input>
+
+        <condition>
+            <property>/instrumentation/gps/wp/wp[1]/valid</property>
+            <equals>
+                <property>/instrumentation/gps/mode</property>
+                <value>leg</value>
+            </equals>
+        </condition>
+
+	</label>
+	
+	
+	
+	<label>
+		<width>2</width>
+		<height>2</height>
+		<y>-10</y>
+		<format>D: %4.1fnm</format>
+		<halign>left</halign>
+		<input>
+			<property>/instrumentation/gps/wp/wp[1]/distance-nm</property>
+		</input>
+        <condition>
+            <property>/instrumentation/gps/wp/wp[1]/valid</property>
+        </condition>
+	</label>
+	
+	<label>
+		<width>2</width>
+		<height>2</height>
+		<x>60</x>
+		<y>-10</y>
+		<format>TTW:%s</format>
+		<halign>left</halign>
+		<input>
+			<property>/instrumentation/gps/wp/wp[1]/TTW</property>
+		</input>
+        <condition>
+            <property>/instrumentation/gps/wp/wp[1]/valid</property>
+        </condition>
+	</label>
+	
+	<label>
+		<width>2</width>
+		<height>2</height>
+		<y>-20</y>
+		<format>BRG:%03d</format>
+		<halign>left</halign>
+		<input>
+			<property>/instrumentation/gps/wp/wp[1]/bearing-mag-deg</property>
+		</input>
+        <condition>
+            <property>/instrumentation/gps/wp/wp[1]/valid</property>
+        </condition>
+	</label>
+	
+	<label>
+		<width>2</width>
+		<height>2</height>
+		<y>-20</y>
+		<x>60</x>
+		<format>XTK: %2.1fnm</format>
+		<halign>left</halign>
+		<input>
+			<property>/instrumentation/gps/wp/wp[1]/course-error-nm</property>
+		</input>
+		
+		<condition>
+            <property>/instrumentation/gps/wp/wp[1]/valid</property>
+    		<greater-than>
+    		    <expression>
+    		        <abs><property>/instrumentation/gps/wp/wp[1]/course-error-nm</property></abs>
+    		    </expression>
+    		    <value>0.1</value>
+    		</greater-than>
+    	</condition>
+	</label>
+	
+    <label>
+		<width>2</width>
+		<height>2</height>
+		<y>-30</y>
+		<format>GS:%3dkts</format>
+		<halign>left</halign>
+		<input>
+			<property>/instrumentation/gps/indicated-ground-speed-kt</property>
+		</input>
+    </label>
+    
+    <!--Extra Information for Space Shuttle by HerbyW -->
+    
+    <label>
+		<width>2</width>
+		<height>2</height>
+		<y>-41</y>
+		<format>GS:%7.5fkm/s</format>
+		<halign>left</halign>
+		<input>
+			<property>/instrumentation/gps/indicated-ground-speed-kt</property>
+			<factor>0.00051444444444444</factor>
+		</input>
+     </label>
+     <label>
+		<width>2</width>
+		<height>2</height>
+		<x>460</x>
+		<y>-50</y>
+		<format>VerticalSpeed:%4d.......................meter/sec</format>
+		<halign>left</halign>
+		<input>
+			<property>velocities/vertical-speed-fps</property>
+			<factor>0.3048</factor>
+		</input>
+     </label>
+     <label>
+		<width>2</width>
+		<height>2</height>
+		<x>460</x>
+		<y>-40</y>
+		<format>GroundElevation:%7.2f........................km</format>
+		<halign>left</halign>
+		<input>
+			<property>/position/altitude-ft</property>
+			<factor>0.0003048</factor>
+		</input>
+     </label>
+     <label>
+		<width>2</width>
+		<height>2</height>
+		<x>460</x>
+		<y>-30</y>
+		<format>Glideslope:%6.3f............................percent</format>
+		<halign>left</halign>
+		<input>
+			<property>velocities/glideslope</property>
+		</input>
+     </label>
+     <label>
+		<width>2</width>
+		<height>2</height>
+		<x>460</x>
+		<y>-20</y>
+		<format>Speedbreak:%01d............................off(0) on(1)</format>
+		<halign>left</halign>
+		<input>
+			<property>controls/flight/speedbrake</property>
+		</input>
+     </label>
+     <label>
+		<width>2</width>
+		<height>2</height>
+		<x>460</x>
+		<y>-10</y>
+		<format>Flaps Indicator:%01d...............Position Degree</format>
+		<halign>left</halign>
+		<input>
+			<property>fdm/jsbsim/fcs/flap-pos-deg</property>
+		</input>
+     </label>
+     <label>
+		<width>2</width>
+		<height>2</height>
+		<x>460</x>
+		<y>0</y>
+		<format>Landing Gear Indicator:%01d...........off(0) on(1)</format>
+		<halign>left</halign>
+		<input>
+			<property>fdm/jsbsim/fcs/gear-control</property>
+		</input>
+     </label>
+     <label>
+		<width>2</width>
+		<height>2</height>
+		<x>460</x>
+		<y>10</y>
+		<format>Robotarm:%01d...............................off(0) on(1)</format>
+		<halign>left</halign>
+		<input>
+			<property>controls/shuttle/robotarm-norm</property>
+		</input>
+     </label>
+     <label>
+		<width>2</width>
+		<height>2</height>
+		<x>460</x>
+		<y>20</y>
+		<format>Doors:%01d....................................off(0) on(1)</format>
+		<halign>left</halign>
+		<input>
+			<property>controls/shuttle/door/position</property>
+		</input>
+     </label>
+     <label>
+		<width>2</width>
+		<height>2</height>
+		<x>460</x>
+		<y>40</y>
+		<format>METAR:%4.1f........................wind direction</format>
+		<halign>left</halign>
+		<input>
+			<property>environment/metar/base-wind-dir-deg</property>
+		</input>
+     </label>
+     <label>
+		<width>2</width>
+		<height>2</height>
+		<x>460</x>
+		<y>50</y>
+		<format>METAR:%4.1f.........................wind speed kt</format>
+		<halign>left</halign>
+		<input>
+			<property>environment/metar/base-wind-speed-kt</property>
+		</input>
+     </label>
+     <label>
+		<width>2</width>
+		<height>2</height>
+		<x>460</x>
+		<y>-280</y>
+		<format>Orbit Manouver Pitch Controll:%6.4f.........rad</format>
+		<halign>left</halign>
+		<input>
+			<property>fdm/jsbsim/propulsion/engine[2]/pitch-angle-rad</property>
+		</input>
+     </label>
+</PropertyList>
