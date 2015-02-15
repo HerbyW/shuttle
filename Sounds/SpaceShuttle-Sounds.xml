@@ -9,6 +9,19 @@ Author: Slavutinsky Victor  from Vostok-1 modified by HerbyW for SpaceShuttle
 <!-- Sounds -->
 
 	<fx>
+	  
+	  
+	<!-- Environments  -->
+
+	<enviro>
+		<name>enviro</name>
+		<mode>once</mode>
+		<path>Aircraft/SpaceShuttle/Sounds/SpaceShuttleLaunchAudio.wav</path>
+		<volume>
+			<min>0.6</min>
+			<max>0.6</max>
+		</volume>
+	</enviro>  
 
 	<!-- Startup on Runway, environment wind  -->
 
