@@ -208,6 +208,17 @@
      <label>
 		<width>2</width>
 		<height>2</height>
+		<y>-40</y>
+		<x>90</x>
+		<format>Mach:%4.2f</format>
+		<halign>left</halign>
+		<input>
+			<property>/velocities/mach</property>
+		</input>
+     </label>
+     <label>
+		<width>2</width>
+		<height>2</height>
 		<x>460</x>
 		<y>-50</y>
 		<format>VerticalSpeed:%4d.......................meter/sec</format>
@@ -227,6 +238,17 @@
 		<input>
 			<property>/position/altitude-ft</property>
 			<factor>0.0003048</factor>
+		</input>
+     </label>
+     <label>
+		<width>2</width>
+		<height>2</height>
+		<x>580</x>
+		<y>-160</y>
+		<format>%12.0f ft</format>
+		<halign>left</halign>
+		<input>
+			<property>/position/altitude-ft</property>
 		</input>
      </label>
      <label>
@@ -299,6 +321,24 @@
 		<width>2</width>
 		<height>2</height>
 		<x>460</x>
+		<y>30</y>
+                <format>METAR: Station ID........................</format>
+		<halign>left</halign>
+     </label>
+     <label>
+		<width>2</width>
+		<height>2</height>
+		<x>625</x>
+		<y>30</y>		
+		<halign>left</halign>
+		<input>
+			<property>environment/metar/station-id</property>
+		</input>
+     </label>
+     <label>
+		<width>2</width>
+		<height>2</height>
+		<x>460</x>
 		<y>40</y>
 		<format>METAR:%4.1f........................wind direction</format>
 		<halign>left</halign>
@@ -322,10 +362,45 @@
 		<height>2</height>
 		<x>460</x>
 		<y>-280</y>
-		<format>Orbit Manouver Pitch Controll:%6.4f.........rad</format>
+		<format>Orbit Manouver Pitch Control:%6.4f..........radial</format>
 		<halign>left</halign>
 		<input>
 			<property>fdm/jsbsim/propulsion/engine[2]/pitch-angle-rad</property>
 		</input>
      </label>
+     <label>
+		<width>2</width>
+		<height>2</height>
+		<x>460</x>
+		<y>-290</y>
+		<format>Tank2 for OMS:%6.4f......................Level-Norm</format>
+		<halign>left</halign>
+		<input>
+			<property>consumables/fuel/tank[2]/level-norm</property>
+		</input>
+     </label>
+     <label>
+		<width>2</width>
+		<height>2</height>
+		<x>460</x>
+		<y>-300</y>
+		<format>Tank3 for OCS:%6.4f......................Level-Norm</format>
+		<halign>left</halign>
+		<input>
+			<property>consumables/fuel/tank[3]/level-norm</property>
+		</input>
+     </label>
+     <label>
+		<width>2</width>
+		<height>2</height>
+		<x>460</x>
+		<y>-310</y>
+		<format>Tank4 for OCS:%6.4f......................Level-Norm</format>
+		<halign>left</halign>
+		<input>
+			<property>consumables/fuel/tank[4]/level-norm</property>
+		</input>
+     </label>
+     
+     
 </PropertyList>

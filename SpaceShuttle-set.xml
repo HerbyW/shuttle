@@ -90,8 +90,12 @@
 	</startup>
   
   <model>
-		<path>Aircraft/SpaceShuttle/Models/SpaceShuttle.xml</path>		
+	<path>Aircraft/SpaceShuttle/Models/SpaceShuttle.xml</path>		
   </model>
+  
+  <sound>
+        <path>Aircraft/SpaceShuttle/Sounds/SpaceShuttle-Sounds.xml</path>
+  </sound>
 
   <submodels>
       <serviceable type="bool">true</serviceable>

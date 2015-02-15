@@ -674,7 +674,7 @@ http://www.businessinsider.com/breathtaking-images-of-the-space-shuttle-2013-9?I
        <z>-100.00 </z>
      </location>
      <capacity unit="LBS"> 117265.00 </capacity>
-     <contents unit="LBS"> 0.10 </contents>
+     <contents unit="LBS"> 200.0 </contents>
      <priority>2</priority>
   </tank>
  

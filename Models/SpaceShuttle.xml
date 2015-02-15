@@ -765,6 +765,39 @@
      </offsets>
 </model>
 
+<!--more smoke ! -->
+
+<model>
+  <name>right-strake-vortex</name>
+  <path>Aircraft/SpaceShuttle/Models/Effects/strake-vortex.xml</path>
+  <offsets>
+        <x-m>9.45</x-m>
+	<y-m> 11.0</y-m>
+	<z-m>-4.46</z-m>
+  </offsets>
+ </model>
+ <model>
+  <name>right-strake-vortex</name>
+  <path>Aircraft/SpaceShuttle/Models/Effects/strake-vortex.xml</path>
+  <offsets>
+        <x-m>9.45</x-m>
+	<y-m>-11.0</y-m>
+	<z-m>-4.46</z-m>
+  </offsets>
+ </model>
+
+ <!--and supersonic boom ! -->
+ <model>
+		<name>sonicboom</name>
+		<path>Aircraft/SpaceShuttle/Models/Effects/boom.xml</path>
+		<offsets>
+			<x-m>-18.38</x-m>
+			<y-m>0</y-m>
+			<z-m>-3.2</z-m>
+			<pitch-deg>0</pitch-deg>
+		</offsets>
+	</model>
+ 
 <!--
 <model>
     <path>Aircraft/SpaceShuttle/Models/lunarlandernofoil-c/lunarlander.xml</path>

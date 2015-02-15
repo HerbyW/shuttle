@@ -3,11 +3,13 @@
 <PropertyList>
 	<import>
 		<path>Huds/Instruments/latitude.xml</path>
-		<x-offset>-210</x-offset>
+		<x-offset>-60</x-offset>
+		<y-offset>-10</y-offset>
 	</import>
 
 	<import>
 		<path>Huds/Instruments/longitude.xml</path>
-		<x-offset>210</x-offset>
+		<x-offset>60</x-offset>
+		<y-offset>-10</y-offset>
 	</import>
 </PropertyList>
