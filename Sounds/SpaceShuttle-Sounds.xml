@@ -23,23 +23,25 @@ Author: Slavutinsky Victor  from Vostok-1 modified by HerbyW for SpaceShuttle
 		</volume>
 	</enviro>  
 
-	<!-- Startup on Runway, environment wind  -->
+	<!-- Startup on Runway, environment wind  --> 
 
 	<wind>
 		<name>wind</name>
 		<mode>looped</mode>
-		<path>Aircraft/SpaceShuttle/Sounds/Vostok-1-Wind.wav</path>
+		<path>Aircraft/SpaceShuttle/Sounds/wind-8khz.wav</path>
 		<volume>
 			<property>environment/wind-speed-kt</property>
-			<factor>1.0</factor>
+			<factor>0.04</factor>
 			<offset>0.0</offset>
 			<min>0.0</min>
-			<max>0.15</max>
+			<max>0.10</max>
 		</volume>
 		<pitch>
 			<property>environment/wind-speed-kt</property>
-			<factor>0.1</factor>
-			<offset>1.0</offset>
+			<factor>0.04</factor>
+			<offset>0.0</offset>
+			<min>0.0</min>
+			<max>1.0</max>
 		</pitch>
 		<position>
 			<x>0</x>
@@ -52,15 +54,16 @@ Author: Slavutinsky Victor  from Vostok-1 modified by HerbyW for SpaceShuttle
          <and>
             <less-than>
                   <property>/velocities/mach</property>
-                  <value>0.3</value>
+                  <value>1.02</value>
             </less-than>               
 	    <less-than>
                <property>/position/altitude-agl-ft</property>
-               <value>500</value>
+               <value>45000</value>
             </less-than>
          </and>
         </condition>
-	</wind>
+	<delay-sec>2</delay-sec>
+	</wind>                                 
 
 	<!-- Booster  -->
 
@@ -229,46 +232,7 @@ Author: Slavutinsky Victor  from Vostok-1 modified by HerbyW for SpaceShuttle
 		</volume>
 	</doors>
 
-	<!-- OCS
-
-	<OCS>
-		<name>OCS</name>
-		<mode>looped</mode>
-		<path>Aircraft/SpaceShuttle/Sounds/Vostok-1-TDU-Engine-Once.wav</path>
-		  
-		  <condition>
-		    <or>
-		    <greater-than>
-			<property>controls/engines/engine[3]/throttle</property>
-			<value>0.8</value>
-		    </greater-than>
-		    <greater-than>
-			<property>controls/engines/engine[4]/throttle</property>
-			<value>0.8</value>
-		    </greater-than>
-		    <greater-than>
-			<property>controls/engines/engine[6]/throttle</property>
-			<value>0.8</value>
-		    </greater-than>
-		    <greater-than>
-			<property>controls/engines/engine[10]/throttle</property>
-			<value>0.8</value>
-		    </greater-than>
-		    <greater-than>
-			<property>controls/engines/engine[11]/throttle</property>
-			<value>0.8</value>
-		    </greater-than>    
-		    </or>
-		  </condition>  
-		  <volume>
-		    	<factor>1.0</factor>
-			<offset>1.0</offset>
-			<min>0.10</min>
-			<max>0.10</max>
-		</volume>
-	</OCS>
-  -->
-
+	
 	</fx>
 
 </PropertyList>

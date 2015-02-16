@@ -21,7 +21,17 @@
     <armament>
       <trigger type="int">0</trigger>
     </armament>
+    <engines>
+      <engine n = "2">
+	<propeller-pitch type="float">0.5</propeller-pitch>
+      </engine>
+      <engine n = "5">
+	<propeller-pitch type="float">0.5</propeller-pitch>
+      </engine>
+    </engines>
   </controls>
+  
+  
   
   <instrumentation>
     <doors>
