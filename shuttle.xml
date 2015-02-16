@@ -955,6 +955,28 @@ http://www.businessinsider.com/breathtaking-images-of-the-space-shuttle-2013-9?I
    </kinematic>
 
   </channel>
+  
+  
+
+  <channel name="parachute">
+   <kinematic name="parachute Control">
+     <input>fcs/parachute-cmd-norm</input>
+     <traverse>
+       <setting>
+          <position> 0 </position>
+          <time>     0 </time>
+       </setting>
+       <setting>
+          <position> 1 </position>
+          <time>     1 </time>
+       </setting>
+     </traverse>
+     <output>fcs/parachute-pos-norm</output>
+   </kinematic>
+
+  </channel>
+
+  
 
  </flight_control>
 
@@ -998,7 +1020,16 @@ http://www.businessinsider.com/breathtaking-images-of-the-space-shuttle-2013-9?I
            <value>-0.09</value>
        </product>
     </function>
+    
+    
+    
+    <function name="aero/coefficient/dCLchute">
+       <description>Delta_Lift_due_to_parachute</description>
+            <value>-0.19</value>       
+    </function>
 
+    
+    
     <function name="aero/coefficient/CLde">
        <description>Lift_due_to_Elevator_Deflection</description>
        <product>
@@ -1087,7 +1118,16 @@ http://www.businessinsider.com/breathtaking-images-of-the-space-shuttle-2013-9?I
            <value>0.019</value>
          </product>
     </function>
+    
+    
+    
+    <function name="aero/coefficient/CDchute">
+       <description>Drag_due_to_parachute</description>
+         <value>0.19</value>
+    </function>
 
+    
+    
     <function name="aero/coefficient/CDbeta">
        <description>Drag_due_to_sideslip</description>
        <product>
@@ -1252,7 +1292,7 @@ http://www.businessinsider.com/breathtaking-images-of-the-space-shuttle-2013-9?I
            <value>-6</value>
        </product>
     </function>
-
+    
   </axis>
 
   <axis name="YAW">

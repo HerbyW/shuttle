@@ -11,7 +11,8 @@
        <robotarm type="float">0</robotarm> 
       <door>
        <position type="float">0</position>
-      </door>             
+      </door>
+      <parachute type="int">0</parachute>
     </shuttle>
     
     <lighting>
@@ -31,7 +32,10 @@
     </engines>
   </controls>
   
-  
+  <fdm><jsbsim><fcs>
+    <parachute-cmd-norm type="float">0</parachute-cmd-norm>
+    <parachute-pos-norm type="float">0</parachute-pos-norm>
+  </fcs></jsbsim></fdm>
   
   <instrumentation>
     <doors>
@@ -85,7 +89,8 @@
         <float n="16" alias="/engines/engine[10]/thrust_lb" />        
         <float n="17" alias="/engines/engine[11]/thrust_lb" />
         <float n="18" alias="/engines/engine[2]/thrust_lb" />
-        <float n="19" alias="/instrumentation/robotarm-norm" />
+        <float n="19" alias="/instrumentation/robotarm-norm" />        
+        <int type="int" n="3" alias="/controls/shuttle/parachute"/>
         <int type="int" n="4" alias="/controls/shuttle/EMU"/>
         <int type="int" n="5" alias="/controls/shuttle/EMU"/>
         <int type="int" n="6" alias="/controls/shuttle/external-fuel-tank"/>
@@ -151,11 +156,10 @@ Close the doors by clicking on them.
 Give throttle, and take off, be carefull with throttle - it is a rocket!
 Hold it in a climbing position of 23 degree and go to 15000 ft,
 stop throttle, set the Autopilot to -3 pitch hold and give throttle again.
-If the shuttle goes up more then 35 degrees reduce throttle.
-Try to get a speed of 12000 kts for a 10 minute orbital flight, 22000 kts for 220 minutes.
-We work on getting the orbital speed of 28000 kts to reach a stable orbit position.
+If the shuttle goes up more then 15 degrees reduce throttle.
+Try to get a speed of 8000 kts for a 10 minute orbital flight, 22000 kts for 220 minutes.
 
-When reaching 145000 ft deactivate the tank and booster rockets by setting the Tank 0 and 1 to 0.
+When reaching 115000 ft deactivate the tank and booster rockets by setting the Tank 0 and 1 to 0.
 You are now making a ballistic flight pattern, reaching 100.000.000 ft is possible.
 
 Fill Tank 3 and 4 now to full and watch the autopilot controlling the OCS engines,
@@ -164,21 +168,23 @@ by making tank 4 full and tank 3 empty, then activate the engines by short filli
 There is a YAW-controll by the rudder implemented now!
 
 Orbit Manouver Engines on tail position are activated by setting tank 2.
-They are controlled with Throttle and with propeller-pitch control for pitching them (-35 - +35 degree pitch for the Thruster)
+They are controlled with Throttle and with propeller-pitch control for pitching them (-20 - +20 degree pitch for the Thruster)
 try to get them in a position so that the elevator-trim is in neutral position.
 So you may control a flight from 145000 ft up to 350000 ft and back again.
 
-Entering the athmosphere is tricky: set the autopilot to -40 degree pitch and hope for the best :)
+Entering the athmosphere is tricky: set the autopilot to -25 degree pitch and hope for the best :)
 Set all Tanks  to 0.
-At 50000 ft the shuttle should be stable and you set the pitch to -3 degree or to +3.
+At 90000 ft the shuttle should be stable and you set the pitch to -3 degree or to +3.
 
 Now you glide to your landing spot.
+
+F2 activates the parachute, use it after touchdown. (still no force impemented)
 
 Gears, Flaps and Speed Breaks are not animated but are there in the jsb.
 Speed Breakes: Key s
    
 ILS Heading is not working, glidepath is not usefull as you have a different glide path as a comercial airliner.
-Landing with 240-340 kt, Flaps (2 Steps) and Speedbreak (1 Step) to full level.
+Landing with 240-340 kt, Flaps (3 Steps) and Speedbreak (1 Step) to full level.
 
 Wing and Pitch leveler engines (OCS) with 8 extra engines working with autopilot in outer-space!
 
@@ -216,7 +222,15 @@ See the latest version on: www.github.com/HerbyW/antonov-aircrafts
              <value>true</value>
         </binding>	
      </key>
- 
+     
+     <key n="258">
+          <name>F2</name>
+          <desc>Parachute</desc>  
+          <binding>
+            <command>property-toggle</command>
+            <property>sim/multiplay/generic/int[3]</property>
+          </binding>
+     </key>
    </keyboard>
   </input>                     
   
