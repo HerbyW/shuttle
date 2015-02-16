@@ -11,19 +11,19 @@ Author: Slavutinsky Victor  from Vostok-1 modified by HerbyW for SpaceShuttle
 	<fx>
 	  
 	  
-	<!-- Environments  -->
+	<!-- Environments  -->  
 
 	<enviro>
 		<name>enviro</name>
 		<mode>once</mode>
 		<path>Aircraft/SpaceShuttle/Sounds/SpaceShuttleLaunchAudio.wav</path>
 		<volume>
-			<min>0.6</min>
-			<max>0.6</max>
+			<min>0.7</min>
+			<max>0.7</max>
 		</volume>
-	</enviro>  
+	</enviro>
 
-	<!-- Startup on Runway, environment wind  --> 
+	<!-- Startup on Runway, environment wind -->
 
 	<wind>
 		<name>wind</name>
@@ -62,8 +62,8 @@ Author: Slavutinsky Victor  from Vostok-1 modified by HerbyW for SpaceShuttle
             </less-than>
          </and>
         </condition>
-	<delay-sec>2</delay-sec>
-	</wind>                                 
+	<delay-sec>1</delay-sec>
+	</wind>              
 
 	<!-- Booster  -->
 
@@ -80,7 +80,7 @@ Author: Slavutinsky Victor  from Vostok-1 modified by HerbyW for SpaceShuttle
 		</volume>
 	</booster>
 	
-	<!-- Main  -->
+	<!-- Main Engines -->
 	
 	<main>
 		<name>main</name>
@@ -135,7 +135,7 @@ Author: Slavutinsky Victor  from Vostok-1 modified by HerbyW for SpaceShuttle
 		</volume>
 	</tank-separation>
 
-        	<!-- OMS Main-->
+        	<!-- OMS Main  -->
 	
 	<OMS>
 		<name>OMS</name>
@@ -151,7 +151,7 @@ Author: Slavutinsky Victor  from Vostok-1 modified by HerbyW for SpaceShuttle
 			<factor>1.0</factor>
 			<offset>0.0</offset>
 			<min>0.0</min>
-			<max>0.6</max>
+			<max>0.4</max>
 		</volume>
 	</OMS>
 	
@@ -168,8 +168,8 @@ Author: Slavutinsky Victor  from Vostok-1 modified by HerbyW for SpaceShuttle
 		  <volume>
 			<factor>1.0</factor>
 			<offset>1.0</offset>
-			<min>0.5</min>
-			<max>0.5</max>
+			<min>0.4</min>
+			<max>0.4</max>
 		</volume>
 	</OMS-out>
 
@@ -198,8 +198,8 @@ Author: Slavutinsky Victor  from Vostok-1 modified by HerbyW for SpaceShuttle
 		    <property>sim/multiplay/generic/float[19]</property>
 			<factor>1.0</factor>
 			<offset>0.0</offset>
-			<min>0.15</min>
-			<max>0.15</max>
+			<min>0.1</min>
+			<max>0.1</max>
 		</volume>
 	</robotarm>
 	
@@ -232,6 +232,110 @@ Author: Slavutinsky Victor  from Vostok-1 modified by HerbyW for SpaceShuttle
 		</volume>
 	</doors>
 
+	<!-- Gears  -->
+
+	<gears>
+		<name>gears</name>
+		<mode>once</mode>
+		<path>Aircraft/SpaceShuttle/Sounds/gear.wav</path>
+		  
+		  <condition>
+		    <and>
+		    <greater-than>
+			<property>gear/gear/position-norm</property>
+			<value>0.01</value>
+		    </greater-than>
+		    <less-than>
+			<property>gear/gear/position-norm</property>
+			<value>0.99</value>
+		    </less-than>
+		    </and>
+		  </condition>
+		  
+		  <volume>
+		    <property>gear/gear/position-norm</property>
+			<factor>1.0</factor>
+			<offset>0.0</offset>
+			<min>0.3</min>
+			<max>0.3</max>
+		</volume>
+	</gears>
+
+	<!-- Flaps  -->
+
+	<flaps>
+		<name>flaps</name>
+		<mode>in-transit</mode>
+		<path>Aircraft/SpaceShuttle/Sounds/flaps.wav</path>
+		 <property>surface-positions/flap-pos-norm</property>
+		<volume>
+		    <min>0.0</min>
+                    <max>0.2</max>
+		</volume>
+	</flaps>
+	
+	<!-- Touchdown  -->
+
+	<touchdown>
+        <name>touchdown</name>
+        <path>Aircraft/SpaceShuttle/Sounds/touchdown.wav</path>
+        <condition>
+            <and>	      
+	       <greater-than>
+                <property>/velocities/airspeed-kt</property>
+		<value>140</value>
+               </greater-than>
+               <less-than>
+                <property>velocities/vertical-speed-fps</property>
+		<value>-0.1</value>
+               </less-than>
+	       <greater-than>
+                <property>/gear/gear/compression-norm</property>
+                <value>0.05</value>
+               </greater-than>
+	       <equals>
+                <property>/gear/gear/wow</property>
+                <value>1</value>
+               </equals>                    
+            </and>
+        </condition>
+        <volume>
+            <property>sim/sound/volume</property>
+        </volume>       
+        <position>
+            <x>-6.5</x>
+            <y>0</y>
+            <z>-5</z>
+        </position>
+        <reference-dist>20.0</reference-dist>
+        <max-dist>40.0</max-dist>
+	</touchdown>
+
+	<!-- rumble  -->
+
+	<rumble>
+		<name>rumble</name>
+		<mode>looped</mode>
+		<path>Aircraft/SpaceShuttle/Sounds/rumble.wav</path>
+		<condition>
+		  <and>
+                   <greater-than>
+                      <property>/gear/gear/rollspeed-ms</property>
+                      <value>5</value>
+                   </greater-than>
+		   <equals>
+                      <property>/gear/gear/wow</property>
+                      <value>1</value>
+                   </equals> 
+		  </and>
+                </condition>
+          <volume>
+            <property>/gear/gear/rollspeed-ms</property>            
+            <factor>0.005</factor>
+	    <min>0.2</min>
+	    <max>1.0</max>
+          </volume>          
+        </rumble>
 	
 	</fx>
 
