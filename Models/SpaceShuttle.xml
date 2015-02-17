@@ -808,11 +808,30 @@
        <z-m> 1.22 </z-m>
        <pitch-deg>90</pitch-deg>
      </offsets>
+                        <condition>
+			 <greater-than>
+				<property>/gear/gear/rollspeed-ms</property>
+				<value>50</value>
+			 </greater-than>
+                        </condition>
+</model>  
+<model>
+    <path>Aircraft/SpaceShuttle/Models/Parachutes/Brake-Parachute2.xml</path>
+     <offsets>
+       <x-m> 57.7 </x-m>
+       <y-m> 0.0 </y-m>
+       <z-m>-6.85 </z-m>
+       <pitch-deg>90</pitch-deg>
+     </offsets>
+                        <condition>
+			 <less-than>
+				<property>/gear/gear/rollspeed-ms</property>
+				<value>49.9</value>
+			 </less-than>
+                        </condition>
 </model>  
 
-
-<!--
-<model>
+<!--<model>
     <path>Aircraft/SpaceShuttle/Models/lunarlandernofoil-c/lunarlander.xml</path>
      <offsets>
        <x-m> -2.30 </x-m>
