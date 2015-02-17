@@ -278,7 +278,7 @@
 		<height>2</height>
 		<x>460</x>
 		<y>-10</y>
-		<format>Flaps Indicator:%01d...............Position Degree</format>
+		<format>Flaps Indicator:%01d................Position Degree</format>
 		<halign>left</halign>
 		<input>
 			<property>fdm/jsbsim/fcs/flap-pos-deg</property>
@@ -300,7 +300,7 @@
 		<height>2</height>
 		<x>460</x>
 		<y>10</y>
-		<format>Robotarm:%01d...............................off(0) on(1)</format>
+		<format>Robotarm:%01d...............................in(0) out(1)</format>
 		<halign>left</halign>
 		<input>
 			<property>controls/shuttle/robotarm-norm</property>
@@ -311,7 +311,7 @@
 		<height>2</height>
 		<x>460</x>
 		<y>20</y>
-		<format>Doors:%01d....................................off(0) on(1)</format>
+		<format>Doors:%01d............................closed(1) open(0)</format>
 		<halign>left</halign>
 		<input>
 			<property>controls/shuttle/door/position</property>
@@ -399,6 +399,17 @@
 		<halign>left</halign>
 		<input>
 			<property>consumables/fuel/tank[4]/level-norm</property>
+		</input>
+     </label>
+     <label>
+		<width>2</width>
+		<height>2</height>
+		<x>460</x>
+		<y>60</y>
+		<format>Parachute:%01d..............................in(0) out(1)</format>
+		<halign>left</halign>
+		<input>
+			<property>controls/shuttle/parachute</property>
 		</input>
      </label>
  

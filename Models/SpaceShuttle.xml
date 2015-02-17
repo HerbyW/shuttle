@@ -811,10 +811,73 @@
                         <condition>
 			 <greater-than>
 				<property>/gear/gear/rollspeed-ms</property>
-				<value>50</value>
+				<value>55</value>
 			 </greater-than>
                         </condition>
 </model>  
+<model>
+    <path>Aircraft/SpaceShuttle/Models/Parachutes/Brake-Parachute.xml</path>
+     <offsets>
+       <x-m> 22.7 </x-m>
+       <y-m> 0.0 </y-m>
+       <z-m> 1.22 </z-m>
+       <pitch-deg>90</pitch-deg>
+     </offsets>
+     <condition>
+       <and>
+			 <greater-than>
+				<property>/gear/gear/rollspeed-ms</property>
+				<value>50</value>
+			 </greater-than> 
+			 <less-than>
+				<property>/gear/gear/rollspeed-ms</property>
+				<value>54.999</value>
+			 </less-than>       
+	</and>
+      </condition>
+</model>
+<model>
+    <path>Aircraft/SpaceShuttle/Models/Parachutes/Brake-Parachute.xml</path>
+     <offsets>
+       <x-m> 27.7 </x-m>
+       <y-m> 0.0 </y-m>
+       <z-m> 1.22 </z-m>
+       <pitch-deg>90</pitch-deg>
+     </offsets>
+                        <condition>
+       <and>
+			 <greater-than>
+				<property>/gear/gear/rollspeed-ms</property>
+				<value>45</value>
+			 </greater-than> 
+			 <less-than>
+				<property>/gear/gear/rollspeed-ms</property>
+				<value>49.999</value>
+			 </less-than>       
+	</and>
+      </condition>
+</model>
+<model>
+    <path>Aircraft/SpaceShuttle/Models/Parachutes/Brake-Parachute2.xml</path>
+     <offsets>
+       <x-m> 47.7 </x-m>
+       <y-m> 0.0 </y-m>
+       <z-m>-6.85 </z-m>
+       <pitch-deg>90</pitch-deg>
+     </offsets>
+                        <condition>
+       <and>
+			 <greater-than>
+				<property>/gear/gear/rollspeed-ms</property>
+				<value>40</value>
+			 </greater-than> 
+			 <less-than>
+				<property>/gear/gear/rollspeed-ms</property>
+				<value>44.999</value>
+			 </less-than>       
+	</and>
+      </condition>
+</model>
 <model>
     <path>Aircraft/SpaceShuttle/Models/Parachutes/Brake-Parachute2.xml</path>
      <offsets>
@@ -824,12 +887,18 @@
        <pitch-deg>90</pitch-deg>
      </offsets>
                         <condition>
+       <and>
+			 <greater-than>
+				<property>/gear/gear/rollspeed-ms</property>
+				<value>15</value>
+			 </greater-than> 
 			 <less-than>
 				<property>/gear/gear/rollspeed-ms</property>
-				<value>49.9</value>
-			 </less-than>
-                        </condition>
-</model>  
+				<value>39.9</value>
+			 </less-than>       
+	</and>
+      </condition>
+</model>
 
 <!--<model>
     <path>Aircraft/SpaceShuttle/Models/lunarlandernofoil-c/lunarlander.xml</path>
