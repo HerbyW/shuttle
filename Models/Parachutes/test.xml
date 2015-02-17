@@ -1,0 +1,105 @@
+
+
+ <flight_control name="FCS: Sounding Balloon">
+
+  <channel name="chute">
+   <fcs_function name="fcs/parachute_reef_pos_norm">
+    <function>
+     <sum>
+      <property>inertia/weight-lbs</property>
+      <property>forces/fbz-buoyancy-lbs</property>
+     </sum>
+    </function>
+    <clipto>
+     <min>0.</min>
+     <max>1.</max>
+    </clipto>
+   </fcs_function>
+  <pure_gain name="metrics/Schute-sqft">
+    <input>fcs/parachute_reef_pos_norm</input>
+    <gain> 8.0 </gain> <!-- Area of braking chute -->
+   </pure_gain>
+  </channel>
+ 
+ </flight_control>
+
+ <aerodynamics>
+  <axis name="LIFT">
+  </axis>
+  <axis name="DRAG">
+  </axis>
+  <axis name="SIDE">
+  </axis>
+  <axis name="ROLL">
+
+   <function name="aero/coefficient/Clpc">
+    <description>Roll_moment_due_to_roll_rate_chute_(roll_damping)</description>
+    <product>
+     <property>aero/qbar-psf</property>
+     <property>metrics/Schute-sqft</property>
+     <property>aero/bi2vel</property>
+     <property>velocities/p-aero-rad_sec</property>
+     <value>-0.4</value>
+    </product>
+   </function>
+  </axis>
+
+  <axis name="PITCH">
+
+   <function name="aero/coefficient/Cmqc">
+    <description>Pitch_moment_due_to_pitch_rate_chute</description>
+    <product>
+     <property>aero/qbar-psf</property>
+     <property>metrics/Schute-sqft</property>
+     <property>aero/ci2vel</property>
+     <property>velocities/q-aero-rad_sec</property>
+     <value>-0.4</value>
+    </product>
+   </function>
+  </axis>
+
+  <axis name="YAW">
+ 
+  <function name="aero/coefficient/Cnrc">
+     <description>Yaw_moment_due_to_yaw_rate_chute</description>
+     <product>
+      <property>aero/qbar-psf</property>
+      <property>metrics/Schute-sqft</property>
+      <property>aero/bi2vel</property>
+      <property>velocities/r-aero-rad_sec</property>
+      <value>-0.05</value>
+    </product>
+   </function>
+  </axis>
+
+ </aerodynamics>
+
+ <external_reactions>
+  <force name="parachute" frame="WIND">
+    <function>
+      <product>
+        <p> aero/qbar-psf </p>
+        <p> metrics/Schute-sqft </p>
+        <v> 1.4 </v> <!-- Full drag coefficient -->
+      </product>
+    </function>
+    <location unit="FT">
+      <x> 0</x>
+      <y> 0</y>
+      <z>-6.0</z>
+    </location>
+    <!-- The direction describes a unit vector. In this case, since
+         the selected frame is the WIND frame, the "-1" x component
+         describes a direction exactly opposite of the direction
+         into the wind vector. That is, the direction specified below
+         is the direction that the drag force acts in. -->
+    <direction>
+      <x>-1</x>
+      <y>0</y>
+      <z>0</z>
+    </direction>
+  </force>
+ </external_reactions>
+
+
+</fdm_config>

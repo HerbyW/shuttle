@@ -31,12 +31,7 @@
       </engine>
     </engines>
   </controls>
-  
-  <fdm><jsbsim><fcs>
-    <parachute-cmd-norm type="float">0</parachute-cmd-norm>
-    <parachute-pos-norm type="float">0</parachute-pos-norm>
-  </fcs></jsbsim></fdm>
-  
+    
   <instrumentation>
     <doors>
       <door1>
@@ -45,6 +40,9 @@
     </doors>
     <robotarm-norm type="float">0</robotarm-norm> 
    </instrumentation>
+ 
+ <fdm><jsbsim><fcs><parachute_reef_pos_norm type="float"> 0 </parachute_reef_pos_norm></fcs></jsbsim></fdm>
+ 
  
  <sim>
   <description>NASA Space Shuttle Atlantis</description>
@@ -229,7 +227,7 @@ See the latest version on: www.github.com/HerbyW/antonov-aircrafts
           <binding>
             <command>property-toggle</command>
             <property>sim/multiplay/generic/int[3]</property>
-          </binding>
+          </binding>	  
      </key>
    </keyboard>
   </input>                     

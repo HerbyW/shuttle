@@ -194,18 +194,18 @@ timerOMS.start();
 
 
 #
-# create timer with 0.1 second interval to check the parachute
+# create timer with 0.8 second interval to check the parachute
 var timerChute = maketimer(0.1, func
 
   {  if(getprop("/controls/shuttle/parachute") < 1)
      {
-        setprop("/fcs/parachute-cmd-norm", 0);
-        setprop("/fcs/parachute-pos-norm", 0);
+        setprop("/fcs/parachute_reef_pos_norm", 0);
+	setprop("/fdm/jsbsim/fcs/parachute_reef_pos_norm", 0);
       }
       else
       {
-        setprop("/fcs/parachute-cmd-norm", 1);
-	setprop("/fcs/parachute-pos-norm", 1);
+        setprop("/fcs/parachute_reef_pos_norm", 1);
+	setprop("/fdm/jsbsim/fcs/parachute_reef_pos_norm", 1);
       }
    }
 );
