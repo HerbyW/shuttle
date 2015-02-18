@@ -810,7 +810,7 @@
      </offsets>
                         <condition>
 			 <greater-than>
-				<property>/gear/gear/rollspeed-ms</property>
+				<property>sim/multiplay/generic/float[0]</property>
 				<value>55</value>
 			 </greater-than>
                         </condition>
@@ -826,11 +826,11 @@
      <condition>
        <and>
 			 <greater-than>
-				<property>/gear/gear/rollspeed-ms</property>
+				<property>sim/multiplay/generic/float[0]</property>
 				<value>50</value>
 			 </greater-than> 
 			 <less-than>
-				<property>/gear/gear/rollspeed-ms</property>
+				<property>sim/multiplay/generic/float[0]</property>
 				<value>54.999</value>
 			 </less-than>       
 	</and>
@@ -847,11 +847,11 @@
                         <condition>
        <and>
 			 <greater-than>
-				<property>/gear/gear/rollspeed-ms</property>
+				<property>sim/multiplay/generic/float[0]</property>
 				<value>45</value>
 			 </greater-than> 
 			 <less-than>
-				<property>/gear/gear/rollspeed-ms</property>
+				<property>sim/multiplay/generic/float[0]</property>
 				<value>49.999</value>
 			 </less-than>       
 	</and>
@@ -868,11 +868,11 @@
                         <condition>
        <and>
 			 <greater-than>
-				<property>/gear/gear/rollspeed-ms</property>
+				<property>sim/multiplay/generic/float[0]</property>
 				<value>40</value>
 			 </greater-than> 
 			 <less-than>
-				<property>/gear/gear/rollspeed-ms</property>
+				<property>sim/multiplay/generic/float[0]</property>
 				<value>44.999</value>
 			 </less-than>       
 	</and>
@@ -889,11 +889,11 @@
                         <condition>
        <and>
 			 <greater-than>
-				<property>/gear/gear/rollspeed-ms</property>
+				<property>sim/multiplay/generic/float[0]</property>
 				<value>15</value>
 			 </greater-than> 
 			 <less-than>
-				<property>/gear/gear/rollspeed-ms</property>
+				<property>sim/multiplay/generic/float[0]</property>
 				<value>39.9</value>
 			 </less-than>       
 	</and>

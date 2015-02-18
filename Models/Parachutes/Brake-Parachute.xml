@@ -36,7 +36,7 @@
 
 	<animation>
 		<type>spin</type>
-		<property>/gear/gear/rollspeed-ms</property>
+		<property>sim/multiplay/generic/float[0]</property>
 		<factor>0.257</factor>
 		<center>
 			<x-m>0.0</x-m>
