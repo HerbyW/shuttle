@@ -413,6 +413,55 @@
 		</input>
      </label>
  
- 
+     <label>
+		<width>2</width>
+		<height>2</height>		
+		<y>-280</y>
+		<format>Pitch-Trim:.....%6.4f.............Number</format>
+		<halign>left</halign>
+		<input>
+			<property>controls/flight/elevator-trim</property>
+		</input>
+     </label>
+     
+     <label>
+		<width>2</width>
+		<height>2</height>
+		<y>-290</y>
+		<halign>left</halign>
+		<format>Home-Airport........................</format>		
+     </label>
+     
+     <label>
+		<width>2</width>
+		<height>2</height>
+		<y>-290</y>
+		<x>150</x>
+		<input>
+			<property>autopilot/route-manager/destination/airport</property>
+		</input>
+     </label>
+          
+     <label>
+		<width>2</width>
+		<height>2</height>
+		<y>-300</y>
+		<halign>left</halign>
+		<format>True-Heading:%5.2f.............Number</format>
+		<input>
+			<property>autopilot/route-manager/wp/true-bearing-deg</property>
+		</input>
+     </label>
+          
+     <label>
+		<width>2</width>
+		<height>2</height>
+		<y>-310</y>
+		<halign>left</halign>
+		<format>Distance:.......%6.2f....................nm</format>
+		<input>
+			<property>autopilot/route-manager/wp/dist</property>
+		</input>
+     </label>
      
 </PropertyList>

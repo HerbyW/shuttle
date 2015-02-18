@@ -187,7 +187,7 @@ http://www.businessinsider.com/breathtaking-images-of-the-space-shuttle-2013-9?I
 
 <contact type="BOGEY" name="NOSE">
 <location unit="M">
-<x> -16.00 </x>
+<x> -15.00 </x>
 <y> 0.00 </y>
 <z> -6.95 </z>
 </location>
@@ -203,8 +203,8 @@ http://www.businessinsider.com/breathtaking-images-of-the-space-shuttle-2013-9?I
 
 <contact type="BOGEY" name="LEFT_MAIN">
 <location unit="M">
-<x> 9.80 </x>
-<y> -4.4 </y>
+<x> 4.70 </x>
+<y> -4.2 </y>
 <z>-6.85 </z>
 </location>
 <static_friction> 0.80 </static_friction>
@@ -219,8 +219,8 @@ http://www.businessinsider.com/breathtaking-images-of-the-space-shuttle-2013-9?I
 
 <contact type="BOGEY" name="RIGHT_MAIN">
 <location unit="M">
-<x> 9.80 </x>
-<y> 4.4 </y>
+<x> 4.70 </x>
+<y> 4.2 </y>
 <z>-6.85 </z>
 </location>
 <static_friction> 0.80 </static_friction>
