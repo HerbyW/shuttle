@@ -277,31 +277,6 @@
 			 </equals>
 		 </condition>
   </model>
-
-  <!--
-  <model>
-		<path>Aircraft/SpaceShuttle/Models/Effects/trails-minni11.xml</path>		
-		<offsets>
-			<x-m>9.45</x-m>
-                        <y-m>-11.4</y-m>
-                        <z-m>-4.46</z-m>
-			<roll-deg>0.0</roll-deg>
-			<pitch-deg>90.0</pitch-deg>
-			<heading-deg>0.0</heading-deg>
-		</offsets>
-  </model>
-  <model>
-		<path>Aircraft/SpaceShuttle/Models/Effects/trails-minni12.xml</path>		
-		<offsets>
-			<x-m>9.45</x-m>
-                        <y-m>11.4</y-m>
-                        <z-m>-4.46</z-m>
-			<roll-deg>0.0</roll-deg>
-			<pitch-deg>90.0</pitch-deg>
-			<heading-deg>0.0</heading-deg>
-		</offsets>
-  </model>
-  -->
   
   <!-- smoke from the extra control engines xlr01 pitchlevel nose position -->
   <model>
@@ -317,7 +292,7 @@
 		<condition>
 			 <equals>
 				<property>/engines/engine[6]/reverser-pos-norm</property>
-				<value>0</value>
+				<value>1</value>
 			 </equals>
 		 </condition>
   </model>
@@ -337,7 +312,7 @@
 		<condition>
 			 <equals>
 				<property>/engines/engine[6]/reverser-pos-norm</property>
-				<value>1</value>
+				<value>0</value>
 			 </equals>
 		 </condition>
   </model>
@@ -355,7 +330,7 @@
 		<condition>
 			 <equals>
 				<property>/engines/engine[6]/reverser-pos-norm</property>
-				<value>0</value>
+				<value>1</value>
 			 </equals>
 		 </condition>
   </model>
@@ -372,7 +347,7 @@
 		<condition>
 			 <equals>
 				<property>/engines/engine[6]/reverser-pos-norm</property>
-				<value>1</value>
+				<value>0</value>
 			 </equals>
 		 </condition>
   </model>
@@ -391,7 +366,7 @@
 		<condition>
 			 <equals>
 				<property>/engines/engine[10]/reverser-pos-norm</property>
-				<value>0</value>
+				<value>1</value>
 			 </equals>
 		 </condition>
   </model>
@@ -409,7 +384,7 @@
 		<condition>
 			 <equals>
 				<property>/engines/engine[10]/reverser-pos-norm</property>
-				<value>1</value>
+				<value>0</value>
 			 </equals>
 		 </condition>
   </model>
@@ -427,7 +402,7 @@
 		<condition>
 			 <equals>
 				<property>/engines/engine[10]/reverser-pos-norm</property>
-				<value>0</value>
+				<value>1</value>
 			 </equals>
 		 </condition>
   </model>
@@ -444,7 +419,7 @@
 		<condition>
 			 <equals>
 				<property>/engines/engine[10]/reverser-pos-norm</property>
-				<value>1</value>
+				<value>0</value>
 			 </equals>
 		 </condition>
   </model>
@@ -811,56 +786,15 @@
                         <condition>
 			 <greater-than>
 				<property>sim/multiplay/generic/float[0]</property>
-				<value>55</value>
+				<value>45</value>
 			 </greater-than>
                         </condition>
 </model>  
-<model>
-    <path>Aircraft/SpaceShuttle/Models/Parachutes/Brake-Parachute.xml</path>
-     <offsets>
-       <x-m> 22.7 </x-m>
-       <y-m> 0.0 </y-m>
-       <z-m> 1.22 </z-m>
-       <pitch-deg>90</pitch-deg>
-     </offsets>
-     <condition>
-       <and>
-			 <greater-than>
-				<property>sim/multiplay/generic/float[0]</property>
-				<value>50</value>
-			 </greater-than> 
-			 <less-than>
-				<property>sim/multiplay/generic/float[0]</property>
-				<value>54.999</value>
-			 </less-than>       
-	</and>
-      </condition>
-</model>
-<model>
-    <path>Aircraft/SpaceShuttle/Models/Parachutes/Brake-Parachute.xml</path>
-     <offsets>
-       <x-m> 27.7 </x-m>
-       <y-m> 0.0 </y-m>
-       <z-m> 1.22 </z-m>
-       <pitch-deg>90</pitch-deg>
-     </offsets>
-                        <condition>
-       <and>
-			 <greater-than>
-				<property>sim/multiplay/generic/float[0]</property>
-				<value>45</value>
-			 </greater-than> 
-			 <less-than>
-				<property>sim/multiplay/generic/float[0]</property>
-				<value>49.999</value>
-			 </less-than>       
-	</and>
-      </condition>
-</model>
+
 <model>
     <path>Aircraft/SpaceShuttle/Models/Parachutes/Brake-Parachute2.xml</path>
      <offsets>
-       <x-m> 47.7 </x-m>
+       <x-m> 45.7 </x-m>
        <y-m> 0.0 </y-m>
        <z-m>-6.85 </z-m>
        <pitch-deg>90</pitch-deg>
@@ -869,7 +803,7 @@
        <and>
 			 <greater-than>
 				<property>sim/multiplay/generic/float[0]</property>
-				<value>40</value>
+				<value>1</value>
 			 </greater-than> 
 			 <less-than>
 				<property>sim/multiplay/generic/float[0]</property>
@@ -878,27 +812,7 @@
 	</and>
       </condition>
 </model>
-<model>
-    <path>Aircraft/SpaceShuttle/Models/Parachutes/Brake-Parachute2.xml</path>
-     <offsets>
-       <x-m> 57.7 </x-m>
-       <y-m> 0.0 </y-m>
-       <z-m>-6.85 </z-m>
-       <pitch-deg>90</pitch-deg>
-     </offsets>
-                        <condition>
-       <and>
-			 <greater-than>
-				<property>sim/multiplay/generic/float[0]</property>
-				<value>15</value>
-			 </greater-than> 
-			 <less-than>
-				<property>sim/multiplay/generic/float[0]</property>
-				<value>39.9</value>
-			 </less-than>       
-	</and>
-      </condition>
-</model>
+
 
 <!--<model>
     <path>Aircraft/SpaceShuttle/Models/lunarlandernofoil-c/lunarlander.xml</path>

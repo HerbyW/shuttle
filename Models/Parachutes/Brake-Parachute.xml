@@ -19,9 +19,9 @@
 
 	<animation>
 		<type>scale</type>
-		<x-offset>0.4</x-offset>
-                <y-offset>0.4</y-offset>
-                <z-offset>0.4</z-offset>                
+		<x-offset>0.5</x-offset>
+                <y-offset>0.5</y-offset>
+                <z-offset>0.5</z-offset>                
 	</animation>
 	
 	<animation>
@@ -50,5 +50,33 @@
 		</axis>
 	</animation>
 
+	<animation>
+  <type>translate</type>  
+  <property>sim/multiplay/generic/float[0]</property>
+  <interpolation>
+    <entry>
+      <ind>450</ind>
+      <dep>0</dep>
+    </entry>
+    <entry>
+      <ind>50</ind>
+      <dep>0</dep>
+    </entry>
+    <entry>
+      <ind>45</ind>
+      <dep>35</dep>
+    </entry>
+  </interpolation>
+  <center>
+   <x-m> 0.0</x-m>
+   <y-m> 0.0</y-m>
+   <z-m> 0.0</z-m>   
+  </center>
+  <axis>
+   <x>0</x>
+   <y>0</y>
+   <z>1</z>
+  </axis>
+</animation> 
 
 </PropertyList>

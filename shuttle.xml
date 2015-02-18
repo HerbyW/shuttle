@@ -481,7 +481,7 @@ http://www.businessinsider.com/breathtaking-images-of-the-space-shuttle-2013-9?I
     </thruster>    
   </engine>  
   
-  <!--extra engines for outer space control Wing Leveler Controls down l+r-->
+  <!--7/8 extra engines for outer space control Wing Leveler Controls down l+r-->
     
     <!--free -->
     <!--free -->
@@ -489,7 +489,7 @@ http://www.businessinsider.com/breathtaking-images-of-the-space-shuttle-2013-9?I
     <engine file="XLR01x">
     <location unit="M">
       <x>9.45</x>
-      <y>-11.4</y>
+      <y>0.0</y>
       <z>-4.46</z>
     </location>
     <orient unit="DEG">
@@ -503,7 +503,7 @@ http://www.businessinsider.com/breathtaking-images-of-the-space-shuttle-2013-9?I
     <thruster file="xlr01x_nozzle">     
       <location unit="M">
       <x>9.45</x>
-      <y>-11.4</y>
+      <y>0.0</y>
       <z>-4.46</z>
       </location>
      <orient unit="DEG">
@@ -521,7 +521,7 @@ http://www.businessinsider.com/breathtaking-images-of-the-space-shuttle-2013-9?I
   <engine file="XLR01x">
     <location unit="M">
       <x>9.45</x>
-      <y>11.4</y>
+      <y>0.0</y>
       <z>-4.46</z>
     </location>
     <orient unit="DEG">
@@ -536,7 +536,7 @@ http://www.businessinsider.com/breathtaking-images-of-the-space-shuttle-2013-9?I
     <thruster file="xlr01x_nozzle">    
       <location unit="M">
       <x>9.45</x>
-      <y>11.4</y>
+      <y>0.0</y>
       <z>-4.46</z>
       </location>
      <orient unit="DEG">
@@ -548,7 +548,7 @@ http://www.businessinsider.com/breathtaking-images-of-the-space-shuttle-2013-9?I
   </engine>
   
 <!--extra engine for outer space control Pitch Leveler Controls
-    on tail position n=10 smoke is still as 4 engines-->
+    on tail position n=9 is not used, n=10 smoke is still as 4 engines-->
     
     <!--free -->
     <!--free -->

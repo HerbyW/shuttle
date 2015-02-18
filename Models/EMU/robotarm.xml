@@ -39,7 +39,7 @@
 <command>property-interpolate</command>
 <property>sim/multiplay/generic/float[19]</property>
 <property>/controls/shuttle/robotarm-norm</property> <!-- the value to interpolate to, is 1 -->
-<rate>0.10</rate><!-- 5 seconds to 0 from 1 or 1 to 0 -->
+<rate>0.10</rate><!-- 10 seconds to 0 from 1 or 1 to 0 -->
 </binding>
 
 </action>
