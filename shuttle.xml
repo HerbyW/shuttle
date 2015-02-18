@@ -1039,7 +1039,7 @@ http://www.businessinsider.com/breathtaking-images-of-the-space-shuttle-2013-9?I
      <property>aero/qbar-psf</property>
      <property>metrics/Schute-sqft</property>    
      <property>fcs/parachute_reef_pos_norm</property>
-     <value>0.4</value>
+     <value>-0.2</value>
     </product>
    </function>
   <!-- Parachute -->
@@ -1159,7 +1159,7 @@ http://www.businessinsider.com/breathtaking-images-of-the-space-shuttle-2013-9?I
      <property>aero/qbar-psf</property>
      <property>metrics/Schute-sqft</property>    
      <property>fcs/parachute_reef_pos_norm</property>
-     <value>0.4</value>
+     <value>0.25</value>
     </product>
    </function>
   <!-- Parachute -->
