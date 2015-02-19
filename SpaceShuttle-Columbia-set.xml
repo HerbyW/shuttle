@@ -1,0 +1,294 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+ 
+ <controls>    
+    <shuttle>
+       <external-fuel-tank type="int">1</external-fuel-tank>
+       <solid-rocket-boosters type="int">1</solid-rocket-boosters>
+       <outerspace type="bool">1</outerspace>
+       <EMU type="int">0</EMU>
+       <robotarm type="float">0</robotarm> 
+      <door>
+       <position type="float">0</position>
+      </door>
+      <parachute type="int">0</parachute>
+    </shuttle>
+    
+    <lighting>
+       <nav-lights type="bool">1</nav-lights>
+    </lighting>
+    
+    <armament>
+      <trigger type="int">0</trigger>
+    </armament>
+    <engines>
+      <engine n = "2">
+	<propeller-pitch type="float">0.5</propeller-pitch>
+      </engine>
+      <engine n = "5">
+	<propeller-pitch type="float">0.5</propeller-pitch>
+      </engine>
+    </engines>
+  </controls>
+    
+  <instrumentation>
+    <doors>
+      <door1>
+	<position-norm type="float">0</position-norm>
+      </door1>
+    </doors>
+    <robotarm-norm type="float">0</robotarm-norm> 
+   </instrumentation>
+ 
+ <fdm><jsbsim><fcs><parachute_reef_pos_norm type="float"> 0 </parachute_reef_pos_norm></fcs></jsbsim></fdm>
+ 
+ 
+ <sim>
+  <description>NASA Space Shuttle Columbia</description>
+  <flight-model>jsb</flight-model>
+  <aero>shuttle</aero>
+  <author>Gijs de Rooy, NASA (3D), HerbyW</author>
+
+
+  <input>
+    <selected>
+      <engine n = "2" type="bool">0</engine>
+      <engine n = "5" type="bool">0</engine>
+      <engine n = "6" type="bool">0</engine>
+      <engine n = "7" type="bool">0</engine>
+      <engine n = "8" type="bool">0</engine>
+      <engine n = "9" type="bool">0</engine>
+      <engine n = "10" type="bool">0</engine>  
+      <engine n = "11" type="bool">0</engine> 
+    </selected>
+    </input>
+    
+
+	
+<multiplay>
+   <chat_display>1</chat_display>
+     <generic> 
+        <float n="1" alias="/engines/engine[3]/thrust_lb" />
+        <float n="2" alias="/engines/engine[1]/thrust_lb" />
+        <float n="3" alias="/instrumentation/doors/door1/position-norm" />        
+        <float n="4" alias="/consumables/fuel/tank/level-lbs" />
+	<float n="5" alias="/consumables/fuel/tank[1]/level-lbs" />
+	<float n="6" alias="/consumables/fuel/tank[2]/level-lbs" />
+	<float n="7" alias="/engines/engine[4]/thrust_lb" />
+        <float n="8" alias="/engines/engine[5]/thrust_lb" />
+        <float n="9" alias="/engines/engine[6]/thrust_lb" />	
+	<float n="10" alias="/consumables/fuel/tank[3]/level-lbs" />
+	<float n="11" alias="/consumables/fuel/tank[4]/level-lbs" />                
+        <float n="12" alias="/engines/engine[0]/thrust_lb" />        
+        <float n="13" alias="/velocities/mach" />
+    <!--<float n="14" alias="/engines/engine[8]/thrust_lb" />-->
+        <float n="15" alias="/engines/engine[9]/thrust_lb" />
+        <float n="16" alias="/engines/engine[10]/thrust_lb" />        
+        <float n="17" alias="/engines/engine[11]/thrust_lb" />
+        <float n="18" alias="/engines/engine[2]/thrust_lb" />
+        <float n="19" alias="/instrumentation/robotarm-norm" />
+        <float n="0" alias="/gear/gear/rollspeed-ms" />
+       
+        <int type="int" n="3" alias="/controls/shuttle/parachute"/>
+        <int type="int" n="4" alias="/controls/shuttle/EMU"/>
+        <int type="int" n="5" alias="/controls/shuttle/EMU"/>
+        <int type="int" n="6" alias="/controls/shuttle/external-fuel-tank"/>
+        <int type="int" n="7" alias="/controls/shuttle/solid-rocket-boosters"/>
+        <int type="int" n="8" alias="/controls/lighting/nav-lights"/>
+        <int type="int" n="9" alias="/controls/armament/trigger"/>        
+     </generic>
+</multiplay>
+
+        <startup>
+		<splash-texture>Aircraft/SpaceShuttle/SpaceShuttle-splash.png</splash-texture>
+	</startup>
+  
+  <model>
+	<path>Aircraft/SpaceShuttle/Models/SpaceShuttle-Columbia.xml</path>		
+  </model>
+  
+  <sound>
+        <path>Aircraft/SpaceShuttle/Sounds/SpaceShuttle-Sounds.xml</path>
+  </sound>
+
+  <submodels>
+      <serviceable type="bool">true</serviceable>
+      <path>Aircraft/SpaceShuttle/Models/EMU/submodels.xml</path>
+    </submodels>
+  
+  <systems>
+      <autopilot n = "0" >
+        <path>Aircraft/SpaceShuttle/Systems/autopilot.xml</path>        
+      </autopilot>
+      <autopilot n = "1" >            
+        <path>Aircraft/SpaceShuttle/Systems/autopilot-outerspace.xml</path>
+      </autopilot> 
+  </systems>  
+	
+  <view n="0">
+   <internal archive="y">true</internal>
+   <config>
+    <x-offset-m archive="y" type="double">0</x-offset-m>
+    <y-offset-m archive="y" type="double">4.94</y-offset-m>
+    <z-offset-m archive="y" type="double">-32.5</z-offset-m>
+   </config>
+</view>
+
+<chase-distance-m type="double" archive="y">-65.0</chase-distance-m>
+
+<help>
+      <title>Space Shuttle</title>
+<text>
+Welcome to Version Columbia!
+  
+Start like a airplane: (as we have no ramp jet)
+Pilot, Tank 0, Tank 1 are set initially (improvements are going on)
+Tank 2 is for Orbital Manouver System (OMS) engines to make orbit maneuvers, set it later to full
+Tank 3 and 4 are emty in the beginning, they are for the engines of the OCS (Orbital Control System)
+You need to set them later.
+
+Now the shuttle will be in horizontal position.
+
+Open the payload menue and the generic autopilot menue.
+Open the HUD, key H.
+Befor take off, set the wing leveler activ and the pitch control to 23 degree.
+Close the doors by clicking on them.
+
+Give throttle, and take off, be carefull with throttle - it is a rocket!
+Hold it in a climbing position of 23 degree and go to 15000 ft,
+stop throttle, set the Autopilot to -3 pitch hold and give throttle again.
+If the shuttle goes up more then 15 degrees reduce throttle.
+Try to get a speed of 8000 kts for a 10 minute orbital flight, 22000 kts for 220 minutes.
+
+When reaching 115000 ft deactivate the tank and booster rockets by setting the Tank 0 and 1 to 0.
+You are now making a ballistic flight pattern, reaching 100.000.000 ft is possible.
+
+Fill Tank 3 and 4 now to full and watch the autopilot controlling the OCS engines,
+manually controll is recommendet to get a stable position by only short (0.08 sec!) impulses
+by making tank 4 full and tank 3 empty, then activate the engines by short filling the tank 3.
+There is a YAW-controll by the rudder implemented now!
+
+Orbit Manouver Engines on tail position are activated by setting tank 2.
+They are controlled with Throttle and with propeller-pitch control for pitching them (-20 - +20 degree pitch for the Thruster)
+try to get them in a position so that the elevator-trim is in neutral position.
+So you may control a flight from 145000 ft up to 350000 ft and back again.
+
+Entering the athmosphere is tricky: set the autopilot to -25 degree pitch and hope for the best :)
+Set all Tanks  to 0.
+At 90000 ft the shuttle should be stable and you set the pitch to -3 degree or to +3.
+
+Now you glide to your landing spot.
+
+F2 activates the parachute, use it after touchdown. (still no force impemented)
+
+Gears, Flaps and Speed Breaks are not animated but are there in the jsb.
+Speed Breakes: Key s
+   
+ILS Heading is not working, glidepath is not usefull as you have a different glide path as a comercial airliner.
+Landing with 240-340 kt, Flaps (3 Steps) and Speedbreak (1 Step) to full level.
+
+Wing and Pitch leveler engines (OCS) with 8 extra engines working with autopilot in outer-space!
+
+Click the little windows on top of the cockpit to activate the man for the moon :)
+
+Click the robotarm :)
+
+Click the satelit to launch it, click again to set a new one and so on, or use the trigger button for that.
+
+Have fun and take your time to get control, it is a little bit tricky but fully working.
+
+Landing airports: KTTS, KVBG, LTAC, GMMN, FJDG, KDYS, KEDW, KRCA, PHIK,
+                  EDDK, KMUO, FZAA, OERK, KWSD, and KXTA
+		  
+http://de.wikipedia.org/wiki/Kategorie:Space-Shuttle-Landeplatz
+http://en.wikipedia.org/wiki/List_of_space_shuttle_landing_sites
+
+See the latest version on: www.github.com/HerbyW/antonov-aircrafts
+</text>
+</help>
+
+ </sim>
+ 
+<!-- Key mapping -->
+
+ <input>
+  <keyboard>
+    
+    <key n="115">
+	<name>s</name>
+	<desc>Speedbreakes on Rudder, left and right</desc>
+	<binding>
+           <command>property-toggle</command>
+             <property>controls/flight/speedbrake</property>
+             <value>true</value>
+        </binding>	
+     </key>
+     
+     <key n="258">
+          <name>F2</name>
+          <desc>Parachute</desc>  
+          <binding>
+            <command>property-toggle</command>
+            <property>sim/multiplay/generic/int[3]</property>
+          </binding>	  
+     </key>
+   </keyboard>
+  </input>                     
+  
+  <!-- Reverser Start for OCS and OMS --> 
+  <engines>    
+   <engine n="11">
+    <reverser-pos-norm type="bool">0</reverser-pos-norm>
+   </engine>
+   <engine n="2">
+    <reverser-pos-norm type="bool">0</reverser-pos-norm>
+   </engine>
+   <engine n="3">
+    <reverser-pos-norm type="bool">0</reverser-pos-norm>
+   </engine>
+   <engine n="4">
+    <reverser-pos-norm type="bool">0</reverser-pos-norm>
+   </engine>
+   <engine n="5">
+    <reverser-pos-norm type="bool">0</reverser-pos-norm>
+   </engine>
+   <engine n="6">
+    <reverser-pos-norm type="bool">0</reverser-pos-norm>
+   </engine>
+   <engine n="10">
+    <reverser-pos-norm type="bool">0</reverser-pos-norm>
+   </engine>
+  </engines>    
+ <!-- Reverser End -->
+
+ <payload>
+  <weight>
+   <name type="string">Equipment</name>
+   <weight-lb alias="/fdm/jsbsim/inertia/pointmass-weight-lbs[0]"/>
+   <min-lb type="double">0.0</min-lb>
+   <max-lb type="double">65000.0</max-lb>
+  </weight>
+ </payload>
+ 
+ <nasal>      
+    <SpaceShuttle>
+      <file>Aircraft/SpaceShuttle/Nasal/light.nas</file>
+      <file>Aircraft/SpaceShuttle/Nasal/setprop.nas</file>
+    </SpaceShuttle> 
+    
+    <!-- Reverser Start  not used now
+    <reversethrust>
+      <file>Aircraft/SpaceShuttle/Nasal/reverse-thrust.nas</file>
+    </reversethrust>
+                        Reverser End -->
+  </nasal>
+
+  <import>
+        <path>Huds/Sets/controls.xml</path>
+        <x-offset>-100</x-offset>
+        <y-offset>70</y-offset>
+    </import>
+</PropertyList>
+
+

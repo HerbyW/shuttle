@@ -1,0 +1,835 @@
+<PropertyList>
+	<path>shuttle_o2.ac</path>
+
+  <!--Lights-->
+                                   
+<animation>   
+   <object-name>spaceshutt_spstob_1</object-name>
+   <object-name>spaceshutt_spstob</object-name>
+   <object-name>spaceshutt_spstob.001</object-name>
+   <object-name>spaceshutt_spstob.002</object-name>    
+   <object-name>spaceshutt_spstob_3</object-name>
+   <object-name>spaceshutt_spstob_4</object-name>
+</animation>
+
+  <animation>
+    <type>material</type>
+    <object-name>spaceshutt_spstob_1</object-name>
+   <object-name>spaceshutt_spstob</object-name>
+   <object-name>spaceshutt_spstob.001</object-name>   
+   <object-name>spaceshutt_spstob.002</object-name>    
+   <object-name>spaceshutt_spstob_3</object-name>
+   <object-name>spaceshutt_spstob_4</object-name>
+   <emission>
+      <factor>1</factor>
+      <red>   0.25 </red>
+      <green> 0.25 </green>
+      <blue>  0.25 </blue>
+    </emission>
+  </animation>
+
+<!-- man for the moon, pick the little windows on the top to activate him -->
+
+<model>
+    <path>Aircraft/SpaceShuttle/Models/EMU/acesjustforroomshow.xml</path>
+     <offsets>
+       <x-m> -12.30 </x-m>
+       <y-m> 1.10 </y-m>
+       <z-m> -2.92 </z-m>
+       <heading-deg>90.0</heading-deg>
+     </offsets>
+</model>  
+  
+<animation>
+ <type>pick</type>
+  <object-name>spaceshutt_spstob_4</object-name>
+  <visible>true</visible>
+ <action>
+  <button>0</button>
+   <binding>
+    <command>property-toggle</command>
+     <property>sim/multiplay/generic/int[5]</property>
+     <value>0</value>
+     <value>1</value>
+   </binding>
+ </action>
+</animation>
+
+<!-- satelit, click it to launch a satelit -->
+<model>
+    <path>Aircraft/SpaceShuttle/Models/EMU/satelit-int.xml</path>
+     <offsets>
+       <x-m> 0.0 </x-m>
+       <y-m> 0.0 </y-m>
+       <z-m> -0.0 </z-m>
+       <heading-deg>0.0</heading-deg>
+     </offsets>
+</model>
+
+<animation>
+ <type>pick</type>
+  <object-name>spaceshutt_spstob_eal</object-name>
+  <visible>true</visible>
+ <action>
+  <button>0</button>
+   <binding>
+    <command>property-toggle</command>
+     <property>sim/multiplay/generic/int[9]</property>
+     <value>0</value>
+     <value>1</value>
+   </binding>
+ </action>
+</animation>
+
+<!-- robotarm, click it to activate -->
+
+<model>
+    <path>Aircraft/SpaceShuttle/Models/EMU/robotarm.xml</path>
+     <offsets>
+       <x-m> 0.0 </x-m>
+       <y-m> 0.0 </y-m>
+       <z-m> 0.0 </z-m>
+       <heading-deg>0.0</heading-deg>
+     </offsets>
+</model>
+
+<!-- external Tank and Booster -->
+ 
+<model>
+<path>Aircraft/SpaceShuttle/Models/external-fuel-tank.xml</path>
+		<offsets>
+			<x-m>-10.0</x-m>
+			<y-m>0.0</y-m>
+			<z-m>-10.0</z-m>
+		</offsets>
+		<condition>
+ 		 <greater-than>
++			<property>sim/multiplay/generic/int[6]</property>
+ 			<value>0</value>
+ 		 </greater-than>
+ 		</condition>
+</model>
+
+<model>
+<path>Aircraft/SpaceShuttle/Models/solid-rocket-booster.xml</path>
+		<offsets>
+			<x-m> -5.2 </x-m>
+			<y-m> -6.35</y-m>
+			<z-m>-10.6 </z-m>
+			<roll-deg>90.0</roll-deg>
+		</offsets>
+                <condition>
+ 		 <greater-than>
++			<property>sim/multiplay/generic/int[7]</property>
+ 			<value>0</value>
+ 		 </greater-than>
+ 		</condition>
+</model>
+
+<model>
+<path>Aircraft/SpaceShuttle/Models/solid-rocket-booster.xml</path>
+		<offsets>
+			<x-m> -5.2 </x-m>
+			<y-m>  6.35</y-m>
+			<z-m>-10.6 </z-m>
+			<roll-deg>-90.0</roll-deg>
+		</offsets>
+		<condition>
+ 		 <greater-than>
++			<property>sim/multiplay/generic/int[7]</property>
+ 			<value>0</value>
+ 		 </greater-than>
+ 		</condition>
+</model>
+
+  <!-- Smoke for 3 Shuttle engines -->
+  
+  <model>
+		<path>Aircraft/SpaceShuttle/Models/Effects/trails.xml</path>		
+		<offsets>
+			<x-m> 17</x-m>
+			<y-m>  0.00</y-m>
+			<z-m>  -0.843</z-m>
+			<roll-deg>0.0</roll-deg>
+			<pitch-deg>0.0</pitch-deg>
+			<heading-deg>0.0</heading-deg>
+		</offsets>
+  </model>
+
+  <model>
+		<path>Aircraft/SpaceShuttle/Models/Effects/trails.xml</path>		
+		<offsets>
+			<x-m> 17</x-m>
+			<y-m>  1.5496</y-m>
+			<z-m> -3.4942</z-m>
+			<roll-deg>0.0</roll-deg>
+			<pitch-deg>0.0</pitch-deg>
+			<heading-deg>0.0</heading-deg>
+		</offsets>
+  </model>
+
+  <model>
+		<path>Aircraft/SpaceShuttle/Models/Effects/trails.xml</path>		
+		<offsets>
+			<x-m> 17</x-m>
+			<y-m> -1.5496</y-m>
+			<z-m> -3.4942</z-m>
+			<roll-deg>0.0</roll-deg>
+			<pitch-deg>0.0</pitch-deg>
+			<heading-deg>0.0</heading-deg>
+		</offsets>
+  </model>
+
+
+<!-- Smoke for 2 Booster rockets-->
+
+  <model>
+   <path>Aircraft/SpaceShuttle/Models/Effects/smoke_engine1.xml</path>
+    <offsets>
+		 <x-m>20.5</x-m>
+		 <y-m>-6.2</y-m>
+		 <z-m>-10.4</z-m>
+		 <pitch-deg>0</pitch-deg>
+		 <roll-deg>0</roll-deg>
+	 </offsets>	
+  </model>
+  
+  <model>
+    <path>Aircraft/SpaceShuttle/Models/Effects/smoke_engine2.xml</path>
+      <offsets>
+		 <x-m>20.5</x-m>
+		 <y-m>6.2</y-m>
+		 <z-m>-10.4</z-m>
+		 <pitch-deg>0</pitch-deg>
+		 <roll-deg>0</roll-deg>
+	 </offsets>	
+  </model>
+  
+  <!-- smoke from the extra control engines xlr01 winglevel-->
+  <model>
+		<path>Aircraft/SpaceShuttle/Models/Effects/trails-minni1.xml</path>		
+		<offsets>
+			<x-m>9.45</x-m>
+                        <y-m>-11.4</y-m>
+                        <z-m>-4.46</z-m>
+			<roll-deg>0.0</roll-deg>
+			<pitch-deg>-90.0</pitch-deg>
+			<heading-deg>0.0</heading-deg>
+		</offsets>
+		 <condition>
+			 <equals>
+				<property>/engines/engine[3]/reverser-pos-norm</property>
+				<value>1</value>
+			 </equals>
+		 </condition>
+  </model>
+  
+  <model>
+		<path>Aircraft/SpaceShuttle/Models/Effects/trails-minni1.xml</path>		
+		<offsets>
+			<x-m>9.45</x-m>
+                        <y-m>-11.4</y-m>
+                        <z-m>-4.46</z-m>
+			<roll-deg>0.0</roll-deg>
+			<pitch-deg>90.0</pitch-deg>
+			<heading-deg>0.0</heading-deg>
+		</offsets>
+		 <condition>
+			 <equals>
+				<property>/engines/engine[3]/reverser-pos-norm</property>
+				<value>0</value>
+			 </equals>
+		 </condition>
+  </model>
+  
+  <model>
+		<path>Aircraft/SpaceShuttle/Models/Effects/trails-minni2.xml</path>		
+		<offsets>
+			<x-m>9.45</x-m>
+                        <y-m>11.4</y-m>
+                        <z-m>-4.46</z-m>
+			<roll-deg>0.0</roll-deg>
+			<pitch-deg>-90.0</pitch-deg>
+			<heading-deg>0.0</heading-deg>
+		</offsets>		 
+		 <condition>
+			 <equals>
+				<property>/engines/engine[4]/reverser-pos-norm</property>
+				<value>1</value>
+			 </equals>
+		 </condition>
+  </model>
+  
+  <model>
+		<path>Aircraft/SpaceShuttle/Models/Effects/trails-minni2.xml</path>		
+		<offsets>
+			<x-m>9.45</x-m>
+                        <y-m>11.4</y-m>
+                        <z-m>-4.46</z-m>
+			<roll-deg>0.0</roll-deg>
+			<pitch-deg>90.0</pitch-deg>
+			<heading-deg>0.0</heading-deg>
+		</offsets>		 
+		 <condition>
+			 <equals>
+				<property>/engines/engine[4]/reverser-pos-norm</property>
+				<value>0</value>
+			 </equals>
+		 </condition>
+  </model>
+  
+  <!-- smoke from the extra control engines xlr01 pitchlevel nose position -->
+  <model>
+		<path>Aircraft/SpaceShuttle/Models/Effects/trails-minni3.xml</path>		
+		<offsets>
+			<x-m>-16.72 </x-m>
+                        <y-m>  1.55 </y-m>
+                        <z-m> -3.30 </z-m>
+			<roll-deg>-20.0</roll-deg>
+			<pitch-deg>-90.0</pitch-deg>
+			<heading-deg>0.0</heading-deg>
+		</offsets>
+		<condition>
+			 <equals>
+				<property>/engines/engine[6]/reverser-pos-norm</property>
+				<value>1</value>
+			 </equals>
+		 </condition>
+  </model>
+  
+  
+  
+  <model>
+		<path>Aircraft/SpaceShuttle/Models/Effects/trails-minni4.xml</path>		
+		<offsets>
+			<x-m>-16.72 </x-m>
+                        <y-m>  1.55 </y-m>
+                        <z-m> -3.50 </z-m>
+			<roll-deg>20.0</roll-deg>
+			<pitch-deg>90.0</pitch-deg>
+			<heading-deg>0.0</heading-deg>
+		</offsets>
+		<condition>
+			 <equals>
+				<property>/engines/engine[6]/reverser-pos-norm</property>
+				<value>0</value>
+			 </equals>
+		 </condition>
+  </model>
+  
+  <model>
+		<path>Aircraft/SpaceShuttle/Models/Effects/trails-minni5.xml</path>		
+		<offsets>
+			<x-m>-16.72 </x-m>
+                        <y-m> -1.55 </y-m>
+                        <z-m> -3.30 </z-m>
+			<roll-deg>20.0</roll-deg>
+			<pitch-deg>-90.0</pitch-deg>
+			<heading-deg>0.0</heading-deg>
+		</offsets>
+		<condition>
+			 <equals>
+				<property>/engines/engine[6]/reverser-pos-norm</property>
+				<value>1</value>
+			 </equals>
+		 </condition>
+  </model>
+  <model>
+		<path>Aircraft/SpaceShuttle/Models/Effects/trails-minni6.xml</path>		
+		<offsets>
+			<x-m>-16.72 </x-m>
+                        <y-m> -1.55 </y-m>
+                        <z-m> -3.50 </z-m>
+			<roll-deg>-20.0</roll-deg>
+			<pitch-deg>90.0</pitch-deg>
+			<heading-deg>0.0</heading-deg>
+		</offsets>
+		<condition>
+			 <equals>
+				<property>/engines/engine[6]/reverser-pos-norm</property>
+				<value>0</value>
+			 </equals>
+		 </condition>
+  </model>
+  
+  <!-- smoke from the extra control engines xlr01 pitchlevel tail position -->
+  <model>
+		<path>Aircraft/SpaceShuttle/Models/Effects/trails-minni14.xml</path>		
+		<offsets>
+			<x-m> 12.4 </x-m>
+                        <y-m>  2.5 </y-m>
+                        <z-m>  1.1 </z-m>
+			<roll-deg>-20.0</roll-deg>
+			<pitch-deg>-90.0</pitch-deg>
+			<heading-deg>0.0</heading-deg>
+		</offsets>
+		<condition>
+			 <equals>
+				<property>/engines/engine[10]/reverser-pos-norm</property>
+				<value>1</value>
+			 </equals>
+		 </condition>
+  </model>
+    
+  <model>
+		<path>Aircraft/SpaceShuttle/Models/Effects/trails-minni13.xml</path>		
+		<offsets>
+			<x-m> 12.48 </x-m>
+                        <y-m>  3.1  </y-m>
+                        <z-m> -1.45 </z-m>
+			<roll-deg>20.0</roll-deg>
+			<pitch-deg>90.0</pitch-deg>
+			<heading-deg>0.0</heading-deg>
+		</offsets>
+		<condition>
+			 <equals>
+				<property>/engines/engine[10]/reverser-pos-norm</property>
+				<value>0</value>
+			 </equals>
+		 </condition>
+  </model>
+  
+  <model>
+		<path>Aircraft/SpaceShuttle/Models/Effects/trails-minni16.xml</path>		
+		<offsets>
+			<x-m> 12.4 </x-m>
+                        <y-m> -2.5 </y-m>
+                        <z-m>  1.1 </z-m>
+			<roll-deg>20.0</roll-deg>
+			<pitch-deg>-90.0</pitch-deg>
+			<heading-deg>0.0</heading-deg>
+		</offsets>
+		<condition>
+			 <equals>
+				<property>/engines/engine[10]/reverser-pos-norm</property>
+				<value>1</value>
+			 </equals>
+		 </condition>
+  </model>
+  <model>
+		<path>Aircraft/SpaceShuttle/Models/Effects/trails-minni15.xml</path>		
+		<offsets>
+			<x-m> 12.48 </x-m>
+                        <y-m> -3.1  </y-m>
+                        <z-m> -1.45 </z-m>
+			<roll-deg>-20.0</roll-deg>
+			<pitch-deg>90.0</pitch-deg>
+			<heading-deg>0.0</heading-deg>
+		</offsets>
+		<condition>
+			 <equals>
+				<property>/engines/engine[10]/reverser-pos-norm</property>
+				<value>0</value>
+			 </equals>
+		 </condition>
+  </model>
+  
+    <!-- smoke from the extra control engines03 for yaw control nose position
+         based on reverser position on=1=270=blow to left, off=0=90=blow to right-->
+  <model>
+		<path>Aircraft/SpaceShuttle/Models/Effects/trails-minni17.xml</path>		
+		<offsets>
+			<x-m> -15.85 </x-m>
+       <y-m> -1.75 </y-m>
+       <z-m> -3.25 </z-m>
+			<roll-deg>    0.0</roll-deg>
+			<pitch-deg>   0.0</pitch-deg>
+			<heading-deg> 270.0</heading-deg>
+		</offsets>	
+			<condition>
+			 <equals>
+				<property>/engines/engine[11]/reverser-pos-norm</property>
+				<value>0</value>
+			 </equals>
+			</condition>
+  </model>
+  <model>
+		<path>Aircraft/SpaceShuttle/Models/Effects/trails-minni17.xml</path>		
+		<offsets>
+			<x-m> -15.85 </x-m>
+       <y-m> 1.75 </y-m>
+       <z-m> -3.25 </z-m>
+			<roll-deg>    0.0</roll-deg>
+			<pitch-deg>   0.0</pitch-deg>
+			<heading-deg> 90.0</heading-deg>
+		</offsets>	
+			<condition>
+			 <equals>
+				<property>/engines/engine[11]/reverser-pos-norm</property>
+				<value>1</value>
+			 </equals>
+			</condition>
+  </model>
+    
+
+  <!-- doors animation -->
+
+<animation>
+<type>pick</type>
+<object-name>spaceshutt_spstob</object-name>
+<object-name>spaceshutt_spstob.001</object-name>
+
+<visible>true</visible>
+<action>
+<button>0</button>
+
+
+<binding>
+<command>property-toggle</command>
+<property>/controls/shuttle/door/position</property>
+<value>0</value>
+<value>1</value>
+</binding>
+
+<binding>
+<command>property-interpolate</command>
+<property>sim/multiplay/generic/float[3]</property>
+<property>/controls/shuttle/door/position</property> <!-- the value to interpolate to, is 1 -->
+<rate>0.10</rate><!-- 10 seconds to 0 from 1 or 1 to 0 -->
+</binding>
+</action>
+</animation>
+
+ 
+ <animation>
+  <type>rotate</type>
+  <object-name>spaceshutt_spstob</object-name>
+  <property>sim/multiplay/generic/float[3]</property>
+  <interpolation>
+    <entry>
+      <ind>0.2</ind>
+      <dep>0</dep>
+    </entry>
+    <entry>
+      <ind>1.0</ind>
+      <dep>-171</dep>
+    </entry>
+  </interpolation>
+  <center>
+   <x-m> -2.2671</x-m>
+   <y-m> -2.552</y-m>
+   <z-m>  -1.52</z-m>   
+  </center>
+  <axis>
+   <x>1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>spaceshutt_spstob.001</object-name>
+  <property>sim/multiplay/generic/float[3]</property>
+  <interpolation>
+    <entry>
+      <ind>0.2</ind>
+      <dep>0</dep>
+    </entry>
+    <entry>
+      <ind>1.0</ind>
+      <dep>171</dep>
+    </entry>
+  </interpolation>
+  <center>
+   <x-m> -2.2672</x-m>
+   <y-m>  2.552</y-m>
+   <z-m>  -1.52</z-m>   
+  </center>
+  <axis>
+   <x>1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+ </animation>
+ 
+ <model>
+		<name>Strobe_1</name>
+		<path>Aircraft/SpaceShuttle/Models/Lights/strobe-red.xml</path>	
+		<offsets>
+			<x-m>9.45</x-m>
+			<y-m>-11.9</y-m>
+			<z-m>-4.46</z-m>
+		</offsets>
+</model>   
+	
+<model>
+		<name>Strobe_4</name>
+		<path>Aircraft/SpaceShuttle/Models/Lights/strobe-green.xml</path>	
+		<offsets>
+			<x-m>9.45</x-m>
+			<y-m>11.9</y-m>
+			<z-m>-4.46</z-m>
+		</offsets>
+</model>   
+
+<model>
+		<name>Strobe_3</name>
+		<path>Aircraft/SpaceShuttle/Models/Lights/strobe-yellow.xml</path>	
+		<offsets>
+			<x-m>-8.9</x-m>
+			<y-m>0</y-m>
+			<z-m>-1</z-m>
+		</offsets>
+</model>   
+
+<model>
+    <name>Beacon_1</name>
+    <path>Aircraft/SpaceShuttle/Models/Lights/beacon.xml</path>
+    <offsets>
+      <x-m> 9.99 </x-m>
+      <y-m>  0.00000 </y-m>
+      <z-m>  -5.30 </z-m>
+    </offsets>
+</model>
+<model>
+    <name>Beacon_2</name>
+    <path>Aircraft/SpaceShuttle/Models/Lights/beacon.xml</path>
+    <offsets>
+      <x-m> 15.45 </x-m>
+      <y-m>  0.00000 </y-m>
+      <z-m>  8.28 </z-m>
+    </offsets>
+</model>
+
+<model>
+    <path>Aircraft/SpaceShuttle/Models/Lights/StrobeLight.xml</path>
+     <offsets>
+      <x-m>9.95</x-m>
+      <y-m>-12.0</y-m>
+      <z-m>-4.46</z-m>
+     </offsets>
+</model>
+<model>
+    <path>Aircraft/SpaceShuttle/Models/Lights/StrobeLight.xml</path>
+     <offsets>
+      <x-m>9.95</x-m>
+      <y-m>12.0</y-m>
+      <z-m>-4.46</z-m>
+     </offsets>
+</model>
+
+<model>
+    <path>Aircraft/SpaceShuttle/Models/Lights/StrobeLight.xml</path>
+     <offsets>
+      <x-m>17.70</x-m>
+      <y-m> 0.0</y-m>
+      <z-m> 8.15</z-m>
+     </offsets>
+</model>
+
+<model>
+    <path>Aircraft/SpaceShuttle/Models/Lights/WhiteLight.xml</path>
+     <offsets>
+      <x-m>-1.70</x-m>
+      <y-m>-4.68</y-m>
+      <z-m>-4.46</z-m>
+     </offsets>
+</model>
+<model>
+    <path>Aircraft/SpaceShuttle/Models/Lights/WhiteLight.xml</path>
+     <offsets>
+      <x-m>-1.70</x-m>
+      <y-m> 4.68</y-m>
+      <z-m>-4.46</z-m>
+     </offsets>
+</model>
+
+<!--Light for Gears! there are no gears, so I set some lights to the spot of earthcontact -->
+<model>
+    <path>Aircraft/SpaceShuttle/Models/Lights/WhiteLight.xml</path>
+     <offsets>
+       <x-m> -15.00 </x-m>
+       <y-m> 0.00 </y-m>
+       <z-m> -6.85 </z-m>
+     </offsets>
+                        <condition>
+			 <equals>
+				<property>/controls/gear/gear-down</property>
+				<value>1</value>
+			 </equals>
+                        </condition>
+</model>
+<model>
+    <path>Aircraft/SpaceShuttle/Models/Lights/WhiteLight.xml</path>
+     <offsets>
+       <x-m> 3.60 </x-m>
+       <y-m> -4.2 </y-m>
+       <z-m>-6.85 </z-m>
+     </offsets>
+     
+                        <condition>
+			 <equals>
+				<property>/controls/gear/gear-down</property>
+				<value>1</value>
+			 </equals>
+                        </condition>
+</model>
+<model>
+    <path>Aircraft/SpaceShuttle/Models/Lights/WhiteLight.xml</path>
+     <offsets>
+       <x-m> 3.60 </x-m>
+       <y-m> 4.2 </y-m>
+       <z-m>-6.85 </z-m>
+     </offsets>
+     
+                        <condition>
+			 <equals>
+				<property>/controls/gear/gear-down</property>
+				<value>1</value>
+			 </equals>
+                        </condition>
+</model>
+
+<!--One Light for the center of the model, just for testing reasons, will be removed later-->
+<model>
+    <path>Aircraft/SpaceShuttle/Models/Lights/strobe-white.xml</path>
+     <offsets>
+       <x-m> 0.0 </x-m>
+       <y-m> 0.0 </y-m>
+       <z-m> 0.0 </z-m>
+     </offsets>
+</model>
+<model>
+    <path>Aircraft/SpaceShuttle/Models/Lights/strobe-white.xml</path>
+     <offsets>
+       <x-m> 2.5 </x-m>
+       <y-m> 0.0 </y-m>
+       <z-m> -2.5 </z-m>
+     </offsets>
+</model>
+
+<!--lets set some fire to the main engines -->
+<model>
+    <path>Aircraft/SpaceShuttle/Models/Effects/engine-fire.xml</path>
+     <offsets>
+       <x-m> 7.5 </x-m>
+       <y-m> 1.5 </y-m>
+       <z-m> -0.55 </z-m>
+       <pitch-deg>-8.0</pitch-deg>
+     </offsets>
+</model>
+<model>
+    <path>Aircraft/SpaceShuttle/Models/Effects/engine-fire.xml</path>
+     <offsets>
+       <x-m> 7.6 </x-m>
+       <y-m> 0.05 </y-m>
+       <z-m> -3.20 </z-m>
+       <pitch-deg>-8.0</pitch-deg>
+     </offsets>
+</model>
+<model>
+    <path>Aircraft/SpaceShuttle/Models/Effects/engine-fire.xml</path>
+     <offsets>
+       <x-m> 7.6 </x-m>
+       <y-m> 2.90 </y-m>
+       <z-m> -3.20 </z-m>
+       <pitch-deg>-8.0</pitch-deg>
+     </offsets>
+</model>
+
+<!--lets set some fire to the OMS-main engines, 2 are iluminated-->
+
+<model>
+  <path>Aircraft/SpaceShuttle/Models/Lights/strobe-red5.xml</path>	
+		<offsets>
+                 <x-m> 13.10 </x-m>
+                 <y-m> -2.20 </y-m>
+                 <z-m> -0.250 </z-m>
+		</offsets>
+</model> 
+
+<model>
+   <path>Aircraft/SpaceShuttle/Models/Lights/strobe-red5.xml</path>
+     <offsets>
+       <x-m> 13.10 </x-m>
+       <y-m> 2.20 </y-m>
+       <z-m> -0.250 </z-m>
+     </offsets>
+</model>
+
+<!--more smoke ! -->
+
+<model>
+  <name>right-strake-vortex</name>
+  <path>Aircraft/SpaceShuttle/Models/Effects/strake-vortex.xml</path>
+  <offsets>
+        <x-m>9.45</x-m>
+	<y-m> 11.0</y-m>
+	<z-m>-4.46</z-m>
+  </offsets>
+ </model>
+ <model>
+  <name>right-strake-vortex</name>
+  <path>Aircraft/SpaceShuttle/Models/Effects/strake-vortex.xml</path>
+  <offsets>
+        <x-m>9.45</x-m>
+	<y-m>-11.0</y-m>
+	<z-m>-4.46</z-m>
+  </offsets>
+ </model>
+
+ <!--and supersonic boom ! -->
+ <model>
+		<name>sonicboom</name>
+		<path>Aircraft/SpaceShuttle/Models/Effects/boom.xml</path>
+		<offsets>
+			<x-m>-18.38</x-m>
+			<y-m>0</y-m>
+			<z-m>-3.2</z-m>
+			<pitch-deg>0</pitch-deg>
+		</offsets>
+	</model>
+
+ <!--Parachutes -->
+	
+<model>
+    <path>Aircraft/SpaceShuttle/Models/Parachutes/Brake-Parachute.xml</path>
+     <offsets>
+       <x-m> 17.7 </x-m>
+       <y-m> 0.0 </y-m>
+       <z-m> 1.22 </z-m>
+       <pitch-deg>90</pitch-deg>
+     </offsets>
+                        <condition>
+			 <greater-than>
+				<property>sim/multiplay/generic/float[0]</property>
+				<value>45</value>
+			 </greater-than>
+                        </condition>
+</model>  
+
+<model>
+    <path>Aircraft/SpaceShuttle/Models/Parachutes/Brake-Parachute2.xml</path>
+     <offsets>
+       <x-m> 45.7 </x-m>
+       <y-m> 0.0 </y-m>
+       <z-m>-6.85 </z-m>
+       <pitch-deg>90</pitch-deg>
+     </offsets>
+                        <condition>
+       <and>
+			 <greater-than>
+				<property>sim/multiplay/generic/float[0]</property>
+				<value>1</value>
+			 </greater-than> 
+			 <less-than>
+				<property>sim/multiplay/generic/float[0]</property>
+				<value>44.999</value>
+			 </less-than>       
+	</and>
+      </condition>
+</model>
+
+
+<!--<model>
+    <path>Aircraft/SpaceShuttle/Models/lunarlandernofoil-c/lunarlander.xml</path>
+     <offsets>
+       <x-m> -2.30 </x-m>
+       <y-m> 20.0 </y-m>
+       <z-m> -6.45 </z-m>
+       <heading-deg>0.0</heading-deg>
+     </offsets>
+</model>  -->
+
+</PropertyList>

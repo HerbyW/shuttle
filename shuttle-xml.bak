@@ -38,12 +38,12 @@
  
 Gesamtsystem:
 
-Startmasse 1.992.500 kg                        4.392.710 lb  ok
+Startmasse 1.992.500 kg 
 
 Orbiter:
 
-Maximale Startmasse: 110900 kg                    244492 lb  ok
-maximale Nutzlast: 29500 kg                        65036 lb  ok
+Maximale Startmasse: 110900 kg                    244492 lb
+maximale Nutzlast: 29500 kg                        65036 lb
 maximale zurückgeführte Nutzlast: 14500 kg         31967 lb
 Landemasse leer: 70800 kg                         156087 lb
 Trockengewicht 68060 kg                           150046 lb
@@ -115,7 +115,7 @@ Externer Tank
 
 Höhe: 46,85 m
 Durchmesser: 8,38 m                                              ok
-Startmasse: 734200 kg                              1618634 lb    ok
+Startmasse: 734200 kg                              1618634 lb
 Leermasse: 31300 kg                                  69004 lb
 Tankvolumen LOX: 552 m³
 Tankvolumen LH2: 1535 m³
@@ -124,7 +124,7 @@ Feststoffbooster
 
 Länge: 45,4 m
 Durchmesser: 3,71 m                                            ok
-Startmasse: 573700 kg                              1264792 lb  ok
+Startmasse: 573700 kg                              1264792 lb
 Leermasse: 82500 kg                                 181881 lb
 Schub am Boden: 11830 kN
 spezifischer Impuls (Durchschnitt): 2538 m/s
@@ -146,43 +146,39 @@ http://www.businessinsider.com/breathtaking-images-of-the-space-shuttle-2013-9?I
    <htailarm  unit="FT" >   54.98 </htailarm>
    <vtailarea unit="FT2">  538.25 </vtailarea>
    <vtailarm  unit="FT" >   54.98 </vtailarm>
-   <location name="AERORP" unit="M">
-     <x>   2.50 </x>
+   <location name="AERORP" unit="IN">
+     <x>   0.00 </x>
      <y>   0.00 </y>
-     <z>  -2.50 </z>
+     <z>   0.00 </z>
    </location>
-   <location name="EYEPOINT" unit="M">
+   <location name="EYEPOINT" unit="IN">
      <x> 102.62 </x>
      <y> -30.00 </y>
      <z>  75.00 </z>
    </location>
-   <location name="VRP" unit="M">
+   <location name="VRP" unit="IN">
      <x>0</x>
      <y>0</y>
      <z>0</z>
    </location>
  </metrics>
 
- <!--changing some values: ixx from  425779 to 2025779
-                           izz from 2475373 to 4575373
-                        emtywt from  172000 to  180000
-                    location z from     1.0 to     5.0-->
  <mass_balance>
-   <ixx unit="SLUG*FT2">   2025779 </ixx>
+   <ixx unit="SLUG*FT2">    425779 </ixx>
    <iyy unit="SLUG*FT2">   2162623 </iyy>
-   <izz unit="SLUG*FT2">   4575373 </izz>
-   <emptywt unit="LBS" >    180000 </emptywt>
-   <location name="CG" unit="M">
-     <x>   2.50 </x>
+   <izz unit="SLUG*FT2">   2475373 </izz>
+   <emptywt unit="LBS" >    172000 </emptywt>
+   <location name="CG" unit="IN">
+     <x>0.00 </x>
      <y>   0.00 </y>
-     <z>  -2.50 </z>
+     <z>   1.00 </z>
    </location>
-        <pointmass name="Equipment">
-            <weight unit="LBS"> 40000 </weight>
-            <location name="POINTMASS" unit="M">
-                <x>  2.5 </x>
-                <y>  0.0 </y>
-                <z> -2.5 </z>
+        <pointmass name="Pilot">
+            <weight unit="LBS"> 80000 </weight>
+            <location name="POINTMASS" unit="IN">
+                <x> 0 </x>
+                <y> 0 </y>
+                <z> 0 </z>
             </location>
         </pointmass>
  </mass_balance>
@@ -207,7 +203,7 @@ http://www.businessinsider.com/breathtaking-images-of-the-space-shuttle-2013-9?I
 
 <contact type="BOGEY" name="LEFT_MAIN">
 <location unit="M">
-<x> 3.60 </x>
+<x> 4.70 </x>
 <y> -4.2 </y>
 <z>-6.85 </z>
 </location>
@@ -223,7 +219,7 @@ http://www.businessinsider.com/breathtaking-images-of-the-space-shuttle-2013-9?I
 
 <contact type="BOGEY" name="RIGHT_MAIN">
 <location unit="M">
-<x> 3.60 </x>
+<x> 4.70 </x>
 <y> 4.2 </y>
 <z>-6.85 </z>
 </location>
@@ -656,7 +652,7 @@ http://www.businessinsider.com/breathtaking-images-of-the-space-shuttle-2013-9?I
        <y>   0.00 </y>
        <z>-241.00 </z>
      </location>
-     <capacity unit="LBS"> 1618634.00 </capacity>
+     <capacity unit="LBS"> 1387457.00 </capacity>
      <contents unit="LBS"> 300000.00 </contents>
      <priority>1</priority>
   </tank>
@@ -667,7 +663,7 @@ http://www.businessinsider.com/breathtaking-images-of-the-space-shuttle-2013-9?I
        <y>   0.00 </y>
        <z>-241.00 </z>
      </location>
-     <capacity unit="LBS"> 2529650.00 </capacity>
+     <capacity unit="LBS"> 234265.00 </capacity>
      <contents unit="LBS"> 200000.00 </contents>
   </tank>
   
@@ -677,8 +673,8 @@ http://www.businessinsider.com/breathtaking-images-of-the-space-shuttle-2013-9?I
        <y>   0.00 </y>
        <z>-100.00 </z>
      </location>
-     <capacity unit="LBS"> 27265.00 </capacity>
-     <contents unit="LBS"> 10.0 </contents>
+     <capacity unit="LBS"> 117265.00 </capacity>
+     <contents unit="LBS"> 200.0 </contents>
      <priority>2</priority>
   </tank>
  
@@ -690,7 +686,7 @@ http://www.businessinsider.com/breathtaking-images-of-the-space-shuttle-2013-9?I
 				<y> 0.0 </y>
 				<z> -4.251 </z>
 			</location>
-			<capacity unit="LBS"> 13500.00 </capacity>
+			<capacity unit="LBS"> 50000.00 </capacity>
 		<!--	<contents unit="LBS"> 4828.00 </contents> -->
 			<contents unit="LBS"> 0.10 </contents>
 			<density unit="KG/L"> 1.14 </density>
@@ -702,7 +698,7 @@ http://www.businessinsider.com/breathtaking-images-of-the-space-shuttle-2013-9?I
 				<y> 0.0 </y>
 				<z> -4.251 </z>
 			</location>
-			<capacity unit="LBS"> 6500.00 </capacity>
+			<capacity unit="LBS"> 25000.00 </capacity>
 		<!--	<contents unit="LBS"> 2204.00 </contents> -->
 			<contents unit="LBS"> 0.10 </contents>
 			<density unit="LBS/GAL"> 6.88 </density>
@@ -898,11 +894,11 @@ http://www.businessinsider.com/breathtaking-images-of-the-space-shuttle-2013-9?I
           <time>      0 </time>
        </setting>
        <setting>
-          <position> 7 </position>
+          <position> 9 </position>
           <time>      4 </time>
        </setting>
        <setting>
-          <position> 15 </position>
+          <position> 19 </position>
           <time>      3 </time>
        </setting>
      </traverse>
@@ -1012,7 +1008,7 @@ http://www.businessinsider.com/breathtaking-images-of-the-space-shuttle-2013-9?I
            <property>aero/qbar-psf</property>
            <property>metrics/Sw-sqft</property>
            <property>fcs/flap-pos-deg</property>
-           <value> 0.006 </value>
+           <value> 0.009 </value>
        </product>
     </function>
 
@@ -1365,7 +1361,7 @@ http://www.businessinsider.com/breathtaking-images-of-the-space-shuttle-2013-9?I
  </aerodynamics>
 
  
- <!-- Parachute 0.3 war 1.4--> 
+ <!-- Parachute 0.4 war 1.4--> 
  <external_reactions>
   <force name="parachute" frame="WIND">
     <function>
@@ -1373,7 +1369,7 @@ http://www.businessinsider.com/breathtaking-images-of-the-space-shuttle-2013-9?I
         <property>aero/qbar-psf</property>
         <property>metrics/Schute-sqft</property>
 	<property>fcs/parachute_reef_pos_norm</property>
-        <value> 0.3 </value> <!-- Full drag coefficient -->
+        <value> 0.4 </value> <!-- Full drag coefficient -->
       </product>
     </function>
     <location unit="FT">
