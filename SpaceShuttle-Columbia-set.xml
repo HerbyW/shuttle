@@ -1,4 +1,11 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--###################################################################################
+    Antonov-Aircrafts and SpaceShuttle :: Herbert Wagner November2014-2015
+    Development is ongoing, see latest version: www.github.com/herbyw/antonov-aircrafts
+    This file is licenced under the terms of the GNU General Public Licence V3 or later
+    ###################################################################################
+-->
 
 <PropertyList>
  
@@ -48,7 +55,7 @@
   <description>NASA Space Shuttle Columbia</description>
   <flight-model>jsb</flight-model>
   <aero>shuttle</aero>
-  <author>Gijs de Rooy, NASA (3D), HerbyW</author>
+  <author>HerbyW, Gijs de Rooy, NASA (3D)</author>
 
 
   <input>

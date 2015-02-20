@@ -1,14 +1,22 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--###################################################################################
+    Antonov-Aircrafts and SpaceShuttle :: Herbert Wagner November2014-2015
+    Development is ongoing, see latest version: www.github.com/herbyw/antonov-aircrafts
+    This file is licenced under the terms of the GNU General Public Licence V3 or later
+    ###################################################################################
+-->
+
 <?xml-stylesheet type="text/xsl" href="http://jsbsim.sourceforge.net/JSBSim.xsl"?>
 <fdm_config name="shuttle" version="2.0" release="ALPHA"
    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
    xsi:noNamespaceSchemaLocation="http://jsbsim.sourceforge.net/JSBSim.xsd">
 
  <fileheader>
-  <author> Aeromatic v 0.9, HerbyW</author>
-  <filecreationdate> 2009-04-09, 01-2015</filecreationdate>
+  <author>HerbyW</author>
+  <filecreationdate>02-2015</filecreationdate>
   <version>$Revison: 4$</version>
-  <description> Models a shuttle </description>
+  <description>Space Shuttle Model JSBSim</description>
  </fileheader>
 
 <!--
