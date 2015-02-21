@@ -95,7 +95,7 @@
         <float n="17" alias="/engines/engine[11]/thrust_lb" />
         <float n="18" alias="/engines/engine[2]/thrust_lb" />
         <float n="19" alias="/instrumentation/robotarm-norm" />
-        <float n="0" alias="/gear/gear/rollspeed-ms" />
+        <float n="0" alias="/gear/gear[1]/rollspeed-ms" />
        
         <int type="int" n="3" alias="/controls/shuttle/parachute"/>
         <int type="int" n="4" alias="/controls/shuttle/EMU"/>

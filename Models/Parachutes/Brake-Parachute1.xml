@@ -24,9 +24,9 @@
 
 	<animation>
 		<type>scale</type>
-		<x-offset>0.4</x-offset>
-                <y-offset>0.4</y-offset>
-                <z-offset>0.4</z-offset>                
+		<x-offset>0.5</x-offset>
+                <y-offset>0.5</y-offset>
+                <z-offset>0.5</z-offset>                
 	</animation>
 	
 	<animation>
@@ -39,49 +39,45 @@
                  </condition>
 	</animation>
 
-	<animation>
-		<type>spin</type>
-		<property>sim/multiplay/generic/float[0]</property>
-		<factor>0.20</factor>
-		<center>
-			<x-m>0.0</x-m>
-			<y-m>0.0</y-m>
-			<z-m>0.0</z-m>
-		</center>
-		<axis>
-			<x>0</x>
-			<y>0</y>
-			<z>1</z>
-		</axis>
-	</animation>
-
-	<animation>
+<animation>
   <type>translate</type>  
   <property>sim/multiplay/generic/float[0]</property>
   <interpolation>
     <entry>
-      <ind>450</ind>
-      <dep>0</dep>
-    </entry>
-    <entry>
-      <ind>50</ind>
-      <dep>0</dep>
-    </entry>
-    <entry>
       <ind>45</ind>
-      <dep>55</dep>
+      <dep>-7</dep>
+    </entry>
+    <entry>
+      <ind>43</ind>
+      <dep>1</dep>
+    </entry>
+    <entry>
+      <ind>42</ind>
+      <dep>2</dep>
+    </entry>
+    <entry>
+      <ind>41</ind>
+      <dep>3</dep>
+    </entry>
+    <entry>
+      <ind>40</ind>
+      <dep>5</dep>
+    </entry>
+    <entry>
+      <ind>39</ind>
+      <dep>7</dep>
     </entry>
   </interpolation>
   <center>
-   <x-m> 0.0</x-m>
+   <x-m> 70.0</x-m>
    <y-m> 0.0</y-m>
    <z-m> 0.0</z-m>   
   </center>
   <axis>
-   <x>0</x>
+   <x>1</x>
    <y>0</y>
-   <z>1</z>
+   <z>0</z>
   </axis>
-</animation> 
+</animation>    
 
 </PropertyList>

@@ -702,9 +702,9 @@
 <model>
     <path>Aircraft/SpaceShuttle/Models/Lights/strobe-white.xml</path>
      <offsets>
-       <x-m> 2.5 </x-m>
+       <x-m> 2.7 </x-m>
        <y-m> 0.0 </y-m>
-       <z-m> -2.5 </z-m>
+       <z-m> -2.7 </z-m>
      </offsets>
 </model>
 
@@ -809,12 +809,34 @@
 </model>  
 
 <model>
+    <path>Aircraft/SpaceShuttle/Models/Parachutes/Brake-Parachute1.xml</path>
+     <offsets>
+       <x-m> 70.7 </x-m>
+       <y-m> 0.0 </y-m>
+       <z-m>-6.30 </z-m>
+       <pitch-deg>69</pitch-deg>
+     </offsets>
+                        <condition>
+       <and>
+			 <greater-than>
+				<property>sim/multiplay/generic/float[0]</property>
+				<value>39</value>
+			 </greater-than> 
+			 <less-than>
+				<property>sim/multiplay/generic/float[0]</property>
+				<value>44.999</value>
+			 </less-than>       
+	</and>
+      </condition>
+</model>
+
+<model>
     <path>Aircraft/SpaceShuttle/Models/Parachutes/Brake-Parachute2.xml</path>
      <offsets>
-       <x-m> 45.7 </x-m>
+       <x-m> 72.7 </x-m>
        <y-m> 0.0 </y-m>
-       <z-m>-6.85 </z-m>
-       <pitch-deg>90</pitch-deg>
+       <z-m>-6.30 </z-m>
+       <pitch-deg>89</pitch-deg>
      </offsets>
                         <condition>
        <and>
@@ -824,7 +846,7 @@
 			 </greater-than> 
 			 <less-than>
 				<property>sim/multiplay/generic/float[0]</property>
-				<value>44.999</value>
+				<value>38.999</value>
 			 </less-than>       
 	</and>
       </condition>

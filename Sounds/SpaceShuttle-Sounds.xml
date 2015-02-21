@@ -297,11 +297,11 @@ Author: Slavutinsky Victor  from Vostok-1 modified by HerbyW for SpaceShuttle
 		<value>-0.1</value>
                </less-than>
 	       <greater-than>
-                <property>/gear/gear/compression-norm</property>
+                <property>/gear/gear[1]/compression-norm</property>
                 <value>0.05</value>
                </greater-than>
 	       <equals>
-                <property>/gear/gear/wow</property>
+                <property>/gear/gear[1]/wow</property>
                 <value>1</value>
                </equals>                    
             </and>
@@ -327,17 +327,17 @@ Author: Slavutinsky Victor  from Vostok-1 modified by HerbyW for SpaceShuttle
 		<condition>
 		  <and>
                    <greater-than>
-                      <property>/gear/gear/rollspeed-ms</property>
+                      <property>/gear/gear[1]/rollspeed-ms</property>
                       <value>5</value>
                    </greater-than>
 		   <equals>
-                      <property>/gear/gear/wow</property>
+                      <property>/gear/gear[1]/wow</property>
                       <value>1</value>
                    </equals> 
 		  </and>
                 </condition>
           <volume>
-            <property>/gear/gear/rollspeed-ms</property>            
+            <property>/gear/gear[1]/rollspeed-ms</property>            
             <factor>0.005</factor>
 	    <min>0.2</min>
 	    <max>1.0</max>
