@@ -24,9 +24,9 @@
 
 	<animation>
 		<type>scale</type>
-		<x-offset>0.4</x-offset>
-                <y-offset>0.4</y-offset>
-                <z-offset>0.4</z-offset>                
+		<x-offset>0.35</x-offset>
+                <y-offset>0.35</y-offset>
+                <z-offset>0.35</z-offset>                
 	</animation>
 	
 	<animation>
@@ -42,7 +42,7 @@
 	<animation>
 		<type>spin</type>
 		<property>sim/multiplay/generic/float[0]</property>
-		<factor>0.20</factor>
+		<factor>0.15</factor>
 		<center>
 			<x-m>0.0</x-m>
 			<y-m>0.0</y-m>
@@ -69,7 +69,7 @@
     </entry>
     <entry>
       <ind>45</ind>
-      <dep>55</dep>
+      <dep>75</dep>
     </entry>
   </interpolation>
   <center>

@@ -24,8 +24,8 @@
 
 	<animation>
 		<type>scale</type>
-		<x-offset>0.06</x-offset>
-                <y-offset>0.55</y-offset>
+		<x-offset>0.10</x-offset>
+                <y-offset>0.65</y-offset>
                 <z-offset>0.55</z-offset>                
 	</animation>
 	
@@ -49,15 +49,15 @@
     </entry>
     <entry>
       <ind>25</ind>
-      <dep>105</dep>
+      <dep>125</dep>
     </entry>
     <entry>
       <ind>4</ind>
-      <dep>160</dep>
+      <dep>190</dep>
     </entry>
     <entry>
       <ind>0.5</ind>
-      <dep>175</dep>
+      <dep>225</dep>
     </entry>
   </interpolation>
   <center>

@@ -811,7 +811,7 @@
 <model>
     <path>Aircraft/SpaceShuttle/Models/Parachutes/Brake-Parachute1.xml</path>
      <offsets>
-       <x-m> 70.7 </x-m>
+       <x-m> 90.7 </x-m>
        <y-m> 0.0 </y-m>
        <z-m>-6.30 </z-m>
        <pitch-deg>69</pitch-deg>
@@ -833,7 +833,7 @@
 <model>
     <path>Aircraft/SpaceShuttle/Models/Parachutes/Brake-Parachute2.xml</path>
      <offsets>
-       <x-m> 72.7 </x-m>
+       <x-m> 95.7 </x-m>
        <y-m> 0.0 </y-m>
        <z-m>-6.30 </z-m>
        <pitch-deg>89</pitch-deg>
