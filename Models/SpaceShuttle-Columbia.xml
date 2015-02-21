@@ -37,6 +37,41 @@
     </emission>
   </animation>
 
+<animation>
+  <type>material</type>
+  <object-name>spaceshutt_spstob_1</object-name>
+   <object-name>spaceshutt_spstob</object-name>
+   <object-name>spaceshutt_spstob.001</object-name>
+   <object-name>spaceshutt_spstob.002</object-name>    
+   <object-name>spaceshutt_spstob_3</object-name>
+   <object-name>spaceshutt_spstob_4</object-name>
+  
+  <texture-prop>texture</texture-prop>
+  <texture>spstob_1hot.png</texture> 
+   
+      <condition>
+         <and>
+              <less-than>
+                  <property>sim/multiplay/generic/float[13]</property>
+                  <value>4.02</value>
+               </less-than>
+               <greater-than>
+                  <property>sim/multiplay/generic/float[13]</property>
+                  <value>3.34</value>
+                  </greater-than>               -->              
+	        <less-than>
+                  <property>/position/altitude-agl-ft</property>
+                  <value>120000</value>
+                </less-than>
+		<greater-than>
+                  <property>/position/altitude-agl-ft</property>
+                  <value>70000</value>
+                </greater-than>
+          </and>
+        </condition>
+
+</animation>  
+  
 <!-- man for the moon, pick the little windows on the top to activate him -->
 
 <model>
