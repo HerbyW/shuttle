@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <!--###################################################################################
-    Antonov-Aircrafts and SpaceShuttle :: Herbert Wagner November2014-2015
+    Antonov-Aircrafts and SpaceShuttle :: Herbert Wagner November2014-March2015
     Development is ongoing, see latest version: www.github.com/herbyw/antonov-aircrafts
     This file is licenced under the terms of the GNU General Public Licence V3 or later
+    
+    Firefly: 3D model improvment: ruder, speedbreak, ailerions, all gears and doors
+    
     ###################################################################################
 -->
 
@@ -75,7 +78,8 @@
 	
 <multiplay>
    <chat_display>1</chat_display>
-     <generic> 
+     <generic>
+        <float n="0" alias="/gear/gear[1]/rollspeed-ms" />
         <float n="1" alias="/engines/engine[3]/thrust_lb" />
         <float n="2" alias="/engines/engine[1]/thrust_lb" />
         <float n="3" alias="/instrumentation/doors/door1/position-norm" />        
@@ -94,9 +98,7 @@
         <float n="16" alias="/engines/engine[10]/thrust_lb" />        
         <float n="17" alias="/engines/engine[11]/thrust_lb" />
         <float n="18" alias="/engines/engine[2]/thrust_lb" />
-        <float n="19" alias="/instrumentation/robotarm-norm" />
-        <float n="0" alias="/gear/gear[1]/rollspeed-ms" />
-       
+        <float n="19" alias="/instrumentation/robotarm-norm" />       
         <int type="int" n="3" alias="/controls/shuttle/parachute"/>
         <int type="int" n="4" alias="/controls/shuttle/EMU"/>
         <int type="int" n="5" alias="/controls/shuttle/EMU"/>
@@ -163,9 +165,9 @@ Befor take off, set the wing leveler activ and the pitch control to 23 degree.
 Close the doors by clicking on them.
 
 Give throttle, and take off, be carefull with throttle - it is a rocket!
-Hold it in a climbing position of 23 degree and go to 15000 ft,
-stop throttle, set the Autopilot to -3 pitch hold and give throttle again.
-If the shuttle goes up more then 15 degrees reduce throttle.
+Hold it in a climbing position of 23 degree and go to 85000 ft,
+
+If the shuttle goes up more then 23 degrees reduce throttle.
 Try to get a speed of 8000 kts for a 10 minute orbital flight, 22000 kts for 220 minutes.
 
 When reaching 115000 ft deactivate the tank and booster rockets by setting the Tank 0 and 1 to 0.
@@ -189,7 +191,7 @@ Now you glide to your landing spot.
 
 F2 activates the parachute, use it after touchdown. (still no force impemented)
 
-Gears, Flaps and Speed Breaks are not animated but are there in the jsb.
+Gears and Speed Breaks are animated.
 Speed Breakes: Key s
    
 ILS Heading is not working, glidepath is not usefull as you have a different glide path as a comercial airliner.

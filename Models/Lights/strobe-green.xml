@@ -43,9 +43,9 @@
   <x-min>1</x-min>
   <y-min>1</y-min>
   <z-min>1</z-min>
-  <x-factor>1.5</x-factor>
-  <y-factor>1.5</y-factor>
-  <z-factor>1.5</z-factor>
+  <x-factor>1.05</x-factor>
+  <y-factor>1.05</y-factor>
+  <z-factor>1.05</z-factor>
  </animation>
 
 </PropertyList>

@@ -16,7 +16,7 @@
 	<path>Main-Parachute.ac</path>
 
 	<offsets>
-		<x-m>0.0</x-m>
+		<x-m>12.0</x-m>
 		<y-m>0.0</y-m>
 		<z-m>0.0</z-m>
 		<pitch-deg>0</pitch-deg>
@@ -57,7 +57,7 @@
     </entry>
     <entry>
       <ind>0.5</ind>
-      <dep>225</dep>
+      <dep>205</dep>
     </entry>
   </interpolation>
   <center>

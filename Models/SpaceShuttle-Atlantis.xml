@@ -1,19 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <!--###################################################################################
-    Antonov-Aircrafts and SpaceShuttle :: Herbert Wagner November2014-2015
+    Antonov-Aircrafts and SpaceShuttle :: Herbert Wagner November2014-March2015
     Development is ongoing, see latest version: www.github.com/herbyw/antonov-aircrafts
     This file is licenced under the terms of the GNU General Public Licence V3 or later
+    
+    Firefly: 3D model improvment: ruder, speedbreak, ailerions, all gears and doors
+    
     ###################################################################################
 -->
 
 <PropertyList>
-	<path>shuttle_o2.ac</path>
+	<path>shuttle_o2at.ac</path>
 
   <!--Lights-->
                                    
 <animation>   
    <object-name>spaceshutt_spstob_1</object-name>
+   <object-name>spaceshutt_spstob_2</object-name>
    <object-name>spaceshutt_spstob</object-name>
    <object-name>spaceshutt_spstob.001</object-name>
    <object-name>spaceshutt_spstob.002</object-name>    
@@ -24,29 +28,21 @@
   <animation>
     <type>material</type>
     <object-name>spaceshutt_spstob_1</object-name>
-   <object-name>spaceshutt_spstob</object-name>
-   <object-name>spaceshutt_spstob.001</object-name>   
-   <object-name>spaceshutt_spstob.002</object-name>    
-   <object-name>spaceshutt_spstob_3</object-name>
-   <object-name>spaceshutt_spstob_4</object-name>
-   <emission>
-      <factor>1</factor>
-      <red>   0.25 </red>
-      <green> 0.25 </green>
-      <blue>  0.25 </blue>
-    </emission>
+    <object-name>spaceshutt_spstob_2</object-name>
+    <object-name>spaceshutt_spstob</object-name>
+    <object-name>spaceshutt_spstob.001</object-name>   
+    <object-name>spaceshutt_spstob.002</object-name>    
+    <object-name>spaceshutt_spstob_3</object-name>
+    <object-name>spaceshutt_spstob_4</object-name>
+     <emission>      
+      <red>   0.15 </red>
+      <green> 0.15 </green>
+      <blue>  0.15 </blue>
+      </emission>
   </animation>
-  
-  
-  <animation>   
-   <object-name>spaceshutt_spstob_1</object-name>
-   <object-name>spaceshutt_spstob</object-name>
-   <object-name>spaceshutt_spstob.001</object-name>
-   <object-name>spaceshutt_spstob.002</object-name>    
-   <object-name>spaceshutt_spstob_3</object-name>
-   <object-name>spaceshutt_spstob_4</object-name>
-</animation>
 
+<!-- sometimes it is hot, so let it glow -->  
+  
 <animation>
   <type>material</type>
   <object-name>spaceshutt_spstob_1</object-name>
@@ -80,8 +76,8 @@
           </and>
         </condition>
 
-</animation>
-
+</animation>  
+  
 <!-- man for the moon, pick the little windows on the top to activate him -->
 
 <model>
@@ -110,6 +106,7 @@
 </animation>
 
 <!-- satelit, click it to launch a satelit -->
+
 <model>
     <path>Aircraft/SpaceShuttle/Models/EMU/satelit-int.xml</path>
      <offsets>
@@ -196,7 +193,7 @@
  		</condition>
 </model>
 
-  <!-- Smoke for 3 Shuttle engines -->
+  <!-- Smoke for 3 Shuttle main engines -->
   
   <model>
 		<path>Aircraft/SpaceShuttle/Models/Effects/trails.xml</path>		
@@ -260,6 +257,7 @@
   </model>
   
   <!-- smoke from the extra control engines xlr01 winglevel-->
+  
   <model>
 		<path>Aircraft/SpaceShuttle/Models/Effects/trails-minni1.xml</path>		
 		<offsets>
@@ -333,6 +331,7 @@
   </model>
   
   <!-- smoke from the extra control engines xlr01 pitchlevel nose position -->
+  
   <model>
 		<path>Aircraft/SpaceShuttle/Models/Effects/trails-minni3.xml</path>		
 		<offsets>
@@ -407,6 +406,7 @@
   </model>
   
   <!-- smoke from the extra control engines xlr01 pitchlevel tail position -->
+  
   <model>
 		<path>Aircraft/SpaceShuttle/Models/Effects/trails-minni14.xml</path>		
 		<offsets>
@@ -480,12 +480,13 @@
   
     <!-- smoke from the extra control engines03 for yaw control nose position
          based on reverser position on=1=270=blow to left, off=0=90=blow to right-->
+    
   <model>
-		<path>Aircraft/SpaceShuttle/Models/Effects/trails-minni17.xml</path>		
+		<path>Aircraft/SpaceShuttle/Models/Effects/trails-minni17.xml</path>
 		<offsets>
 			<x-m> -15.85 </x-m>
-       <y-m> -1.75 </y-m>
-       <z-m> -3.25 </z-m>
+                        <y-m> -1.75 </y-m>
+                        <z-m> -3.25 </z-m>
 			<roll-deg>    0.0</roll-deg>
 			<pitch-deg>   0.0</pitch-deg>
 			<heading-deg> 270.0</heading-deg>
@@ -501,8 +502,8 @@
 		<path>Aircraft/SpaceShuttle/Models/Effects/trails-minni17.xml</path>		
 		<offsets>
 			<x-m> -15.85 </x-m>
-       <y-m> 1.75 </y-m>
-       <z-m> -3.25 </z-m>
+                        <y-m> 1.75 </y-m>
+                        <z-m> -3.25 </z-m>
 			<roll-deg>    0.0</roll-deg>
 			<pitch-deg>   0.0</pitch-deg>
 			<heading-deg> 90.0</heading-deg>
@@ -516,17 +517,16 @@
   </model>
     
 
-  <!-- doors animation -->
+  <!-- Shuttle doors animation, open by default, click them to close or open  -->
 
 <animation>
-<type>pick</type>
-<object-name>spaceshutt_spstob</object-name>
-<object-name>spaceshutt_spstob.001</object-name>
+ <type>pick</type>
+  <object-name>spaceshutt_spstob</object-name>
+  <object-name>spaceshutt_spstob.001</object-name>
 
-<visible>true</visible>
+  <visible>true</visible>
 <action>
 <button>0</button>
-
 
 <binding>
 <command>property-toggle</command>
@@ -541,12 +541,12 @@
 <property>/controls/shuttle/door/position</property> <!-- the value to interpolate to, is 1 -->
 <rate>0.10</rate><!-- 10 seconds to 0 from 1 or 1 to 0 -->
 </binding>
+
 </action>
 </animation>
-
  
- <animation>
-  <type>rotate</type>
+<animation>
+ <type>rotate</type>
   <object-name>spaceshutt_spstob</object-name>
   <property>sim/multiplay/generic/float[3]</property>
   <interpolation>
@@ -569,10 +569,10 @@
    <y>0</y>
    <z>0</z>
   </axis>
- </animation>
+</animation>
 
- <animation>
-  <type>rotate</type>
+<animation>
+ <type>rotate</type>
   <object-name>spaceshutt_spstob.001</object-name>
   <property>sim/multiplay/generic/float[3]</property>
   <interpolation>
@@ -595,7 +595,9 @@
    <y>0</y>
    <z>0</z>
   </axis>
- </animation>
+</animation>
+
+<!--Light for Wing Lights, no strobes-->
  
  <model>
 		<name>Strobe_1</name>
@@ -617,6 +619,8 @@
 		</offsets>
 </model>   
 
+<!--Light in the satelit-->
+
 <model>
 		<name>Strobe_3</name>
 		<path>Aircraft/SpaceShuttle/Models/Lights/strobe-yellow.xml</path>	
@@ -626,6 +630,8 @@
 			<z-m>-1</z-m>
 		</offsets>
 </model>   
+
+<!--Light for Beacons-->
 
 <model>
     <name>Beacon_1</name>
@@ -645,6 +651,8 @@
       <z-m>  8.28 </z-m>
     </offsets>
 </model>
+
+<!--Light for Position Lights, Strobes-->
 
 <model>
     <path>Aircraft/SpaceShuttle/Models/Lights/StrobeLight.xml</path>
@@ -672,6 +680,8 @@
      </offsets>
 </model>
 
+<!--Light for Nav Lights-->
+
 <model>
     <path>Aircraft/SpaceShuttle/Models/Lights/WhiteLight.xml</path>
      <offsets>
@@ -689,13 +699,13 @@
      </offsets>
 </model>
 
-<!--Light for Gears! there are no gears, so I set some lights to the spot of earthcontact -->
+<!--Light for Gears! -->
 <model>
     <path>Aircraft/SpaceShuttle/Models/Lights/WhiteLight.xml</path>
      <offsets>
-       <x-m> -15.00 </x-m>
+       <x-m> -11.35 </x-m>
        <y-m> 0.00 </y-m>
-       <z-m> -6.85 </z-m>
+       <z-m> -5.35 </z-m>
      </offsets>
                         <condition>
 			 <equals>
@@ -707,9 +717,9 @@
 <model>
     <path>Aircraft/SpaceShuttle/Models/Lights/WhiteLight.xml</path>
      <offsets>
-       <x-m> 3.60 </x-m>
-       <y-m> -4.2 </y-m>
-       <z-m>-6.85 </z-m>
+       <x-m> 3.15 </x-m>
+       <y-m> -3.5 </y-m>
+       <z-m>-5.40  </z-m>
      </offsets>
      
                         <condition>
@@ -722,9 +732,9 @@
 <model>
     <path>Aircraft/SpaceShuttle/Models/Lights/WhiteLight.xml</path>
      <offsets>
-       <x-m> 3.60 </x-m>
-       <y-m> 4.2 </y-m>
-       <z-m>-6.85 </z-m>
+       <x-m> 3.15 </x-m>
+       <y-m> 3.5 </y-m>
+       <z-m>-5.40  </z-m>
      </offsets>
      
                         <condition>
@@ -735,15 +745,10 @@
                         </condition>
 </model>
 
-<!--One Light for the center of the model, just for testing reasons, will be removed later-->
-<model>
-    <path>Aircraft/SpaceShuttle/Models/Lights/strobe-white.xml</path>
-     <offsets>
-       <x-m> 0.0 </x-m>
-       <y-m> 0.0 </y-m>
-       <z-m> 0.0 </z-m>
-     </offsets>
-</model>
+ 
+
+<!--One Light for the center of gravity, just for testing reasons, will be removed later-->
+
 <model>
     <path>Aircraft/SpaceShuttle/Models/Lights/strobe-white.xml</path>
      <offsets>
@@ -754,6 +759,7 @@
 </model>
 
 <!--lets set some fire to the main engines -->
+
 <model>
     <path>Aircraft/SpaceShuttle/Models/Effects/engine-fire.xml</path>
      <offsets>
@@ -802,7 +808,7 @@
      </offsets>
 </model>
 
-<!--more smoke ! -->
+<!--more effect ! for critical flight situation-->
 
 <model>
   <name>right-strake-vortex</name>
@@ -824,6 +830,7 @@
  </model>
 
  <!--and supersonic boom ! -->
+ 
  <model>
 		<name>sonicboom</name>
 		<path>Aircraft/SpaceShuttle/Models/Effects/boom.xml</path>
@@ -836,32 +843,54 @@
 	</model>
 
  <!--Parachutes -->
-	
+ 
 <model>
-    <path>Aircraft/SpaceShuttle/Models/Parachutes/Brake-Parachute.xml</path>
+    <path>Aircraft/SpaceShuttle/Models/Parachutes/Helping-Parachute.xml</path>
      <offsets>
-       <x-m> 17.7 </x-m>
+       <x-m> 39.7 </x-m>
        <y-m> 0.0 </y-m>
        <z-m> 1.22 </z-m>
        <pitch-deg>90</pitch-deg>
      </offsets>
-                        <condition>
+      <condition>
+			 <greater-than>
+				<property>sim/multiplay/generic/float[0]</property>
+				<value>100</value>
+			 </greater-than>
+      </condition>
+</model>
+	
+<model>
+    <path>Aircraft/SpaceShuttle/Models/Parachutes/Brake-Parachute.xml</path>
+     <offsets>
+       <x-m> 25.7 </x-m>
+       <y-m> 0.0 </y-m>
+       <z-m> 1.22 </z-m>
+       <pitch-deg>90</pitch-deg>
+     </offsets>
+      <condition>
+       <and>
 			 <greater-than>
 				<property>sim/multiplay/generic/float[0]</property>
 				<value>45</value>
-			 </greater-than>
-                        </condition>
+			 </greater-than> 
+			 <less-than>
+				<property>sim/multiplay/generic/float[0]</property>
+				<value>99.999</value>
+			 </less-than>       
+	 </and>
+	</condition>
 </model>  
 
 <model>
     <path>Aircraft/SpaceShuttle/Models/Parachutes/Brake-Parachute1.xml</path>
      <offsets>
-       <x-m> 90.7 </x-m>
+       <x-m> 100.7 </x-m>
        <y-m> 0.0 </y-m>
        <z-m>-6.30 </z-m>
-       <pitch-deg>69</pitch-deg>
+       <pitch-deg>90</pitch-deg>
      </offsets>
-                        <condition>
+      <condition>
        <and>
 			 <greater-than>
 				<property>sim/multiplay/generic/float[0]</property>
@@ -872,18 +901,18 @@
 				<value>44.999</value>
 			 </less-than>       
 	</and>
-      </condition>
+       </condition>
 </model>
 
 <model>
     <path>Aircraft/SpaceShuttle/Models/Parachutes/Brake-Parachute2.xml</path>
      <offsets>
-       <x-m> 95.7 </x-m>
+       <x-m> 105.7 </x-m>
        <y-m> 0.0 </y-m>
        <z-m>-6.30 </z-m>
-       <pitch-deg>89</pitch-deg>
+       <pitch-deg>90</pitch-deg>
      </offsets>
-                        <condition>
+      <condition>
        <and>
 			 <greater-than>
 				<property>sim/multiplay/generic/float[0]</property>
@@ -894,7 +923,7 @@
 				<value>38.999</value>
 			 </less-than>       
 	</and>
-      </condition>
+       </condition>
 </model>
 
 
@@ -908,4 +937,387 @@
      </offsets>
 </model>  -->
 
+  <!-- Speedbrake animation -->
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>speedbrakeL</object-name>
+    <property>surface-positions/speedbrake-pos-norm</property>
+    <factor> 18 </factor>
+    <axis>
+      <x1-m>  16.023   </x1-m>
+      <y1-m>  -0.04977 </y1-m>
+      <z1-m>   7.512   </z1-m>
+      <x2-m>  13.134   </x2-m>
+      <y2-m>  -0.259   </y2-m>
+      <z2-m>   2.311   </z2-m>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>speedbrakeR</object-name>
+    <property>surface-positions/speedbrake-pos-norm</property>
+    <factor> -18 </factor>
+    <axis>
+      <x1-m>  16.023   </x1-m>
+      <y1-m>   0.04977 </y1-m>
+      <z1-m>   7.512   </z1-m>
+      <x2-m>  13.134   </x2-m>
+      <y2-m>   0.259   </y2-m>
+      <z2-m>   2.311   </z2-m>
+    </axis>
+  </animation>
+ 
+ <!-- Rudder animation in the Speedbrake-->
+ 
+  <animation>
+    <type>rotate</type>
+    <object-name>speedbrakeL</object-name>    
+    <property>surface-positions/rudder-pos-norm</property>
+    <factor> -25 </factor>
+    <axis>
+      <x1-m>  16.023   </x1-m>
+      <y1-m>  -0.04977 </y1-m>
+      <z1-m>   7.512   </z1-m>
+      <x2-m>  13.134   </x2-m>
+      <y2-m>  -0.259   </y2-m>
+      <z2-m>   2.311   </z2-m>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>speedbrakeR</object-name>    
+    <property>surface-positions/rudder-pos-norm</property>
+    <factor> -25 </factor>
+    <axis>
+      <x1-m>  16.023   </x1-m>
+      <y1-m>   0.04977 </y1-m>
+      <z1-m>   7.512   </z1-m>
+      <x2-m>  13.134   </x2-m>
+      <y2-m>   0.259   </y2-m>
+      <z2-m>   2.311   </z2-m>
+    </axis>
+  </animation>
+ 
+   <!-- Ailerons animation -->
+   
+  <animation>
+    <type>rotate</type>
+    <object-name>Left alieron</object-name>
+    <property>surface-positions/left-aileron-pos-norm</property>
+    <factor> -15 </factor>
+    <center>
+      <x-m>  9.6664295 </x-m>
+      <y-m>  9.9170141 </y-m>
+      <z-m> -4.5840192 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>Right alieron</object-name>
+    <property>surface-positions/right-aileron-pos-norm</property>
+    <factor> 15 </factor>
+    <center>
+      <x-m>  9.6664295 </x-m>
+      <y-m> -9.9170141 </y-m>
+      <z-m> -4.5840192 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+  
+    <!-- Elevator animation -->
+    
+  <animation>
+    <type>rotate</type>
+    <object-name>Left elevator</object-name>
+    <property>surface-positions/elevator-pos-norm</property>
+    <factor> 15 </factor>
+    <center>
+      <x-m>  9.5124702 </x-m>
+      <y-m>  5.3279390 </y-m>
+      <z-m> -4.5753546 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>Right elevator</object-name>
+    <property>surface-positions/elevator-pos-norm</property>
+    <factor> 15 </factor>
+    <center>
+      <x-m>  9.5124702 </x-m>
+      <y-m>  5.3279390 </y-m>
+      <z-m> -4.5753546 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+  
+    <!-- Front Gear in and out animation-->  
+
+  <animation>
+    <type>rotate</type>
+    <object-name>front wheels</object-name>
+    <object-name>frontgear</object-name>
+    <property>gear/gear[0]/position-norm</property>
+    <interpolation>
+      <entry><ind> 0 </ind><dep>  94 </dep></entry>
+      <entry><ind> 1 </ind><dep>   0 </dep></entry>
+    </interpolation>
+    <center>
+      <x-m>  -11.0473566 </x-m>
+      <y-m>   -0.0000028 </y-m>
+      <z-m>   -4.8964105 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>frontgeardoorL</object-name>    
+    <property>gear/gear[0]/position-norm</property>      
+  <interpolation>
+    <entry>
+      <ind>0.0</ind>
+      <dep>-90.0</dep>
+    </entry>    
+    <entry>
+      <ind>0.15</ind>
+      <dep>0.0</dep>
+    </entry>
+    <entry>
+      <ind>1.0</ind>
+      <dep>0.0</dep>
+    </entry>
+  </interpolation>   
+    <axis>
+      <x1-m>   -11.319   </x1-m>
+      <y1-m>    -0.612   </y1-m>
+      <z1-m>    -5.25    </z1-m>
+      <x2-m>   -12.817   </x2-m>
+      <y2-m>    -0.612   </y2-m>
+      <z2-m>    -5.245   </z2-m>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>rotate</type>    
+    <object-name>frontgeardoorR</object-name>
+    <property>gear/gear[0]/position-norm</property>
+    <interpolation>
+    <entry>
+      <ind>0.0</ind>
+      <dep>90.0</dep>
+    </entry>    
+    <entry>
+      <ind>0.15</ind>
+      <dep>0.0</dep>
+    </entry>
+    <entry>
+      <ind>1.0</ind>
+      <dep>0.0</dep>
+    </entry>
+  </interpolation>
+    <axis>
+      <x1-m>  -11.319   </x1-m>
+      <y1-m>    0.612   </y1-m>
+      <z1-m>   -5.25    </z1-m>
+      <x2-m>  -12.817   </x2-m>
+      <y2-m>    0.612   </y2-m>
+      <z2-m>   -5.245   </z2-m>
+    </axis>
+  </animation>
+
+    <!-- Tail Gear in and out animation -->  
+
+  <animation>
+    <type>rotate</type>
+    <object-name>back wheelsL</object-name>
+    <object-name>back wheelsR</object-name>
+    <object-name>backgearL</object-name>
+    <object-name>backgearR</object-name>    
+    <property>gear/gear[0]/position-norm</property>
+    <interpolation>
+      <entry><ind> 0 </ind><dep>  100 </dep></entry>
+      <entry><ind> 1 </ind><dep>   0 </dep></entry>
+    </interpolation>
+    <center>
+      <x-m>  3.5672667 </x-m>
+      <y-m>  3.4999995 </y-m>
+      <z-m> -4.78      </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+ 
+ <animation>
+    <type>translate</type> 
+    <object-name>backgearlinkageL</object-name>
+    <object-name>backgearlinkageR</object-name>  
+    <property>gear/gear[0]/position-norm</property>
+  <interpolation>
+    <entry>
+      <ind>0</ind>
+      <dep>4</dep>
+    </entry>
+    <entry>
+      <ind>1</ind>
+      <dep>0</dep>
+    </entry>    
+  </interpolation>
+  <center>
+   <x-m> 1.753 </x-m>
+      <y-m>  0.0   </y-m>
+      <z-m> 3.459 </z-m> 
+  </center>
+  <axis>
+   <x>-1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+</animation> 
+ 
+  <animation>
+    <type>rotate</type>
+    <object-name>backgearlinkageL</object-name>
+    <object-name>backgearlinkageR</object-name>    
+    <property>gear/gear[0]/position-norm</property>
+    <interpolation>
+      <entry><ind> 0 </ind><dep>  45 </dep></entry>
+      <entry><ind> 1 </ind><dep>   0 </dep></entry>
+    </interpolation>
+    <center>
+      <x-m> 1.753 </x-m>
+      <y-m>  0.0   </y-m>
+      <z-m> -5.024 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> -1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>geardoorL</object-name>    
+    <property>gear/gear[0]/position-norm</property>
+    <interpolation>
+    <entry>
+      <ind>0.0</ind>
+      <dep>-90.0</dep>
+    </entry>    
+    <entry>
+      <ind>0.15</ind>
+      <dep>0.0</dep>
+    </entry>
+    <entry>
+      <ind>1.0</ind>
+      <dep>0.0</dep>
+    </entry>
+  </interpolation>
+    <axis>
+      <x1-m>  4.520   </x1-m>
+      <y1-m> -4.620   </y1-m>
+      <z1-m> -5.294   </z1-m>
+      <x2-m>  0.727   </x2-m>
+      <y2-m> -4.612   </y2-m>
+      <z2-m> -5.294   </z2-m>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>rotate</type>    
+    <object-name>geardoorR</object-name>
+    <property>gear/gear[0]/position-norm</property>
+    <interpolation>
+    <entry>
+      <ind>0.0</ind>
+      <dep>90.0</dep>
+    </entry>    
+    <entry>
+      <ind>0.15</ind>
+      <dep>0.0</dep>
+    </entry>
+    <entry>
+      <ind>1.0</ind>
+      <dep>0.0</dep>
+    </entry>
+  </interpolation>
+    <axis>
+      <x1-m>  4.520   </x1-m>
+      <y1-m>  4.620   </y1-m>
+      <z1-m> -5.294   </z1-m>
+      <x2-m>  0.727   </x2-m>
+      <y2-m>  4.612   </y2-m>
+      <z2-m> -5.294   </z2-m>
+    </axis>
+  </animation>
+  
+  <!-- Rotate all wheels forwards -->
+  
+ <animation>
+  <type>spin</type>
+  <object-name>back wheelsL</object-name>
+  <object-name>back wheelsR</object-name>   
+  <property>sim/multiplay/generic/float[0]</property>
+    <factor> -20 </factor>
+  <center>
+      <x-m> 3.567 </x-m>
+      <y-m> 0.0   </y-m>
+      <z-m>-7.396 </z-m>
+    </center>
+  <axis>
+   <x>0</x>
+   <y>1</y>
+   <z>0</z>
+  </axis>
+ </animation>
+ 
+ <animation>
+  <type>spin</type>  
+  <object-name>front wheels</object-name>  
+  <property>sim/multiplay/generic/float[0]</property>
+    <factor> -25 </factor>
+  <center>
+      <x-m>-11.047 </x-m>
+      <y-m>  0.0 </y-m>
+      <z-m> -6.922 </z-m>
+    </center>
+  <axis>
+   <x>0</x>
+   <y>1</y>
+   <z>0</z>
+  </axis>
+ </animation>
+ 
+ 
+  
 </PropertyList>

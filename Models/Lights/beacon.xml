@@ -58,8 +58,8 @@
     <type>dist-scale</type>
     <object-name>strobe</object-name>
     <interpolation>
-      <entry><ind>    0 </ind><dep> 0.25 </dep></entry>
-      <entry><ind>   20 </ind><dep> 0.50 </dep></entry>
+      <entry><ind>    0 </ind><dep> 0.65 </dep></entry>
+      <entry><ind>   20 </ind><dep> 1.00 </dep></entry>
       <entry><ind> 1500 </ind><dep> 5.00 </dep></entry>
     </interpolation>
   </animation>

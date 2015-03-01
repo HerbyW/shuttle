@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <!--###################################################################################
-    Antonov-Aircrafts and SpaceShuttle :: Herbert Wagner November2014-2015
+    Antonov-Aircrafts and SpaceShuttle :: Herbert Wagner November2014-March2015
     Development is ongoing, see latest version: www.github.com/herbyw/antonov-aircrafts
     This file is licenced under the terms of the GNU General Public Licence V3 or later
+    
+    Firefly: 3D model improvment: ruder, speedbreak, ailerions, all gears and doors
+    
     ###################################################################################
 -->
 
@@ -14,8 +17,8 @@
 
  <fileheader>
   <author>HerbyW</author>
-  <filecreationdate>02-2015</filecreationdate>
-  <version>$Revison: 4$</version>
+  <filecreationdate>03-2015</filecreationdate>
+  <version>$Revison: 5$</version>
   <description>Space Shuttle Model JSBSim</description>
  </fileheader>
 
@@ -201,7 +204,7 @@ http://www.businessinsider.com/breathtaking-images-of-the-space-shuttle-2013-9?I
 <location unit="M">
 <x> -15.00 </x>
 <y> 0.00 </y>
-<z> -6.95 </z>
+<z> -7.30 </z>
 </location>
 <static_friction> 0.80 </static_friction>
 <dynamic_friction> 0.20 </dynamic_friction>
@@ -217,7 +220,7 @@ http://www.businessinsider.com/breathtaking-images-of-the-space-shuttle-2013-9?I
 <location unit="M">
 <x> 3.60 </x>
 <y> -4.2 </y>
-<z>-6.85 </z>
+<z>-8.25 </z>
 </location>
 <static_friction> 0.80 </static_friction>
 <dynamic_friction> 0.20 </dynamic_friction>
@@ -233,7 +236,7 @@ http://www.businessinsider.com/breathtaking-images-of-the-space-shuttle-2013-9?I
 <location unit="M">
 <x> 3.60 </x>
 <y> 4.2 </y>
-<z>-6.85 </z>
+<z>-8.25 </z>
 </location>
 <static_friction> 0.80 </static_friction>
 <dynamic_friction> 0.20 </dynamic_friction>

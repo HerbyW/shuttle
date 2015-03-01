@@ -60,12 +60,16 @@
   <property>sim/multiplay/generic/float[0]</property>
   <interpolation>
     <entry>
-      <ind>450</ind>
+      <ind>101</ind>
       <dep>0</dep>
     </entry>
     <entry>
+      <ind>90</ind>
+      <dep>8</dep>
+    </entry>
+    <entry>
       <ind>50</ind>
-      <dep>0</dep>
+      <dep>10</dep>
     </entry>
     <entry>
       <ind>45</ind>
