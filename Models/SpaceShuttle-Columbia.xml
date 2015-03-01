@@ -1005,9 +1005,9 @@
    
   <animation>
     <type>rotate</type>
-    <object-name>Left alieron</object-name>
+    <object-name>Left</object-name>
     <property>surface-positions/left-aileron-pos-norm</property>
-    <factor> -15 </factor>
+    <factor> 15 </factor>
     <center>
       <x-m>  9.6664295 </x-m>
       <y-m>  9.9170141 </y-m>
@@ -1022,9 +1022,9 @@
 
   <animation>
     <type>rotate</type>
-    <object-name>Right alieron</object-name>
+    <object-name>Right</object-name>
     <property>surface-positions/right-aileron-pos-norm</property>
-    <factor> 15 </factor>
+    <factor> -15 </factor>
     <center>
       <x-m>  9.6664295 </x-m>
       <y-m> -9.9170141 </y-m>
@@ -1041,7 +1041,7 @@
     
   <animation>
     <type>rotate</type>
-    <object-name>Left elevator</object-name>
+    <object-name>Left.001</object-name>
     <property>surface-positions/elevator-pos-norm</property>
     <factor> 15 </factor>
     <center>
@@ -1058,7 +1058,7 @@
 
   <animation>
     <type>rotate</type>
-    <object-name>Right elevator</object-name>
+    <object-name>Right.001</object-name>
     <property>surface-positions/elevator-pos-norm</property>
     <factor> 15 </factor>
     <center>
@@ -1077,7 +1077,7 @@
 
   <animation>
     <type>rotate</type>
-    <object-name>front wheels</object-name>
+    <object-name>front</object-name>
     <object-name>frontgear</object-name>
     <property>gear/gear[0]/position-norm</property>
     <interpolation>
@@ -1085,9 +1085,9 @@
       <entry><ind> 1 </ind><dep>   0 </dep></entry>
     </interpolation>
     <center>
-      <x-m>  -11.0473566 </x-m>
-      <y-m>   -0.0000028 </y-m>
-      <z-m>   -4.8964105 </z-m>
+      <x-m>  -11.047 </x-m>
+      <y-m>   -0.000 </y-m>
+      <z-m>   -4.896 </z-m>
     </center>
     <axis>
       <x> 0 </x>
@@ -1156,13 +1156,13 @@
 
   <animation>
     <type>rotate</type>
-    <object-name>back wheelsL</object-name>
-    <object-name>back wheelsR</object-name>
+    <object-name>back</object-name>
+    <object-name>back.001</object-name>
     <object-name>backgearL</object-name>
     <object-name>backgearR</object-name>    
     <property>gear/gear[0]/position-norm</property>
     <interpolation>
-      <entry><ind> 0 </ind><dep>  100 </dep></entry>
+      <entry><ind> 0 </ind><dep>  94</dep></entry>
       <entry><ind> 1 </ind><dep>   0 </dep></entry>
     </interpolation>
     <center>
@@ -1285,8 +1285,8 @@
   
  <animation>
   <type>spin</type>
-  <object-name>back wheelsL</object-name>
-  <object-name>back wheelsR</object-name>   
+  <object-name>back</object-name>
+  <object-name>back.001</object-name>   
   <property>sim/multiplay/generic/float[0]</property>
     <factor> -20 </factor>
   <center>
@@ -1303,7 +1303,7 @@
  
  <animation>
   <type>spin</type>  
-  <object-name>front wheels</object-name>  
+  <object-name>front</object-name>  
   <property>sim/multiplay/generic/float[0]</property>
     <factor> -25 </factor>
   <center>
@@ -1318,6 +1318,80 @@
   </axis>
  </animation>
  
+     <!-- Front Wheel Steering 
+    
+  <animation>
+    <type>rotate</type>
+    <object-name>front</object-name>
+    <property>surface-positions/rudder-pos-norm</property>
+    <factor> -20 </factor>
+    <center>
+      <x-m>-11.047 </x-m>
+      <y-m>  0.0 </y-m>
+      <z-m> -6.922 </z-m>
+     </center>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+
+  -->
  
+   <!-- Wheels Compression 
+
+  <animation>
+    <type>translate</type>
+    
+    <object-name>backgearL</object-name>
+    <property>gear/gear[1]/compression-norm</property>
+    <interpolation>
+      <entry><ind> 0.00 </ind><dep> -0.04 </dep></entry>
+      <entry><ind> 0.13 </ind><dep>  0.00 </dep></entry>
+      <entry><ind> 1.00 </ind><dep>  0.18 </dep></entry>
+    </interpolation>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>translate</type>
+    
+    <object-name>backgearR</object-name>
+    <property>gear/gear[2]/compression-norm</property>
+    <interpolation>
+      <entry><ind> 0.00 </ind><dep> -0.04 </dep></entry>
+      <entry><ind> 0.13 </ind><dep>  0.00 </dep></entry>
+      <entry><ind> 1.00 </ind><dep>  0.18 </dep></entry>
+    </interpolation>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>translate</type>
+    
+    <object-name>frontgear</object-name>
+    <property>gear/gear[0]/compression-norm</property>
+    <interpolation>
+      <entry><ind> 0.00 </ind><dep> -0.04 </dep></entry>
+      <entry><ind> 0.13 </ind><dep>  0.00 </dep></entry>
+      <entry><ind> 1.00 </ind><dep>  0.18 </dep></entry>
+    </interpolation>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+  
+-->
   
 </PropertyList>
