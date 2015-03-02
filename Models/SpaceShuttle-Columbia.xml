@@ -1072,6 +1072,25 @@
       <z> 0 </z>
     </axis>
   </animation>
+
+    <!-- Front Wheel Steering -->
+    
+  <animation>
+    <type>rotate</type>
+    <object-name>front</object-name>
+    <property>surface-positions/rudder-pos-norm</property>
+    <factor> -20 </factor>
+    <center>
+      <x-m>-11.047 </x-m>
+      <y-m>  0.0 </y-m>
+      <z-m> -6.922 </z-m>
+     </center>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
   
     <!-- Front Gear in and out animation -->  
 
@@ -1281,7 +1300,37 @@
     </axis>
   </animation>
   
-  <!-- Rotate all wheels forwards -->
+  <!-- Tail Wheels Compression and Spin -->
+
+  <animation>
+    <type>translate</type>    
+    <object-name>backgearL</object-name>
+    <property>gear/gear[1]/compression-norm</property>
+    <interpolation>
+      <entry><ind> 0.00 </ind><dep>  0.0 </dep></entry>
+      <entry><ind> 1.00 </ind><dep>  1.0 </dep></entry>
+    </interpolation>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>translate</type>    
+    <object-name>backgearR</object-name>
+    <property>gear/gear[2]/compression-norm</property>
+    <interpolation>
+      <entry><ind> 0.00 </ind><dep>  0.0 </dep></entry>
+      <entry><ind> 1.00 </ind><dep>  1.0 </dep></entry>
+    </interpolation>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>  
   
  <animation>
   <type>spin</type>
@@ -1301,6 +1350,23 @@
   </axis>
  </animation>
  
+ <!-- Front Wheel Compression and Spin-->
+ 
+ <animation>
+    <type>translate</type>    
+    <object-name>frontgear</object-name>
+    <property>gear/gear[0]/compression-norm</property>
+    <interpolation>
+      <entry><ind> 0.00 </ind><dep>  0.0 </dep></entry>   
+      <entry><ind> 1.00 </ind><dep>  1.0 </dep></entry>
+    </interpolation>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation> 
+ 
  <animation>
   <type>spin</type>  
   <object-name>front</object-name>  
@@ -1318,80 +1384,5 @@
   </axis>
  </animation>
  
-     <!-- Front Wheel Steering 
-    
-  <animation>
-    <type>rotate</type>
-    <object-name>front</object-name>
-    <property>surface-positions/rudder-pos-norm</property>
-    <factor> -20 </factor>
-    <center>
-      <x-m>-11.047 </x-m>
-      <y-m>  0.0 </y-m>
-      <z-m> -6.922 </z-m>
-     </center>
-    <axis>
-      <x> 0 </x>
-      <y> 0 </y>
-      <z> 1 </z>
-    </axis>
-  </animation>
-
-  -->
  
-   <!-- Wheels Compression 
-
-  <animation>
-    <type>translate</type>
-    
-    <object-name>backgearL</object-name>
-    <property>gear/gear[1]/compression-norm</property>
-    <interpolation>
-      <entry><ind> 0.00 </ind><dep> -0.04 </dep></entry>
-      <entry><ind> 0.13 </ind><dep>  0.00 </dep></entry>
-      <entry><ind> 1.00 </ind><dep>  0.18 </dep></entry>
-    </interpolation>
-    <axis>
-      <x> 0 </x>
-      <y> 0 </y>
-      <z> 1 </z>
-    </axis>
-  </animation>
-  
-  <animation>
-    <type>translate</type>
-    
-    <object-name>backgearR</object-name>
-    <property>gear/gear[2]/compression-norm</property>
-    <interpolation>
-      <entry><ind> 0.00 </ind><dep> -0.04 </dep></entry>
-      <entry><ind> 0.13 </ind><dep>  0.00 </dep></entry>
-      <entry><ind> 1.00 </ind><dep>  0.18 </dep></entry>
-    </interpolation>
-    <axis>
-      <x> 0 </x>
-      <y> 0 </y>
-      <z> 1 </z>
-    </axis>
-  </animation>
-  
-  <animation>
-    <type>translate</type>
-    
-    <object-name>frontgear</object-name>
-    <property>gear/gear[0]/compression-norm</property>
-    <interpolation>
-      <entry><ind> 0.00 </ind><dep> -0.04 </dep></entry>
-      <entry><ind> 0.13 </ind><dep>  0.00 </dep></entry>
-      <entry><ind> 1.00 </ind><dep>  0.18 </dep></entry>
-    </interpolation>
-    <axis>
-      <x> 0 </x>
-      <y> 0 </y>
-      <z> 1 </z>
-    </axis>
-  </animation>
-  
--->
-  
 </PropertyList>

@@ -209,8 +209,8 @@ http://www.businessinsider.com/breathtaking-images-of-the-space-shuttle-2013-9?I
 <static_friction> 0.80 </static_friction>
 <dynamic_friction> 0.20 </dynamic_friction>
 <rolling_friction> 0.02 </rolling_friction>
-<spring_coeff unit="LBS/FT"> 90000.00 </spring_coeff>
-<damping_coeff unit="LBS/FT/SEC"> 30000.00 </damping_coeff>
+<spring_coeff unit="LBS/FT"> 55000.00 </spring_coeff>
+<damping_coeff unit="LBS/FT/SEC"> 11000.00 </damping_coeff>
 <max_steer unit="DEG"> 20.00 </max_steer>
 <brake_group>NONE</brake_group>
 <retractable>1</retractable>
