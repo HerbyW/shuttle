@@ -16,24 +16,60 @@
   <!--Lights-->
                                    
 <animation>   
-   <object-name>spaceshutt_spstob_1</object-name>
-   <object-name>spaceshutt_spstob_2</object-name>
-   <object-name>spaceshutt_spstob</object-name>
-   <object-name>spaceshutt_spstob.001</object-name>
-   <object-name>spaceshutt_spstob.002</object-name>    
-   <object-name>spaceshutt_spstob_3</object-name>
-   <object-name>spaceshutt_spstob_4</object-name>
+   <object-name>spaceshutt_sptob_1</object-name>      <!--body -->
+   <object-name>spaceshutt_spstob_2</object-name>     <!--emty element ? -->
+   <object-name>spaceshutt_spstob</object-name>       <!--left door -->
+   <object-name>spaceshutt_spstob.001</object-name>   <!--right door -->
+   <object-name>spaceshutt_spstob.002</object-name>   <!--left door -->    
+   <object-name>spaceshutt_spstob_3</object-name>     <!--inner cabin for cockpit -->
+   <object-name>spaceshutt_spstob_4</object-name>     <!--4 little windows -->
+   <object-name>speedbrakeL</object-name>             <!-- -->
+   <object-name>speedbrakeR</object-name>             <!-- -->
+   <object-name>geardoorL</object-name>               <!--tail -->
+   <object-name>geardoorR</object-name>               <!--tail -->
+   <object-name>front</object-name>                   <!--front wheels -->
+   <object-name>frontgear</object-name>               <!--front gear mechanic-->
+   <object-name>backgearlinkageL</object-name>        <!--little gear stick -->
+   <object-name>backgearlinkageR</object-name>        <!--little gear stick -->
+   <object-name>backgearL</object-name>               <!--back gear mechanics -->
+   <object-name>backgearR</object-name>               <!--back gear mechanics -->
+   <object-name>back</object-name>                    <!--tail wheels left -->
+   <object-name>back.001</object-name>                <!--tail wheels right -->
+   <object-name>frontgeardoorR</object-name>          <!--front -->
+   <object-name>frontgeardoorR</object-name>          <!--front -->
+   <object-name>Left</object-name>                    <!--ailerion L -->
+   <object-name>Right</object-name>                   <!--ailerion R -->
+   <object-name>Left.001</object-name>                <!--elevator L -->   
+   <object-name>Right.001</object-name>               <!--elevator R -->
 </animation>
 
   <animation>
     <type>material</type>
-    <object-name>spaceshutt_spstob_1</object-name>
-    <object-name>spaceshutt_spstob_2</object-name>
-    <object-name>spaceshutt_spstob</object-name>
-    <object-name>spaceshutt_spstob.001</object-name>   
-    <object-name>spaceshutt_spstob.002</object-name>    
-    <object-name>spaceshutt_spstob_3</object-name>
-    <object-name>spaceshutt_spstob_4</object-name>
+   <object-name>spaceshutt_sptob_1</object-name>      <!--body -->
+   <object-name>spaceshutt_spstob_2</object-name>     <!--emty element ? -->
+   <object-name>spaceshutt_spstob</object-name>       <!--left door -->
+   <object-name>spaceshutt_spstob.001</object-name>   <!--right door -->
+   <object-name>spaceshutt_spstob.002</object-name>   <!--left door -->    
+   <object-name>spaceshutt_spstob_3</object-name>     <!--inner cabin for cockpit -->
+   <object-name>spaceshutt_spstob_4</object-name>     <!--4 little windows -->
+   <object-name>speedbrakeL</object-name>             <!-- -->
+   <object-name>speedbrakeR</object-name>             <!-- -->
+   <object-name>geardoorL</object-name>               <!--tail -->
+   <object-name>geardoorR</object-name>               <!--tail -->
+   <object-name>front</object-name>                   <!--front wheels -->
+   <object-name>frontgear</object-name>               <!--front gear mechanic-->
+   <object-name>backgearlinkageL</object-name>        <!--little gear stick -->
+   <object-name>backgearlinkageR</object-name>        <!--little gear stick -->
+   <object-name>backgearL</object-name>               <!--back gear mechanics -->
+   <object-name>backgearR</object-name>               <!--back gear mechanics -->
+   <object-name>back</object-name>                    <!--tail wheels left -->
+   <object-name>back.001</object-name>                <!--tail wheels right -->
+   <object-name>frontgeardoorR</object-name>          <!--front -->
+   <object-name>frontgeardoorR</object-name>          <!--front -->
+   <object-name>Left</object-name>                    <!--ailerion L -->
+   <object-name>Right</object-name>                   <!--ailerion R -->
+   <object-name>Left.001</object-name>                <!--elevator L -->   
+   <object-name>Right.001</object-name>               <!--elevator R -->
      <emission>      
       <red>   0.15 </red>
       <green> 0.15 </green>
@@ -41,16 +77,27 @@
       </emission>
   </animation>
 
-<!-- sometimes it is hot, so let it glow -->  
+<!-- sometimes it is hot, so let it glow, still waiting for a better picture of this -->  
   
 <animation>
-  <type>material</type>
-  <object-name>spaceshutt_spstob_1</object-name>
-   <object-name>spaceshutt_spstob</object-name>
-   <object-name>spaceshutt_spstob.001</object-name>
-   <object-name>spaceshutt_spstob.002</object-name>    
-   <object-name>spaceshutt_spstob_3</object-name>
-   <object-name>spaceshutt_spstob_4</object-name>
+  <type>material</type>  
+   <object-name>spaceshutt_sptob_1</object-name>      <!--body -->
+   <object-name>spaceshutt_spstob_2</object-name>     <!--emty element ? -->
+   <object-name>spaceshutt_spstob</object-name>       <!--left door -->
+   <object-name>spaceshutt_spstob.001</object-name>   <!--right door -->
+   <object-name>spaceshutt_spstob.002</object-name>   <!--left door -->    
+   <object-name>spaceshutt_spstob_3</object-name>     <!--inner cabin for cockpit -->
+   <object-name>spaceshutt_spstob_4</object-name>     <!--4 little windows -->
+   <object-name>speedbrakeL</object-name>             <!-- -->
+   <object-name>speedbrakeR</object-name>             <!-- -->
+   <object-name>geardoorL</object-name>               <!--tail -->
+   <object-name>geardoorR</object-name>               <!--tail -->
+   <object-name>frontgeardoorR</object-name>          <!--front -->
+   <object-name>frontgeardoorL</object-name>          <!--front -->
+   <object-name>Left</object-name>                    <!--ailerion L -->
+   <object-name>Right</object-name>                   <!--ailerion R -->
+   <object-name>Left.001</object-name>                <!--elevator L -->   
+   <object-name>Right.001</object-name>               <!--elevator R -->
   
   <texture-prop>texture</texture-prop>
   <texture>spstob_1hot.png</texture> 
@@ -59,18 +106,18 @@
          <and>
               <less-than>
                   <property>sim/multiplay/generic/float[13]</property>
-                  <value>4.02</value>
+                  <value>7.02</value>
                </less-than>
                <greater-than>
                   <property>sim/multiplay/generic/float[13]</property>
                   <value>3.34</value>
                   </greater-than>               -->              
 	        <less-than>
-                  <property>/position/altitude-agl-ft</property>
+                  <property>sim/multiplay/generic/float[14]</property>
                   <value>120000</value>
                 </less-than>
 		<greater-than>
-                  <property>/position/altitude-agl-ft</property>
+                  <property>sim/multiplay/generic/float[14]</property>
                   <value>70000</value>
                 </greater-than>
           </and>
@@ -709,7 +756,7 @@
      </offsets>
                         <condition>
 			 <equals>
-				<property>/controls/gear/gear-down</property>
+				<property>gear/gear/position-norm</property>
 				<value>1</value>
 			 </equals>
                         </condition>
@@ -724,7 +771,7 @@
      
                         <condition>
 			 <equals>
-				<property>/controls/gear/gear-down</property>
+				<property>gear/gear/position-norm</property>
 				<value>1</value>
 			 </equals>
                         </condition>
@@ -739,7 +786,7 @@
      
                         <condition>
 			 <equals>
-				<property>/controls/gear/gear-down</property>
+				<property>gear/gear/position-norm</property>
 				<value>1</value>
 			 </equals>
                         </condition>
@@ -850,12 +897,12 @@
        <x-m> 39.7 </x-m>
        <y-m> 0.0 </y-m>
        <z-m> 1.22 </z-m>
-       <pitch-deg>90</pitch-deg>
+       <pitch-deg>89</pitch-deg>
      </offsets>
       <condition>
 			 <greater-than>
 				<property>sim/multiplay/generic/float[0]</property>
-				<value>100</value>
+				<value>120</value>
 			 </greater-than>
       </condition>
 </model>
@@ -866,7 +913,7 @@
        <x-m> 25.7 </x-m>
        <y-m> 0.0 </y-m>
        <z-m> 1.22 </z-m>
-       <pitch-deg>90</pitch-deg>
+       <pitch-deg>91</pitch-deg>
      </offsets>
       <condition>
        <and>
@@ -876,7 +923,7 @@
 			 </greater-than> 
 			 <less-than>
 				<property>sim/multiplay/generic/float[0]</property>
-				<value>99.999</value>
+				<value>119.999</value>
 			 </less-than>       
 	 </and>
 	</condition>
@@ -888,7 +935,7 @@
        <x-m> 100.7 </x-m>
        <y-m> 0.0 </y-m>
        <z-m>-6.30 </z-m>
-       <pitch-deg>90</pitch-deg>
+       <pitch-deg>91</pitch-deg>
      </offsets>
       <condition>
        <and>
@@ -909,8 +956,8 @@
      <offsets>
        <x-m> 105.7 </x-m>
        <y-m> 0.0 </y-m>
-       <z-m>-6.30 </z-m>
-       <pitch-deg>90</pitch-deg>
+       <z-m> 2.50 </z-m>
+       <pitch-deg>95.3</pitch-deg>
      </offsets>
       <condition>
        <and>

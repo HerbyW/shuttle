@@ -93,7 +93,7 @@
 	<float n="11" alias="/consumables/fuel/tank[4]/level-lbs" />                
         <float n="12" alias="/engines/engine[0]/thrust_lb" />        
         <float n="13" alias="/velocities/mach" />
-    <!--<float n="14" alias="/engines/engine[8]/thrust_lb" />-->
+        <float n="14" alias="/position/altitude-agl-ft" />
         <float n="15" alias="/engines/engine[9]/thrust_lb" />
         <float n="16" alias="/engines/engine[10]/thrust_lb" />        
         <float n="17" alias="/engines/engine[11]/thrust_lb" />

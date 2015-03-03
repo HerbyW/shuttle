@@ -42,7 +42,5 @@
 		<path>Huds/Instruments/ladder.xml</path>
 	</import>
 
-	<import>
-		<path>Huds/Instruments/runway.xml</path>
-	</import>
+	
 </PropertyList>

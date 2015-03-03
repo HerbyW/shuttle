@@ -12,7 +12,21 @@
 	<!--<path>Aircraft/f-14b/Models/f14-fx.ac</path>-->
 	<path>Aircraft/SpaceShuttle/Models/Effects/engine-fire.ac</path>
 	<nopreview/>
+        
+        <animation>
+		<name>fx</name>
+		<object-name>ReheatL</object-name>
+		<object-name>HeatBlurL</object-name>
+		<object-name>InnerFlameL</object-name>
+	</animation>
+        
+        <!-- disable shadows for these objects  -->
+	<animation>
+		<type>noshadow</type>
+		<object-name>fx</object-name>
+	</animation>
 
+        
 	<effect>
 		<inherits-from>Effects/model-transparent</inherits-from>
 		<object-name>HeatBlurL</object-name>
@@ -20,18 +34,23 @@
 		<object-name>ReheatL</object-name>
 	</effect>
 
-
+	<!-- Heat Blur -->
 	
 	<animation>
 		<type>select</type>
-		
 		<object-name>HeatBlurL</object-name>
-		<condition>
+		 <condition>
+		  <and>
 			<greater-than>
 				<property>sim/multiplay/generic/float[12]</property>
 				<value>1</value>
 			</greater-than>
-		</condition>
+			<greater-than>
+			         <property>sim/multiplay/generic/float[4]</property>
+			         <value>0</value>
+			</greater-than>			
+		  </and>	
+		 </condition>
 	</animation>
 
 	<animation>
@@ -40,14 +59,10 @@
 		<property>sim/multiplay/generic/float[12]</property>
 		<offset>1</offset>
 		<factor>-1.4</factor>
-	</animation>
-
-	
+	</animation>	
 
 	<!-- Burner Flame -->
 	
-	
-
 	<animation>
 		<type>select</type>
 		<object-name>InnerFlameL</object-name>
@@ -91,11 +106,8 @@
 			<z>-1.457</z>
 		</axis>
 	</animation>
-
 	
-	<!--flame texture animation -->
-
-	
+	<!--flame texture animation -->	
 
 	<animation>
 		<type>textranslate</type>
@@ -107,35 +119,6 @@
 			<y>1</y>
 			<z>0</z>
 		</axis>
-	</animation>
-
-
-
-
-	<!-- Heat Blur -->
-
-	<animation>
-		<type>select</type>
-		<object-name>HeatBlurL</object-name>
-		<property>sim/multiplay/generic/int[6]</property>
-	</animation>
-
-	
-<!-- 
-	<animation>
-		<type>shader</type>
-		<shader>heat-haze</shader>
-		
-		<object-name>HeatBlurL</object-name>
-		<factor>0.12</factor>
-		<speed>120</speed>
-	</animation>
-  -->
-
-	<!-- disable shadows for these objects  -->
-	<animation>
-		<type>noshadow</type>
-		<object-name>fx</object-name>
 	</animation>
 
 </PropertyList>
