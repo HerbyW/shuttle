@@ -22,55 +22,47 @@ setlistener("/tu154/switches/usvp-selector-trans", func
   );
 
 #
-#Setlistener for Booster and Tank visibility
+# Booster and Tank visibility
 #
-#setlistener("/controls/shuttle/external-fuel-tank", func 
 #
-#  { if(getprop("/consumables/fuel/tank[0]/level-lbs") > 100)
-#  {
-#  setprop("/controls/shuttle/external-fuel-tank", 1 );
-#      }
-#      else
-#      {
-#        setprop("/controls/shuttle/external-fuel-tank", 0 );
-#      }  
-#  }
-#  );
-#    
-#setlistener("/controls/shuttle/solid-rocket-boosters", func 
-#
-#  { if(getprop("/consumables/fuel/tank[1]/level-lbs") > 100)
-#  {
-#  setprop("/controls/shuttle/solid-rocket-boosters", 1 );
-#      }
-#      else
-#      {
-#        setprop("/controls/shuttle/solid-rocket-boosters", 0 );
-#      }  
-#  }
-#  );
-#  
-  
-  
-if (getprop("/consumables/fuel/tank[0]/level-lbs") < 100)
-  {
-  setprop("/controls/shuttle/external-fuel-tank", 0 );
-      }
-      else
+# create timer with 0.5 second interval
+var timerTank = maketimer(0.5, func
+
+{ if(getprop("/consumables/fuel/tank[0]/level-lbs") > 0)
       {
         setprop("/controls/shuttle/external-fuel-tank", 1 );
-      }
-;
-    
-if (getprop("/consumables/fuel/tank[1]/level-lbs") < 100)
-  {
-  setprop("/controls/shuttle/solid-rocket-boosters", 0 );
+        
       }
       else
       {
+        setprop("/controls/shuttle/external-fuel-tank", 0 );
+	
+      }  
+  }
+);
+# start the timer (with 0.1 second inverval)
+timerTank.start();
+
+
+var timerBooster = maketimer(0.5, func
+{ if(getprop("/consumables/fuel/tank[1]/level-lbs") > 0)
+      {
         setprop("/controls/shuttle/solid-rocket-boosters", 1 );
+        
       }
-;
+      else
+      {
+        setprop("/controls/shuttle/solid-rocket-boosters", 0 );
+	
+      }  
+  }
+);
+# start the timer (with 0.1 second inverval)
+timerBooster.start();
+
+
+
+
 
 setprop("fdm/jsbsim/propulsion/engine[2]/set-running", 1);
 setprop("fdm/jsbsim/propulsion/engine[3]/set-running", 1);

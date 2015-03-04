@@ -36,7 +36,7 @@
    <object-name>back</object-name>                    <!--tail wheels left -->
    <object-name>back.001</object-name>                <!--tail wheels right -->
    <object-name>frontgeardoorR</object-name>          <!--front -->
-   <object-name>frontgeardoorR</object-name>          <!--front -->
+   <object-name>frontgeardoorL</object-name>          <!--front -->
    <object-name>Left</object-name>                    <!--ailerion L -->
    <object-name>Right</object-name>                   <!--ailerion R -->
    <object-name>Left.001</object-name>                <!--elevator L -->   
@@ -65,17 +65,17 @@
    <object-name>back</object-name>                    <!--tail wheels left -->
    <object-name>back.001</object-name>                <!--tail wheels right -->
    <object-name>frontgeardoorR</object-name>          <!--front -->
-   <object-name>frontgeardoorR</object-name>          <!--front -->
+   <object-name>frontgeardoorL</object-name>          <!--front -->
    <object-name>Left</object-name>                    <!--ailerion L -->
    <object-name>Right</object-name>                   <!--ailerion R -->
    <object-name>Left.001</object-name>                <!--elevator L -->   
    <object-name>Right.001</object-name>               <!--elevator R -->
      <emission>      
-      <red>   0.15 </red>
-      <green> 0.15 </green>
-      <blue>  0.15 </blue>
+      <red>   0.19 </red>
+      <green> 0.19 </green>
+      <blue>  0.19 </blue>
       </emission>
-  </animation>
+  </animation>  
 
 <!-- sometimes it is hot, so let it glow, still waiting for a better picture of this -->  
   
