@@ -111,7 +111,7 @@
                <greater-than>
                   <property>sim/multiplay/generic/float[13]</property>
                   <value>3.34</value>
-                  </greater-than>               -->              
+                  </greater-than>
 	        <less-than>
                   <property>sim/multiplay/generic/float[14]</property>
                   <value>120000</value>

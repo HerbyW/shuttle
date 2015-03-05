@@ -73,6 +73,7 @@
 			</greater-than>
 		</condition>
 	</animation>
+	
 	<animation>
 		<type>translate</type>
 		<object-name>InnerFlameL</object-name>
@@ -84,6 +85,7 @@
 			<z>-1.457</z>
 		</axis>
 	</animation>
+	
 	<animation>
 		<type>scale</type>
 		<object-name>InnerFlameL</object-name>
@@ -95,6 +97,7 @@
 		<z-factor>0.3</z-factor>
 		<z-offset>1.0</z-offset>
 	</animation>
+	
 	<animation>
 		<type>translate</type>
 		<object-name>InnerFlameL</object-name>
