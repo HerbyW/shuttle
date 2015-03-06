@@ -165,8 +165,11 @@ Befor take off, set the wing leveler activ and the pitch control to 23 degree.
 Close the doors by clicking on them.
 
 Give throttle, and take off, be carefull with throttle - it is a rocket!
-Hold it in a climbing position of 23 degree and go to 85000 ft.
-Fill tank 0 and 1 as you want - to go to a higher speed befor going up in the orbit.
+Hold it in a climbing position of 23 degree.
+When at 60000 ft set pitch control to 13.
+When at 85000 ft set pitch control to 3.
+Booster Rockets will fall down now, Main Engines will work longer.
+(Fill tank 0 and 1 as you want - to go to a higher speed befor going up in the orbit.)
 
 If the shuttle goes up more then 23 degrees reduce throttle.
 Try to get a speed of 8000 kts for a 10 minute orbital flight, 22000 kts for 220 minutes.
@@ -181,22 +184,27 @@ manually controll is recommendet to get a stable position by only short (0.08 se
 by making tank 4 full and tank 3 empty, then activate the engines by short filling the tank 3.
 There is a YAW-controll by the rudder implemented now!
 
+Up to 260000 ft there is still a little air, so the aerodynamic controls will also make influence,
+but the Orbit Control Engines have more power and will take the control if you set the autopilot right.
+
 Orbit Manouver Engines on tail position are activated by setting tank 2.
 They are controlled with Throttle and with propeller-pitch control for pitching them (-20 - +20 degree pitch for the Thruster)
 try to get them in a position so that the elevator-trim is in neutral position.
-So you may control a flight from 145000 ft up to 350000 ft and back again.
+So you may control a flight from 145000 ft up to 780000 ft and back again.
 The pitch control and wing leveler is allways activ in orbit! Do not deactivate them.
 
 A tricky manouver is reducing speed in orbit: Turn your nose in opposite direction of your heading
-and use the OMS with pitch control to go from mach 30 to mach 12 in 2 minutes. After this turn your nose back to your heading.
+and use the OMS with pitch control to go from mach 30 to mach 12 in 2 minutes. After this, turn your nose back to your heading.
 
 Entering the athmosphere is tricky: set the autopilot to -5 up to -25 degree pitch and hope for the best :)
 Set all Tanks  to 0.
-At 90000 ft the shuttle should be stable and you set the pitch to -3 degree or to +3.
+Reduce speed in waves from 120000 ft to 90000 ft and back with a pitch of -+3, +-5, +-7, +-9, till you have the speed for going down.
+Below 90000 ft the shuttle should have not a speed more than 7 mach.
 Reduce speed below mach 4 befor entering the lower altitudes.
+Braking the sound barrier is done at 60000 ft or higher, or all windows below you are crashed :)
 Now you glide to your landing spot.
 80 mn out you should be in 80000 ft and in direct heading to the runway, use the HUD infos to get it as exacly as possible.
-Now set the pitch control to -7 to -17, 30 nm out you are at 30000 ft, now you set the speedbrake (key s).
+Now set the pitch control in a range from -3 to -17, 30 nm out you are at 30000 ft, now you set the speedbrake (key s).
 25 sec befor touchdown you deploy the gears, maximal speed for this is 324 kt.
 
 F2 activates the parachute, use it 0.5 sec after touchdown.
@@ -208,18 +216,14 @@ Speed Breakes: Key s
 Parachute: F2
 
 ILS Heading is not working, glidepath is not usefull as you have a different glide path as a comercial airliner.
-Landing with 280-320 kt, the Shuttle has no Flaps, but a Speedbreak (1 Step) in the ruder.
+Landing with 280-320 kt, Speedbreak (1 Step) is integrated in the ruder.
+The Shuttle has no Flaps! (they are still there if you like to use the shuttle as normal airplane),
 
 Wing and Pitch leveler engines (OCS) with 8 extra engines working with autopilot in outer-space!
-
 Click the little windows on top of the cockpit to activate the man for the moon :)
-
 Click the robotarm :)
-
 Click the satelit to launch it, click again to set a new one and so on, or use the trigger button for that.
-
 Have fun and take your time to get control, it is a little bit tricky but fully working.
-
 Watching videos of landing will give you more details, the FDM is set to go as realistic as possible.
 
 Landing airports: KTTS, KVBG, LTAC, GMMN, FJDG, KDYS, KEDW, KRCA, PHIK,

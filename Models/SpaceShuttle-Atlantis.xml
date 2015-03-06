@@ -77,8 +77,139 @@
       </emission>
   </animation>  
 
-<!-- sometimes it is hot, so let it glow, still waiting for a better picture of this -->  
+<!-- sometimes it is hot, so let it glow, still waiting for a better picture of this 
+
+3 stages of reentry effect: 3-2-1-2-3
+
+3: little effect   spstob_3hot.png 7.02-6.73 + 3.73-3.34
+2: middle effect   spstob_2hot.png 6.72-6.43 + 4.01-3.74
+1: full effect     spstob_1hot.png 6.42-4.02
+
+condition on mach: 7.02-6.73, 6.72999-6.43, 6.42999-4.02, 4.01999-3.74, 3.73999-3.34
+in altidude: 70.000-120.000 ft
+
+-->  
   
+<animation>
+  <type>material</type>  
+   <object-name>spaceshutt_sptob_1</object-name>      <!--body -->
+   <object-name>spaceshutt_spstob_2</object-name>     <!--emty element ? -->
+   <object-name>spaceshutt_spstob</object-name>       <!--left door -->
+   <object-name>spaceshutt_spstob.001</object-name>   <!--right door -->
+   <object-name>spaceshutt_spstob.002</object-name>   <!--left door -->    
+   <object-name>spaceshutt_spstob_3</object-name>     <!--inner cabin for cockpit -->
+   <object-name>spaceshutt_spstob_4</object-name>     <!--4 little windows -->
+   <object-name>speedbrakeL</object-name>             <!-- -->
+   <object-name>speedbrakeR</object-name>             <!-- -->
+   <object-name>geardoorL</object-name>               <!--tail -->
+   <object-name>geardoorR</object-name>               <!--tail -->
+   <object-name>frontgeardoorR</object-name>          <!--front -->
+   <object-name>frontgeardoorL</object-name>          <!--front -->
+   <object-name>Left</object-name>                    <!--ailerion L -->
+   <object-name>Right</object-name>                   <!--ailerion R -->
+   <object-name>Left.001</object-name>                <!--elevator L -->   
+   <object-name>Right.001</object-name>               <!--elevator R -->
+  
+  <texture-prop>texture</texture-prop>
+  <texture>spstob_3hot.png</texture> 
+   
+      <condition>
+         <and>
+	   <or>
+	     <and>
+              <less-than>
+                  <property>sim/multiplay/generic/float[13]</property>
+                  <value>7.02</value>
+               </less-than>
+               <greater-than>
+                  <property>sim/multiplay/generic/float[13]</property>
+                  <value>6.73</value>
+               </greater-than>
+	      </and>
+	      <and>
+	       <less-than>
+                  <property>sim/multiplay/generic/float[13]</property>
+                  <value>3.73999</value>
+               </less-than>
+               <greater-than>
+                  <property>sim/multiplay/generic/float[13]</property>
+                  <value>3.34</value>
+               </greater-than>
+	      </and>	  
+             </or>  
+	        <less-than>
+                  <property>sim/multiplay/generic/float[14]</property>
+                  <value>120000</value>
+                </less-than>
+		<greater-than>
+                  <property>sim/multiplay/generic/float[14]</property>
+                  <value>70000</value>
+                </greater-than>
+          </and>
+        </condition>
+
+</animation>
+
+<animation>
+  <type>material</type>  
+   <object-name>spaceshutt_sptob_1</object-name>      <!--body -->
+   <object-name>spaceshutt_spstob_2</object-name>     <!--emty element ? -->
+   <object-name>spaceshutt_spstob</object-name>       <!--left door -->
+   <object-name>spaceshutt_spstob.001</object-name>   <!--right door -->
+   <object-name>spaceshutt_spstob.002</object-name>   <!--left door -->    
+   <object-name>spaceshutt_spstob_3</object-name>     <!--inner cabin for cockpit -->
+   <object-name>spaceshutt_spstob_4</object-name>     <!--4 little windows -->
+   <object-name>speedbrakeL</object-name>             <!-- -->
+   <object-name>speedbrakeR</object-name>             <!-- -->
+   <object-name>geardoorL</object-name>               <!--tail -->
+   <object-name>geardoorR</object-name>               <!--tail -->
+   <object-name>frontgeardoorR</object-name>          <!--front -->
+   <object-name>frontgeardoorL</object-name>          <!--front -->
+   <object-name>Left</object-name>                    <!--ailerion L -->
+   <object-name>Right</object-name>                   <!--ailerion R -->
+   <object-name>Left.001</object-name>                <!--elevator L -->   
+   <object-name>Right.001</object-name>               <!--elevator R -->
+  
+  <texture-prop>texture</texture-prop>
+  <texture>spstob_2hot.png</texture> 
+   
+      <condition>
+         <and>
+	   <or>
+	     <and>
+              <less-than>
+                  <property>sim/multiplay/generic/float[13]</property>
+                  <value>6.72999</value>
+               </less-than>
+               <greater-than>
+                  <property>sim/multiplay/generic/float[13]</property>
+                  <value>6.43</value>
+               </greater-than>
+	      </and>
+	      <and>
+	       <less-than>
+                  <property>sim/multiplay/generic/float[13]</property>
+                  <value>4.01999</value>
+               </less-than>
+               <greater-than>
+                  <property>sim/multiplay/generic/float[13]</property>
+                  <value>3.74</value>
+               </greater-than>
+	      </and>	  
+             </or>  
+	        <less-than>
+                  <property>sim/multiplay/generic/float[14]</property>
+                  <value>120000</value>
+                </less-than>
+		<greater-than>
+                  <property>sim/multiplay/generic/float[14]</property>
+                  <value>70000</value>
+                </greater-than>
+          </and>
+        </condition>
+
+</animation>
+
 <animation>
   <type>material</type>  
    <object-name>spaceshutt_sptob_1</object-name>      <!--body -->
@@ -106,11 +237,11 @@
          <and>
               <less-than>
                   <property>sim/multiplay/generic/float[13]</property>
-                  <value>7.02</value>
+                  <value>6.42999</value>
                </less-than>
                <greater-than>
                   <property>sim/multiplay/generic/float[13]</property>
-                  <value>3.34</value>
+                  <value>4.02</value>
                   </greater-than>
 	        <less-than>
                   <property>sim/multiplay/generic/float[14]</property>
@@ -123,7 +254,24 @@
           </and>
         </condition>
 
-</animation>  
+</animation>
+
+
+  
+   <!--some plasma would be nice ! but it is too much for now, you may activate it
+ 
+ <model>
+		<name>plasma</name>
+		<path>Aircraft/SpaceShuttle/Models/Effects/plasma.xml</path>
+		<offsets>
+			<x-m>-16.38</x-m>
+			<y-m>0</y-m>
+			<z-m>-3.2</z-m>
+			<pitch-deg>0</pitch-deg>
+		</offsets>
+	</model>
+
+   -->
   
 <!-- man for the moon, pick the little windows on the top to activate him -->
 
@@ -1054,7 +1202,7 @@
     <type>rotate</type>
     <object-name>Left</object-name>
     <property>surface-positions/left-aileron-pos-norm</property>
-    <factor> 15 </factor>
+    <factor> 5 </factor>
     <center>
       <x-m>  9.6664295 </x-m>
       <y-m>  9.9170141 </y-m>
@@ -1071,7 +1219,7 @@
     <type>rotate</type>
     <object-name>Right</object-name>
     <property>surface-positions/right-aileron-pos-norm</property>
-    <factor> -15 </factor>
+    <factor> -5 </factor>
     <center>
       <x-m>  9.6664295 </x-m>
       <y-m> -9.9170141 </y-m>
@@ -1090,7 +1238,7 @@
     <type>rotate</type>
     <object-name>Left.001</object-name>
     <property>surface-positions/elevator-pos-norm</property>
-    <factor> 15 </factor>
+    <factor> 5 </factor>
     <center>
       <x-m>  9.5124702 </x-m>
       <y-m>  5.3279390 </y-m>
@@ -1107,7 +1255,7 @@
     <type>rotate</type>
     <object-name>Right.001</object-name>
     <property>surface-positions/elevator-pos-norm</property>
-    <factor> 15 </factor>
+    <factor> 5 </factor>
     <center>
       <x-m>  9.5124702 </x-m>
       <y-m>  5.3279390 </y-m>

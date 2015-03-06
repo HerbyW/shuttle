@@ -7,15 +7,11 @@
     ###################################################################################
 -->
 
-<rocket_engine name="XLR01">
-	<isp>               356 </isp>
-	<shr>              1.23 </shr>
-	<max_pc>       86556.00 </max_pc>
-	<variance>         0.10 </variance>
-	<prop_eff>         0.67 </prop_eff>
-	<maxthrottle>      1.00 </maxthrottle>
-	<minthrottle>      0.00 </minthrottle>
-	<sloxiflowmax>   2.90 </sloxiflowmax>
-	<slfuelflowmax>   1.18 </slfuelflowmax>
-</rocket_engine>
-
+<nozzle name="xlr015_nozzle">
+	<!--
+		pe      = Nozzle exit pressure, psf.
+		area    = Nozzle exit area, sqft.
+	-->
+	<pe unit="PSF"> 700.0  </pe>
+	<area unit="FT2"> 0.856  </area>
+</nozzle>

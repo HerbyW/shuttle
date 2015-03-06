@@ -7,15 +7,15 @@
     ###################################################################################
 -->
 
-<rocket_engine name="XLR01">
-	<isp>               356 </isp>
+<rocket_engine name="XLR015">
+	<isp>               376 </isp>
 	<shr>              1.23 </shr>
 	<max_pc>       86556.00 </max_pc>
 	<variance>         0.10 </variance>
 	<prop_eff>         0.67 </prop_eff>
 	<maxthrottle>      1.00 </maxthrottle>
 	<minthrottle>      0.00 </minthrottle>
-	<sloxiflowmax>   2.90 </sloxiflowmax>
-	<slfuelflowmax>   1.18 </slfuelflowmax>
+	<sloxiflowmax>   3.74 </sloxiflowmax>
+	<slfuelflowmax>   1.39 </slfuelflowmax>
 </rocket_engine>
 

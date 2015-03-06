@@ -67,9 +67,9 @@ setprop("fdm/jsbsim/propulsion/engine[11]/set-running", 1);
 #
 # settimer(<function>, <time> [, <realtime=0>]);  0.78539816325  2.35619448975
 #
-# create timer with 0.1 second interval to set the reverser for YAW-Engine
+# create timer with 0.05 second interval to set the reverser for YAW-Engine
 
-var timerYAW = maketimer(0.1, func
+var timerYAW = maketimer(0.05, func
 
   { if(getprop("/controls/flight/rudder") <= 0)
       {
@@ -88,13 +88,13 @@ var timerYAW = maketimer(0.1, func
   }
 );
 
-# start the timer (with 0.1 second inverval)
+# start the timer (with 0.05 second inverval)
 timerYAW.start();
 
 #
-# create timer with 0.1 second interval to set the reverser for Roll-Engines
+# create timer with 0.05 second interval to set the reverser for Roll-Engines
 
-var timerROLL = maketimer(0.1, func
+var timerROLL = maketimer(0.05, func
 
   { if(getprop("/controls/flight/aileron") <= 0)
       {
@@ -121,13 +121,13 @@ var timerROLL = maketimer(0.1, func
   }
 );
 
-# start the timer (with 0.1 second inverval)
+# start the timer (with 0.05 second inverval)
 timerROLL.start();
 
 #
-# create timer with 0.1 second interval to set the reverser for Pitch-Engines
+# create timer with 0.05 second interval to set the reverser for Pitch-Engines
 
-var timerPITCH = maketimer(0.1, func
+var timerPITCH = maketimer(0.05, func
 
   { if(getprop("/controls/flight/elevator-trim") <= 0)
       {
@@ -154,13 +154,13 @@ var timerPITCH = maketimer(0.1, func
   }
 );
 
-# start the timer (with 0.1 second inverval)
+# start the timer (with 0.05 second inverval)
 timerPITCH.start();
 
 #
-# create timer with 0.1 second interval to set the reverser for Pitch-Engines
+# create timer with 0.05 second interval to set the reverser for Pitch-Engines
 
-var timerOMS = maketimer(0.1, func
+var timerOMS = maketimer(0.05, func
 
   { if(getprop("/controls/engines/engine[2]/propeller-pitch") >= 0)
       {
@@ -176,15 +176,15 @@ var timerOMS = maketimer(0.1, func
   }
 );
 
-# start the timer (with 0.1 second inverval)
+# start the timer (with 0.05 second inverval)
 timerOMS.start();
 
 
 
 #
-# create timer with 0.8 second interval to check the parachute
+# create timer with 0.4 second interval to check the parachute
 
-var timerChute = maketimer(0.1, func
+var timerChute = maketimer(0.4, func
 
   {  if(getprop("/controls/shuttle/parachute") < 1)
      {

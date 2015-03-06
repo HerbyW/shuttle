@@ -125,6 +125,21 @@
 
 </animation>  
   
+   <!--some plasma would be nice ! but it is too much for now, you may activate it
+ 
+ <model>
+		<name>plasma</name>
+		<path>Aircraft/SpaceShuttle/Models/Effects/plasma.xml</path>
+		<offsets>
+			<x-m>-16.38</x-m>
+			<y-m>0</y-m>
+			<z-m>-3.2</z-m>
+			<pitch-deg>0</pitch-deg>
+		</offsets>
+	</model>
+
+   -->
+  
 <!-- man for the moon, pick the little windows on the top to activate him -->
 
 <model>
@@ -1054,7 +1069,7 @@
     <type>rotate</type>
     <object-name>Left</object-name>
     <property>surface-positions/left-aileron-pos-norm</property>
-    <factor> 15 </factor>
+    <factor> 5 </factor>
     <center>
       <x-m>  9.6664295 </x-m>
       <y-m>  9.9170141 </y-m>
@@ -1071,7 +1086,7 @@
     <type>rotate</type>
     <object-name>Right</object-name>
     <property>surface-positions/right-aileron-pos-norm</property>
-    <factor> -15 </factor>
+    <factor> -5 </factor>
     <center>
       <x-m>  9.6664295 </x-m>
       <y-m> -9.9170141 </y-m>
@@ -1090,7 +1105,7 @@
     <type>rotate</type>
     <object-name>Left.001</object-name>
     <property>surface-positions/elevator-pos-norm</property>
-    <factor> 15 </factor>
+    <factor> 5 </factor>
     <center>
       <x-m>  9.5124702 </x-m>
       <y-m>  5.3279390 </y-m>
@@ -1107,7 +1122,7 @@
     <type>rotate</type>
     <object-name>Right.001</object-name>
     <property>surface-positions/elevator-pos-norm</property>
-    <factor> 15 </factor>
+    <factor> 5 </factor>
     <center>
       <x-m>  9.5124702 </x-m>
       <y-m>  5.3279390 </y-m>
