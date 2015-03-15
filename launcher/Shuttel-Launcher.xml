@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+	<scenario>
+
+		<description>
+			This scenario places the Shuttle launcher to KTTS
+			Copy this file to your Flightgear/AI folder,
+			then you may activate it in the scenario menue.
+			
+			3D-Model is from NASA
+			
+			Koordinates for KTTS, parking spot:
+			latitude   28.600 latitude
+			longitude -80.680 longitude
+			
+			Putting the shuttle on top needs a 90 degree change to the FDM.
+			
+                </description>
+
+		<entry>
+			<name>launcher</name>
+			<type>static</type>
+			<model>Aircraft/SpaceShuttle/launcher/launcher.xml</model>
+			<latitude>28.600</latitude>
+			<longitude>-80.680</longitude>
+			<altitude>22</altitude>
+			<life>-1</life>
+			<speed>0</speed>
+			<repeat>false</repeat>
+			<count>1</count>
+			<azimuth>0</azimuth>
+			<elevation>0</elevation>
+			<x-offset>0</x-offset>
+			<y-offset>0</y-offset>
+			<z-offset>0</z-offset>
+			<slaved-load>true</slaved-load>
+			<ground-offset>0</ground-offset>
+			<load-offset>0</load-offset>
+			<wind>false</wind>
+			<eda>0.0</eda>
+			<mass>93250000</mass>
+			<cd>0.95</cd>
+			<aero_stabilized>false</aero_stabilized>
+			<!--<contents>consumables/fuel/tank[3]</contents>
+			<impact>true</impact>
+			<impact-reports>sim/ai/aircraft/impact/droptank</impact-reports>-->
+			<force_stabilized>true</force_stabilized>
+			<external-force>false</external-force>
+			<!--<force-path>sim/ai/ballistic/force[2]</force-path>-->
+		</entry>
+
+	</scenario>
+
+</PropertyList>
