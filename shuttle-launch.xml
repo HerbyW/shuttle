@@ -311,7 +311,7 @@ http://www.businessinsider.com/breathtaking-images-of-the-space-shuttle-2013-9?I
       <roll>  0.00 </roll>
       <yaw>   0.00 </yaw>
     </orient>
-                             <feed>0</feed>    
+                             <feed>5</feed>    
     <thruster file="xlr99_nozzle">
      <location unit="IN">
       <x> 200.00 </x>
@@ -338,7 +338,7 @@ http://www.businessinsider.com/breathtaking-images-of-the-space-shuttle-2013-9?I
       <roll>  0.00 </roll>
       <yaw>   0.00 </yaw>
     </orient>    
-                               <feed>1</feed>
+                               <feed>5</feed>
     
     <thruster file="SRB_nozzle">
      <location unit="IN">
@@ -705,7 +705,7 @@ http://www.businessinsider.com/breathtaking-images-of-the-space-shuttle-2013-9?I
 			</location>
 			<capacity unit="LBS"> 13500.00 </capacity>
 		<!--	<contents unit="LBS"> 4828.00 </contents> -->
-			<contents unit="LBS"> 0.10 </contents>
+			<contents unit="LBS"> 0.0 </contents>
 			<density unit="KG/L"> 1.14 </density>
 		</tank>
 
@@ -717,8 +717,22 @@ http://www.businessinsider.com/breathtaking-images-of-the-space-shuttle-2013-9?I
 			</location>
 			<capacity unit="LBS"> 6500.00 </capacity>
 		<!--	<contents unit="LBS"> 2204.00 </contents> -->
-			<contents unit="LBS"> 0.10 </contents>
+			<contents unit="LBS"> 0.0 </contents>
 			<density unit="LBS/GAL"> 6.88 </density>
+		</tank>
+		
+		<!--new tanks for DEMO only, to shut down the engines from the shuttle without crashing it-->
+ 
+                <tank type="OXIDIZER" number="5">
+			<location unit="IN">
+				<x> 0.0 </x>
+				<y> 0.0 </y>
+				<z> -4.251 </z>
+			</location>
+			<capacity unit="LBS"> 13500.00 </capacity>
+		<!--	<contents unit="LBS"> 4828.00 </contents> -->
+			<contents unit="LBS"> 0.0 </contents>
+			<density unit="KG/L"> 1.14 </density>
 		</tank>
  
 <!--new tanks for control engines  end-->
