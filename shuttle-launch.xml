@@ -11,7 +11,7 @@
 -->
 
 <?xml-stylesheet type="text/xsl" href="http://jsbsim.sourceforge.net/JSBSim.xsl"?>
-<fdm_config name="shuttle" version="2.0" release="ALPHA"
+<fdm_config name="shuttle-launch" version="2.0" release="ALPHA"
    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
    xsi:noNamespaceSchemaLocation="http://jsbsim.sourceforge.net/JSBSim.xsd">
 
@@ -220,7 +220,7 @@ http://www.businessinsider.com/breathtaking-images-of-the-space-shuttle-2013-9?I
 <location unit="M">
 <x> 3.60 </x>
 <y> -4.2 </y>
-<z>-8.05 </z>
+<z>-8.25 </z>
 </location>
 <static_friction> 0.80 </static_friction>
 <dynamic_friction> 0.20 </dynamic_friction>
@@ -236,7 +236,7 @@ http://www.businessinsider.com/breathtaking-images-of-the-space-shuttle-2013-9?I
 <location unit="M">
 <x> 3.60 </x>
 <y> 4.2 </y>
-<z>-8.05 </z>
+<z>-8.25 </z>
 </location>
 <static_friction> 0.80 </static_friction>
 <dynamic_friction> 0.20 </dynamic_friction>

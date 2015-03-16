@@ -5,26 +5,21 @@
 	<scenario>
 
 		<description>
-			This scenario places the Shuttle launcher to KTTS
-			Copy this file to your Flightgear/AI folder,
-			then you may activate it in the scenario menue.
-			
-			3D-Model is from NASA
-			
-			Koordinates for KTTS, parking spot:
-			latitude   28.600 latitude
-			longitude -80.680 longitude
-			
-			Putting the shuttle on top needs a 90 degree change to the FDM.
-			
+			This scenario places an underslung load ready to be picked up at the
+			designated position. It assumes a cubic shape whose centre is specified
+			by the z-offset.
+				 
+			Note: Units are ft, lbs, deg. Mass is in slugs
+
+			Vivian Meazza
                 </description>
 
 		<entry>
 			<name>launcher</name>
-			<type>static</type>
+			<type>carrier</type>
 			<model>Aircraft/SpaceShuttle/launcher/launcher.xml</model>
-			<latitude>28.600</latitude>
-			<longitude>-80.680</longitude>
+			<latitude>28.60015</latitude>
+			<longitude>-80.6799</longitude>
 			<altitude>22</altitude>
 			<life>-1</life>
 			<speed>0</speed>
