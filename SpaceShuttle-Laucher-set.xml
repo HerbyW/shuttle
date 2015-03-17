@@ -110,7 +110,7 @@
 </multiplay>
 
         <startup>
-		<splash-texture>Aircraft/SpaceShuttle/SpaceShuttle-splash.png</splash-texture>
+		<splash-texture>Aircraft/SpaceShuttle/SpaceShuttle-splashL.png</splash-texture>
 	</startup>
   
   <model>
