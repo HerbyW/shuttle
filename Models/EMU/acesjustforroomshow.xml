@@ -7,7 +7,7 @@
     ###################################################################################
 -->
 
-<path>Aircraft/SpaceShuttle/Models/EMU/acesjustforroomshow.ac</path>
+<path>Aircraft/shuttle/Models/EMU/acesjustforroomshow.ac</path>
  
  <animation>
  <type>select</type> 

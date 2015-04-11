@@ -11,7 +11,7 @@
 
   <submodel> 
     <name>satelit</name>
-    <model>Aircraft/SpaceShuttle/Models/EMU/satelit.xml</model>
+    <model>Aircraft/shuttle/Models/EMU/satelit.xml</model>
     
     <trigger>sim/multiplay/generic/int[9]</trigger>
     <speed> 0.0 </speed>

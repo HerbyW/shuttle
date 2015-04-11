@@ -17,7 +17,7 @@
 		<entry>
 			<name>launcher</name>
 			<type>carrier</type>
-			<model>Aircraft/SpaceShuttle/launcher/launcher.xml</model>
+			<model>Aircraft/shuttle/launcher/launcher.xml</model>
 			<latitude>28.60015</latitude>
 			<longitude>-80.6799</longitude>
 			<altitude>22</altitude>

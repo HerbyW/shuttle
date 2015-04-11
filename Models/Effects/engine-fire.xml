@@ -10,7 +10,7 @@
 <PropertyList>
 
 	<!--<path>Aircraft/f-14b/Models/f14-fx.ac</path>-->
-	<path>Aircraft/SpaceShuttle/Models/Effects/engine-fire.ac</path>
+	<path>Aircraft/shuttle/Models/Effects/engine-fire.ac</path>
 	<nopreview/>
         
         <animation>

@@ -110,11 +110,11 @@
 </multiplay>
 
         <startup>
-		<splash-texture>Aircraft/SpaceShuttle/SpaceShuttle-splashL.png</splash-texture>
+		<splash-texture>Aircraft/shuttle/SpaceShuttle-splashL.png</splash-texture>
 	</startup>
   
   <model>
-	<path>Aircraft/SpaceShuttle/Models/SpaceShuttle-Launcher.xml</path>
+	<path>Aircraft/shuttle/Models/SpaceShuttle-Launcher.xml</path>
 	
   </model>
   
@@ -126,20 +126,20 @@
   
   
   <sound>
-        <path>Aircraft/SpaceShuttle/Sounds/SpaceShuttle-Sounds.xml</path>
+        <path>Aircraft/shuttle/Sounds/SpaceShuttle-Sounds.xml</path>
   </sound>
 
   <submodels>
       <serviceable type="bool">true</serviceable>
-      <path>Aircraft/SpaceShuttle/Models/EMU/submodels.xml</path>      
+      <path>Aircraft/shuttle/Models/EMU/submodels.xml</path>      
   </submodels>  
   
   <systems>
       <autopilot n = "0" >
-        <path>Aircraft/SpaceShuttle/Systems/autopilot.xml</path>        
+        <path>Aircraft/shuttle/Systems/autopilot.xml</path>        
       </autopilot>
       <autopilot n = "1" >            
-        <path>Aircraft/SpaceShuttle/Systems/autopilot-outerspace.xml</path>
+        <path>Aircraft/shuttle/Systems/autopilot-outerspace.xml</path>
       </autopilot> 
   </systems>  
 	
@@ -249,13 +249,13 @@ See the latest version on: www.github.com/HerbyW/antonov-aircrafts
  
  <nasal>      
     <SpaceShuttle>
-      <file>Aircraft/SpaceShuttle/Nasal/light.nas</file>
-      <file>Aircraft/SpaceShuttle/Nasal/setprop.nas</file>
+      <file>Aircraft/shuttle/Nasal/light.nas</file>
+      <file>Aircraft/shuttle/Nasal/setprop.nas</file>
     </SpaceShuttle> 
     
     <!-- Reverser Start  not used now
     <reversethrust>
-      <file>Aircraft/SpaceShuttle/Nasal/reverse-thrust.nas</file>
+      <file>Aircraft/shuttle/Nasal/reverse-thrust.nas</file>
     </reversethrust>
                         Reverser End -->
   </nasal>

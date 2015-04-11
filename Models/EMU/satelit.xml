@@ -9,7 +9,7 @@
 
 <PropertyList>
   
-    <path>Aircraft/SpaceShuttle/Models/EMU/satelit.ac</path>
+    <path>Aircraft/shuttle/Models/EMU/satelit.ac</path>
 
  <animation>   
    <object-name>spaceshutt_spstob_eal</object-name>

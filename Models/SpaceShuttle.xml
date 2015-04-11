@@ -31,7 +31,7 @@
 <!-- man for the moon, pick the little windows on the top to activate him -->
 
 <model>
-    <path>Aircraft/SpaceShuttle/Models/EMU/acesjustforroomshow.xml</path>
+    <path>Aircraft/shuttle/Models/EMU/acesjustforroomshow.xml</path>
      <offsets>
        <x-m> -12.30 </x-m>
        <y-m> 1.10 </y-m>
@@ -57,7 +57,7 @@
 
 <!-- satelit, click it to launch a satelit -->
 <model>
-    <path>Aircraft/SpaceShuttle/Models/EMU/satelit-int.xml</path>
+    <path>Aircraft/shuttle/Models/EMU/satelit-int.xml</path>
      <offsets>
        <x-m> 0.0 </x-m>
        <y-m> 0.0 </y-m>
@@ -84,7 +84,7 @@
 <!-- robotarm, click it to activate -->
 
 <model>
-    <path>Aircraft/SpaceShuttle/Models/EMU/robotarm.xml</path>
+    <path>Aircraft/shuttle/Models/EMU/robotarm.xml</path>
      <offsets>
        <x-m> 0.0 </x-m>
        <y-m> 0.0 </y-m>
@@ -96,7 +96,7 @@
 <!-- external Tank and Booster -->
  
 <model>
-<path>Aircraft/SpaceShuttle/Models/external-fuel-tank.xml</path>
+<path>Aircraft/shuttle/Models/external-fuel-tank.xml</path>
 		<offsets>
 			<x-m>-10.0</x-m>
 			<y-m>0.0</y-m>
@@ -111,7 +111,7 @@
 </model>
 
 <model>
-<path>Aircraft/SpaceShuttle/Models/solid-rocket-booster.xml</path>
+<path>Aircraft/shuttle/Models/solid-rocket-booster.xml</path>
 		<offsets>
 			<x-m> -5.2 </x-m>
 			<y-m> -6.35</y-m>
@@ -127,7 +127,7 @@
 </model>
 
 <model>
-<path>Aircraft/SpaceShuttle/Models/solid-rocket-booster.xml</path>
+<path>Aircraft/shuttle/Models/solid-rocket-booster.xml</path>
 		<offsets>
 			<x-m> -5.2 </x-m>
 			<y-m>  6.35</y-m>
@@ -145,7 +145,7 @@
   <!-- Smoke for 3 Shuttle engines -->
   
   <model>
-		<path>Aircraft/SpaceShuttle/Models/Effects/trails.xml</path>		
+		<path>Aircraft/shuttle/Models/Effects/trails.xml</path>		
 		<offsets>
 			<x-m> 17</x-m>
 			<y-m>  0.00</y-m>
@@ -157,7 +157,7 @@
   </model>
 
   <model>
-		<path>Aircraft/SpaceShuttle/Models/Effects/trails.xml</path>		
+		<path>Aircraft/shuttle/Models/Effects/trails.xml</path>		
 		<offsets>
 			<x-m> 17</x-m>
 			<y-m>  1.5496</y-m>
@@ -169,7 +169,7 @@
   </model>
 
   <model>
-		<path>Aircraft/SpaceShuttle/Models/Effects/trails.xml</path>		
+		<path>Aircraft/shuttle/Models/Effects/trails.xml</path>		
 		<offsets>
 			<x-m> 17</x-m>
 			<y-m> -1.5496</y-m>
@@ -184,7 +184,7 @@
 <!-- Smoke for 2 Booster rockets-->
 
   <model>
-   <path>Aircraft/SpaceShuttle/Models/Effects/smoke_engine1.xml</path>
+   <path>Aircraft/shuttle/Models/Effects/smoke_engine1.xml</path>
     <offsets>
 		 <x-m>20.5</x-m>
 		 <y-m>-6.2</y-m>
@@ -195,7 +195,7 @@
   </model>
   
   <model>
-    <path>Aircraft/SpaceShuttle/Models/Effects/smoke_engine2.xml</path>
+    <path>Aircraft/shuttle/Models/Effects/smoke_engine2.xml</path>
       <offsets>
 		 <x-m>20.5</x-m>
 		 <y-m>6.2</y-m>
@@ -207,7 +207,7 @@
   
   <!-- smoke from the extra control engines xlr01 winglevel-->
   <model>
-		<path>Aircraft/SpaceShuttle/Models/Effects/trails-minni1.xml</path>		
+		<path>Aircraft/shuttle/Models/Effects/trails-minni1.xml</path>		
 		<offsets>
 			<x-m>9.45</x-m>
                         <y-m>-11.4</y-m>
@@ -225,7 +225,7 @@
   </model>
   
   <model>
-		<path>Aircraft/SpaceShuttle/Models/Effects/trails-minni1.xml</path>		
+		<path>Aircraft/shuttle/Models/Effects/trails-minni1.xml</path>		
 		<offsets>
 			<x-m>9.45</x-m>
                         <y-m>-11.4</y-m>
@@ -243,7 +243,7 @@
   </model>
   
   <model>
-		<path>Aircraft/SpaceShuttle/Models/Effects/trails-minni2.xml</path>		
+		<path>Aircraft/shuttle/Models/Effects/trails-minni2.xml</path>		
 		<offsets>
 			<x-m>9.45</x-m>
                         <y-m>11.4</y-m>
@@ -261,7 +261,7 @@
   </model>
   
   <model>
-		<path>Aircraft/SpaceShuttle/Models/Effects/trails-minni2.xml</path>		
+		<path>Aircraft/shuttle/Models/Effects/trails-minni2.xml</path>		
 		<offsets>
 			<x-m>9.45</x-m>
                         <y-m>11.4</y-m>
@@ -280,7 +280,7 @@
   
   <!-- smoke from the extra control engines xlr01 pitchlevel nose position -->
   <model>
-		<path>Aircraft/SpaceShuttle/Models/Effects/trails-minni3.xml</path>		
+		<path>Aircraft/shuttle/Models/Effects/trails-minni3.xml</path>		
 		<offsets>
 			<x-m>-16.72 </x-m>
                         <y-m>  1.55 </y-m>
@@ -300,7 +300,7 @@
   
   
   <model>
-		<path>Aircraft/SpaceShuttle/Models/Effects/trails-minni4.xml</path>		
+		<path>Aircraft/shuttle/Models/Effects/trails-minni4.xml</path>		
 		<offsets>
 			<x-m>-16.72 </x-m>
                         <y-m>  1.55 </y-m>
@@ -318,7 +318,7 @@
   </model>
   
   <model>
-		<path>Aircraft/SpaceShuttle/Models/Effects/trails-minni5.xml</path>		
+		<path>Aircraft/shuttle/Models/Effects/trails-minni5.xml</path>		
 		<offsets>
 			<x-m>-16.72 </x-m>
                         <y-m> -1.55 </y-m>
@@ -335,7 +335,7 @@
 		 </condition>
   </model>
   <model>
-		<path>Aircraft/SpaceShuttle/Models/Effects/trails-minni6.xml</path>		
+		<path>Aircraft/shuttle/Models/Effects/trails-minni6.xml</path>		
 		<offsets>
 			<x-m>-16.72 </x-m>
                         <y-m> -1.55 </y-m>
@@ -354,7 +354,7 @@
   
   <!-- smoke from the extra control engines xlr01 pitchlevel tail position -->
   <model>
-		<path>Aircraft/SpaceShuttle/Models/Effects/trails-minni14.xml</path>		
+		<path>Aircraft/shuttle/Models/Effects/trails-minni14.xml</path>		
 		<offsets>
 			<x-m> 12.4 </x-m>
                         <y-m>  2.5 </y-m>
@@ -372,7 +372,7 @@
   </model>
     
   <model>
-		<path>Aircraft/SpaceShuttle/Models/Effects/trails-minni13.xml</path>		
+		<path>Aircraft/shuttle/Models/Effects/trails-minni13.xml</path>		
 		<offsets>
 			<x-m> 12.48 </x-m>
                         <y-m>  3.1  </y-m>
@@ -390,7 +390,7 @@
   </model>
   
   <model>
-		<path>Aircraft/SpaceShuttle/Models/Effects/trails-minni16.xml</path>		
+		<path>Aircraft/shuttle/Models/Effects/trails-minni16.xml</path>		
 		<offsets>
 			<x-m> 12.4 </x-m>
                         <y-m> -2.5 </y-m>
@@ -407,7 +407,7 @@
 		 </condition>
   </model>
   <model>
-		<path>Aircraft/SpaceShuttle/Models/Effects/trails-minni15.xml</path>		
+		<path>Aircraft/shuttle/Models/Effects/trails-minni15.xml</path>		
 		<offsets>
 			<x-m> 12.48 </x-m>
                         <y-m> -3.1  </y-m>
@@ -427,7 +427,7 @@
     <!-- smoke from the extra control engines03 for yaw control nose position
          based on reverser position on=1=270=blow to left, off=0=90=blow to right-->
   <model>
-		<path>Aircraft/SpaceShuttle/Models/Effects/trails-minni17.xml</path>		
+		<path>Aircraft/shuttle/Models/Effects/trails-minni17.xml</path>		
 		<offsets>
 			<x-m> -15.85 </x-m>
        <y-m> -1.75 </y-m>
@@ -444,7 +444,7 @@
 			</condition>
   </model>
   <model>
-		<path>Aircraft/SpaceShuttle/Models/Effects/trails-minni17.xml</path>		
+		<path>Aircraft/shuttle/Models/Effects/trails-minni17.xml</path>		
 		<offsets>
 			<x-m> -15.85 </x-m>
        <y-m> 1.75 </y-m>
@@ -545,7 +545,7 @@
  
  <model>
 		<name>Strobe_1</name>
-		<path>Aircraft/SpaceShuttle/Models/Lights/strobe-red.xml</path>	
+		<path>Aircraft/shuttle/Models/Lights/strobe-red.xml</path>	
 		<offsets>
 			<x-m>9.45</x-m>
 			<y-m>-11.9</y-m>
@@ -555,7 +555,7 @@
 	
 <model>
 		<name>Strobe_4</name>
-		<path>Aircraft/SpaceShuttle/Models/Lights/strobe-green.xml</path>	
+		<path>Aircraft/shuttle/Models/Lights/strobe-green.xml</path>	
 		<offsets>
 			<x-m>9.45</x-m>
 			<y-m>11.9</y-m>
@@ -565,7 +565,7 @@
 
 <model>
 		<name>Strobe_3</name>
-		<path>Aircraft/SpaceShuttle/Models/Lights/strobe-yellow.xml</path>	
+		<path>Aircraft/shuttle/Models/Lights/strobe-yellow.xml</path>	
 		<offsets>
 			<x-m>-8.9</x-m>
 			<y-m>0</y-m>
@@ -575,7 +575,7 @@
 
 <model>
     <name>Beacon_1</name>
-    <path>Aircraft/SpaceShuttle/Models/Lights/beacon.xml</path>
+    <path>Aircraft/shuttle/Models/Lights/beacon.xml</path>
     <offsets>
       <x-m> 9.99 </x-m>
       <y-m>  0.00000 </y-m>
@@ -584,7 +584,7 @@
 </model>
 <model>
     <name>Beacon_2</name>
-    <path>Aircraft/SpaceShuttle/Models/Lights/beacon.xml</path>
+    <path>Aircraft/shuttle/Models/Lights/beacon.xml</path>
     <offsets>
       <x-m> 15.45 </x-m>
       <y-m>  0.00000 </y-m>
@@ -593,7 +593,7 @@
 </model>
 
 <model>
-    <path>Aircraft/SpaceShuttle/Models/Lights/StrobeLight.xml</path>
+    <path>Aircraft/shuttle/Models/Lights/StrobeLight.xml</path>
      <offsets>
       <x-m>9.95</x-m>
       <y-m>-12.0</y-m>
@@ -601,7 +601,7 @@
      </offsets>
 </model>
 <model>
-    <path>Aircraft/SpaceShuttle/Models/Lights/StrobeLight.xml</path>
+    <path>Aircraft/shuttle/Models/Lights/StrobeLight.xml</path>
      <offsets>
       <x-m>9.95</x-m>
       <y-m>12.0</y-m>
@@ -610,7 +610,7 @@
 </model>
 
 <model>
-    <path>Aircraft/SpaceShuttle/Models/Lights/StrobeLight.xml</path>
+    <path>Aircraft/shuttle/Models/Lights/StrobeLight.xml</path>
      <offsets>
       <x-m>17.70</x-m>
       <y-m> 0.0</y-m>
@@ -619,7 +619,7 @@
 </model>
 
 <model>
-    <path>Aircraft/SpaceShuttle/Models/Lights/WhiteLight.xml</path>
+    <path>Aircraft/shuttle/Models/Lights/WhiteLight.xml</path>
      <offsets>
       <x-m>-1.70</x-m>
       <y-m>-4.68</y-m>
@@ -627,7 +627,7 @@
      </offsets>
 </model>
 <model>
-    <path>Aircraft/SpaceShuttle/Models/Lights/WhiteLight.xml</path>
+    <path>Aircraft/shuttle/Models/Lights/WhiteLight.xml</path>
      <offsets>
       <x-m>-1.70</x-m>
       <y-m> 4.68</y-m>
@@ -637,7 +637,7 @@
 
 <!--Light for Gears! there are no gears, so I set some lights to the spot of earthcontact -->
 <model>
-    <path>Aircraft/SpaceShuttle/Models/Lights/WhiteLight.xml</path>
+    <path>Aircraft/shuttle/Models/Lights/WhiteLight.xml</path>
      <offsets>
        <x-m> -15.00 </x-m>
        <y-m> 0.00 </y-m>
@@ -651,7 +651,7 @@
                         </condition>
 </model>
 <model>
-    <path>Aircraft/SpaceShuttle/Models/Lights/WhiteLight.xml</path>
+    <path>Aircraft/shuttle/Models/Lights/WhiteLight.xml</path>
      <offsets>
        <x-m> 4.70 </x-m>
        <y-m> -4.2 </y-m>
@@ -666,7 +666,7 @@
                         </condition>
 </model>
 <model>
-    <path>Aircraft/SpaceShuttle/Models/Lights/WhiteLight.xml</path>
+    <path>Aircraft/shuttle/Models/Lights/WhiteLight.xml</path>
      <offsets>
        <x-m> 4.70 </x-m>
        <y-m> 4.2 </y-m>
@@ -683,7 +683,7 @@
 
 <!--One Light for the center of the model, just for testing reasons, will be removed later-->
 <model>
-    <path>Aircraft/SpaceShuttle/Models/Lights/strobe-white.xml</path>
+    <path>Aircraft/shuttle/Models/Lights/strobe-white.xml</path>
      <offsets>
        <x-m> 0.0 </x-m>
        <y-m> 0.0 </y-m>
@@ -693,7 +693,7 @@
 
 <!--lets set some fire to the main engines -->
 <model>
-    <path>Aircraft/SpaceShuttle/Models/Effects/engine-fire.xml</path>
+    <path>Aircraft/shuttle/Models/Effects/engine-fire.xml</path>
      <offsets>
        <x-m> 7.5 </x-m>
        <y-m> 1.5 </y-m>
@@ -702,7 +702,7 @@
      </offsets>
 </model>
 <model>
-    <path>Aircraft/SpaceShuttle/Models/Effects/engine-fire.xml</path>
+    <path>Aircraft/shuttle/Models/Effects/engine-fire.xml</path>
      <offsets>
        <x-m> 7.6 </x-m>
        <y-m> 0.05 </y-m>
@@ -711,7 +711,7 @@
      </offsets>
 </model>
 <model>
-    <path>Aircraft/SpaceShuttle/Models/Effects/engine-fire.xml</path>
+    <path>Aircraft/shuttle/Models/Effects/engine-fire.xml</path>
      <offsets>
        <x-m> 7.6 </x-m>
        <y-m> 2.90 </y-m>
@@ -723,7 +723,7 @@
 <!--lets set some fire to the OMS-main engines, 2 are iluminated-->
 
 <model>
-  <path>Aircraft/SpaceShuttle/Models/Lights/strobe-red5.xml</path>	
+  <path>Aircraft/shuttle/Models/Lights/strobe-red5.xml</path>	
 		<offsets>
                  <x-m> 13.10 </x-m>
                  <y-m> -2.20 </y-m>
@@ -732,7 +732,7 @@
 </model> 
 
 <model>
-   <path>Aircraft/SpaceShuttle/Models/Lights/strobe-red5.xml</path>
+   <path>Aircraft/shuttle/Models/Lights/strobe-red5.xml</path>
      <offsets>
        <x-m> 13.10 </x-m>
        <y-m> 2.20 </y-m>
@@ -744,7 +744,7 @@
 
 <model>
   <name>right-strake-vortex</name>
-  <path>Aircraft/SpaceShuttle/Models/Effects/strake-vortex.xml</path>
+  <path>Aircraft/shuttle/Models/Effects/strake-vortex.xml</path>
   <offsets>
         <x-m>9.45</x-m>
 	<y-m> 11.0</y-m>
@@ -753,7 +753,7 @@
  </model>
  <model>
   <name>right-strake-vortex</name>
-  <path>Aircraft/SpaceShuttle/Models/Effects/strake-vortex.xml</path>
+  <path>Aircraft/shuttle/Models/Effects/strake-vortex.xml</path>
   <offsets>
         <x-m>9.45</x-m>
 	<y-m>-11.0</y-m>
@@ -764,7 +764,7 @@
  <!--and supersonic boom ! -->
  <model>
 		<name>sonicboom</name>
-		<path>Aircraft/SpaceShuttle/Models/Effects/boom.xml</path>
+		<path>Aircraft/shuttle/Models/Effects/boom.xml</path>
 		<offsets>
 			<x-m>-18.38</x-m>
 			<y-m>0</y-m>
@@ -776,7 +776,7 @@
  <!--Parachutes -->
 	
 <model>
-    <path>Aircraft/SpaceShuttle/Models/Parachutes/Brake-Parachute.xml</path>
+    <path>Aircraft/shuttle/Models/Parachutes/Brake-Parachute.xml</path>
      <offsets>
        <x-m> 17.7 </x-m>
        <y-m> 0.0 </y-m>
@@ -792,7 +792,7 @@
 </model>  
 
 <model>
-    <path>Aircraft/SpaceShuttle/Models/Parachutes/Brake-Parachute2.xml</path>
+    <path>Aircraft/shuttle/Models/Parachutes/Brake-Parachute2.xml</path>
      <offsets>
        <x-m> 45.7 </x-m>
        <y-m> 0.0 </y-m>
@@ -815,7 +815,7 @@
 
 
 <!--<model>
-    <path>Aircraft/SpaceShuttle/Models/lunarlandernofoil-c/lunarlander.xml</path>
+    <path>Aircraft/shuttle/Models/lunarlandernofoil-c/lunarlander.xml</path>
      <offsets>
        <x-m> -2.30 </x-m>
        <y-m> 20.0 </y-m>
