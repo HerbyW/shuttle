@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+	<import>
+		<path>Huds/Instruments/latitude.xml</path>
+		<x-offset>-60</x-offset>
+		<y-offset>-10</y-offset>
+	</import>
+
+	<import>
+		<path>Huds/Instruments/longitude.xml</path>
+		<x-offset>60</x-offset>
+		<y-offset>-10</y-offset>
+	</import>
+</PropertyList>

@@ -1,0 +1,87 @@
+<?xml version="1.0"?>
+
+<!--###################################################################################
+    Antonov-Aircrafts and SpaceShuttle :: Herbert Wagner November2014-2015
+    Development is ongoing, see latest version: www.github.com/herbyw/antonov-aircrafts
+    This file is licenced under the terms of the GNU General Public Licence V3 or later
+    ###################################################################################
+-->
+
+
+
+<PropertyList>
+
+<!-- Brake Parachute -->
+
+	<path>Helping-Parachute.ac</path>
+
+	<offsets>
+		<x-m>0.0</x-m>
+		<y-m>0.0</y-m>
+		<z-m>0.0</z-m>
+		<pitch-deg>0</pitch-deg>
+	</offsets>
+
+	<animation>
+		<type>scale</type>
+		<x-offset>0.35</x-offset>
+                <y-offset>0.35</y-offset>
+                <z-offset>0.35</z-offset>                
+	</animation>
+	
+	<animation>
+		<type>select</type>
+		<condition>            
+	          <equals>
+                   <property>sim/multiplay/generic/int[3]</property>
+                   <value>1</value>
+                  </equals>                    
+                 </condition>
+	</animation>
+
+	<animation>
+		<type>spin</type>
+		<property>sim/multiplay/generic/float[0]</property>
+		<factor>0.15</factor>
+		<center>
+			<x-m>0.0</x-m>
+			<y-m>0.0</y-m>
+			<z-m>0.0</z-m>
+		</center>
+		<axis>
+			<x>0</x>
+			<y>0</y>
+			<z>1</z>
+		</axis>
+	</animation>
+
+	<animation>
+  <type>translate</type>  
+  <property>sim/multiplay/generic/float[0]</property>
+  <interpolation>
+    <entry>
+      <ind>450</ind>
+      <dep>0</dep>
+    </entry>
+    <entry>
+      <ind>122</ind>
+      <dep>0</dep>
+    </entry>
+    <entry>
+      <ind>120</ind>
+      <dep>75</dep>
+    </entry>
+  </interpolation>
+  <center>
+   <x-m> 0.0</x-m>
+   <y-m> 0.0</y-m>
+   <z-m> 0.0</z-m>   
+  </center>
+  <axis>
+   <x>0</x>
+   <y>0</y>
+   <z>1</z>
+  </axis>
+</animation> 
+
+</PropertyList>

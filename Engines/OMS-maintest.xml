@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--###################################################################################
+    Antonov-Aircrafts and SpaceShuttle :: Herbert Wagner November2014-2015
+    Development is ongoing, see latest version: www.github.com/herbyw/antonov-aircrafts
+    This file is licenced under the terms of the GNU General Public Licence V3 or later
+    ###################################################################################
+-->
+
+<!--Author:   Slavutinsky Victor-->
+<rocket_engine name="OMS-maintest">
+<!--	<isp>               266 </isp> -->
+	<isp>               400.0 </isp>
+	<shr>              1.23 </shr>
+	<max_pc>       86556.00 </max_pc>
+	<variance>         0.10 </variance>
+	<prop_eff>         0.67 </prop_eff>
+	<maxthrottle>      1.00 </maxthrottle>
+	<minthrottle>      0.00 </minthrottle>
+	<sloxiflowmax>   600.000 </sloxiflowmax>
+	<slfuelflowmax>  162.000 </slfuelflowmax>
+</rocket_engine>

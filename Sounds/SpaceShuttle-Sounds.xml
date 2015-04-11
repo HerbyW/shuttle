@@ -1,0 +1,349 @@
+<?xml version="1.0"?>
+
+<!--###################################################################################
+    Antonov-Aircrafts and SpaceShuttle :: Herbert Wagner November2014-2015
+    Development is ongoing, see latest version: www.github.com/herbyw/antonov-aircrafts
+    This file is licenced under the terms of the GNU General Public Licence V3 or later
+    ###################################################################################
+-->
+
+<!--
+Author: Slavutinsky Victor  from Vostok-1 modified by HerbyW for SpaceShuttle
+-->
+
+<PropertyList>
+
+<!-- Sounds -->
+
+	<fx>
+	  
+	  
+	<!-- Environments  -->  
+
+	<enviro>
+		<name>enviro</name>
+		<mode>once</mode>
+		<path>Aircraft/SpaceShuttle/Sounds/SpaceShuttleLaunchAudio.wav</path>
+		<volume>
+			<min>0.7</min>
+			<max>0.7</max>
+		</volume>
+	</enviro>
+
+	<!-- Startup on Runway, environment wind -->
+
+	<wind>
+		<name>wind</name>
+		<mode>looped</mode>
+		<path>Aircraft/SpaceShuttle/Sounds/wind-8khz.wav</path>
+		<volume>
+			<property>environment/wind-speed-kt</property>
+			<factor>0.04</factor>
+			<offset>0.0</offset>
+			<min>0.0</min>
+			<max>0.10</max>
+		</volume>
+		<pitch>
+			<property>environment/wind-speed-kt</property>
+			<factor>0.04</factor>
+			<offset>0.0</offset>
+			<min>0.0</min>
+			<max>1.0</max>
+		</pitch>
+		<position>
+			<x>0</x>
+			<y>0</y>
+			<z>0</z>
+		</position>
+		<max-dist>2</max-dist>
+		<reference-dist>1</reference-dist>
+	<condition>
+         <and>
+            <less-than>
+                  <property>/velocities/mach</property>
+                  <value>1.02</value>
+            </less-than>               
+	    <less-than>
+               <property>/position/altitude-agl-ft</property>
+               <value>45000</value>
+            </less-than>
+         </and>
+        </condition>
+	<delay-sec>1</delay-sec>
+	</wind>              
+
+	<!-- Booster  -->
+
+	<booster>
+		<name>booster</name>
+		<mode>looped</mode>
+		<path>Aircraft/SpaceShuttle/Sounds/Vostok-1-Deorbit-Burning.wav</path>
+		<volume>
+			<property>sim/multiplay/generic/float[2]</property>
+			<factor>0.0001</factor>
+			<offset>0.0</offset>
+			<min>0.0</min>
+			<max>1.0</max>
+		</volume>
+	</booster>
+	
+	<!-- Main Engines -->
+	
+	<main>
+		<name>main</name>
+		<mode>looped</mode>
+		<path>Aircraft/SpaceShuttle/Sounds/Vostok-1-Stage-1-2-Engines-Internal.wav</path>
+		<volume>
+			<property>sim/multiplay/generic/float[12]</property>
+			<factor>0.0001</factor>
+			<offset>0.0</offset>
+			<min>0.0</min>
+			<max>0.6</max>
+		</volume>		
+	</main>
+
+	<!-- Booster separation-->
+	
+	<booster-separation>
+		<name>booster-separation</name>
+		<mode>once</mode>
+		<path>Aircraft/SpaceShuttle/Sounds/Vostok-1-Fairings-Separation.wav</path>		
+		  <condition>
+		    <less-than>
+			<property>sim/multiplay/generic/float[5]</property>
+			<value>100</value>
+		    </less-than>
+		  </condition>
+		  <volume>
+			<factor>1.0</factor>
+			<offset>0.0</offset>
+			<min>0.7</min>
+			<max>0.7</max>
+		</volume>
+	</booster-separation>
+	
+		<!-- External Tank separation-->
+	
+	<tank-separation>
+		<name>tank-separation</name>
+		<mode>once</mode>
+		<path>Aircraft/SpaceShuttle/Sounds/Vostok-1-Stage-1-Separation.wav</path>		
+		  <condition>
+		    <less-than>
+			<property>sim/multiplay/generic/float[4]</property>
+			<value>100</value>
+		    </less-than>
+		  </condition>
+		  <volume>
+			<factor>1.0</factor>
+			<offset>0.0</offset>
+			<min>0.6</min>
+			<max>0.6</max>
+		</volume>
+	</tank-separation>
+
+        	<!-- OMS Main  -->
+	
+	<OMS>
+		<name>OMS</name>
+		<mode>looped</mode>
+		<path>Aircraft/SpaceShuttle/Sounds/Vostok-1-TDU-Engine.wav</path>		
+		  <condition>
+		    <greater-than>
+			<property>sim/multiplay/generic/float[18]</property>
+			<value>0</value>
+		    </greater-than>
+		  </condition>
+		  <volume>
+			<factor>1.0</factor>
+			<offset>0.0</offset>
+			<min>0.0</min>
+			<max>0.4</max>
+		</volume>
+	</OMS>
+	
+	<OMS-out>
+		<name>OMS-out</name>
+		<mode>once</mode>
+		<path>Aircraft/SpaceShuttle/Sounds/Vostok-1-TDU-Engine-Once.wav</path>		
+		  <condition>   
+		    <less-than>
+			<property>sim/multiplay/generic/float[6]</property>
+			<value>10</value>
+		    </less-than>
+		  </condition>
+		  <volume>
+			<factor>1.0</factor>
+			<offset>1.0</offset>
+			<min>0.4</min>
+			<max>0.4</max>
+		</volume>
+	</OMS-out>
+
+
+	<!-- robotarm  -->
+
+	<robotarm>
+		<name>robotarm</name>
+		<mode>looped</mode>
+		<path>Aircraft/SpaceShuttle/Sounds/Vostok-1-Antennas-Turn.wav</path>
+		  
+		  <condition>
+		    <and>
+		    <greater-than>
+			<property>sim/multiplay/generic/float[19]</property>
+			<value>0.01</value>
+		    </greater-than>
+		    <less-than>
+			<property>sim/multiplay/generic/float[19]</property>
+			<value>0.99</value>
+		    </less-than>
+		    </and>
+		  </condition>
+		  
+		  <volume>
+		    <property>sim/multiplay/generic/float[19]</property>
+			<factor>1.0</factor>
+			<offset>0.0</offset>
+			<min>0.1</min>
+			<max>0.1</max>
+		</volume>
+	</robotarm>
+	
+	<!-- doors  -->
+
+	<doors>
+		<name>doors</name>
+		<mode>looped</mode>
+		<path>Aircraft/SpaceShuttle/Sounds/Vostok-1-Radiators-Turn.wav</path>
+		  
+		  <condition>
+		    <and>
+		    <greater-than>
+			<property>sim/multiplay/generic/float[3]</property>
+			<value>0.01</value>
+		    </greater-than>
+		    <less-than>
+			<property>sim/multiplay/generic/float[3]</property>
+			<value>0.99</value>
+		    </less-than>
+		    </and>
+		  </condition>
+		  
+		  <volume>
+		    <property>sim/multiplay/generic/float[3]</property>
+			<factor>1.0</factor>
+			<offset>0.0</offset>
+			<min>0.15</min>
+			<max>0.15</max>
+		</volume>
+	</doors>
+
+	<!-- Gears  -->
+
+	<gears>
+		<name>gears</name>
+		<mode>once</mode>
+		<path>Aircraft/SpaceShuttle/Sounds/gear.wav</path>
+		  
+		  <condition>
+		    <and>
+		    <greater-than>
+			<property>gear/gear/position-norm</property>
+			<value>0.01</value>
+		    </greater-than>
+		    <less-than>
+			<property>gear/gear/position-norm</property>
+			<value>0.99</value>
+		    </less-than>
+		    </and>
+		  </condition>
+		  
+		  <volume>
+		    <property>gear/gear/position-norm</property>
+			<factor>1.0</factor>
+			<offset>0.0</offset>
+			<min>0.3</min>
+			<max>0.3</max>
+		</volume>
+	</gears>
+
+	<!-- Flaps  -->
+
+	<flaps>
+		<name>flaps</name>
+		<mode>in-transit</mode>
+		<path>Aircraft/SpaceShuttle/Sounds/flaps.wav</path>
+		 <property>surface-positions/flap-pos-norm</property>
+		<volume>
+		    <min>0.0</min>
+                    <max>0.2</max>
+		</volume>
+	</flaps>
+	
+	<!-- Touchdown  -->
+
+	<touchdown>
+        <name>touchdown</name>
+        <path>Aircraft/SpaceShuttle/Sounds/touchdown.wav</path>
+        <condition>
+            <and>	      
+	       <greater-than>
+                <property>/velocities/airspeed-kt</property>
+		<value>140</value>
+               </greater-than>
+               <less-than>
+                <property>velocities/vertical-speed-fps</property>
+		<value>-0.1</value>
+               </less-than>
+	       <greater-than>
+                <property>/gear/gear[1]/compression-norm</property>
+                <value>0.05</value>
+               </greater-than>
+	       <equals>
+                <property>/gear/gear[1]/wow</property>
+                <value>1</value>
+               </equals>                    
+            </and>
+        </condition>
+        <volume>
+            <property>sim/sound/volume</property>
+        </volume>       
+        <position>
+            <x>-6.5</x>
+            <y>0</y>
+            <z>-5</z>
+        </position>
+        <reference-dist>20.0</reference-dist>
+        <max-dist>40.0</max-dist>
+	</touchdown>
+
+	<!-- rumble  -->
+
+	<rumble>
+		<name>rumble</name>
+		<mode>looped</mode>
+		<path>Aircraft/SpaceShuttle/Sounds/rumble.wav</path>
+		<condition>
+		  <and>
+                   <greater-than>
+                      <property>/gear/gear[1]/rollspeed-ms</property>
+                      <value>5</value>
+                   </greater-than>
+		   <equals>
+                      <property>/gear/gear[1]/wow</property>
+                      <value>1</value>
+                   </equals> 
+		  </and>
+                </condition>
+          <volume>
+            <property>/gear/gear[1]/rollspeed-ms</property>            
+            <factor>0.005</factor>
+	    <min>0.2</min>
+	    <max>1.0</max>
+          </volume>          
+        </rumble>
+	
+	</fx>
+
+</PropertyList>

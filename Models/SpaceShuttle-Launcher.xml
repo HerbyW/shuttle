@@ -1,0 +1,1591 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--###################################################################################
+    Antonov-Aircrafts and SpaceShuttle :: Herbert Wagner November2014-March2015
+    Development is ongoing, see latest version: www.github.com/herbyw/antonov-aircrafts
+    This file is licenced under the terms of the GNU General Public Licence V3 or later
+    
+    Firefly: 3D model improvment: ruder, speedbreak, ailerions, all gears and doors
+    
+    ###################################################################################
+-->
+
+<PropertyList>
+	<path>shuttle_o2at.ac</path>
+	
+	<offsets>
+		<x-m>0.0</x-m>
+		<y-m>0.0</y-m>
+		<z-m>12.0</z-m>
+		<pitch-deg>97</pitch-deg>
+		<heading-deg>0.0</heading-deg>
+	</offsets>
+
+  <!--Lights-->
+                                   
+<animation>   
+   <object-name>spaceshutt_sptob_1</object-name>      <!--body -->
+   <object-name>spaceshutt_spstob_2</object-name>     <!--emty element ? -->
+   <object-name>spaceshutt_spstob</object-name>       <!--left door -->
+   <object-name>spaceshutt_spstob.001</object-name>   <!--right door -->
+   <object-name>spaceshutt_spstob.002</object-name>   <!--left door -->    
+   <object-name>spaceshutt_spstob_3</object-name>     <!--inner cabin for cockpit -->
+   <object-name>spaceshutt_spstob_4</object-name>     <!--4 little windows -->
+   <object-name>speedbrakeL</object-name>             <!-- -->
+   <object-name>speedbrakeR</object-name>             <!-- -->
+   <object-name>geardoorL</object-name>               <!--tail -->
+   <object-name>geardoorR</object-name>               <!--tail -->
+   <object-name>front</object-name>                   <!--front wheels -->
+   <object-name>frontgear</object-name>               <!--front gear mechanic-->
+   <object-name>backgearlinkageL</object-name>        <!--little gear stick -->
+   <object-name>backgearlinkageR</object-name>        <!--little gear stick -->
+   <object-name>backgearL</object-name>               <!--back gear mechanics -->
+   <object-name>backgearR</object-name>               <!--back gear mechanics -->
+   <object-name>back</object-name>                    <!--tail wheels left -->
+   <object-name>back.001</object-name>                <!--tail wheels right -->
+   <object-name>frontgeardoorR</object-name>          <!--front -->
+   <object-name>frontgeardoorL</object-name>          <!--front -->
+   <object-name>Left</object-name>                    <!--ailerion L -->
+   <object-name>Right</object-name>                   <!--ailerion R -->
+   <object-name>Left.001</object-name>                <!--elevator L -->   
+   <object-name>Right.001</object-name>               <!--elevator R -->
+</animation>
+
+  <animation>
+    <type>material</type>
+   <object-name>spaceshutt_sptob_1</object-name>      <!--body -->
+   <object-name>spaceshutt_spstob_2</object-name>     <!--emty element ? -->
+   <object-name>spaceshutt_spstob</object-name>       <!--left door -->
+   <object-name>spaceshutt_spstob.001</object-name>   <!--right door -->
+   <object-name>spaceshutt_spstob.002</object-name>   <!--left door -->    
+   <object-name>spaceshutt_spstob_3</object-name>     <!--inner cabin for cockpit -->
+   <object-name>spaceshutt_spstob_4</object-name>     <!--4 little windows -->
+   <object-name>speedbrakeL</object-name>             <!-- -->
+   <object-name>speedbrakeR</object-name>             <!-- -->
+   <object-name>geardoorL</object-name>               <!--tail -->
+   <object-name>geardoorR</object-name>               <!--tail -->
+   <object-name>front</object-name>                   <!--front wheels -->
+   <object-name>frontgear</object-name>               <!--front gear mechanic-->
+   <object-name>backgearlinkageL</object-name>        <!--little gear stick -->
+   <object-name>backgearlinkageR</object-name>        <!--little gear stick -->
+   <object-name>backgearL</object-name>               <!--back gear mechanics -->
+   <object-name>backgearR</object-name>               <!--back gear mechanics -->
+   <object-name>back</object-name>                    <!--tail wheels left -->
+   <object-name>back.001</object-name>                <!--tail wheels right -->
+   <object-name>frontgeardoorR</object-name>          <!--front -->
+   <object-name>frontgeardoorL</object-name>          <!--front -->
+   <object-name>Left</object-name>                    <!--ailerion L -->
+   <object-name>Right</object-name>                   <!--ailerion R -->
+   <object-name>Left.001</object-name>                <!--elevator L -->   
+   <object-name>Right.001</object-name>               <!--elevator R -->
+     <emission>      
+      <red>   0.19 </red>
+      <green> 0.19 </green>
+      <blue>  0.19 </blue>
+      </emission>
+  </animation>  
+
+<!-- sometimes it is hot, so let it glow, still waiting for a better picture of this 
+
+3 stages of reentry effect: 3-2-1-2-3
+
+3: little effect   spstob_3hot.png 7.02-6.73 + 3.73-3.34
+2: middle effect   spstob_2hot.png 6.72-6.43 + 4.01-3.74
+1: full effect     spstob_1hot.png 6.42-4.02
+
+condition on mach: 7.02-6.73, 6.72999-6.43, 6.42999-4.02, 4.01999-3.74, 3.73999-3.34
+in altidude: 70.000-120.000 ft
+
+-->  
+  
+<animation>
+  <type>material</type>  
+   <object-name>spaceshutt_sptob_1</object-name>      <!--body -->
+   <object-name>spaceshutt_spstob_2</object-name>     <!--emty element ? -->
+   <object-name>spaceshutt_spstob</object-name>       <!--left door -->
+   <object-name>spaceshutt_spstob.001</object-name>   <!--right door -->
+   <object-name>spaceshutt_spstob.002</object-name>   <!--left door -->    
+   <object-name>spaceshutt_spstob_3</object-name>     <!--inner cabin for cockpit -->
+   <object-name>spaceshutt_spstob_4</object-name>     <!--4 little windows -->
+   <object-name>speedbrakeL</object-name>             <!-- -->
+   <object-name>speedbrakeR</object-name>             <!-- -->
+   <object-name>geardoorL</object-name>               <!--tail -->
+   <object-name>geardoorR</object-name>               <!--tail -->
+   <object-name>frontgeardoorR</object-name>          <!--front -->
+   <object-name>frontgeardoorL</object-name>          <!--front -->
+   <object-name>Left</object-name>                    <!--ailerion L -->
+   <object-name>Right</object-name>                   <!--ailerion R -->
+   <object-name>Left.001</object-name>                <!--elevator L -->   
+   <object-name>Right.001</object-name>               <!--elevator R -->
+  
+  <texture-prop>texture</texture-prop>
+  <texture>spstob_3hot.png</texture> 
+   
+      <condition>
+         <and>
+	   <or>
+	     <and>
+              <less-than>
+                  <property>sim/multiplay/generic/float[13]</property>
+                  <value>7.02</value>
+               </less-than>
+               <greater-than>
+                  <property>sim/multiplay/generic/float[13]</property>
+                  <value>6.73</value>
+               </greater-than>
+	      </and>
+	      <and>
+	       <less-than>
+                  <property>sim/multiplay/generic/float[13]</property>
+                  <value>3.73999</value>
+               </less-than>
+               <greater-than>
+                  <property>sim/multiplay/generic/float[13]</property>
+                  <value>3.34</value>
+               </greater-than>
+	      </and>	  
+             </or>  
+	        <less-than>
+                  <property>sim/multiplay/generic/float[14]</property>
+                  <value>120000</value>
+                </less-than>
+		<greater-than>
+                  <property>sim/multiplay/generic/float[14]</property>
+                  <value>70000</value>
+                </greater-than>
+          </and>
+        </condition>
+
+</animation>
+
+<animation>
+  <type>material</type>  
+   <object-name>spaceshutt_sptob_1</object-name>      <!--body -->
+   <object-name>spaceshutt_spstob_2</object-name>     <!--emty element ? -->
+   <object-name>spaceshutt_spstob</object-name>       <!--left door -->
+   <object-name>spaceshutt_spstob.001</object-name>   <!--right door -->
+   <object-name>spaceshutt_spstob.002</object-name>   <!--left door -->    
+   <object-name>spaceshutt_spstob_3</object-name>     <!--inner cabin for cockpit -->
+   <object-name>spaceshutt_spstob_4</object-name>     <!--4 little windows -->
+   <object-name>speedbrakeL</object-name>             <!-- -->
+   <object-name>speedbrakeR</object-name>             <!-- -->
+   <object-name>geardoorL</object-name>               <!--tail -->
+   <object-name>geardoorR</object-name>               <!--tail -->
+   <object-name>frontgeardoorR</object-name>          <!--front -->
+   <object-name>frontgeardoorL</object-name>          <!--front -->
+   <object-name>Left</object-name>                    <!--ailerion L -->
+   <object-name>Right</object-name>                   <!--ailerion R -->
+   <object-name>Left.001</object-name>                <!--elevator L -->   
+   <object-name>Right.001</object-name>               <!--elevator R -->
+  
+  <texture-prop>texture</texture-prop>
+  <texture>spstob_2hot.png</texture> 
+   
+      <condition>
+         <and>
+	   <or>
+	     <and>
+              <less-than>
+                  <property>sim/multiplay/generic/float[13]</property>
+                  <value>6.72999</value>
+               </less-than>
+               <greater-than>
+                  <property>sim/multiplay/generic/float[13]</property>
+                  <value>6.43</value>
+               </greater-than>
+	      </and>
+	      <and>
+	       <less-than>
+                  <property>sim/multiplay/generic/float[13]</property>
+                  <value>4.01999</value>
+               </less-than>
+               <greater-than>
+                  <property>sim/multiplay/generic/float[13]</property>
+                  <value>3.74</value>
+               </greater-than>
+	      </and>	  
+             </or>  
+	        <less-than>
+                  <property>sim/multiplay/generic/float[14]</property>
+                  <value>120000</value>
+                </less-than>
+		<greater-than>
+                  <property>sim/multiplay/generic/float[14]</property>
+                  <value>70000</value>
+                </greater-than>
+          </and>
+        </condition>
+
+</animation>
+
+<animation>
+  <type>material</type>  
+   <object-name>spaceshutt_sptob_1</object-name>      <!--body -->
+   <object-name>spaceshutt_spstob_2</object-name>     <!--emty element ? -->
+   <object-name>spaceshutt_spstob</object-name>       <!--left door -->
+   <object-name>spaceshutt_spstob.001</object-name>   <!--right door -->
+   <object-name>spaceshutt_spstob.002</object-name>   <!--left door -->    
+   <object-name>spaceshutt_spstob_3</object-name>     <!--inner cabin for cockpit -->
+   <object-name>spaceshutt_spstob_4</object-name>     <!--4 little windows -->
+   <object-name>speedbrakeL</object-name>             <!-- -->
+   <object-name>speedbrakeR</object-name>             <!-- -->
+   <object-name>geardoorL</object-name>               <!--tail -->
+   <object-name>geardoorR</object-name>               <!--tail -->
+   <object-name>frontgeardoorR</object-name>          <!--front -->
+   <object-name>frontgeardoorL</object-name>          <!--front -->
+   <object-name>Left</object-name>                    <!--ailerion L -->
+   <object-name>Right</object-name>                   <!--ailerion R -->
+   <object-name>Left.001</object-name>                <!--elevator L -->   
+   <object-name>Right.001</object-name>               <!--elevator R -->
+  
+  <texture-prop>texture</texture-prop>
+  <texture>spstob_1hot.png</texture> 
+   
+      <condition>
+         <and>
+              <less-than>
+                  <property>sim/multiplay/generic/float[13]</property>
+                  <value>6.42999</value>
+               </less-than>
+               <greater-than>
+                  <property>sim/multiplay/generic/float[13]</property>
+                  <value>4.02</value>
+                  </greater-than>
+	        <less-than>
+                  <property>sim/multiplay/generic/float[14]</property>
+                  <value>120000</value>
+                </less-than>
+		<greater-than>
+                  <property>sim/multiplay/generic/float[14]</property>
+                  <value>70000</value>
+                </greater-than>
+          </and>
+        </condition>
+
+</animation>
+
+
+  
+   <!--some plasma would be nice ! but it is too much for now, you may activate it
+ 
+ <model>
+		<name>plasma</name>
+		<path>Aircraft/SpaceShuttle/Models/Effects/plasma.xml</path>
+		<offsets>
+			<x-m>-16.38</x-m>
+			<y-m>0</y-m>
+			<z-m>-3.2</z-m>
+			<pitch-deg>0</pitch-deg>
+		</offsets>
+	</model>
+
+   -->
+  
+<!-- man for the moon, pick the little windows on the top to activate him -->
+
+<model>
+    <path>Aircraft/SpaceShuttle/Models/EMU/acesjustforroomshow.xml</path>
+     <offsets>
+       <x-m> -12.30 </x-m>
+       <y-m> 1.10 </y-m>
+       <z-m> -2.92 </z-m>
+       <heading-deg>90.0</heading-deg>
+     </offsets>
+</model>  
+  
+<animation>
+ <type>pick</type>
+  <object-name>spaceshutt_spstob_4</object-name>
+  <visible>true</visible>
+ <action>
+  <button>0</button>
+   <binding>
+    <command>property-toggle</command>
+     <property>sim/multiplay/generic/int[5]</property>
+     <value>0</value>
+     <value>1</value>
+   </binding>
+ </action>
+</animation>
+
+<!-- satelit, click it to launch a satelit -->
+
+<model>
+    <path>Aircraft/SpaceShuttle/Models/EMU/satelit-int.xml</path>
+     <offsets>
+       <x-m> 0.0 </x-m>
+       <y-m> 0.0 </y-m>
+       <z-m> -0.0 </z-m>
+       <heading-deg>0.0</heading-deg>
+     </offsets>
+</model>
+
+<animation>
+ <type>pick</type>
+  <object-name>spaceshutt_spstob_eal</object-name>
+  <visible>true</visible>
+ <action>
+  <button>0</button>
+   <binding>
+    <command>property-toggle</command>
+     <property>sim/multiplay/generic/int[9]</property>
+     <value>0</value>
+     <value>1</value>
+   </binding>
+ </action>
+</animation>
+
+<!-- robotarm, click it to activate -->
+
+<model>
+    <path>Aircraft/SpaceShuttle/Models/EMU/robotarm.xml</path>
+     <offsets>
+       <x-m> 0.0 </x-m>
+       <y-m> 0.0 </y-m>
+       <z-m> 0.0 </z-m>
+       <heading-deg>0.0</heading-deg>
+     </offsets>
+</model>
+
+<!-- external Tank and Booster -->
+ 
+<model>
+<path>Aircraft/SpaceShuttle/Models/external-fuel-tank.xml</path>
+		<offsets>
+			<x-m>-10.0</x-m>
+			<y-m>0.0</y-m>
+			<z-m>-10.0</z-m>
+		</offsets>
+		<condition>
+ 		 <greater-than>
++			<property>sim/multiplay/generic/int[6]</property>
+ 			<value>0</value>
+ 		 </greater-than>
+ 		</condition>
+</model>
+
+<model>
+<path>Aircraft/SpaceShuttle/Models/solid-rocket-booster.xml</path>
+		<offsets>
+			<x-m> -5.2 </x-m>
+			<y-m> -6.35</y-m>
+			<z-m>-10.6 </z-m>
+			<roll-deg>90.0</roll-deg>
+		</offsets>
+                <condition>
+ 		 <greater-than>
++			<property>sim/multiplay/generic/int[7]</property>
+ 			<value>0</value>
+ 		 </greater-than>
+ 		</condition>
+</model>
+
+<model>
+<path>Aircraft/SpaceShuttle/Models/solid-rocket-booster.xml</path>
+		<offsets>
+			<x-m> -5.2 </x-m>
+			<y-m>  6.35</y-m>
+			<z-m>-10.6 </z-m>
+			<roll-deg>-90.0</roll-deg>
+		</offsets>
+		<condition>
+ 		 <greater-than>
++			<property>sim/multiplay/generic/int[7]</property>
+ 			<value>0</value>
+ 		 </greater-than>
+ 		</condition>
+</model>
+
+  <!-- Smoke for 3 Shuttle main engines -->
+  
+  <model>
+		<path>Aircraft/SpaceShuttle/Models/Effects/trails.xml</path>		
+		<offsets>
+			<x-m> 17</x-m>
+			<y-m>  0.00</y-m>
+			<z-m>  -0.843</z-m>
+			<roll-deg>0.0</roll-deg>
+			<pitch-deg>90.0</pitch-deg>
+			<heading-deg>0.0</heading-deg>
+		</offsets>
+  </model>
+
+  <model>
+		<path>Aircraft/SpaceShuttle/Models/Effects/trails.xml</path>		
+		<offsets>
+			<x-m> 17</x-m>
+			<y-m>  1.5496</y-m>
+			<z-m> -3.4942</z-m>
+			<roll-deg>0.0</roll-deg>
+			<pitch-deg>90.0</pitch-deg>
+			<heading-deg>0.0</heading-deg>
+		</offsets>
+  </model>
+
+  <model>
+		<path>Aircraft/SpaceShuttle/Models/Effects/trails.xml</path>		
+		<offsets>
+			<x-m> 17</x-m>
+			<y-m> -1.5496</y-m>
+			<z-m> -3.4942</z-m>
+			<roll-deg>0.0</roll-deg>
+			<pitch-deg>90.0</pitch-deg>
+			<heading-deg>0.0</heading-deg>
+		</offsets>
+  </model>
+
+
+<!-- Smoke for 2 Booster rockets-->
+
+  <model>
+   <path>Aircraft/SpaceShuttle/Models/Effects/smoke_engine1.xml</path>
+    <offsets>
+		 <x-m>20.5</x-m>
+		 <y-m>-6.2</y-m>
+		 <z-m>-10.4</z-m>
+		 <pitch-deg>90</pitch-deg>
+		 <roll-deg>0</roll-deg>
+	 </offsets>	
+  </model>
+  
+  <model>
+    <path>Aircraft/SpaceShuttle/Models/Effects/smoke_engine2.xml</path>
+      <offsets>
+		 <x-m>20.5</x-m>
+		 <y-m>6.2</y-m>
+		 <z-m>-10.4</z-m>
+		 <pitch-deg>90</pitch-deg>
+		 <roll-deg>0</roll-deg>
+	 </offsets>	
+  </model>
+  
+  <!-- smoke from the extra control engines xlr01 winglevel-->
+  
+  <model>
+		<path>Aircraft/SpaceShuttle/Models/Effects/trails-minni1.xml</path>		
+		<offsets>
+			<x-m>9.45</x-m>
+                        <y-m>-11.4</y-m>
+                        <z-m>-4.46</z-m>
+			<roll-deg>0.0</roll-deg>
+			<pitch-deg>-90.0</pitch-deg>
+			<heading-deg>0.0</heading-deg>
+		</offsets>
+		 <condition>
+			 <equals>
+				<property>/engines/engine[3]/reverser-pos-norm</property>
+				<value>1</value>
+			 </equals>
+		 </condition>
+  </model>
+  
+  <model>
+		<path>Aircraft/SpaceShuttle/Models/Effects/trails-minni1.xml</path>		
+		<offsets>
+			<x-m>9.45</x-m>
+                        <y-m>-11.4</y-m>
+                        <z-m>-4.46</z-m>
+			<roll-deg>0.0</roll-deg>
+			<pitch-deg>90.0</pitch-deg>
+			<heading-deg>0.0</heading-deg>
+		</offsets>
+		 <condition>
+			 <equals>
+				<property>/engines/engine[3]/reverser-pos-norm</property>
+				<value>0</value>
+			 </equals>
+		 </condition>
+  </model>
+  
+  <model>
+		<path>Aircraft/SpaceShuttle/Models/Effects/trails-minni2.xml</path>		
+		<offsets>
+			<x-m>9.45</x-m>
+                        <y-m>11.4</y-m>
+                        <z-m>-4.46</z-m>
+			<roll-deg>0.0</roll-deg>
+			<pitch-deg>-90.0</pitch-deg>
+			<heading-deg>0.0</heading-deg>
+		</offsets>		 
+		 <condition>
+			 <equals>
+				<property>/engines/engine[4]/reverser-pos-norm</property>
+				<value>1</value>
+			 </equals>
+		 </condition>
+  </model>
+  
+  <model>
+		<path>Aircraft/SpaceShuttle/Models/Effects/trails-minni2.xml</path>		
+		<offsets>
+			<x-m>9.45</x-m>
+                        <y-m>11.4</y-m>
+                        <z-m>-4.46</z-m>
+			<roll-deg>0.0</roll-deg>
+			<pitch-deg>90.0</pitch-deg>
+			<heading-deg>0.0</heading-deg>
+		</offsets>		 
+		 <condition>
+			 <equals>
+				<property>/engines/engine[4]/reverser-pos-norm</property>
+				<value>0</value>
+			 </equals>
+		 </condition>
+  </model>
+  
+  <!-- smoke from the extra control engines xlr01 pitchlevel nose position -->
+  
+  <model>
+		<path>Aircraft/SpaceShuttle/Models/Effects/trails-minni3.xml</path>		
+		<offsets>
+			<x-m>-16.72 </x-m>
+                        <y-m>  1.55 </y-m>
+                        <z-m> -3.30 </z-m>
+			<roll-deg>-20.0</roll-deg>
+			<pitch-deg>-90.0</pitch-deg>
+			<heading-deg>0.0</heading-deg>
+		</offsets>
+		<condition>
+			 <equals>
+				<property>/engines/engine[6]/reverser-pos-norm</property>
+				<value>1</value>
+			 </equals>
+		 </condition>
+  </model>
+  
+  
+  
+  <model>
+		<path>Aircraft/SpaceShuttle/Models/Effects/trails-minni4.xml</path>		
+		<offsets>
+			<x-m>-16.72 </x-m>
+                        <y-m>  1.55 </y-m>
+                        <z-m> -3.50 </z-m>
+			<roll-deg>20.0</roll-deg>
+			<pitch-deg>90.0</pitch-deg>
+			<heading-deg>0.0</heading-deg>
+		</offsets>
+		<condition>
+			 <equals>
+				<property>/engines/engine[6]/reverser-pos-norm</property>
+				<value>0</value>
+			 </equals>
+		 </condition>
+  </model>
+  
+  <model>
+		<path>Aircraft/SpaceShuttle/Models/Effects/trails-minni5.xml</path>		
+		<offsets>
+			<x-m>-16.72 </x-m>
+                        <y-m> -1.55 </y-m>
+                        <z-m> -3.30 </z-m>
+			<roll-deg>20.0</roll-deg>
+			<pitch-deg>-90.0</pitch-deg>
+			<heading-deg>0.0</heading-deg>
+		</offsets>
+		<condition>
+			 <equals>
+				<property>/engines/engine[6]/reverser-pos-norm</property>
+				<value>1</value>
+			 </equals>
+		 </condition>
+  </model>
+  <model>
+		<path>Aircraft/SpaceShuttle/Models/Effects/trails-minni6.xml</path>		
+		<offsets>
+			<x-m>-16.72 </x-m>
+                        <y-m> -1.55 </y-m>
+                        <z-m> -3.50 </z-m>
+			<roll-deg>-20.0</roll-deg>
+			<pitch-deg>90.0</pitch-deg>
+			<heading-deg>0.0</heading-deg>
+		</offsets>
+		<condition>
+			 <equals>
+				<property>/engines/engine[6]/reverser-pos-norm</property>
+				<value>0</value>
+			 </equals>
+		 </condition>
+  </model>
+  
+  <!-- smoke from the extra control engines xlr01 pitchlevel tail position -->
+  
+  <model>
+		<path>Aircraft/SpaceShuttle/Models/Effects/trails-minni14.xml</path>		
+		<offsets>
+			<x-m> 12.4 </x-m>
+                        <y-m>  2.5 </y-m>
+                        <z-m>  1.1 </z-m>
+			<roll-deg>-20.0</roll-deg>
+			<pitch-deg>-90.0</pitch-deg>
+			<heading-deg>0.0</heading-deg>
+		</offsets>
+		<condition>
+			 <equals>
+				<property>/engines/engine[10]/reverser-pos-norm</property>
+				<value>1</value>
+			 </equals>
+		 </condition>
+  </model>
+    
+  <model>
+		<path>Aircraft/SpaceShuttle/Models/Effects/trails-minni13.xml</path>		
+		<offsets>
+			<x-m> 12.48 </x-m>
+                        <y-m>  3.1  </y-m>
+                        <z-m> -1.45 </z-m>
+			<roll-deg>20.0</roll-deg>
+			<pitch-deg>90.0</pitch-deg>
+			<heading-deg>0.0</heading-deg>
+		</offsets>
+		<condition>
+			 <equals>
+				<property>/engines/engine[10]/reverser-pos-norm</property>
+				<value>0</value>
+			 </equals>
+		 </condition>
+  </model>
+  
+  <model>
+		<path>Aircraft/SpaceShuttle/Models/Effects/trails-minni16.xml</path>		
+		<offsets>
+			<x-m> 12.4 </x-m>
+                        <y-m> -2.5 </y-m>
+                        <z-m>  1.1 </z-m>
+			<roll-deg>20.0</roll-deg>
+			<pitch-deg>-90.0</pitch-deg>
+			<heading-deg>0.0</heading-deg>
+		</offsets>
+		<condition>
+			 <equals>
+				<property>/engines/engine[10]/reverser-pos-norm</property>
+				<value>1</value>
+			 </equals>
+		 </condition>
+  </model>
+  <model>
+		<path>Aircraft/SpaceShuttle/Models/Effects/trails-minni15.xml</path>		
+		<offsets>
+			<x-m> 12.48 </x-m>
+                        <y-m> -3.1  </y-m>
+                        <z-m> -1.45 </z-m>
+			<roll-deg>-20.0</roll-deg>
+			<pitch-deg>90.0</pitch-deg>
+			<heading-deg>0.0</heading-deg>
+		</offsets>
+		<condition>
+			 <equals>
+				<property>/engines/engine[10]/reverser-pos-norm</property>
+				<value>0</value>
+			 </equals>
+		 </condition>
+  </model>
+  
+    <!-- smoke from the extra control engines03 for yaw control nose position
+         based on reverser position on=1=270=blow to left, off=0=90=blow to right-->
+    
+  <model>
+		<path>Aircraft/SpaceShuttle/Models/Effects/trails-minni17.xml</path>
+		<offsets>
+			<x-m> -15.85 </x-m>
+                        <y-m> -1.75 </y-m>
+                        <z-m> -3.25 </z-m>
+			<roll-deg>    0.0</roll-deg>
+			<pitch-deg>   0.0</pitch-deg>
+			<heading-deg> 270.0</heading-deg>
+		</offsets>	
+			<condition>
+			 <equals>
+				<property>/engines/engine[11]/reverser-pos-norm</property>
+				<value>0</value>
+			 </equals>
+			</condition>
+  </model>
+  <model>
+		<path>Aircraft/SpaceShuttle/Models/Effects/trails-minni17.xml</path>		
+		<offsets>
+			<x-m> -15.85 </x-m>
+                        <y-m> 1.75 </y-m>
+                        <z-m> -3.25 </z-m>
+			<roll-deg>    0.0</roll-deg>
+			<pitch-deg>   0.0</pitch-deg>
+			<heading-deg> 90.0</heading-deg>
+		</offsets>	
+			<condition>
+			 <equals>
+				<property>/engines/engine[11]/reverser-pos-norm</property>
+				<value>1</value>
+			 </equals>
+			</condition>
+  </model>
+    
+
+  <!-- Shuttle doors animation, open by default, click them to close or open  -->
+
+<animation>
+ <type>pick</type>
+  <object-name>spaceshutt_spstob</object-name>
+  <object-name>spaceshutt_spstob.001</object-name>
+
+  <visible>true</visible>
+<action>
+<button>0</button>
+
+<binding>
+<command>property-toggle</command>
+<property>/controls/shuttle/door/position</property>
+<value>0</value>
+<value>1</value>
+</binding>
+
+<binding>
+<command>property-interpolate</command>
+<property>sim/multiplay/generic/float[3]</property>
+<property>/controls/shuttle/door/position</property> <!-- the value to interpolate to, is 1 -->
+<rate>0.10</rate><!-- 10 seconds to 0 from 1 or 1 to 0 -->
+</binding>
+
+</action>
+</animation>
+ 
+<animation>
+ <type>rotate</type>
+  <object-name>spaceshutt_spstob</object-name>
+  <property>sim/multiplay/generic/float[3]</property>
+  <interpolation>
+    <entry>
+      <ind>0.2</ind>
+      <dep>0</dep>
+    </entry>
+    <entry>
+      <ind>1.0</ind>
+      <dep>-171</dep>
+    </entry>
+  </interpolation>
+  <center>
+   <x-m> -2.2671</x-m>
+   <y-m> -2.552</y-m>
+   <z-m>  -1.52</z-m>   
+  </center>
+  <axis>
+   <x>1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+</animation>
+
+<animation>
+ <type>rotate</type>
+  <object-name>spaceshutt_spstob.001</object-name>
+  <property>sim/multiplay/generic/float[3]</property>
+  <interpolation>
+    <entry>
+      <ind>0.2</ind>
+      <dep>0</dep>
+    </entry>
+    <entry>
+      <ind>1.0</ind>
+      <dep>171</dep>
+    </entry>
+  </interpolation>
+  <center>
+   <x-m> -2.2672</x-m>
+   <y-m>  2.552</y-m>
+   <z-m>  -1.52</z-m>   
+  </center>
+  <axis>
+   <x>1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+</animation>
+
+<!--Light for Wing Lights, no strobes-->
+ 
+ <model>
+		<name>Strobe_1</name>
+		<path>Aircraft/SpaceShuttle/Models/Lights/strobe-red.xml</path>	
+		<offsets>
+			<x-m>9.45</x-m>
+			<y-m>-11.9</y-m>
+			<z-m>-4.46</z-m>
+		</offsets>
+</model>   
+	
+<model>
+		<name>Strobe_4</name>
+		<path>Aircraft/SpaceShuttle/Models/Lights/strobe-green.xml</path>	
+		<offsets>
+			<x-m>9.45</x-m>
+			<y-m>11.9</y-m>
+			<z-m>-4.46</z-m>
+		</offsets>
+</model>   
+
+<!--Light in the satelit-->
+
+<model>
+		<name>Strobe_3</name>
+		<path>Aircraft/SpaceShuttle/Models/Lights/strobe-yellow.xml</path>	
+		<offsets>
+			<x-m>-8.9</x-m>
+			<y-m>0</y-m>
+			<z-m>-1</z-m>
+		</offsets>
+</model>   
+
+<!--Light for Beacons-->
+
+<model>
+    <name>Beacon_1</name>
+    <path>Aircraft/SpaceShuttle/Models/Lights/beacon.xml</path>
+    <offsets>
+      <x-m> 9.99 </x-m>
+      <y-m>  0.00000 </y-m>
+      <z-m>  -5.30 </z-m>
+    </offsets>
+</model>
+<model>
+    <name>Beacon_2</name>
+    <path>Aircraft/SpaceShuttle/Models/Lights/beacon.xml</path>
+    <offsets>
+      <x-m> 15.45 </x-m>
+      <y-m>  0.00000 </y-m>
+      <z-m>  8.28 </z-m>
+    </offsets>
+</model>
+
+<!--Light for Position Lights, Strobes-->
+
+<model>
+    <path>Aircraft/SpaceShuttle/Models/Lights/StrobeLight.xml</path>
+     <offsets>
+      <x-m>9.95</x-m>
+      <y-m>-12.0</y-m>
+      <z-m>-4.46</z-m>
+     </offsets>
+</model>
+<model>
+    <path>Aircraft/SpaceShuttle/Models/Lights/StrobeLight.xml</path>
+     <offsets>
+      <x-m>9.95</x-m>
+      <y-m>12.0</y-m>
+      <z-m>-4.46</z-m>
+     </offsets>
+</model>
+
+<model>
+    <path>Aircraft/SpaceShuttle/Models/Lights/StrobeLight.xml</path>
+     <offsets>
+      <x-m>17.70</x-m>
+      <y-m> 0.0</y-m>
+      <z-m> 8.15</z-m>
+     </offsets>
+</model>
+
+<!--Light for Nav Lights-->
+
+<model>
+    <path>Aircraft/SpaceShuttle/Models/Lights/WhiteLight.xml</path>
+     <offsets>
+      <x-m>-1.70</x-m>
+      <y-m>-4.68</y-m>
+      <z-m>-4.46</z-m>
+     </offsets>
+</model>
+<model>
+    <path>Aircraft/SpaceShuttle/Models/Lights/WhiteLight.xml</path>
+     <offsets>
+      <x-m>-1.70</x-m>
+      <y-m> 4.68</y-m>
+      <z-m>-4.46</z-m>
+     </offsets>
+</model>
+
+<!--Light for Gears! -->
+<model>
+    <path>Aircraft/SpaceShuttle/Models/Lights/WhiteLight.xml</path>
+     <offsets>
+       <x-m> -11.35 </x-m>
+       <y-m> 0.00 </y-m>
+       <z-m> -5.35 </z-m>
+     </offsets>
+                        <condition>
+			 <equals>
+				<property>gear/gear/position-norm</property>
+				<value>1</value>
+			 </equals>
+                        </condition>
+</model>
+<model>
+    <path>Aircraft/SpaceShuttle/Models/Lights/WhiteLight.xml</path>
+     <offsets>
+       <x-m> 3.15 </x-m>
+       <y-m> -3.5 </y-m>
+       <z-m>-5.40  </z-m>
+     </offsets>
+     
+                        <condition>
+			 <equals>
+				<property>gear/gear/position-norm</property>
+				<value>1</value>
+			 </equals>
+                        </condition>
+</model>
+<model>
+    <path>Aircraft/SpaceShuttle/Models/Lights/WhiteLight.xml</path>
+     <offsets>
+       <x-m> 3.15 </x-m>
+       <y-m> 3.5 </y-m>
+       <z-m>-5.40  </z-m>
+     </offsets>
+     
+                        <condition>
+			 <equals>
+				<property>gear/gear/position-norm</property>
+				<value>1</value>
+			 </equals>
+                        </condition>
+</model>
+
+ 
+
+<!--One Light for the center of gravity, just for testing reasons, will be removed later-->
+
+<model>
+    <path>Aircraft/SpaceShuttle/Models/Lights/strobe-white.xml</path>
+     <offsets>
+       <x-m> 2.7 </x-m>
+       <y-m> 0.0 </y-m>
+       <z-m> -2.7 </z-m>
+     </offsets>
+</model>
+
+<!--lets set some fire to the main engines -->
+
+<model>
+    <path>Aircraft/SpaceShuttle/Models/Effects/engine-fire.xml</path>
+     <offsets>
+       <x-m> 7.5 </x-m>
+       <y-m> 1.5 </y-m>
+       <z-m> -0.55 </z-m>
+       <pitch-deg>-8.0</pitch-deg>
+     </offsets>
+</model>
+<model>
+    <path>Aircraft/SpaceShuttle/Models/Effects/engine-fire.xml</path>
+     <offsets>
+       <x-m> 7.6 </x-m>
+       <y-m> 0.05 </y-m>
+       <z-m> -3.20 </z-m>
+       <pitch-deg>-8.0</pitch-deg>
+     </offsets>
+</model>
+<model>
+    <path>Aircraft/SpaceShuttle/Models/Effects/engine-fire.xml</path>
+     <offsets>
+       <x-m> 7.6 </x-m>
+       <y-m> 2.90 </y-m>
+       <z-m> -3.20 </z-m>
+       <pitch-deg>-8.0</pitch-deg>
+     </offsets>
+</model>
+
+<!--lets set some fire to the OMS-main engines, 2 are iluminated-->
+
+<model>
+  <path>Aircraft/SpaceShuttle/Models/Lights/strobe-red5.xml</path>	
+		<offsets>
+                 <x-m> 13.10 </x-m>
+                 <y-m> -2.20 </y-m>
+                 <z-m> -0.250 </z-m>
+		</offsets>
+</model> 
+
+<model>
+   <path>Aircraft/SpaceShuttle/Models/Lights/strobe-red5.xml</path>
+     <offsets>
+       <x-m> 13.10 </x-m>
+       <y-m> 2.20 </y-m>
+       <z-m> -0.250 </z-m>
+     </offsets>
+</model>
+
+<!--more effect ! for critical flight situation-->
+
+<model>
+  <name>right-strake-vortex</name>
+  <path>Aircraft/SpaceShuttle/Models/Effects/strake-vortex.xml</path>
+  <offsets>
+        <x-m>9.45</x-m>
+	<y-m> 11.0</y-m>
+	<z-m>-4.46</z-m>
+  </offsets>
+ </model>
+ <model>
+  <name>right-strake-vortex</name>
+  <path>Aircraft/SpaceShuttle/Models/Effects/strake-vortex.xml</path>
+  <offsets>
+        <x-m>9.45</x-m>
+	<y-m>-11.0</y-m>
+	<z-m>-4.46</z-m>
+  </offsets>
+ </model>
+
+ <!--and supersonic boom ! -->
+ 
+ <model>
+		<name>sonicboom</name>
+		<path>Aircraft/SpaceShuttle/Models/Effects/boom.xml</path>
+		<offsets>
+			<x-m>-18.38</x-m>
+			<y-m>0</y-m>
+			<z-m>-3.2</z-m>
+			<pitch-deg>0</pitch-deg>
+		</offsets>
+	</model>
+
+ <!--Parachutes -->
+ 
+<model>
+    <path>Aircraft/SpaceShuttle/Models/Parachutes/Helping-Parachute.xml</path>
+     <offsets>
+       <x-m> 39.7 </x-m>
+       <y-m> 0.0 </y-m>
+       <z-m> 1.22 </z-m>
+       <pitch-deg>89</pitch-deg>
+     </offsets>
+      <condition>
+			 <greater-than>
+				<property>sim/multiplay/generic/float[0]</property>
+				<value>120</value>
+			 </greater-than>
+      </condition>
+</model>
+	
+<model>
+    <path>Aircraft/SpaceShuttle/Models/Parachutes/Brake-Parachute.xml</path>
+     <offsets>
+       <x-m> 25.7 </x-m>
+       <y-m> 0.0 </y-m>
+       <z-m> 1.22 </z-m>
+       <pitch-deg>91</pitch-deg>
+     </offsets>
+      <condition>
+       <and>
+			 <greater-than>
+				<property>sim/multiplay/generic/float[0]</property>
+				<value>45</value>
+			 </greater-than> 
+			 <less-than>
+				<property>sim/multiplay/generic/float[0]</property>
+				<value>119.999</value>
+			 </less-than>       
+	 </and>
+	</condition>
+</model>  
+
+<model>
+    <path>Aircraft/SpaceShuttle/Models/Parachutes/Brake-Parachute1.xml</path>
+     <offsets>
+       <x-m> 100.7 </x-m>
+       <y-m> 0.0 </y-m>
+       <z-m>-6.30 </z-m>
+       <pitch-deg>91</pitch-deg>
+     </offsets>
+      <condition>
+       <and>
+			 <greater-than>
+				<property>sim/multiplay/generic/float[0]</property>
+				<value>39</value>
+			 </greater-than> 
+			 <less-than>
+				<property>sim/multiplay/generic/float[0]</property>
+				<value>44.999</value>
+			 </less-than>       
+	</and>
+       </condition>
+</model>
+
+<model>
+    <path>Aircraft/SpaceShuttle/Models/Parachutes/Brake-Parachute2.xml</path>
+     <offsets>
+       <x-m> 105.7 </x-m>
+       <y-m> 0.0 </y-m>
+       <z-m> 2.50 </z-m>
+       <pitch-deg>95.3</pitch-deg>
+     </offsets>
+      <condition>
+       <and>
+			 <greater-than>
+				<property>sim/multiplay/generic/float[0]</property>
+				<value>1</value>
+			 </greater-than> 
+			 <less-than>
+				<property>sim/multiplay/generic/float[0]</property>
+				<value>38.999</value>
+			 </less-than>       
+	</and>
+       </condition>
+</model>
+
+
+<!--<model>
+    <path>Aircraft/SpaceShuttle/Models/lunarlandernofoil-c/lunarlander.xml</path>
+     <offsets>
+       <x-m> -2.30 </x-m>
+       <y-m> 20.0 </y-m>
+       <z-m> -6.45 </z-m>
+       <heading-deg>0.0</heading-deg>
+     </offsets>
+</model>  -->
+
+  <!-- Speedbrake animation -->
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>speedbrakeL</object-name>
+    <property>surface-positions/speedbrake-pos-norm</property>
+    <factor> 18 </factor>
+    <axis>
+      <x1-m>  16.023   </x1-m>
+      <y1-m>  -0.04977 </y1-m>
+      <z1-m>   7.512   </z1-m>
+      <x2-m>  13.134   </x2-m>
+      <y2-m>  -0.259   </y2-m>
+      <z2-m>   2.311   </z2-m>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>speedbrakeR</object-name>
+    <property>surface-positions/speedbrake-pos-norm</property>
+    <factor> -18 </factor>
+    <axis>
+      <x1-m>  16.023   </x1-m>
+      <y1-m>   0.04977 </y1-m>
+      <z1-m>   7.512   </z1-m>
+      <x2-m>  13.134   </x2-m>
+      <y2-m>   0.259   </y2-m>
+      <z2-m>   2.311   </z2-m>
+    </axis>
+  </animation>
+ 
+ <!-- Rudder animation in the Speedbrake-->
+ 
+  <animation>
+    <type>rotate</type>
+    <object-name>speedbrakeL</object-name>    
+    <property>surface-positions/rudder-pos-norm</property>
+    <factor> -25 </factor>
+    <axis>
+      <x1-m>  16.023   </x1-m>
+      <y1-m>  -0.04977 </y1-m>
+      <z1-m>   7.512   </z1-m>
+      <x2-m>  13.134   </x2-m>
+      <y2-m>  -0.259   </y2-m>
+      <z2-m>   2.311   </z2-m>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>speedbrakeR</object-name>    
+    <property>surface-positions/rudder-pos-norm</property>
+    <factor> -25 </factor>
+    <axis>
+      <x1-m>  16.023   </x1-m>
+      <y1-m>   0.04977 </y1-m>
+      <z1-m>   7.512   </z1-m>
+      <x2-m>  13.134   </x2-m>
+      <y2-m>   0.259   </y2-m>
+      <z2-m>   2.311   </z2-m>
+    </axis>
+  </animation>
+ 
+   <!-- Ailerons animation -->
+   
+  <animation>
+    <type>rotate</type>
+    <object-name>Left</object-name>
+    <property>surface-positions/left-aileron-pos-norm</property>
+    <factor> 5 </factor>
+    <center>
+      <x-m>  9.6664295 </x-m>
+      <y-m>  9.9170141 </y-m>
+      <z-m> -4.5840192 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>Right</object-name>
+    <property>surface-positions/right-aileron-pos-norm</property>
+    <factor> -5 </factor>
+    <center>
+      <x-m>  9.6664295 </x-m>
+      <y-m> -9.9170141 </y-m>
+      <z-m> -4.5840192 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+  
+    <!-- Elevator animation -->
+    
+  <animation>
+    <type>rotate</type>
+    <object-name>Left.001</object-name>
+    <property>surface-positions/elevator-pos-norm</property>
+    <factor> 5 </factor>
+    <center>
+      <x-m>  9.5124702 </x-m>
+      <y-m>  5.3279390 </y-m>
+      <z-m> -4.5753546 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>Right.001</object-name>
+    <property>surface-positions/elevator-pos-norm</property>
+    <factor> 5 </factor>
+    <center>
+      <x-m>  9.5124702 </x-m>
+      <y-m>  5.3279390 </y-m>
+      <z-m> -4.5753546 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+    <!-- Front Wheel Steering -->
+    
+  <animation>
+    <type>rotate</type>
+    <object-name>front</object-name>
+    <property>surface-positions/rudder-pos-norm</property>
+    <factor> -20 </factor>
+    <center>
+      <x-m>-11.047 </x-m>
+      <y-m>  0.0 </y-m>
+      <z-m> -6.922 </z-m>
+     </center>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+  
+    <!-- Front Gear in and out animation -->  
+
+  <animation>
+    <type>rotate</type>
+    <object-name>front</object-name>
+    <object-name>frontgear</object-name>
+    <property>gear/gear[0]/position-norm</property>
+    <interpolation>
+      <entry><ind> 0 </ind><dep>  94 </dep></entry>
+      <entry><ind> 1 </ind><dep>   0 </dep></entry>
+    </interpolation>
+    <center>
+      <x-m>  -11.047 </x-m>
+      <y-m>   -0.000 </y-m>
+      <z-m>   -4.896 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>frontgeardoorL</object-name>    
+    <property>gear/gear[0]/position-norm</property>      
+  <interpolation>
+    <entry>
+      <ind>0.0</ind>
+      <dep>-90.0</dep>
+    </entry>    
+    <entry>
+      <ind>0.15</ind>
+      <dep>0.0</dep>
+    </entry>
+    <entry>
+      <ind>1.0</ind>
+      <dep>0.0</dep>
+    </entry>
+  </interpolation>   
+    <axis>
+      <x1-m>   -11.319   </x1-m>
+      <y1-m>    -0.612   </y1-m>
+      <z1-m>    -5.25    </z1-m>
+      <x2-m>   -12.817   </x2-m>
+      <y2-m>    -0.612   </y2-m>
+      <z2-m>    -5.245   </z2-m>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>rotate</type>    
+    <object-name>frontgeardoorR</object-name>
+    <property>gear/gear[0]/position-norm</property>
+    <interpolation>
+    <entry>
+      <ind>0.0</ind>
+      <dep>90.0</dep>
+    </entry>    
+    <entry>
+      <ind>0.15</ind>
+      <dep>0.0</dep>
+    </entry>
+    <entry>
+      <ind>1.0</ind>
+      <dep>0.0</dep>
+    </entry>
+  </interpolation>
+    <axis>
+      <x1-m>  -11.319   </x1-m>
+      <y1-m>    0.612   </y1-m>
+      <z1-m>   -5.25    </z1-m>
+      <x2-m>  -12.817   </x2-m>
+      <y2-m>    0.612   </y2-m>
+      <z2-m>   -5.245   </z2-m>
+    </axis>
+  </animation>
+
+    <!-- Tail Gear in and out animation -->  
+
+  <animation>
+    <type>rotate</type>
+    <object-name>back</object-name>
+    <object-name>back.001</object-name>
+    <object-name>backgearL</object-name>
+    <object-name>backgearR</object-name>    
+    <property>gear/gear[0]/position-norm</property>
+    <interpolation>
+      <entry><ind> 0 </ind><dep>  94</dep></entry>
+      <entry><ind> 1 </ind><dep>   0 </dep></entry>
+    </interpolation>
+    <center>
+      <x-m>  3.5672667 </x-m>
+      <y-m>  3.4999995 </y-m>
+      <z-m> -4.78      </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+ 
+ <animation>
+    <type>translate</type> 
+    <object-name>backgearlinkageL</object-name>
+    <object-name>backgearlinkageR</object-name>  
+    <property>gear/gear[0]/position-norm</property>
+  <interpolation>
+    <entry>
+      <ind>0</ind>
+      <dep>4</dep>
+    </entry>
+    <entry>
+      <ind>1</ind>
+      <dep>0</dep>
+    </entry>    
+  </interpolation>
+  <center>
+   <x-m> 1.753 </x-m>
+      <y-m>  0.0   </y-m>
+      <z-m> 3.459 </z-m> 
+  </center>
+  <axis>
+   <x>-1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+</animation> 
+ 
+  <animation>
+    <type>rotate</type>
+    <object-name>backgearlinkageL</object-name>
+    <object-name>backgearlinkageR</object-name>    
+    <property>gear/gear[0]/position-norm</property>
+    <interpolation>
+      <entry><ind> 0 </ind><dep>  45 </dep></entry>
+      <entry><ind> 1 </ind><dep>   0 </dep></entry>
+    </interpolation>
+    <center>
+      <x-m> 1.753 </x-m>
+      <y-m>  0.0   </y-m>
+      <z-m> -5.024 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> -1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>geardoorL</object-name>    
+    <property>gear/gear[0]/position-norm</property>
+    <interpolation>
+    <entry>
+      <ind>0.0</ind>
+      <dep>-90.0</dep>
+    </entry>    
+    <entry>
+      <ind>0.15</ind>
+      <dep>0.0</dep>
+    </entry>
+    <entry>
+      <ind>1.0</ind>
+      <dep>0.0</dep>
+    </entry>
+  </interpolation>
+    <axis>
+      <x1-m>  4.520   </x1-m>
+      <y1-m> -4.620   </y1-m>
+      <z1-m> -5.294   </z1-m>
+      <x2-m>  0.727   </x2-m>
+      <y2-m> -4.612   </y2-m>
+      <z2-m> -5.294   </z2-m>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>rotate</type>    
+    <object-name>geardoorR</object-name>
+    <property>gear/gear[0]/position-norm</property>
+    <interpolation>
+    <entry>
+      <ind>0.0</ind>
+      <dep>90.0</dep>
+    </entry>    
+    <entry>
+      <ind>0.15</ind>
+      <dep>0.0</dep>
+    </entry>
+    <entry>
+      <ind>1.0</ind>
+      <dep>0.0</dep>
+    </entry>
+  </interpolation>
+    <axis>
+      <x1-m>  4.520   </x1-m>
+      <y1-m>  4.620   </y1-m>
+      <z1-m> -5.294   </z1-m>
+      <x2-m>  0.727   </x2-m>
+      <y2-m>  4.612   </y2-m>
+      <z2-m> -5.294   </z2-m>
+    </axis>
+  </animation>
+  
+  <!-- Tail Wheels Compression and Spin -->
+
+  <animation>
+    <type>translate</type>    
+    <object-name>backgearL</object-name>
+    <property>gear/gear[1]/compression-norm</property>
+    <interpolation>
+      <entry><ind> 0.00 </ind><dep>  0.0 </dep></entry>
+      <entry><ind> 1.00 </ind><dep>  1.0 </dep></entry>
+    </interpolation>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>translate</type>    
+    <object-name>backgearR</object-name>
+    <property>gear/gear[2]/compression-norm</property>
+    <interpolation>
+      <entry><ind> 0.00 </ind><dep>  0.0 </dep></entry>
+      <entry><ind> 1.00 </ind><dep>  1.0 </dep></entry>
+    </interpolation>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>  
+  
+ <animation>
+  <type>spin</type>
+  <object-name>back</object-name>
+  <object-name>back.001</object-name>   
+  <property>sim/multiplay/generic/float[0]</property>
+    <factor> -20 </factor>
+  <center>
+      <x-m> 3.567 </x-m>
+      <y-m> 0.0   </y-m>
+      <z-m>-7.396 </z-m>
+    </center>
+  <axis>
+   <x>0</x>
+   <y>1</y>
+   <z>0</z>
+  </axis>
+ </animation>
+ 
+ <!-- Front Wheel Compression and Spin-->
+ 
+ <animation>
+    <type>translate</type>    
+    <object-name>frontgear</object-name>
+    <property>gear/gear[0]/compression-norm</property>
+    <interpolation>
+      <entry><ind> 0.00 </ind><dep>  0.0 </dep></entry>   
+      <entry><ind> 1.00 </ind><dep>  1.0 </dep></entry>
+    </interpolation>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation> 
+ 
+ <animation>
+  <type>spin</type>  
+  <object-name>front</object-name>  
+  <property>sim/multiplay/generic/float[0]</property>
+    <factor> -25 </factor>
+  <center>
+      <x-m>-11.047 </x-m>
+      <y-m>  0.0 </y-m>
+      <z-m> -6.922 </z-m>
+    </center>
+  <axis>
+   <x>0</x>
+   <y>1</y>
+   <z>0</z>
+  </axis>
+ </animation>
+ 
+ 
+</PropertyList>

@@ -1,0 +1,95 @@
+<?xml version="1.0"?>
+
+<!--###################################################################################
+    Antonov-Aircrafts and SpaceShuttle :: Herbert Wagner November2014-2015
+    Development is ongoing, see latest version: www.github.com/herbyw/antonov-aircrafts
+    This file is licenced under the terms of the GNU General Public Licence V3 or later
+    ###################################################################################
+-->
+
+<PropertyList>
+	<particlesystem>
+		<name>vapor</name>
+		<offsets>
+			<x-m>0.0</x-m>
+			<y-m>0.0</y-m>
+			<z-m>0.0</z-m>
+			<roll-deg>0.0</roll-deg>
+			<pitch-deg>0.0</pitch-deg>
+			<heading-deg>0.0</heading-deg>
+		</offsets>
+		<condition>
+			<greater-than>
+				<property>sim/multiplay/generic/float[17]</property>
+				<value>1</value>
+			</greater-than>
+		</condition>
+		<texture>smoke.png</texture>
+		<emissive>false</emissive>
+		<lighting>false</lighting>
+		<attach>world</attach>
+		<placer>
+			<type>point</type> 
+		</placer>
+		<shooter>
+			<theta-min-deg>89.90</theta-min-deg>
+			<theta-max-deg>90.10</theta-max-deg>
+			<phi-min-deg>0.01</phi-min-deg>
+			<phi-max-deg>0.01</phi-max-deg>
+			<speed-mps>
+				<value>20</value>
+				<spread>0</spread>
+			</speed-mps>
+			<rotation-speed>
+				<x-min-deg-sec>1</x-min-deg-sec>
+				<y-min-deg-sec>1</y-min-deg-sec>
+				<z-min-deg-sec>1</z-min-deg-sec>
+				<x-max-deg-sec>5</x-max-deg-sec>
+				<y-max-deg-sec>5</y-max-deg-sec>
+				<z-max-deg-sec>5</z-max-deg-sec>
+			</rotation-speed>
+		</shooter>
+		<counter>
+			<particles-per-sec>
+				<value>60</value>
+				<spread>1</spread>
+			</particles-per-sec>
+		</counter>
+		<align>billboard</align>
+		<particle>
+			<start>
+				<color>
+					<red><value>0.19</value></red>
+					<green><value>0.59</value></green>
+					<blue><value>0.19</value></blue>
+					<alpha><value>0.6</value></alpha>
+				</color>
+				<size>
+					<value>0.15</value>
+				</size>
+			</start>
+			<end>
+				<color>
+					<red><value>0.9</value></red>
+					<green><value>0.9</value></green>
+					<blue><value>0.9</value></blue>
+					<alpha><value>0.95</value></alpha>
+				</color>
+				<size>
+					<value>1</value>
+				</size>
+			</end>
+			<life-sec>
+				<value>0.35</value>
+			</life-sec>
+			<mass-kg>0.05</mass-kg>
+			<radius-m>0.03</radius-m>
+		</particle>
+		<program>
+			<fluid>air</fluid>
+			<gravity>true</gravity>
+			<wind>true</wind>
+		</program>
+	</particlesystem>
+</PropertyList>
+

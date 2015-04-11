@@ -1,0 +1,107 @@
+<?xml version="1.0"?>
+
+<!--###################################################################################
+    Antonov-Aircrafts and SpaceShuttle :: Herbert Wagner November2014-2015
+    Development is ongoing, see latest version: www.github.com/herbyw/antonov-aircrafts
+    This file is licenced under the terms of the GNU General Public Licence V3 or later
+    ###################################################################################
+-->
+
+<PropertyList>
+<!-- ******************************************************************* -->
+<!-- Supersonic Boom Effect by HerbyW     02/2015                        -->
+<!-- ******************************************************************* -->
+
+<particlesystem>
+		<name>vapor</name>
+		<offsets>
+			<x-m>30.0</x-m>
+			<y-m>0.0</y-m>
+			<z-m>0.0</z-m>
+			<roll-deg>0.0</roll-deg>
+			<pitch-deg>0.0</pitch-deg>
+			<heading-deg>0.0</heading-deg>
+		</offsets>
+      <condition>
+         <and>
+            <less-than>
+                  <property>sim/multiplay/generic/float[13]</property>
+                  <value>1.02</value>
+               </less-than>
+               <greater-than>
+                  <property>sim/multiplay/generic/float[13]</property>
+                  <value>0.94</value>
+            </greater-than>	    
+         </and>
+      </condition>
+		<texture>smoke.png</texture>
+		<emissive>false</emissive>
+		<lighting>false</lighting>
+		<attach>world</attach>
+		<placer>
+			<type>point</type> 
+		</placer>
+		<shooter>
+			<theta-min-deg>0</theta-min-deg>
+			<theta-max-deg>5</theta-max-deg>
+			<phi-min-deg>0.1</phi-min-deg>
+			<phi-max-deg>0.1</phi-max-deg>
+			<speed-mps>
+				<value>0</value>
+				<spread>0</spread>
+			</speed-mps>
+			<rotation-speed>
+				<x-min-deg-sec>0</x-min-deg-sec>
+				<y-min-deg-sec>0</y-min-deg-sec>
+				<z-min-deg-sec>0</z-min-deg-sec>
+				<x-max-deg-sec>0</x-max-deg-sec>
+				<y-max-deg-sec>0</y-max-deg-sec>
+				<z-max-deg-sec>0</z-max-deg-sec>
+			</rotation-speed>
+		</shooter>
+		<counter>
+			<particles-per-sec>
+				<value>95</value>
+				<spread>5</spread>
+			</particles-per-sec>
+		</counter>
+		<align>billboard</align>
+		<particle>
+			<start>
+				<color>
+					<red><value>0.95</value></red>
+					<green><value>0.95</value></green>
+					<blue><value>0.95</value></blue>
+					<alpha><value>1.0</value></alpha>
+				</color>
+				<size>
+					<value>18</value>
+				</size>
+			</start>
+			<end>
+				<color>
+					<red><value>0.9</value></red>
+					<green><value>0.9</value></green>
+					<blue><value>0.9</value></blue>
+					<alpha><value>0.9</value></alpha>
+				</color>
+				<size>
+					<value>18</value>
+				</size>
+			</end>
+			<life-sec>
+				<value>0.01</value>
+			</life-sec>
+			<mass-kg>10</mass-kg>
+			<radius-m>18</radius-m>
+		</particle>
+		<program>
+			<gravity>false</gravity>
+			<wind>false</wind>
+		</program>
+	</particlesystem>
+
+
+ 
+</PropertyList>
+

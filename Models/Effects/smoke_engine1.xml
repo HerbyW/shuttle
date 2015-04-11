@@ -1,0 +1,127 @@
+<?xml version="1.0"?>
+
+<!--###################################################################################
+    Antonov-Aircrafts and SpaceShuttle :: Herbert Wagner November2014-2015
+    Development is ongoing, see latest version: www.github.com/herbyw/antonov-aircrafts
+    This file is licenced under the terms of the GNU General Public Licence V3 or later
+    ###################################################################################
+-->
+
+<PropertyList>
+
+<particlesystem>
+	 <!-- <type>trail</type>-->
+	 <name>gear_smoke_right</name>
+	 <texture>puff.rgb</texture>
+	 <emissive>false</emissive>
+	 <lighting>true</lighting>
+	                <x-m>0.0</x-m>
+			<y-m>0.0</y-m>
+			<z-m>0.0</z-m>
+			<roll-deg>0.0</roll-deg>
+			<pitch-deg>90.0</pitch-deg>
+			<heading-deg>0.0</heading-deg>
+<condition>
+  <and>
+    <greater-than>
+     <property>sim/multiplay/generic/float[2]</property>
+     <value>100</value>
+    </greater-than>
+
+    <greater-than>
+     <property>sim/multiplay/generic/int[7]</property>
+     <value>0</value>
+    </greater-than>
+  </and>
+</condition>
+		 
+	 <attach>world</attach>
+	 
+	 <placer>
+		 <type>point</type>
+	 </placer>
+	 
+	 <shooter>
+		 <theta-min-deg>85</theta-min-deg>
+		 <theta-max-deg>95</theta-max-deg>
+		 <phi-min-deg>0.1</phi-min-deg>
+		 <phi-max-deg>0.1</phi-max-deg>
+		 <speed>
+			 <value>150</value>
+			 <spread>5</spread>
+		 </speed>
+		 <rotation-speed>
+			<x-min-deg-sec>1</x-min-deg-sec>
+			<y-min-deg-sec>1</y-min-deg-sec>
+			<z-min-deg-sec>1</z-min-deg-sec>
+			<x-max-deg-sec>5</x-max-deg-sec>
+			<y-max-deg-sec>5</y-max-deg-sec>
+			<z-max-deg-sec>5</z-max-deg-sec>
+		 </rotation-speed>
+	 </shooter>
+	 
+	 <counter>
+		 <particles-per-sec>
+			 <value>150</value>
+			 <spread>15</spread>
+		 </particles-per-sec>
+	 </counter>
+	 
+	 <align>billboard</align>
+	 
+	 <particle>
+		 <start>
+			 <color>
+				 <red>
+					 <value>0.4</value>
+				 </red>
+				 <green>
+					 <value>0.4</value>
+				 </green>
+				 <blue>
+					 <value>0.4</value>
+				 </blue>
+				 <alpha>
+					 <value>0.8</value>
+				 </alpha>
+			 </color>
+			 <size>
+				 <value>1.2</value>
+			 </size>
+		 </start>
+		 <end>
+			 <color>
+				 <red>
+					 <value>0.1</value>
+				 </red>
+				 <green>
+					 <value>0.1</value>
+				 </green>
+				 <blue>
+					 <value>0.1</value>
+				 </blue>
+				 <alpha>
+					 <value>0.98</value>
+				 </alpha>
+			 </color>
+			 <size>
+				 <value>300.0</value>
+			 </size>
+		 </end>
+		 <life-sec>
+			 <value>55</value>
+		 </life-sec>
+		 <mass-kg>0.35</mass-kg>
+		 <radius-m>0.70</radius-m>
+	 </particle>
+	 
+	 <program>
+		 <fluid>air</fluid>
+		 <gravity type="bool">true</gravity>
+		 <wind type="bool">true</wind>
+	 </program>
+	 
+</particlesystem>
+
+</PropertyList>
+
