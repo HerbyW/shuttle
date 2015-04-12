@@ -3,7 +3,7 @@
 <PropertyList>
 
 
-<path>launcher.ac</path>
+<path>Aircraft/shuttle/launcher/launcher.ac</path>
 
 	<offsets>
 		<x-m>0</x-m>
