@@ -1,19 +1,10 @@
-Antonov-12
-Antonov-22
-Antonov-225
-SpaceShuttle 
+Antonov-12: AN-12BK - Antonov AN-22A - Antonov AN-225-Mrija
+SpaceShuttle (renamed to "shuttle")
+Tupolew Tu-95MR
 
 for Flightgear
 ================
 
-Antonov-12 for Flightgear, 
-
-Antonov-22 for Flightgear,
-
-Antonov-225 for Flightgear,
-
-SpaceShuttle for Flightgear (renamed to "shuttle")
-
 New Instrumentation, new panels, new interior and hundreds of addings to the official Versions.
 
-made by HerbyW: www.github.com/HerbyW/antonov-aircrafts
+made by HerbyW: www.github.com/HerbyW
