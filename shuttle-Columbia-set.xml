@@ -59,7 +59,7 @@
   <flight-model>jsb</flight-model>
   <aero>shuttle</aero>
   <author>HerbyW, Gijs de Rooy, NASA (3D)</author>
-
+  <aircraft-version>2.0.1</aircraft-version>
 
   <input>
     <selected>
@@ -105,7 +105,8 @@
         <int type="int" n="6" alias="/controls/shuttle/external-fuel-tank"/>
         <int type="int" n="7" alias="/controls/shuttle/solid-rocket-boosters"/>
         <int type="int" n="8" alias="/controls/lighting/nav-lights"/>
-        <int type="int" n="9" alias="/controls/armament/trigger"/>        
+        <int type="int" n="9" alias="/controls/armament/trigger"/> 
+        <string n="1" type="string" alias="/sim/model/shuttle/version"/>
      </generic>
 </multiplay>
 
@@ -114,7 +115,8 @@
 	</startup>
   
   <model>
-	<path>Aircraft/shuttle/Models/SpaceShuttle-Columbia.xml</path>		
+	<path>Aircraft/shuttle/Models/SpaceShuttle-Columbia.xml</path>
+	<shuttle><version type="string">2.0.1</version></shuttle>
   </model>
   
   <sound>

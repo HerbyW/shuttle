@@ -344,6 +344,23 @@ Author: Slavutinsky Victor  from Vostok-1 modified by HerbyW for SpaceShuttle
           </volume>          
         </rumble>
 	
-	</fx>
+	        <!-- Gear Warning -->
+ 
+    <decision>
+      <name>gearwarning</name>
+      <mode>looped</mode>
+      <path>Aircraft/shuttle/Sounds/sirena.wav</path>
+      <condition>    
+	<property>/gear/warning</property>
+      </condition>
+      <volume>
+        <min>0.8</min>
+        <max>0.8</max>
+      </volume>
+      <reference-dist>10</reference-dist>
+      <max-dist>100</max-dist>
+    </decision>
+
+</fx>
 
 </PropertyList>
