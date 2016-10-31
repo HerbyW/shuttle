@@ -12,7 +12,7 @@ setlistener("/tu154/switches/usvp-selector-trans", func
       }
       else
       {
-        setprop("/tu154/instrumentation/usvp/air_ground_speed_kt", getprop("/velocities/airspeed-kt"));
+        setprop("/tu154/instrumentation/usvp/air_ground_speed_kt", getprop("/instrumentation/airspeed-indicator/true-speed-kt"));
       }  
   }
   );
