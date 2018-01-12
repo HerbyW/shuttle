@@ -1,4 +1,4 @@
-# shuttle (renamed from SpaceShuttle)
+shuttle (renamed from SpaceShuttle)
 
 for Flightgear Flightsimulator by Herbert Wagner
 
