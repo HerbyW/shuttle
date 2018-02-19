@@ -204,7 +204,7 @@ http://www.businessinsider.com/breathtaking-images-of-the-space-shuttle-2013-9?I
 <location unit="M">
 <x> -15.00 </x>
 <y> 0.00 </y>
-<z> -7.30 </z>
+<z> -7.18 </z>
 </location>
 <static_friction> 0.80 </static_friction>
 <dynamic_friction> 0.20 </dynamic_friction>
@@ -220,7 +220,7 @@ http://www.businessinsider.com/breathtaking-images-of-the-space-shuttle-2013-9?I
 <location unit="M">
 <x> 3.60 </x>
 <y> -4.2 </y>
-<z>-8.05 </z>
+<z>-7.92 </z>
 </location>
 <static_friction> 0.80 </static_friction>
 <dynamic_friction> 0.20 </dynamic_friction>
@@ -236,7 +236,7 @@ http://www.businessinsider.com/breathtaking-images-of-the-space-shuttle-2013-9?I
 <location unit="M">
 <x> 3.60 </x>
 <y> 4.2 </y>
-<z>-8.05 </z>
+<z>-7.92 </z>
 </location>
 <static_friction> 0.80 </static_friction>
 <dynamic_friction> 0.20 </dynamic_friction>

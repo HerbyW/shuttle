@@ -226,3 +226,13 @@ if ((getprop("gear/gear/position-norm") == 0) and (getprop("/position/altitude-a
  });
 
 gearwarning.start();
+
+########################################################################################
+
+setlistener("/controls/shuttle/external-fuel-tank", func
+  { if (getprop("/controls/shuttle/external-fuel-tank") == 0)
+      { setprop("/controls/shuttle/gearanimat", 1);}
+    
+    else setprop("/controls/shuttle/gearanimat", 0);
+  }
+);
