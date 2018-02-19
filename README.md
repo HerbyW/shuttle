@@ -1,6 +1,6 @@
 # shuttle (renamed from SpaceShuttle)
 
-for Flightgear Flightsimulator by Herbert Wagner
+for Flightgear Flightsimulator by Herbert Wagner 2016-2018 (schamangerbert, HerbyW)
 
 Based on works from: Gijs de Rooy, NASA (3D)
 
